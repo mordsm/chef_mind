@@ -1,0 +1,363 @@
+{
+  "domain_doneness_changes": [
+    {
+      "source_id": "domain/base_ingredients/beef_ribeye/target_doneness",
+      "original": "Rare עד Medium (50°C-56°C)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/beef_tenderloin/target_doneness",
+      "original": "Rare עד Medium (50°C-56°C)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/beef_sirloin/target_doneness",
+      "original": "Rare עד Medium (50°C-56°C)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/beef_short_ribs/target_doneness",
+      "original": "פירוק קולגן מלא לג'לטין (92°C-96°C ליבה)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/beef_ground/target_doneness",
+      "original": "עסיסי (68°C-71°C ליבה)",
+      "safety_minimum": 71.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/chicken_breast/target_doneness",
+      "original": "74°C ליבה מדויקת (פאסטוריזציה מלאה)",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/chicken_thighs_boneless/target_doneness",
+      "original": "74°C ליבה",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/turkey_thigh/target_doneness",
+      "original": "74°C-80°C ליבה",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/duck_breast/target_doneness",
+      "original": "Medium-Rare עד Medium (57°C)",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/fish_salmon_fillet/target_doneness",
+      "original": "50°C ליבה (ורוד רך ועסיסי)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/fish_tuna_loin/target_doneness",
+      "original": "Rare מובהק (40°C-42°C ליבה)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/fish_sea_bream_fillet/target_doneness",
+      "original": "עשייה רכה (50°C-54°C ליבה)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/fish_sea_bass/target_doneness",
+      "original": "עשייה רכה (50°C-54°C ליבה)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "domain/base_ingredients/seafood_shrimp/target_doneness",
+      "original": "60°C (גוון פנינה אטום, אלסטי)",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    }
+  ],
+  "domain_source_sha256": "266061e7a56c2e9a7f238feb415db436e60c701619b83a52de352b9d38a0b922",
+  "domain_archetypes": 16,
+  "domain_ingredients": 23,
+  "domain_recipe_paths": 20,
+  "domain_adapted_steps": 80,
+  "source_sha256": "9ffe8a92f4e8239f1d0b66b7ec01bc89f177e3f98a6552db8dc11dd7ed0dc85e",
+  "source_file": "culinary_graph_source.yaml",
+  "ingredients": 75,
+  "methods": 10,
+  "preparations": 5,
+  "recipe_paths": 20,
+  "safety_changes": [
+    {
+      "source_id": "base_ingredients/chicken_breast/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/chicken_thighs_boneless/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/chicken_thighs_bone_in/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/chicken_wings/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/chicken_giblets/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/chicken_whole/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/turkey_breast/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/turkey_thigh/safety_temp",
+      "original": "74°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/duck_breast/safety_temp",
+      "original": "57°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/duck_leg/safety_temp",
+      "original": "82°C",
+      "safety_minimum": 74.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_ribeye/safety_temp",
+      "original": "54°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_tenderloin/safety_temp",
+      "original": "52°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_sirloin/safety_temp",
+      "original": "54°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_short_ribs/safety_temp",
+      "original": "92°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_ground/safety_temp",
+      "original": "71°C",
+      "safety_minimum": 71.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_shank/safety_temp",
+      "original": "90°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_flank/safety_temp",
+      "original": "54°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/beef_brisket/safety_temp",
+      "original": "95°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/lamb_chops/safety_temp",
+      "original": "56°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/lamb_shoulder/safety_temp",
+      "original": "88°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 180,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/fish_salmon_fillet/safety_temp",
+      "original": "50°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/fish_tuna_loin/safety_temp",
+      "original": "42°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/fish_sea_bass_whole/safety_temp",
+      "original": "58°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/fish_sea_bream_fillet/safety_temp",
+      "original": "55°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/fish_cod_fillet/safety_temp",
+      "original": "55°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/fish_sardines_fresh/safety_temp",
+      "original": "60°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "source_id": "base_ingredients/seafood_shrimp/safety_temp",
+      "original": "60°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely"
+    },
+    {
+      "source_id": "base_ingredients/seafood_calamari/safety_temp",
+      "original": "60°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely"
+    },
+    {
+      "source_id": "base_ingredients/seafood_scallops/safety_temp",
+      "original": "46°C",
+      "safety_minimum": 63.0,
+      "rest_seconds": 0,
+      "classification": "ORIGINAL_NOT_USED_FOR_SAFETY",
+      "policy_source": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely"
+    }
+  ],
+  "editorial_policy": "All active rules are curated adaptations; original recipe times and low-temperature processes are not activated.",
+  "evidence_cutoff_date": "2026-10-19"
+}

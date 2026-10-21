@@ -1,0 +1,12 @@
+.git
+.venv
+.uv-cache
+.test-tmp
+.docker-local
+.runtime
+.env
+.env.*
+vault
+tests
+backups
+**/__pycache__

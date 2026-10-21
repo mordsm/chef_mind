@@ -1,0 +1,20 @@
+ingredients:
+  chicken_gizzard:
+    name: "קורקבנים"
+    archetype: "dense_collagen_lean"
+  beef_shank:
+    name: "שוק בקר (אוסובוקו)"
+    archetype: "dense_collagen_lean"
+  chicken_breast:
+    name: "חזה עוף"
+    archetype: "lean_tender_muscle"
+  sea_bream:
+    name: "דניס"
+    archetype: "delicate_white_fish"
+  lettuce_romaine:
+    name: "חסה רומית"
+    archetype: "watery_tender_greens"
+  potato_russet:
+    name: "תפוח אדמה"
+    archetype: "dense_starchy_tubers"
+

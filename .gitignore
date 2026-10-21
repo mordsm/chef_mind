@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.env.*
+!.env.example
+.docker-local/
+*.sqlite
+*.sqlite-*
+*.sqlite3-*
+backups/
+.uv-cache/
+.test-tmp/
+.runtime/

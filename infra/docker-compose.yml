@@ -1,0 +1,43 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: chef
+      POSTGRES_USER: chef
+      POSTGRES_PASSWORD: ${CHEF_DB_PASSWORD:-local-development-only}
+    ports:
+      - "127.0.0.1:56432:5432"
+    volumes:
+      - chef_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chef -d chef"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  api:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    environment:
+      CHEF_DATABASE_URL: postgresql+psycopg://chef:${CHEF_DB_PASSWORD:-local-development-only}@db:5432/chef
+      CHEF_VAULT_ROOT: /vault
+      CHEF_API_KEYS: ${CHEF_API_KEYS:?Set CHEF_API_KEYS to your private token map}
+      CHEF_SYNC_ENABLED: ${CHEF_SYNC_ENABLED:-false}
+      CHEF_MODEL_ENABLED: ${CHEF_MODEL_ENABLED:-false}
+      CHEF_MODEL_NAME: ${CHEF_MODEL_NAME:-gpt-6-luna}
+      CHEF_MODEL_TIMEOUT_SECONDS: ${CHEF_MODEL_TIMEOUT_SECONDS:-20}
+      CHEF_MODEL_MAX_OUTPUT_TOKENS: ${CHEF_MODEL_MAX_OUTPUT_TOKENS:-400}
+      CHEF_MODEL_CALLS_PER_MINUTE: ${CHEF_MODEL_CALLS_PER_MINUTE:-30}
+      CHEF_MODEL_USER_CALLS_PER_MINUTE: ${CHEF_MODEL_USER_CALLS_PER_MINUTE:-10}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      CHEF_OPENAI_API_KEY: ${CHEF_OPENAI_API_KEY:-}
+    volumes:
+      - ../vault:/vault:ro
+    ports:
+      - "127.0.0.1:8800:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+volumes:
+  chef_db:

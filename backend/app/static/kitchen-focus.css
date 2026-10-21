@@ -1,0 +1,66 @@
+/* Final kitchen presentation: one reading column, progressive disclosure. */
+body {font-size:18px}
+#cook {max-width:980px;margin-inline:auto}
+#cook button,#cook select,#cook input,#cook summary {min-height:56px;font-size:18px}
+#cook button {padding:14px 20px;border-radius:14px;touch-action:manipulation}
+#cook textarea {font-size:20px;line-height:1.6;min-height:100px;width:100%;box-sizing:border-box}
+#cook [hidden] {display:none!important}
+.coach-home {margin-bottom:18px}.coach-home h2 {font-size:32px}
+.custom-start {display:flex;flex-direction:column;gap:12px;max-width:760px;margin-inline:auto}
+.custom-start>label {font-weight:750;font-size:22px;margin-top:12px}
+.custom-start input,.custom-start select {width:100%;box-sizing:border-box}
+.custom-start #start-work,.custom-start #update-dish {width:100%;margin-top:16px;min-height:68px;font-size:24px;background:var(--green);color:white}
+.custom-quick-starts {display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.custom-quick-starts button {background:#e5eee7;border:0!important;font-size:16px!important;min-height:48px!important;padding:9px 15px!important}
+.kitchen-setup,.kitchen-preferences,.kitchen-ingredients,.kitchen-plan,.kitchen-reference,.kitchen-measurement {padding:12px 0;border-top:1px solid var(--line)}
+.kitchen-setup>summary,.kitchen-plan>summary,.kitchen-reference>summary {font-weight:700;cursor:pointer}
+.kitchen-setup:not([open]) {background:#f0f4ef;padding:8px 16px;border-radius:14px}
+.field-help,.kitchen-secondary {font-size:16px;line-height:1.5;color:#3d5148}
+.mentor-settings {margin:12px 0}.mentor-settings label>span{font-size:18px}
+.connection.compact-connection {padding:0;border:0;box-shadow:none;background:transparent;margin-top:10px}
+.compact-connection summary {font-size:16px!important;font-weight:400}
+.coach-workspace {display:flex!important;flex-direction:column;gap:18px}
+.coach-workspace[hidden] {display:none!important}
+.coach-workspace>.panel {width:100%;box-sizing:border-box;padding:24px}
+.companion-panel {position:static}.learning-panel {border:0;background:transparent;padding:0;display:block}
+.journey-panel>.work-ownership,.journey-panel>.badge,.companion-heading .chef-avatar {display:none}
+.journey-panel>h2 {font-size:30px;margin:0 0 14px}
+.user-step-card.selected:has(.active-work-guidance) {display:block;border:0;padding:0;background:transparent}
+.user-step-card.selected>.step-action-body {background:#e7f0e5;border-radius:16px;padding:18px}
+.user-step-title {font-size:24px!important;font-weight:750}
+.user-step-card.selected .step-controls {display:none}
+.active-work-guidance {padding:20px;background:#fff8e9;text-align:start}
+.active-work-guidance h3 {font-size:22px}.active-work-guidance p,.active-work-guidance li {font-size:21px;line-height:1.75;text-align:start}
+.current-chef-message .chef-bubble {padding:0;background:transparent;margin:0}
+.kitchen-guidance-lines {padding-inline-start:1.5em;margin:8px 0}.kitchen-guidance-lines li {padding-inline-start:8px;margin-bottom:12px;white-space:pre-line}
+.coach-actions {display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:0}
+#coach-problem {border:2px solid #a43d27;background:#fff0ea;color:#842b1b;font-weight:750}
+#coach-done {font-weight:750}.status-question {border:0;margin-top:16px}
+.decision-question {display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px}.decision-question legend {font-size:21px}
+.decision-question button {margin:0;font-size:20px!important;text-align:start}
+.companion-heading h2 {font-size:22px}.user-report-form {margin:0;background:transparent;padding:0}
+.user-report-form>h3 {display:none}.user-report-form>label {display:block;font-weight:700;margin:12px 0}
+.composer-modes {display:flex;gap:8px}.composer-modes button {flex:1;background:#fff;color:var(--green);border:1px solid var(--green)}
+.composer-modes [aria-pressed=true] {background:var(--green);color:#fff}
+#work-report-dictate {width:100%;font-size:23px;margin:12px 0;background:#e4efeb;color:#173f32;border:2px solid #315f50}
+#work-report-dictate[aria-pressed=true] {background:#fff1d8;border-color:#a05714}
+#kitchen-stop-voice {width:100%;margin-bottom:12px}#user-report-form button[type=submit] {width:100%;font-size:21px}
+.user-report-form small {display:block;margin-top:12px}.quick-reports {margin:10px 0}.quick-reports button {font-size:18px!important}
+.kitchen-timer {border:1px solid var(--line);border-radius:16px;padding:18px;margin:18px 0;background:#f0f5f3}
+.kitchen-timer strong {display:block;font-size:19px}.kitchen-timer .coach-clock {font-size:52px;font-weight:750;margin:8px 0;text-align:start}
+.kitchen-timer .row {display:flex;flex-wrap:wrap;align-items:center;gap:10px}.kitchen-timer input {width:110px!important}
+.kitchen-timer label {font-size:17px}.kitchen-reference {padding:8px 20px}.kitchen-plan .user-step-list {margin:14px 0}
+.kitchen-attachments,.chef-history {margin-top:12px}.kitchen-attachments summary,.chef-history summary{font-size:17px!important}
+.voice-tools small {font-size:15px!important}.voice-status {font-size:19px;font-weight:700}
+.kitchen-user-work .work-empty {font-size:18px}.kitchen-user-work .coach-home h2 {display:none}
+.kitchen-has-work header {padding-block:10px}.kitchen-has-work header h1 {font-size:25px;margin:3px 0}.kitchen-has-work header p,.kitchen-has-work .eyebrow {display:none}
+.kitchen-has-work #notice:not(.error) {display:none}.kitchen-has-work nav {margin-bottom:12px}
+.kitchen-user-work .coach-home {display:flex;align-items:start;gap:10px;flex-wrap:wrap}
+.kitchen-user-work .kitchen-setup {flex:1;min-width:200px}.kitchen-user-work .restored-work {width:100%;font-size:16px}
+.kitchen-user-work #kitchen-new-work {margin-top:0}.kitchen-setup #open-inventory {margin-top:16px}
+.kitchen-timer .coach-clock {display:inline-block;font-size:36px;margin:4px 0}
+.kitchen-timer-duration {float:inline-end;margin-top:6px}.kitchen-timer-duration>summary {font-size:16px!important;min-height:44px!important;cursor:pointer}
+.kitchen-timer .row {clear:both;margin-bottom:0}.kitchen-timer .row button {flex:1;min-width:80px;font-size:17px!important;padding:12px!important}
+.quick-reports button {color:var(--green)!important;background:#edf3e8!important;border-color:#b2c4b7!important}
+.kitchen-action-background {border-top:1px solid var(--line);margin:12px 0}.kitchen-action-background>summary {font-size:18px!important;cursor:pointer}
+@media(max-width:720px){#cook{width:100%}.coach-workspace>.panel{padding:16px}.coach-home h2{font-size:28px}.decision-question{grid-template-columns:1fr}.active-work-guidance{padding:14px}.active-work-guidance p,.active-work-guidance li{font-size:20px}.mentor-settings{grid-template-columns:1fr}.composer-modes button{padding:12px!important;font-size:17px!important}.kitchen-timer{padding:12px}.kitchen-timer-duration{float:none}.kitchen-timer .row{gap:6px}}

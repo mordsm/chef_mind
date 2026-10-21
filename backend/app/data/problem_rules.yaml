@@ -1,0 +1,73 @@
+rules:
+  burning:
+    response: "לפי הדיווח יש חשש לחריכה. הפחת חום אם בטוח לעשות זאת ובדוק ריח וחלקים שחורים. אל תערבב חלקים שרופים לתוך שאר המנה. אם יש אש, בחר מיד באפשרות סיכון אש."
+  sticking:
+    response: "לפי הדיווח המזון נדבק. הפחת חום אם יש חשש לחריכה; אל תנסה לשחרר בכוח. מה סוג הכלי והאם יש נוזל או שומן במחבת?"
+  too_thick:
+    response: "אם מדובר ברוטב, אפשר להוסיף מעט נוזל מתאים בהדרגה ולערבב. בדוק שוב סמיכות ותיבול אחרי כל תוספת."
+  too_thin:
+    response: "אם הרוטב מתאים לבישול, אפשר לרכז אותו בבעבוע עדין ולבדוק לעיתים קרובות. מה המרכיבים וכמה נוזל יש כרגע?"
+  too_salty:
+    response: "אל תוסיף עוד מלח כרגע. מה סוג המנה וכמה מלח הוספת? התיקון תלוי במרכיבים ובאפשרות להגדיל את הכמות בלי מלח."
+  too_dry:
+    questions:
+      - id: dry_state
+        text: "מה בדיוק יבש במנה?"
+        options:
+          - {id: liquid_low, label: "הנוזל בסיר כמעט נגמר"}
+          - {id: hard_wet, label: "יש נוזל, אבל הנתח עדיין קשה"}
+          - {id: cooked_dry, label: "כבר בושל, אבל יבש באכילה"}
+          - {id: not_sure, label: "לא בטוח — צריך לברר"}
+    variants:
+      - id: gizzard_liquid_low
+        dish_terms: ["קורקבנים", "קוקבנים", "gizzards"]
+        methods: [braise, boil_simmer]
+        answers: {dry_state: liquid_low}
+        response: "לקורקבנים בבישול בנוזל: הפחת בעבוע חזק ובדוק אם התחתית נחרכה. אם אין חריכה, הוסף מעט מים או ציר לא מלוח בהדרגה כדי לשמור על סביבת בישול לחה. בדוק רכות בנפרד; אין זמן אחיד לריכוך. אין להוסיף נוזל לשמן טיגון חם."
+        sources: ["https://blogs.extension.iastate.edu/answerline/tag/less-tender-cuts/"]
+      - id: wet_cooking_liquid_low
+        methods: [braise, boil_simmer]
+        answers: {dry_state: liquid_low}
+        response: "בבישול בנוזל: בדוק אם התחתית נחרכה והפחת בעבוע חזק. אם אין חריכה, הוסף מעט נוזל שמתאים למתכון בהדרגה ובדוק את המרקם לפני תוספת נוספת. אל תעתיק כמות נוזל ממנה אחרת; בדגנים פעל לפי סוג הדגן והאריזה. אין להוסיף מים לשמן טיגון חם."
+      - id: gizzard_still_tough
+        dish_terms: ["קורקבנים", "קוקבנים", "gizzards"]
+        methods: [braise, boil_simmer]
+        answers: {dry_state: hard_wet}
+        response: "בקורקבנים שעדיין קשים ויש נוזל, הבעיה עשויה להיות ריכוך שטרם הושלם. המשך בשיטת הבישול הלחה שכבר נבחרה, בבעבוע עדין ובבדיקות רכות חוזרות. אין צורך לעבור להשחמה עכשיו. רכות אינה בדיקת בטיחות ויש לבדוק מוכנות בנפרד."
+        sources: ["https://blogs.extension.iastate.edu/answerline/tag/less-tender-cuts/"]
+      - id: shank_still_tough
+        ingredient_ids: [beef_shank]
+        methods: [braise, boil_simmer]
+        answers: {dry_state: hard_wet}
+        response: "בשוק בקר בבישול בנוזל, רקמת החיבור עשויה עדיין לדרוש ריכוך. שמור על בישול לח ועדין ובדוק רכות שוב, בלי לקבוע זמן אחיד ובלי להסתמך על צבע. ההנחיה אינה מתאימה אוטומטית לנתח רזה ועדין."
+        sources: ["https://blogs.extension.iastate.edu/answerline/tag/less-tender-cuts/"]
+      - id: cooked_protein_dry
+        families: [poultry, meat, fish]
+        answers: {dry_state: cooked_dry}
+        response: "אם הנתח כבר מבושל ויבש באכילה, אל תאריך בישול רק כדי לנסות להחזיר עסיסיות. אפשר לשפר את ההגשה עם רוטב מתאים למנה ולהימנעויות שלך, אך אין הבטחה להחזרת המרקם המקורי. אם מוכנותו עדיין לא נבדקה, בדוק אותה בנפרד. בחימום חוזר של שאריות נדרשים כללי חימום ואחסון מתאימים; רוטב אינו אישור בטיחות."
+        sources: ["https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/poultry/lets-talk-turkey-roasting"]
+  tough:
+    questions:
+      - id: tough_state
+        text: "מה מצב הנתח הקשה כרגע?"
+        options:
+          - {id: wet_cooking, label: "עדיין מתבשל ויש נוזל"}
+          - {id: dry_after_cooking, label: "כבר בושל והוא קשה ויבש"}
+          - {id: not_sure, label: "לא בטוח מה הסיבה"}
+    variants:
+      - id: gizzard_wet_tough
+        dish_terms: ["קורקבנים", "קוקבנים", "gizzards"]
+        methods: [braise, boil_simmer]
+        answers: {tough_state: wet_cooking}
+        response: "לקורקבנים בבישול בנוזל: אם יש נוזל והנתח עדיין קשה, ייתכן שהריכוך לא הושלם. שמור על בעבוע עדין ובדוק רכות שוב במהלך הבישול. אל תעבור להשחמה רק בגלל הקושי; רכות אינה מחליפה בדיקת בטיחות."
+        sources: ["https://blogs.extension.iastate.edu/answerline/tag/less-tender-cuts/"]
+      - id: shank_wet_tough
+        ingredient_ids: [beef_shank]
+        methods: [braise, boil_simmer]
+        answers: {tough_state: wet_cooking}
+        response: "בשוק בקר, בישול לח ועדין עשוי להמשיך לרכך את רקמת החיבור. בדוק שיש נוזל ושאין חריכה, ובדוק רכות לאורך העבודה. אין לקבוע שכל נתח בשר קשה דורש עוד בישול — בנתח רזה הסיבה יכולה להיות אחרת."
+        sources: ["https://blogs.extension.iastate.edu/answerline/tag/less-tender-cuts/"]
+      - id: protein_dry_after_cooking
+        families: [poultry, meat, fish]
+        answers: {tough_state: dry_after_cooking}
+        response: "אין להאריך בישול אוטומטית של נתח שכבר בושל והוא קשה ויבש. אפשר לשקול הגשה עם רוטב מתאים, אך תחילה יש לוודא את סוג הנתח ואת מוכנותו. רוטב לא מחזיר בהכרח עסיסיות שאבדה ולא מאמת בטיחות."

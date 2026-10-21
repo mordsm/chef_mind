@@ -1,0 +1,51 @@
+default_reason: "אין עדיין רשימת שיטות מומלצות למנה הזו בקונפיגורציה. יש להוסיף פרופיל לפני בחירת שיטת הכנה."
+profiles:
+  - id: gizzards
+    title: קורקבנים
+    ingredient_ids: [chicken_giblets]
+    title_terms: [קורקבנים, קורקבן, קוקבנים, קוקבן, gizzard, gizzards]
+    allowed: [braise, boil_simmer]
+    reason: "ההגדרה לקורקבנים מתעדפת בישול בנוזל למטרת ריכוך. שיטה אחרת אינה מומלצת בפרופיל הזה בלי תוכנית הכנה מתאימה."
+    blocked_reasons:
+      oven_roast: "צלייה בתנור לבדה אינה השיטה המומלצת לקורקבנים בפרופיל הזה: המטרה היא ריכוך בבישול בנוזל, והחום היבש עלול לייבש לפני שהמרקם הרצוי מתקבל."
+      pan_sear: "צריבה במחבת אינה מוגדרת כאן כשיטת הריכוך הראשית. אפשר להוסיף פרופיל נפרד לקורקבנים שכבר בושלו אם רוצים השחמה בסיום."
+  - id: poultry
+    title: עופות — ברירת מחדל
+    family: poultry
+    allowed: [oven_roast, braise, boil_simmer]
+    reason: "שיטה זו אינה ברשימת ההמלצות של פרופיל העופות. אפשר להוסיף פרופיל מדויק לנתח ולתוצאה הרצויה."
+  - id: fish
+    title: דגים — ברירת מחדל
+    family: fish
+    allowed: [pan_sear, steam, oven_roast, boil_simmer]
+    reason: "השיטה אינה ברשימת ההמלצות לפרופיל הדגים. תהליכים מיוחדים דורשים פרופיל מתאים ובדיקות נפרדות."
+  - id: meat
+    title: בשר — ברירת מחדל
+    family: meat
+    allowed: [braise, boil_simmer, oven_roast, pan_sear, sous_vide]
+    reason: "השיטה אינה מוגדרת כמומלצת בפרופיל הבשר. יש להתאים רשימה לנתח מסוים במידת הצורך."
+  - id: grains
+    title: אורז ודגנים
+    family: grains
+    allowed: [boil_simmer, steam]
+    reason: "השיטה אינה ברשימת ההמלצות לפרופיל אורז ודגנים. יש להוסיף פרופיל אם המנה דורשת שיטה אחרת."
+  - id: pasta
+    title: פסטה
+    family: pasta
+    allowed: [boil_simmer]
+    reason: "לפרופיל הפסטה הזה מוגדר בישול בנוזל בלבד. מנה אפויה דורשת פרופיל נפרד."
+  - id: vegetables
+    title: ירקות
+    family: vegetables
+    allowed: [oven_roast, pan_sear, steam, boil_simmer]
+    reason: "השיטה אינה ברשימת ההמלצות לפרופיל הירקות. ניתן להוסיף פרופיל למנה מסוימת."
+  - id: soup
+    title: מרקים ותבשילים
+    family: soup
+    allowed: [boil_simmer, braise]
+    reason: "לפרופיל מרק ותבשיל מוגדרות שיטות עם נוזל. שיטה אחרת דורשת פרופיל נפרד."
+  - id: eggs
+    title: ביצים
+    family: eggs
+    allowed: [pan_sear, boil_simmer]
+    reason: "השיטה אינה ברשימת ההמלצות לפרופיל הביצים. יש להגדיר פרופיל למנה מיוחדת."
