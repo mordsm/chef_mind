@@ -16,6 +16,7 @@ from fastapi.staticfiles import StaticFiles
 from sqlalchemy import select, text
 from sqlalchemy.exc import IntegrityError, SQLAlchemyError
 
+from app.action_log import install_action_log
 from app.chef import respond
 from app.coach import install_coach_routes
 from app.config import Settings, get_settings
@@ -51,6 +52,7 @@ from app.schemas import (
     ReviewRequest,
 )
 from app.sync import reconcile
+from app.web_push import dispatch_once, install_push_routes, validate_push_settings
 
 bearer = HTTPBearer(auto_error=False)
 
@@ -59,6 +61,7 @@ def create_app(settings: Settings | None = None, engine=None):
     settings = settings or get_settings()
     engine = engine or make_engine(settings.database_url)
     sessions = session_factory(engine)
+    validate_push_settings(settings)
 
     @asynccontextmanager
     async def lifespan(application):
@@ -76,14 +79,26 @@ def create_app(settings: Settings | None = None, engine=None):
                         logging.getLogger(__name__).warning("Vault scan failed; existing knowledge retained")
 
         worker = Thread(target=poll, name="chef-vault-sync", daemon=True) if settings.sync_enabled else None
+        def push_timers():
+            while not stop.wait(1):
+                try:
+                    dispatch_once(sessions, settings)
+                except Exception:
+                    logging.getLogger(__name__).warning("Timer push dispatch failed; durable jobs retained")
+
+        push_worker = Thread(target=push_timers, name="chef-timer-push", daemon=True) if settings.push_enabled and settings.push_worker_enabled else None
         if worker:
             worker.start()
+        if push_worker:
+            push_worker.start()
         try:
             yield
         finally:
             stop.set()
             if worker:
                 worker.join(timeout=5)
+            if push_worker:
+                push_worker.join(timeout=5)
 
     app = FastAPI(
         title="Chef Core",
@@ -109,10 +124,10 @@ def create_app(settings: Settings | None = None, engine=None):
         response.headers["X-Request-ID"] = request.state.request_id
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "no-referrer"
-        if request.url.path == "/" or request.url.path.startswith("/assets/"):
+        if request.url.path == "/" or request.url.path.startswith(("/assets/", "/report/")):
             response.headers["Content-Security-Policy"] = (
                 "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; "
-                "connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+                "connect-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'self'"
             )
         response.headers["Cache-Control"] = "no-store"
         return response
@@ -387,6 +402,34 @@ def create_app(settings: Settings | None = None, engine=None):
                     409,
                 )
         decision = respond(session, owner.user_id, body, selection)
+        from app.culinary_context import dish_context
+        from app.station_protocol import build_protocol
+
+        station_title = body.state.current_goal or body.message
+        station_context = dish_context(station_title, "", [item.name for item in body.inventory])
+        decision.station_protocol = build_protocol(
+            station_title, family=station_context["family"], advice=decision.instruction,
+            current={"title": "הפעולה הנוכחית", "instruction": decision.instruction,
+                     "successCriteria": [decision.success_signal]} if decision.decision_type == "action" else None,
+            blocked=decision.decision_type == "blocked" or bool(decision.missing_conditions)
+            or "INVENTORY_UNVERIFIED" in decision.policy_flags or "EXCEPTION_REVIEW_REQUIRED" in decision.policy_flags,
+            gaps=["הנחיית המקור: " + decision.instruction] if decision.decision_type != "action" else (),
+            model_status="unavailable" if model_failed else "rules_only",
+            allergies=body.profile.allergies,
+        )
+        if decision.citations:
+            from app.station_protocol import obsidian_note, render_text
+
+            protocol = decision.station_protocol
+            protocol["blocks"][5]["text"] += "\nמקורות מאושרים לפעולה: " + "; ".join(
+                f"{citation.source_id} / {citation.knowledge_id}: {citation.source_reference}"
+                for citation in decision.citations
+            )
+            protocol["source_ids"] = list(dict.fromkeys([
+                *protocol["source_ids"], *[citation.source_id for citation in decision.citations]
+            ]))
+            protocol["text"] = render_text(protocol)
+            protocol["obsidian_markdown"] = obsidian_note(protocol, station_title)
         if decision.decision_type != "blocked":
             decision.basic_knowledge = basics_for(body.state.current_goal + " " + body.message)
         if selection is not None:
@@ -549,7 +592,9 @@ def create_app(settings: Settings | None = None, engine=None):
         session.commit()
         return report
 
-    install_coach_routes(app, principal, db)
+    install_coach_routes(app, principal, db, settings)
+    install_action_log(app, db, principal, sessions)
+    install_push_routes(app, db, principal, sessions, settings)
     return app
 
 

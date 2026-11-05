@@ -17,6 +17,8 @@ class ContextTip(StrictModel):
     source: str = Field(max_length=1000)
     origin: str = Field(default="EDITORIAL", max_length=60)
     source_ids: list[str] = Field(default_factory=list, max_length=16)
+    practical: bool = False
+    step_keywords: list[str] = Field(default_factory=list, max_length=20)
 
 
 class DishContext(StrictModel):
@@ -55,7 +57,7 @@ FAMILIES = [
     (
         "fish",
         "דגים",
-        {"דג", "דגים", "סלמון", "טונה", "בקלה", "fish", "salmon", "cod", "tuna"},
+        {"דג", "דגים", "סלמון", "טונה", "בקלה", "fish", "salmon", "cod", "tuna", "נסיכת הנילוס", "nile perch", "lates niloticus"},
         "דגים נבדלים בעובי ובתכולת השומן. בחר שיטת הכנה לפי הנתח ולא רק לפי שם המנה, ועקוב אחר מרקם במהלך ההכנה.",
         ["איזה דג ומה עובי הנתח?", "צלייה, מחבת או בישול ברוטב?"],
         ["הכנת הנתח", "בישול בשיטה שבחרת", "בדיקת מוכנות"],
@@ -166,6 +168,12 @@ def dish_context(title, method="", ingredients=()):
                 None,
             )
     tips, questions, suggestions, minimum = [], [], [], None
+    if family is None:
+        from app.station_protocol import identify
+
+        _profile, profile_family = identify(title)
+        if profile_family:
+            family = next((entry for entry in FAMILIES if entry[0] == profile_family), None)
     if family:
         key, label, _, text, questions, suggestions, minimum = family
         tips.append(ContextTip(title="עיקרון שמתאים לסוג המנה", text=text, source=TECHNIQUE))
@@ -200,13 +208,6 @@ def dish_context(title, method="", ingredients=()):
             )
         )
     if method:
-        tips.append(
-            ContextTip(
-                title="השיטה שבחרת",
-                text=f"שיטת ההכנה שדיווחת: {method}. בדוק את מצב המזון בפועל; בחירת שיטה אינה מספקת לקביעת זמן או טמפרטורת תנור בלי פרטי המנה.",
-                source=TECHNIQUE,
-            )
-        )
         questions = [
             question for question in questions if not any(term in question for term in ("שיטת", "צלייה,"))
         ]
@@ -262,10 +263,10 @@ def dish_context(title, method="", ingredients=()):
     if linked["minimum_temperature"] is not None:
         minimum = max(minimum or 0, linked["minimum_temperature"])
         rest = linked["rest_seconds"]
-        safety_text = f"סף הבישול הכללי לחומרי הגלם שזוהו: {minimum:g}°C."
+        safety_text = f"לפני הגשה: מדוד במדחום בחלק העבה של המזון, בלי לגעת בעצם. נדרשים לפחות {minimum:g}°C."
         if rest:
             safety_text += " לנתחי הבשר השלמים נדרשת גם מנוחה של 3 דקות; מדידה לבדה אינה מאמתת אותה."
-        safety_text += " אין להשתמש בטמפרטורת המרקם שבמסמך כאישור בטיחות."
+        safety_text += " חום התנור או הנוזל וזמן הבישול אינם מדידה של פנים המזון."
         tips.insert(
             0,
             ContextTip(
@@ -308,6 +309,11 @@ def dish_context(title, method="", ingredients=()):
 def contextual_reply(context, text, current_title="", consultant=False):
     """Return advice and an issue label. Never infer completion from a free-text report."""
     value = text.lower()
+    if text in ("בדוק את ההתקדמות שלי", "מה לבדוק לפני שממשיכים?", "המנה נראית טוב"):
+        check = "בדוק את המרקם בכלי נקי, שאין חריכה בתחתית, ושכמות הנוזל מתאימה לפעולה הנוכחית. דווח מה עשית ומה מצאת בכל בדיקה כדי שאוכל להציע המשך או תיקון."
+        if context["minimum_temperature"] is not None:
+            check += f" לפני הגשה מדוד גם בחלק העבה: הסף למנה הוא {context['minimum_temperature']:g}°C. מראה טוב לבדו אינו מספיק."
+        return check, ""
     if value in ("יש בעיה", "צריך עזרה"):
         return "מה השתבש — חום, צבע, מרקם, סמיכות או תיבול? תאר מה קרה ואציע בדיקה שמתאימה למצב.", ""
     if any(term in value for term in ("סמיך מדי", "סמיכה מדי", "too thick")):
@@ -368,3 +374,26 @@ def contextual_reply(context, text, current_title="", consultant=False):
         return "רשמתי שלפי הדיווח שלך המנה נראית טוב. הבחירה אם להמשיך, לשנות או לסיים נשארת שלך.", ""
     tip = context["tips"][0]["text"]
     return (tip if consultant else tip + " " + context["questions"][0]), ""
+
+
+def strict_context(context, title, ingredients=()):
+    """Expose only the selected species; never inherit sibling comparisons."""
+    words = set(re.findall(r"[^\W_]+", " ".join([title, *ingredients]).lower()))
+    species = {"עוף": {"עוף", "chicken"}, "הודו": {"הודו", "turkey"},
+               "בקר": {"בקר", "beef"}}
+    selected = {name for name, aliases in species.items() if words & aliases}
+    if not selected:
+        return context
+    excluded = set().union(*(aliases for name, aliases in species.items() if name not in selected))
+    def relevant(text):
+        tokens = re.findall(r"[^\W_]+", text.lower())
+        return not any(token == term or (token.endswith(term) and all(c in 'ובכלמהש' for c in token[:-len(term)])) for token in tokens for term in excluded)
+    context['tips'] = [tip for tip in context['tips'] if relevant(tip['title'] + ' ' + tip['text'])]
+    context['questions'] = [text for text in context['questions'] if relevant(text)]
+    if not context['questions']:
+        context['questions'] = ['מה הכמות ומה גודל החתיכות?']
+    context['suggestions'] = [text for text in context['suggestions'] if relevant(text)]
+    context['label'] = ' ו'.join(sorted(selected))
+    if not context['tips']:
+        context['tips'] = [ContextTip(title='הכנה', text='הכן את המרכיבים והכלים לפני תחילת העבודה.', source=TECHNIQUE).model_dump()]
+    return context

@@ -71,14 +71,12 @@ async function loadInventoryArchive(){
 history.addEventListener('change',()=>{if(history.value==='')return;const selected=historicalInventories[Number(history.value)];if(!selected)return;$('inventory').replaceChildren();selected.inventory.forEach(addInventory);saveInventory();paintInventory();history.value='';});
 $('inventory').addEventListener('input',()=>queueMicrotask(paintInventory));$('inventory').addEventListener('click',()=>queueMicrotask(paintInventory));
 document.addEventListener('chef-inventory-loaded',()=>{connectionDetails.open=false;connectionSummary.textContent='מחובר למטבח האישי · '+identityUser;publicIntro.textContent='המלאי וההתקדמות משוחזרים מהמטבח האישי.';paintInventory();void loadInventoryArchive();void restoreCoach();});
-async function publicApi(path,body){const controller=new AbortController();const deadline=setTimeout(()=>controller.abort(),15000);try{const response=await fetch(path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined,signal:controller.signal,cache:'no-store'});if(!response.ok){let code='',message='';try{const payload=await response.json();code=payload.code;message=payload.message;}catch{}if(code==='METHOD_NOT_RECOMMENDED'){const error=new Error(message);error.methodPolicy=true;throw error;}throw new Error(code==='ALLERGEN_CONFLICT'?'allergenConflict':code==='SAFETY_HOLD'?'safetyHold':response.status===409?'stateConflict':'error');}return await response.json();}finally{clearTimeout(deadline);}}
+async function publicApi(path,body){const controller=new AbortController();const deadline=setTimeout(()=>controller.abort(),body?.command?.action==='start_custom'?45000:15000);try{const response=await fetch(path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined,signal:controller.signal,cache:'no-store'});if(!response.ok){let code='',message='';try{const payload=await response.json();code=payload.code;message=payload.message;}catch{}if(code==='METHOD_NOT_RECOMMENDED'){const error=new Error(message);error.methodPolicy=true;throw error;}throw new Error(code==='ALLERGEN_CONFLICT'?'allergenConflict':code==='SAFETY_HOLD'?'safetyHold':response.status===409?'stateConflict':'error');}return await response.json();}finally{clearTimeout(deadline);}}
 function currentRecipe(){if(mentor.state?.workflow==='user')return {id:'custom',title:mentor.state.dish_title,steps:mentor.state.custom_steps};return mentor.recipes.find(recipe=>recipe.id===mentor.state?.recipe_id);}
 function currentSmartStep(){return currentRecipe()?.steps[mentor.state.current_step];}
 async function coachCommand(action,extra={}){
  if(mentor.busy){coachNotice.textContent='ממתין לסיום הבקשה הקודמת. הדיווח טרם נשלח.';return null;}
  const existing=mentor.state;
- const progressed=existing&&(existing.workflow==='user'?(existing.custom_steps.length>0||existing.report_count>0||existing.safety_hold):existing.current_step>0||existing.stage_valid||existing.safety_hold);
- if(['start','start_custom'].includes(action)&&existing&&['active','paused'].includes(existing.status)&&progressed&&!confirm('להתחיל עבודה חדשה במקום ״'+(existing.dish_title||currentRecipe()?.title||'העבודה הקודמת')+'״?'))return;
  const epoch=authEpoch;mentor.busy=true;coachNotice.textContent='מעדכן…';setCoachBusy(true);
  try{
    const command={action,forbid_meat_dairy:$('kosher').checked,expected_revision:mentor.state?.revision||0,journey_id:mentor.state?.id||'',chefPersonality:personality.value,allergies:$('allergies').value.split(',').map(value=>value.trim()).filter(Boolean),hazard_resolved:!!$('coach-hazard-resolved')?.checked,...extra};
@@ -90,14 +88,14 @@ async function coachCommand(action,extra={}){
  }catch(error){if(epoch!==authEpoch)return;coachNotice.textContent=error.methodPolicy?error.message:error.message==='stateConflict'?'הבישול השתנה בלשונית אחרת. המצב ייטען מחדש.':error.message==='allergenConflict'?'המנה מכילה אלרגן שסימנת להימנעות. בחר מנה מתאימה.':error.message==='safetyHold'?'יש לטפל בסיכון ולאשר שטופל לפני שממשיכים.':'לא ניתן לעדכן כרגע. השלב לא קודם; נסה שוב.';if(error.methodPolicy)document.dispatchEvent(new CustomEvent('chef-method-policy-error',{detail:error.message}));if(error.message==='stateConflict')void restoreCoach();}
  finally{mentor.busy=false;setCoachBusy(false);}
 }
-function setCoachBusy(value){for(const button of workspace.querySelectorAll('button'))button.disabled=value;}
+function setCoachBusy(value){for(const button of workspace.querySelectorAll('button')){if(value){button.dataset.coachWasDisabled=String(button.disabled);button.disabled=true;}else if(button.dataset.coachWasDisabled!==undefined){button.disabled=button.dataset.coachWasDisabled==='true';delete button.dataset.coachWasDisabled;}}}
 function renderCoach(){
  const state=mentor.state,recipe=currentRecipe(),step=currentSmartStep();
  guestBanner.textContent=identityUser?'מחובר למטבח האישי — ההתקדמות נשמרת בשרת.':'בישול מקומי — ההתקדמות נשמרת בדפדפן הזה. לשחזור מלאי קודם יש להתחבר.';
  resumeButton.hidden=!state;
  journey.replaceChildren();learning.replaceChildren();conversation.replaceChildren();statusQuestion.replaceChildren();
  if(state?.workflow==='user'&&typeof renderUserWorkbench==='function'){renderUserWorkbench();return;}
- if(!state||!recipe||!step){journey.append(el('h2','בוחרים מנה ומתחילים'),el('p','השלב הנוכחי, בדיקות המצב וההמשך יופיעו כאן.'));conversation.append(el('p','אני כאן כדי ללוות אותך. בחר מנה, ובכל שלב ספר מה קורה בפועל.'));learning.append(el('h2','💡 יסוד ברגע הנכון'),el('p','כאן יופיע הסבר קצר שמתאים לשלב שלך.'));actions.hidden=true;chatForm.hidden=true;return;}
+ if(!state||!recipe||!step){journey.append(el('h2','בוחרים מנה ומתחילים'),el('p','השלב הנוכחי, בדיקות המצב וההמשך יופיעו כאן.'));conversation.append(el('p','אני כאן כדי ללוות אותך. בחר מנה, ובכל שלב ספר מה קורה בפועל.'));actions.hidden=true;chatForm.hidden=true;return;}
  actions.hidden=false;chatForm.hidden=state.status==='completed';personality.value=state.chefPersonality;
  const completed=state.status==='completed'?recipe.steps.length:state.current_step,percentage=Math.round(completed/recipe.steps.length*100);
  journey.append(el('span',state.status==='paused'?'מושהה':state.status==='completed'?'המסלול הושלם':'בישול בתהליך','badge'),el('h2',recipe.title));

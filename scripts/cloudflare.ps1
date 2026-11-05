@@ -13,7 +13,17 @@ $origin = 'http://127.0.0.1:8800'
 
 function Test-ChefUrl([string]$url) {
     try { return (Invoke-RestMethod -Uri ($url+'/health') -TimeoutSec 6).service -eq 'chef-core' }
-    catch { return $false }
+    catch {
+        if ($url.StartsWith('https://') -and (Get-Command node -ErrorAction SilentlyContinue)) {
+            $priorChefCa = $env:NODE_USE_SYSTEM_CA
+            try {
+                $env:NODE_USE_SYSTEM_CA = '1'
+                & node -e "fetch(process.argv[1]+'/health',{signal:AbortSignal.timeout(6000)}).then(r=>r.json()).then(d=>process.exit(d.service==='chef-core'?0:1)).catch(()=>process.exit(1))" $url | Out-Null
+                return $LASTEXITCODE -eq 0
+            } finally { $env:NODE_USE_SYSTEM_CA = $priorChefCa }
+        }
+        return $false
+    }
 }
 
 function Get-TunnelState {

@@ -79,7 +79,10 @@ def test_decisions_survive_server_restore_and_new_plan_clears_them(env):
         now=1002,
     )
     assert changed["decision_answers"] == {}
-    assert [q["id"] for q in changed["decision_questions"]] == ["progress"]
+    # Station guidance is immediate; the removed generic progress interview
+    # must not be restored when changing to a new dish.
+    assert changed["decision_questions"] == []
+    assert len(changed["station_protocol"]["blocks"]) == 6
 
 
 def test_unknown_text_never_invents_a_choice():

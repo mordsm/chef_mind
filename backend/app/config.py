@@ -19,12 +19,19 @@ class Settings(BaseSettings):
     poll_seconds: int = Field(default=10, ge=1, le=3600)
     sync_enabled: bool = False
     model_enabled: bool = False
+    dish_model_provider: Literal['disabled', 'local', 'openai'] = 'disabled'
+    dish_local_model: str = 'phi4-mini:latest'
     model_name: str = "gpt-6-luna"
     openai_api_key: SecretStr | None = None
     model_timeout_seconds: float = Field(default=20, ge=1, le=60)
     model_max_output_tokens: int = Field(default=400, ge=100, le=2000)
     model_calls_per_minute: int = Field(default=30, ge=1, le=1200)
     model_user_calls_per_minute: int = Field(default=10, ge=1, le=1200)
+    push_enabled: bool = False
+    push_worker_enabled: bool = True
+    push_vapid_private_key_file: Path | None = None
+    push_vapid_public_key: str = ""
+    push_vapid_subject: str = ""
 
     @model_validator(mode="after")
     def check_tokens(self):

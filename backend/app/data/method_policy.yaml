@@ -1,4 +1,4 @@
-default_reason: "אין עדיין רשימת שיטות מומלצות למנה הזו בקונפיגורציה. יש להוסיף פרופיל לפני בחירת שיטת הכנה."
+default_reason: "Knowledge Base Extension Needed — אין פרופיל שיטות מאומת. פקודת התחנה והכנות לפי המשפחה זמינות מיד; הוסף ידע קאנוני ואמת את הפרט הבא לפני חימום שאינו נתמך."
 profiles:
   - id: gizzards
     title: קורקבנים
@@ -12,7 +12,7 @@ profiles:
   - id: poultry
     title: עופות — ברירת מחדל
     family: poultry
-    allowed: [oven_roast, braise, boil_simmer]
+    allowed: [oven_roast, grill_direct, braise, boil_simmer]
     reason: "שיטה זו אינה ברשימת ההמלצות של פרופיל העופות. אפשר להוסיף פרופיל מדויק לנתח ולתוצאה הרצויה."
   - id: fish
     title: דגים — ברירת מחדל

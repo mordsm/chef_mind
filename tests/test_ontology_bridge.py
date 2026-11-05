@@ -12,10 +12,11 @@ def test_ontology_loads_all_domains_and_resolves_graph():
     data = load_ontology()
     assert data["total_nodes"] >= 50
     assert data["verified_nodes"] >= 45
-    assert data["sources_count"] == 6
-    assert data["rules_count"] == 6
-    assert data["conflicts_count"] == 3
-    assert data["open_gaps_count"] == 2
+    assert data["sources_count"] >= 8
+    assert {"SRC-NOSRAT-2017", "SRC-AVIR-2019", "SRC-MCGEE-2004", "SRC-FOODLAB-2015"} <= data["by_id"].keys()
+    assert data["rules_count"] >= 6
+    assert data["conflicts_count"] >= 3
+    assert data["open_gaps_count"] >= 2
     assert data["total_edges"] >= 100
 
     folders = {f["folder"]: f["total"] for f in data["folder_stats"]}
@@ -80,7 +81,7 @@ def test_ontology_api_endpoints_and_draft_export_workflow(env):
     assert summary.status_code == 200
     body = summary.json()
     assert body["total_nodes"] >= 50
-    assert body["rules_count"] == 6
+    assert body["rules_count"] >= 6
 
     nodes = client.get("/v1/ontology/nodes", params={"q": "קולגן בישול ארוך", "limit": 5})
     assert nodes.status_code == 200

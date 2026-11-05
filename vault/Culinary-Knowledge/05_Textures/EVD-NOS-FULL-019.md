@@ -1,0 +1,67 @@
+---
+id: EVD-NOS-FULL-019
+type: EVIDENCE_RECORD
+name: שמירת פריכות לאחר הטיגון
+domain: TEXTURES
+verification_status: PRELIMINARY
+source_text_checked: true
+claim_type: INTERPRETATION
+scientific_validation: NOT_INDEPENDENTLY_VALIDATED
+description: אל תערום ואל תכסה מזון פריך בעודו חם. האדים המשתחררים נלכדים, מתעבים
+  ומרככים את המעטפת. השאר מקום לאדים לצאת.
+claim: אל תערום ואל תכסה מזון פריך בעודו חם. האדים המשתחררים נלכדים, מתעבים ומרככים
+  את המעטפת. השאר מקום לאדים לצאת.
+chef_tip: אל תערום ואל תכסה מזון פריך בעודו חם. האדים המשתחררים נלכדים, מתעבים ומרככים
+  את המעטפת. השאר מקום לאדים לצאת.
+target_foods: &id001
+- טיגון
+- פריכות
+- fried food
+tags: *id001
+conditions:
+  method_id: ''
+checkpoints: []
+step_keywords:
+- תיבול
+- המלח
+- ערבב
+- בישול
+- חימום
+- הכנת
+- תנור
+- רוטב
+recommended_equipment: []
+runtime_use: EXPLANATION_ONLY
+sources:
+- source_id: SRC-NOSRAT-2017
+  citation: Nosrat, Salt, Fat, Acid, Heat (2017), PDF 104
+  pdf_pages:
+  - 104
+  split_page:
+  - 104
+  split_filename: Salt, Fat, Acid, Heat{Samin Nosrat, Michael Pollan, Wendy MacNaughton}(2017,
+    Simon &amp_ Schuster){112518383} libgen.li.pdf
+  pdf_sha256: 5e5376bc4b6f1b3f64bd88b660c8efc5740a118b72fd390d61b29cacd437f281
+  evidence_anchor: do not cover or pile up crisp foods
+  anchor_sha256: a44b3f8eb4cc07a02b21b4c4e76b23a434d89e1bee722c8116889b06e0f029de
+relationships:
+- type: SUPPORTED_BY
+  target_id: PAGE-NOSRAT-104
+- type: SUPPORTED_BY
+  target_id: SRC-NOSRAT-2017
+- type: MENTIONS
+  target_id: TEX-CRUST-001
+project_scope: chef_mind
+allowed_contexts:
+- chef_mind
+- related_culinary_projects
+external_publication: false
+---
+
+# שמירת פריכות לאחר הטיגון
+
+אל תערום ואל תכסה מזון פריך בעודו חם. האדים המשתחררים נלכדים, מתעבים ומרככים את המעטפת. השאר מקום לאדים לצאת.
+
+מקור: [[nosrat-page-104]] מתוך [[SRC-NOSRAT-2017]].
+
+הערה מעובדת בעברית עם עוגן טקסט שנבדק במקור. אין כאן אימות מדעי עצמאי או פרוטוקול בטיחות.

@@ -120,6 +120,7 @@ class Citation(StrictModel):
 
 
 class ChefDecision(StrictModel):
+    station_protocol: dict = Field(default_factory=dict)
     basic_knowledge: list[dict[str, str]] = Field(default_factory=list)
     decision_type: Literal["action", "clarify", "blocked", "insufficient_evidence"]
     current_goal: str

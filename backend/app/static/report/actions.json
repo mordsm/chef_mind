@@ -1,0 +1,803 @@
+{
+  "version": 1,
+  "ingredients": [
+    {
+      "id": "onion",
+      "label": "בצל"
+    },
+    {
+      "id": "carrot",
+      "label": "גזר"
+    },
+    {
+      "id": "potato",
+      "label": "תפוח אדמה"
+    },
+    {
+      "id": "tomato",
+      "label": "עגבנייה"
+    },
+    {
+      "id": "garlic",
+      "label": "שום"
+    },
+    {
+      "id": "chicken",
+      "label": "עוף"
+    },
+    {
+      "id": "turkey",
+      "label": "הודו"
+    },
+    {
+      "id": "beef",
+      "label": "בקר"
+    },
+    {
+      "id": "fish",
+      "label": "דג"
+    },
+    {
+      "id": "rice",
+      "label": "אורז"
+    },
+    {
+      "id": "water",
+      "label": "מים"
+    },
+    {
+      "id": "oil",
+      "label": "שמן"
+    },
+    {
+      "id": "salt",
+      "label": "מלח"
+    },
+    {
+      "id": "pepper",
+      "label": "פלפל"
+    }
+  ],
+  "actions": [
+    {
+      "id": "cook",
+      "label": "לבשל",
+      "icon": "🍲",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 30,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "pot",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    },
+    {
+      "id": "cut",
+      "label": "לחתוך",
+      "icon": "🔪",
+      "auto_timer": false,
+      "fields": [
+        {
+          "id": "ingredient",
+          "label": "מצרך",
+          "type": "ingredient",
+          "default": "onion"
+        },
+        {
+          "id": "cut_type",
+          "label": "סוג חיתוך",
+          "type": "choice",
+          "default": "cubes",
+          "options": [
+            {
+              "id": "cubes",
+              "label": "קוביות"
+            },
+            {
+              "id": "slices",
+              "label": "פרוסות"
+            },
+            {
+              "id": "strips",
+              "label": "רצועות"
+            },
+            {
+              "id": "minced",
+              "label": "קצוץ דק"
+            }
+          ]
+        },
+        {
+          "id": "size",
+          "label": "גודל",
+          "type": "choice",
+          "default": "medium",
+          "options": [
+            {
+              "id": "coarse",
+              "label": "גס"
+            },
+            {
+              "id": "medium",
+              "label": "בינוני"
+            },
+            {
+              "id": "fine",
+              "label": "דק"
+            }
+          ]
+        }
+      ],
+      "group": "הכנה ותוספות"
+    },
+    {
+      "id": "add",
+      "label": "להוסיף מצרך",
+      "icon": "🥕",
+      "auto_timer": false,
+      "fields": [
+        {
+          "id": "ingredient",
+          "label": "מצרך",
+          "type": "ingredient",
+          "default": "water"
+        },
+        {
+          "id": "quantity",
+          "label": "כמות",
+          "type": "number",
+          "default": 1,
+          "presets": [
+            0.5,
+            1,
+            2,
+            3,
+            5,
+            10
+          ],
+          "min": 0.01,
+          "max": 10000,
+          "step": 0.01
+        },
+        {
+          "id": "unit",
+          "label": "יחידה",
+          "type": "choice",
+          "default": "cup",
+          "options": [
+            {
+              "id": "g",
+              "label": "גרם"
+            },
+            {
+              "id": "kg",
+              "label": "ק״ג"
+            },
+            {
+              "id": "ml",
+              "label": "מ״ל"
+            },
+            {
+              "id": "cup",
+              "label": "כוס"
+            },
+            {
+              "id": "tbsp",
+              "label": "כף"
+            },
+            {
+              "id": "tsp",
+              "label": "כפית"
+            },
+            {
+              "id": "piece",
+              "label": "יחידה"
+            }
+          ]
+        }
+      ],
+      "group": "הכנה ותוספות"
+    },
+    {
+      "id": "grill",
+      "label": "לצלות בגריל",
+      "icon": "🔥",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 10,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "grill",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "grill",
+              "label": "גריל"
+            },
+            {
+              "id": "steamer",
+              "label": "סיר אידוי"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    },
+    {
+      "id": "roast",
+      "label": "לצלות בתנור",
+      "icon": "♨️",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 30,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "oven",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "grill",
+              "label": "גריל"
+            },
+            {
+              "id": "steamer",
+              "label": "סיר אידוי"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    },
+    {
+      "id": "fry",
+      "label": "לטגן",
+      "icon": "🍳",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 5,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "pan",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "grill",
+              "label": "גריל"
+            },
+            {
+              "id": "steamer",
+              "label": "סיר אידוי"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    },
+    {
+      "id": "boil",
+      "label": "להרתיח",
+      "icon": "🫕",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 10,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "pot",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "grill",
+              "label": "גריל"
+            },
+            {
+              "id": "steamer",
+              "label": "סיר אידוי"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    },
+    {
+      "id": "steam",
+      "label": "לאדות",
+      "icon": "☁️",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 10,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "steamer",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "grill",
+              "label": "גריל"
+            },
+            {
+              "id": "steamer",
+              "label": "סיר אידוי"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    },
+    {
+      "id": "stir",
+      "label": "לערבב",
+      "icon": "🥄",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 2,
+          "presets": [
+            1,
+            2,
+            5,
+            10,
+            15
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        }
+      ],
+      "group": "הכנה ותוספות"
+    },
+    {
+      "id": "wait",
+      "label": "להמתין / להניח לנוח",
+      "icon": "⏳",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 5,
+          "presets": [
+            1,
+            2,
+            5,
+            10,
+            15
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        }
+      ],
+      "group": "בדיקה והמתנה"
+    },
+    {
+      "id": "season",
+      "label": "לתבל",
+      "icon": "🧂",
+      "auto_timer": false,
+      "fields": [
+        {
+          "id": "ingredient",
+          "label": "מצרך",
+          "type": "ingredient",
+          "default": "salt"
+        },
+        {
+          "id": "quantity",
+          "label": "כמות",
+          "type": "number",
+          "default": 1,
+          "presets": [
+            0.5,
+            1,
+            2,
+            3,
+            5,
+            10
+          ],
+          "min": 0.01,
+          "max": 10000,
+          "step": 0.01
+        },
+        {
+          "id": "unit",
+          "label": "יחידה",
+          "type": "choice",
+          "default": "tsp",
+          "options": [
+            {
+              "id": "g",
+              "label": "גרם"
+            },
+            {
+              "id": "kg",
+              "label": "ק״ג"
+            },
+            {
+              "id": "ml",
+              "label": "מ״ל"
+            },
+            {
+              "id": "cup",
+              "label": "כוס"
+            },
+            {
+              "id": "tbsp",
+              "label": "כף"
+            },
+            {
+              "id": "tsp",
+              "label": "כפית"
+            },
+            {
+              "id": "piece",
+              "label": "יחידה"
+            }
+          ]
+        }
+      ],
+      "group": "הכנה ותוספות"
+    },
+    {
+      "id": "measure",
+      "label": "למדוד טמפרטורה",
+      "icon": "🌡️",
+      "auto_timer": false,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "מדידה אמיתית בפנים המזון °C",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [],
+          "min": -50,
+          "max": 300,
+          "step": 0.1
+        }
+      ],
+      "group": "בדיקה והמתנה"
+    },
+    {
+      "id": "bake",
+      "label": "לאפות",
+      "icon": "🥧",
+      "auto_timer": true,
+      "fields": [
+        {
+          "id": "temperature",
+          "label": "טמפרטורה מכוונת במכשיר °C — לא מדידת המזון",
+          "type": "number",
+          "nullable": true,
+          "default": null,
+          "presets": [
+            160,
+            180,
+            200
+          ],
+          "min": 20,
+          "max": 300,
+          "step": 1
+        },
+        {
+          "id": "duration",
+          "label": "משך מתוכנן בדקות",
+          "type": "number",
+          "default": 30,
+          "presets": [
+            5,
+            10,
+            15,
+            30,
+            45,
+            60
+          ],
+          "min": 1,
+          "max": 1440,
+          "step": 1
+        },
+        {
+          "id": "equipment",
+          "label": "כלי",
+          "type": "choice",
+          "default": "oven",
+          "options": [
+            {
+              "id": "pot",
+              "label": "סיר"
+            },
+            {
+              "id": "pan",
+              "label": "מחבת"
+            },
+            {
+              "id": "oven",
+              "label": "תנור"
+            },
+            {
+              "id": "grill",
+              "label": "גריל"
+            },
+            {
+              "id": "steamer",
+              "label": "סיר אידוי"
+            }
+          ]
+        }
+      ],
+      "group": "חימום ובישול"
+    }
+  ]
+}

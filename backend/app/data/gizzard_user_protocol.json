@@ -1,0 +1,26 @@
+{
+  "source_id": "USER_GIZZARD_PROTOCOL_2026_10_25",
+  "source_type": "USER_SUPPLIED_PROTOCOL",
+  "verification_status": "CITATION_NOT_VERIFIED",
+  "attribution": "User supplied; broad reference to The Joy of Cooking and traditional techniques; no edition, page, or direct citation supplied.",
+  "conditions": {
+    "weight_kg": 1,
+    "condition": "fresh or fully thawed and cleaned",
+    "cut": "halves; large pieces in thirds",
+    "pot": "heavy ordinary pot, not pressure cooker",
+    "lid": "heavy close-fitting lid",
+    "liquid": "almost covering the gizzards"
+  },
+  "simmer_minutes": [90, 120],
+  "clock_origin": "start of gentle simmer after initial boil",
+  "timing_origin_status": "IMPLEMENTATION_ASSUMPTION_USER_DID_NOT_SPECIFY",
+  "doneness_quality": "Fork enters and withdraws without rubbery resistance; assess separately from safety.",
+  "excluded_from_automatic_guidance": [
+    "Whole-piece cooking time increase of 25–35%: not verified.",
+    "Exact temperature 85–90 C: not independently verified for this protocol.",
+    "Pressure cooking 35–45 min plus 15 min natural release: not validated for a specific cooker, load, or pressure.",
+    "Hard boiling necessarily causes toughness even after three hours: not verified.",
+    "Finger compression and tasting hot or unverified poultry: not used as readiness checks.",
+    "Paper/foil lid modifications: not used without appliance-specific validation."
+  ]
+}

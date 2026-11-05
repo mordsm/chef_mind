@@ -1,66 +1,56 @@
-/* Final kitchen presentation: one reading column, progressive disclosure. */
-body {font-size:18px}
-#cook {max-width:980px;margin-inline:auto}
-#cook button,#cook select,#cook input,#cook summary {min-height:56px;font-size:18px}
-#cook button {padding:14px 20px;border-radius:14px;touch-action:manipulation}
-#cook textarea {font-size:20px;line-height:1.6;min-height:100px;width:100%;box-sizing:border-box}
-#cook [hidden] {display:none!important}
-.coach-home {margin-bottom:18px}.coach-home h2 {font-size:32px}
-.custom-start {display:flex;flex-direction:column;gap:12px;max-width:760px;margin-inline:auto}
-.custom-start>label {font-weight:750;font-size:22px;margin-top:12px}
-.custom-start input,.custom-start select {width:100%;box-sizing:border-box}
-.custom-start #start-work,.custom-start #update-dish {width:100%;margin-top:16px;min-height:68px;font-size:24px;background:var(--green);color:white}
-.custom-quick-starts {display:flex;flex-wrap:wrap;gap:8px;margin:0}
-.custom-quick-starts button {background:#e5eee7;border:0!important;font-size:16px!important;min-height:48px!important;padding:9px 15px!important}
-.kitchen-setup,.kitchen-preferences,.kitchen-ingredients,.kitchen-plan,.kitchen-reference,.kitchen-measurement {padding:12px 0;border-top:1px solid var(--line)}
-.kitchen-setup>summary,.kitchen-plan>summary,.kitchen-reference>summary {font-weight:700;cursor:pointer}
-.kitchen-setup:not([open]) {background:#f0f4ef;padding:8px 16px;border-radius:14px}
-.field-help,.kitchen-secondary {font-size:16px;line-height:1.5;color:#3d5148}
-.mentor-settings {margin:12px 0}.mentor-settings label>span{font-size:18px}
-.connection.compact-connection {padding:0;border:0;box-shadow:none;background:transparent;margin-top:10px}
-.compact-connection summary {font-size:16px!important;font-weight:400}
-.coach-workspace {display:flex!important;flex-direction:column;gap:18px}
-.coach-workspace[hidden] {display:none!important}
-.coach-workspace>.panel {width:100%;box-sizing:border-box;padding:24px}
-.companion-panel {position:static}.learning-panel {border:0;background:transparent;padding:0;display:block}
-.journey-panel>.work-ownership,.journey-panel>.badge,.companion-heading .chef-avatar {display:none}
-.journey-panel>h2 {font-size:30px;margin:0 0 14px}
-.user-step-card.selected:has(.active-work-guidance) {display:block;border:0;padding:0;background:transparent}
-.user-step-card.selected>.step-action-body {background:#e7f0e5;border-radius:16px;padding:18px}
-.user-step-title {font-size:24px!important;font-weight:750}
-.user-step-card.selected .step-controls {display:none}
-.active-work-guidance {padding:20px;background:#fff8e9;text-align:start}
-.active-work-guidance h3 {font-size:22px}.active-work-guidance p,.active-work-guidance li {font-size:21px;line-height:1.75;text-align:start}
-.current-chef-message .chef-bubble {padding:0;background:transparent;margin:0}
-.kitchen-guidance-lines {padding-inline-start:1.5em;margin:8px 0}.kitchen-guidance-lines li {padding-inline-start:8px;margin-bottom:12px;white-space:pre-line}
-.coach-actions {display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:0}
-#coach-problem {border:2px solid #a43d27;background:#fff0ea;color:#842b1b;font-weight:750}
-#coach-done {font-weight:750}.status-question {border:0;margin-top:16px}
-.decision-question {display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px}.decision-question legend {font-size:21px}
-.decision-question button {margin:0;font-size:20px!important;text-align:start}
-.companion-heading h2 {font-size:22px}.user-report-form {margin:0;background:transparent;padding:0}
-.user-report-form>h3 {display:none}.user-report-form>label {display:block;font-weight:700;margin:12px 0}
-.composer-modes {display:flex;gap:8px}.composer-modes button {flex:1;background:#fff;color:var(--green);border:1px solid var(--green)}
-.composer-modes [aria-pressed=true] {background:var(--green);color:#fff}
-#work-report-dictate {width:100%;font-size:23px;margin:12px 0;background:#e4efeb;color:#173f32;border:2px solid #315f50}
-#work-report-dictate[aria-pressed=true] {background:#fff1d8;border-color:#a05714}
-#kitchen-stop-voice {width:100%;margin-bottom:12px}#user-report-form button[type=submit] {width:100%;font-size:21px}
-.user-report-form small {display:block;margin-top:12px}.quick-reports {margin:10px 0}.quick-reports button {font-size:18px!important}
-.kitchen-timer {border:1px solid var(--line);border-radius:16px;padding:18px;margin:18px 0;background:#f0f5f3}
-.kitchen-timer strong {display:block;font-size:19px}.kitchen-timer .coach-clock {font-size:52px;font-weight:750;margin:8px 0;text-align:start}
-.kitchen-timer .row {display:flex;flex-wrap:wrap;align-items:center;gap:10px}.kitchen-timer input {width:110px!important}
-.kitchen-timer label {font-size:17px}.kitchen-reference {padding:8px 20px}.kitchen-plan .user-step-list {margin:14px 0}
-.kitchen-attachments,.chef-history {margin-top:12px}.kitchen-attachments summary,.chef-history summary{font-size:17px!important}
-.voice-tools small {font-size:15px!important}.voice-status {font-size:19px;font-weight:700}
-.kitchen-user-work .work-empty {font-size:18px}.kitchen-user-work .coach-home h2 {display:none}
-.kitchen-has-work header {padding-block:10px}.kitchen-has-work header h1 {font-size:25px;margin:3px 0}.kitchen-has-work header p,.kitchen-has-work .eyebrow {display:none}
-.kitchen-has-work #notice:not(.error) {display:none}.kitchen-has-work nav {margin-bottom:12px}
-.kitchen-user-work .coach-home {display:flex;align-items:start;gap:10px;flex-wrap:wrap}
-.kitchen-user-work .kitchen-setup {flex:1;min-width:200px}.kitchen-user-work .restored-work {width:100%;font-size:16px}
-.kitchen-user-work #kitchen-new-work {margin-top:0}.kitchen-setup #open-inventory {margin-top:16px}
-.kitchen-timer .coach-clock {display:inline-block;font-size:36px;margin:4px 0}
-.kitchen-timer-duration {float:inline-end;margin-top:6px}.kitchen-timer-duration>summary {font-size:16px!important;min-height:44px!important;cursor:pointer}
-.kitchen-timer .row {clear:both;margin-bottom:0}.kitchen-timer .row button {flex:1;min-width:80px;font-size:17px!important;padding:12px!important}
-.quick-reports button {color:var(--green)!important;background:#edf3e8!important;border-color:#b2c4b7!important}
-.kitchen-action-background {border-top:1px solid var(--line);margin:12px 0}.kitchen-action-background>summary {font-size:18px!important;cursor:pointer}
-@media(max-width:720px){#cook{width:100%}.coach-workspace>.panel{padding:16px}.coach-home h2{font-size:28px}.decision-question{grid-template-columns:1fr}.active-work-guidance{padding:14px}.active-work-guidance p,.active-work-guidance li{font-size:20px}.mentor-settings{grid-template-columns:1fr}.composer-modes button{padding:12px!important;font-size:17px!important}.kitchen-timer{padding:12px}.kitchen-timer-duration{float:none}.kitchen-timer .row{gap:6px}}
+﻿/* Three visible work areas: chef choices, current action, relevant suggestions. */
+body{font-size:16px}
+#cook{max-width:1800px;margin-inline:auto}
+#cook [hidden]{display:none!important}
+#cook button,#cook select,#cook input,#cook summary{min-height:44px;font-size:15px}
+#cook button{padding:9px 14px;border-radius:7px;touch-action:manipulation}
+#cook textarea{width:100%;box-sizing:border-box;min-height:82px;font-size:16px;line-height:1.5}
+.coach-home{margin-bottom:16px}.coach-home h2{font-size:25px}
+.kitchen-setup{padding:10px 0;border-top:1px solid var(--line)}
+.kitchen-setup>summary{font-weight:700;cursor:pointer}
+.custom-start{display:grid;grid-template-columns:minmax(180px,2fr) minmax(140px,1fr) minmax(180px,1.5fr) auto;gap:8px;max-width:none;margin:12px 0;align-items:end}
+.custom-start>label,.custom-start>.field-help{display:none}
+.custom-start input,.custom-start select{width:100%;box-sizing:border-box;min-width:0}
+#custom-dish-title{grid-column:1;grid-row:1}#custom-method{grid-column:2;grid-row:1}
+.kitchen-ingredients{grid-column:3;grid-row:1}.kitchen-ingredients>summary{cursor:pointer}
+#start-work{grid-column:4;grid-row:1;background:var(--green);color:white}
+#update-dish{grid-column:1/3;background:white;color:var(--green)}
+.custom-quick-starts{grid-column:1/-1;display:flex;gap:7px;flex-wrap:wrap;margin:0}
+.method-policy-info{grid-column:1/-1;margin:0;font-size:13px}
+.kitchen-preferences{grid-column:1/-1}.kitchen-preferences>summary{cursor:pointer}
+.mentor-settings{display:flex;gap:12px}.mentor-settings label{min-width:160px}
+.optional-journeys{margin:6px 0}.coach-mode,.field-help{font-size:13px;color:#52675c}
+.connection.compact-connection{padding:8px 0;border:0;box-shadow:none;background:transparent}
+.compact-connection summary{font-size:14px!important;cursor:pointer}
+.user-toolbar{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.coach-workspace{display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(0,1.5fr) minmax(0,.85fr);grid-template-areas:'companion journey learning';gap:16px;align-items:start}
+.coach-workspace[hidden]{display:none!important}
+.coach-workspace>.panel{min-width:0;box-sizing:border-box;padding:18px}
+.companion-panel{grid-area:companion;position:static}.journey-panel{grid-area:journey}.learning-panel{grid-area:learning;display:block;background:#fffcf0;border:1px solid #e5dfc6}
+.journey-panel>h2{font-size:25px;margin:8px 0}.work-ownership{font-size:13px}
+.user-step-card.selected:has(.active-work-guidance){display:block;border:1px solid var(--line);background:white;padding:12px}
+.user-step-card.selected>.step-action-body{background:#edf3e8;border-radius:8px;padding:12px}
+.user-step-title{font-size:18px!important;font-weight:700}.step-controls{display:flex}
+.active-work-guidance{padding:14px;background:#fff8e9;text-align:start}
+.active-work-guidance h3{font-size:17px}.active-work-guidance p,.active-work-guidance li{font-size:16px;line-height:1.65;text-align:start}
+.current-chef-message .chef-bubble{padding:0;background:transparent;margin:0}
+.kitchen-guidance-lines{padding-inline-start:1.3em;margin:8px 0}.kitchen-guidance-lines li{margin-bottom:8px;white-space:pre-line}
+.status-question{margin:12px 0;padding:12px 0;border-block:1px solid var(--line)}
+.decision-question{display:flex;flex-wrap:wrap;gap:7px;padding:10px;margin:12px 0}.decision-question legend{font-size:15px}.decision-question button{flex:1 1 130px;margin:0;text-align:start}
+.cooking-path-choices,.cooking-step-choices{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.cooking-path-choices h3{width:100%}.cooking-path-choices button,.cooking-step-choices button{flex:1 1 140px;margin:0}
+.coach-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+#coach-problem{border-color:#a43d27;background:#fff0ea;color:#842b1b}
+.companion-heading h2{font-size:22px}.chef-history{margin:10px 0}
+.user-report-form{margin:12px 0;background:#edf5fb;padding:12px;border-radius:8px}.user-report-form>h3{display:none}.user-report-form>label{display:block;font-weight:650;margin:10px 0}
+.composer-modes{display:flex;gap:8px}.composer-modes button{flex:1;background:white;color:var(--green);border:1px solid var(--green)}.composer-modes [aria-pressed=true]{background:var(--green);color:white}
+#work-report-dictate{width:100%;margin:8px 0;background:#e4efeb;color:#173f32}#work-report-dictate[aria-pressed=true]{background:#fff1d8}#kitchen-stop-voice,#user-report-form button[type=submit]{width:100%}
+.user-report-form small{display:block;margin-top:8px}.quick-reports{margin:8px 0}
+.kitchen-timer{border:1px solid var(--line);border-radius:8px;padding:12px;margin:12px 0;background:#f0f5f3}.kitchen-timer strong{display:block}.kitchen-timer .coach-clock{display:inline-block;font-size:30px;margin:4px 0}.kitchen-timer-duration{float:inline-end}.kitchen-timer .row{display:flex;flex-wrap:wrap;clear:both;gap:8px}.kitchen-timer .row button{flex:1}.kitchen-timer input{width:100px!important}
+.kitchen-plan{border-top:1px solid var(--line);margin-top:14px;padding-top:8px}.kitchen-plan>summary{font-weight:650;cursor:pointer}.kitchen-attachments{margin:10px 0}.kitchen-action-background>summary{cursor:pointer}
+@media(max-width:1100px) and (min-width:721px){.coach-workspace{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);grid-template-areas:'companion journey' 'learning learning'}.custom-start{grid-template-columns:minmax(160px,2fr) minmax(120px,1fr) auto}.kitchen-ingredients{grid-column:1/-1;grid-row:2}#start-work{grid-column:3}}
+@media(max-width:720px){#cook{width:100%}.coach-workspace{grid-template-columns:minmax(0,1fr);grid-template-areas:'journey' 'companion' 'learning'}.coach-workspace>.panel{padding:14px}.custom-start{grid-template-columns:minmax(0,1fr)}#custom-dish-title,#custom-method,.kitchen-ingredients,#start-work,#update-dish{grid-column:1;grid-row:auto}.custom-start>label{display:block}.custom-start>label[for=custom-dish-title]{grid-row:1}#custom-dish-title{grid-row:2}.custom-start>label[for=custom-method]{grid-row:3}#custom-method{grid-row:4}.mentor-settings{display:grid;grid-template-columns:1fr 1fr}.mentor-settings label{min-width:0}#cook button{min-height:48px}#work-report-dictate{min-height:56px}.kitchen-timer-duration{float:none}.decision-question button{flex-basis:120px}}
+#cook #work-report-dictate{min-height:56px}
+.guidance-links{border-top:1px solid var(--line);margin-top:14px;padding-top:10px}.guidance-links a{display:block;margin:8px 0;line-height:1.5;text-decoration:underline}.guidance-links h3{font-size:16px}
+.kitchen-send-row{display:flex;gap:8px;align-items:center}.kitchen-send-row>button{flex:1;min-width:0}#cook .kitchen-send-row #work-report-dictate{width:auto;margin:0}#cook .quick-reports button{background:#e4efeb;color:#173f32;border:1px solid #527363}
+.inline-action-reporter{margin-block:16px;border:1px solid #b3c8bc;border-radius:12px;padding:10px;background:#edf5ef}.inline-action-reporter h3{margin:4px 0}.inline-action-reporter iframe{display:block;width:100%;border:0;border-radius:8px}
+.cooking-intake{border-bottom:1px solid #c6cbbd;padding-bottom:16px;margin-bottom:16px;color:#243a2d}.cooking-intake h3{margin-top:0}.cooking-intake p,.cooking-intake li{line-height:1.6}.cooking-intake a{display:block;margin-block:10px;text-decoration:underline;overflow-wrap:anywhere}.recipe-request{background:#edf5fb;padding:10px}.intake-form{display:grid;gap:7px;margin-top:12px}.intake-form label{font-weight:650}.intake-form input,.intake-form select,.intake-form textarea{width:100%;box-sizing:border-box;min-width:0}.operation-picker{padding:14px;margin-block:16px;border:1px solid #bacbc2;background:#f7fbf8;border-radius:9px}.operation-picker>summary{font-weight:700;cursor:pointer}.operation-picker>input,.operation-picker>select{width:100%;box-sizing:border-box;margin-block:6px}.operation-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-block:12px}.operation-options article{display:grid;align-content:start}.operation-options button{width:100%;background:#e4efeb;color:#173f32}.operation-options [aria-pressed=true]{border:2px solid #173f32}.operation-options small{display:block;line-height:1.4}.selected-operation{background:#fff8e9;border:1px solid #d8c9a2;padding:12px}.selected-operation>button{margin:4px}.selected-operation li,.selected-operation p{line-height:1.6}.operation-reply{padding:10px;border-inline-start:4px solid #527363;background:white;white-space:pre-line}

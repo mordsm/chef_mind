@@ -1,5 +1,27 @@
 # Implementation status — 2026-10-21
 
+## 2026-10-25 — Three supplied McGee PDF ranges ingested and connected
+
+Mapped all 473 supplied PDF pages (226–500, 701–898) against the full 898-page edition using normalized extracted-text equality. Added 31 source-checked claims and nine interpreted rules across chapters 5–9 and 12–15, plus provenance/limitations and five review questions. Every claim has printed/full-PDF/split-PDF page references, source filename, textual anchor and page hash. Old notes and source files remain unchanged. Extraction is selective; missing PDF pages 501–700 and incomplete chapter coverage are explicitly documented.
+
+The live coach now allows these manifest-listed McGee evidence records and their linked rules in addition to existing McGee/Food Lab sources. PRELIMINARY labels remain; source checking is distinguished from independent scientific validation. New source-backed knowledge can appear in ordinary chef answers as well as contextual cards. Raw note parameters, dated medical claims, and unvalidated preservation/reheating procedures are not executed.
+
+Validation: 39 focused application tests passed; new-source YAML, IDs, links, relationship IDs and page hashes passed; 184 previous knowledge notes and original PDFs remained unchanged. Ruff passed for changed retrieval/tests. Report: `vault/Culinary-Knowledge/09_Sources/McGee-2004-Supplied-Ranges/McGee-Ranges-Report-HE.md`.
+
+## 2026-10-25 — The Food Lab available to the live coach
+
+At the owner's explicit request to use the extracted book, the coach now retrieves the 36 source-checked Food Lab evidence records listed in the ingestion manifest and the nine interpreted rules linked to those claim IDs. This is bounded source access, not a blanket promotion of PRELIMINARY notes to VERIFIED or general knowledge-database activation. Book note verification labels are preserved. Displayed advice includes the conditions, claim/interpretation label, independent-validation limitation, EPUB chapter/file/paragraph, note path and content hash.
+
+McGee and all existing non-book context tips remain. Selection reserves room for relevant evidence from both books, refreshes rather than duplicates book tips, and never executes note rule parameters. Relevant Food Lab material is also appended to ordinary chef answers; problem/safety responses and specific recipe guidance retain priority. The workbench displays Food Lab citations alongside McGee citations. The complete EPUB is not searched at runtime: scope is the extracted notes.
+
+Validation: 37 focused tests passed, covering Food Lab provenance and ordinary chef answers, both books with safety, prior cooking flows, and source attribution.
+
+## 2026-10-25 — McGee notes connected to cooking coach
+
+The user-directed coach now retrieves up to two relevant McGee-attributed VERIFIED notes from the Obsidian ontology at intake and after commands. Existing context tips, safety policy, recipe guidance, and other sources remain. Explanations appear beside current guidance with printed-page references, note ID/path, and SHA-256 provenance. The lookup cache invalidates on note file changes. Only structured descriptions/scientific rationale are displayed as background; raw rule parameters and arbitrary Markdown are not executed as instructions. This connects already processed notes, not runtime full-book PDF retrieval, and does not independently reverify their citations. No draft database activation or PDF ingestion occurs.
+
+Validation: 34 focused tests passed; ruff passed for the new retrieval module/tests. Kitchen browser coverage checks visible McGee explanations as well as the existing report, plan, timer, and responsive flows.
+
 ## 2026-10-21 Phase 2 — Culinary Knowledge Ontology & Engine Integration
 
 Completed Phase 2 knowledge ingestion and engine integration:

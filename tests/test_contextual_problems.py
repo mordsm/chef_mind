@@ -27,6 +27,8 @@ def test_goal_clicks_and_conditional_problem_choices_use_local_rules(monkeypatch
     assert state["decision_answers"]["goal"] == "sauce"
     assert "בחרת תבשיל רך ברוטב" in state["messages"][-1]["text"]
     assert state["decision_questions"] == []
+    planned_steps = state["custom_steps"][:]
+    assert planned_steps
     state = change(state, action="problem", problem_id="too_dry")
     assert state["problem_rule_status"] == "clarify"
     assert state["decision_questions"][0]["id"] == "problem_dry_state"
@@ -35,7 +37,7 @@ def test_goal_clicks_and_conditional_problem_choices_use_local_rules(monkeypatch
     assert state["problem_rule_match"]["variant_id"] == "gizzard_liquid_low"
     assert "ציר לא מלוח" in state["messages"][-1]["text"]
     assert not state["pending_problem"] and not state["problem_questions"]
-    assert not state["custom_steps"] and state["measured_temperature"] is None
+    assert state["custom_steps"] == planned_steps and state["measured_temperature"] is None
 
 
 def test_same_problem_has_different_treatments_by_condition_and_dish():

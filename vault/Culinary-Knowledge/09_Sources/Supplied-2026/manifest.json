@@ -1,0 +1,106 @@
+{
+  "coverage": "CURATED_PARTIAL",
+  "files": [
+    {
+      "source_id": "SRC-NOSRAT-2017",
+      "filename": "Salt, Fat, Acid, Heat{Samin Nosrat, Michael Pollan, Wendy MacNaughton}(2017, Simon &amp_ Schuster){112518383} libgen.li-1-250.pdf",
+      "sha256": "889a00c5c87dfafc3c4360a94ad9569c2a1ae1bc0154355ccb95998f04a7166a",
+      "first_full_pdf_page": 1,
+      "text_layer": true
+    },
+    {
+      "source_id": "SRC-NOSRAT-2017",
+      "filename": "Salt, Fat, Acid, Heat{Samin Nosrat, Michael Pollan, Wendy MacNaughton}(2017, Simon &amp_ Schuster){112518383} libgen.li-251-593.pdf",
+      "sha256": "f0f9cf576c102e9b501f376fe567bce666d01d73f4707834b535af9f8a8725fe",
+      "first_full_pdf_page": 251,
+      "text_layer": true
+    },
+    {
+      "source_id": "SRC-AVIR-2019",
+      "filename": "אסף אביר - לא ספר בישול_ המדע והאמנות של הביס המושלם (2019, כנרת זמורה ביתן דביר) - libgen.li-1-100.pdf",
+      "sha256": "d9c980d9a8147b1669753628bbbfcef82fd681700be1121f5eb2e12180db6111",
+      "first_full_pdf_page": 1,
+      "text_layer": false
+    },
+    {
+      "source_id": "SRC-AVIR-2019",
+      "filename": "אסף אביר - לא ספר בישול_ המדע והאמנות של הביס המושלם (2019, כנרת זמורה ביתן דביר) - libgen.li-101-188.pdf",
+      "sha256": "98b738b505d24e9abb9293abac6c40ab655f12f78be90b9f952202a8467c96cf",
+      "first_full_pdf_page": 101,
+      "text_layer": false
+    },
+    {
+      "source_id": "SRC-AVIR-2019",
+      "filename": "אסף אביר - לא ספר בישול_ המדע והאמנות של הביס המושלם (2019, כנרת זמורה ביתן דביר) - libgen.li-189-280.pdf",
+      "sha256": "f3b6193b3464d36e538d5159474cf844e400f1559c6cfded5448b40a730f1e4d",
+      "first_full_pdf_page": 189,
+      "text_layer": false
+    }
+  ],
+  "records": [
+    {
+      "id": "EVD-NOS-001",
+      "sha256": "53123b48171ac9cf5e8f560437bfcb42b940a714bf74b86476b973668cf3db5f"
+    },
+    {
+      "id": "EVD-NOS-002",
+      "sha256": "b9086e8f0527b6478faeee7d71e91291a88af0bb25174b2776481981bd2c76a6"
+    },
+    {
+      "id": "EVD-NOS-003",
+      "sha256": "036ce15c143a1e92f4d5d41cad45326ef87775bfc522b57eda8f210f28f399a7"
+    },
+    {
+      "id": "EVD-NOS-004",
+      "sha256": "291853e66ca9f5dc9b859cf654ddfb74ccfde473d3e2ddba56c38197527419c5"
+    },
+    {
+      "id": "EVD-NOS-005",
+      "sha256": "36e852649cc45dff68222f31626b04b0b2ea4fabd7717af5972dd0bf4d25e92a"
+    },
+    {
+      "id": "EVD-NOS-006",
+      "sha256": "a9acd0f5f585896b4da7a841ceed0da87fc2d531a988ed2e4e8246b9976fed50"
+    },
+    {
+      "id": "EVD-NOS-007",
+      "sha256": "ae56dbadf18d7477698836674196dc06682e48604b38cdd6e9c3289fd9bd1a3b"
+    },
+    {
+      "id": "EVD-AVR-001",
+      "sha256": "aa091cb11fe4fb190be009153ad03101c2e6f276f91a2f6bb926112aee490923"
+    },
+    {
+      "id": "EVD-AVR-002",
+      "sha256": "f234967b8091d683f08aeda1f38222e68decedc6ec75296868f67d7663db737e"
+    },
+    {
+      "id": "EVD-AVR-003",
+      "sha256": "9cf204e497bb0b4fb38a3cf94e22f8e16069fdf3ae2f6f9279e4b1b1e1d66f7b"
+    },
+    {
+      "id": "EVD-AVR-004",
+      "sha256": "342d70ad6bc082c38f5bc1989f77868d14260c915dd827981b3349c993ad7f29"
+    },
+    {
+      "id": "EVD-AVR-005",
+      "sha256": "724179f0c48d23b0c2e00424ca864a9c0f44eb105de7ebec4d7ed86f5f1a9a0d"
+    },
+    {
+      "id": "EVD-AVR-006",
+      "sha256": "6bde005e829af6eb68713096cc21d8249453bf6962d01cc1948fe02d11181d02"
+    },
+    {
+      "id": "EVD-AVR-007",
+      "sha256": "8408b7a31a21e7422ca0ace944233842ca11d9872aadd8e5867fb706168b1899"
+    },
+    {
+      "id": "EVD-AVR-008",
+      "sha256": "776ebb5a00588afab351c24a4a1d14a66573e4142163cc614b09157b28fa87c2"
+    },
+    {
+      "id": "EVD-AVR-009",
+      "sha256": "7058eadffe40a876b19f197d61a02e663af26da8d9801e0656a0c2f4c6426fce"
+    }
+  ]
+}

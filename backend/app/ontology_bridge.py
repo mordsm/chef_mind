@@ -121,7 +121,7 @@ def _parse_markdown_file(path: Path, ontology_root: Path) -> dict | None:
     }
 
 
-def load_ontology(vault_root: Path | None = None) -> dict:
+def load_ontology(vault_root: Path | None = None, *, include_source_pages: bool = True) -> dict:
     root = (vault_root or DEFAULT_VAULT_ROOT) / ONTOLOGY_DIR_NAME
     if not root.is_dir():
         root = DEFAULT_VAULT_ROOT / ONTOLOGY_DIR_NAME
@@ -132,6 +132,8 @@ def load_ontology(vault_root: Path | None = None) -> dict:
 
     for path in sorted(root.rglob("*.md")):
         rel = path.relative_to(root).as_posix()
+        if not include_source_pages and rel.startswith("09_Sources/Full-Books/"):
+            continue
         if rel == "Dashboard.md" or rel.startswith("13_Templates/"):
             continue
         parsed = _parse_markdown_file(path, root)
@@ -198,7 +200,10 @@ def load_ontology(vault_root: Path | None = None) -> dict:
         "verified_nodes": len(verified_nodes),
         "unverified_nodes": len(unverified_nodes),
         "total_edges": len(edges),
-        "sources_count": len(by_folder.get("09_Sources", [])),
+        "sources_count": sum(n["type"] in ("source", "knowledge_source") for n in by_folder.get("09_Sources", [])),
+        "source_records_count": len(by_folder.get("09_Sources", [])),
+        "source_pages_count": sum(n["type"] == "source_page" for n in nodes),
+        "recipe_references_count": sum(n["type"] == "recipe_reference" for n in nodes),
         "rules_count": len(by_folder.get("12_Rules", [])),
         "conflicts_count": len(conflicts),
         "open_gaps_count": len(open_gaps),
@@ -318,7 +323,10 @@ def diagnose_prerequisites(
     supported_by = [edge for edge in outgoing if edge["type"] in ("SUPPORTED_BY", "SUPPORTS")]
 
     status = "ready"
-    if active_inhibitors:
+    if node["type"] in ("source_page", "source_chapter", "recipe_reference", "topic_source_map",
+                        "source_index", "culinary_source_table"):
+        status = "reference_only"
+    elif active_inhibitors:
         status = "inhibited"
     elif missing_prerequisites:
         status = "prerequisites_unconfirmed"
@@ -344,6 +352,11 @@ def to_knowledge_document(vault_root: Path | None = None) -> KnowledgeDocument:
 
     for node in data["nodes"]:
         meta = node["metadata"]
+        # User-supplied book material must not inherit this export's CC license.
+        # It remains available in the local graph and the scoped book index.
+        if any(ref.get("source_id") in ("SRC-NOSRAT-2017", "SRC-AVIR-2019")
+               for ref in meta.get("sources", []) if isinstance(ref, dict)):
+            continue
         if node["folder"] == "12_Rules":
             knowledge_id = re.sub(r"[^a-zA-Z0-9_-]", "-", node["id"].lower())
             trigger = meta.get("trigger_conditions") or {}
@@ -632,19 +645,26 @@ def install_ontology_routes(app, db, principal, reviewer):
         bounded_limit = max(1, min(limit, 100))
         return {"items": query_ontology(app.state.settings.vault_root, q, domain, bounded_limit)}
 
-    @app.get("/v1/ontology/nodes/{node_id}")
-    def get_node(node_id: str):
+    def node_details(node_id: str, *, full_source=False):
         data = load_ontology(app.state.settings.vault_root)
         node = data["by_id"].get(node_id) or data["by_stem"].get(node_id.lower())
         if node is None:
             raise DomainError("ONTOLOGY_NODE_NOT_FOUND", "Ontology node was not found", 404)
         outgoing = [edge for edge in data["edges"] if edge["source_id"] == node["id"]]
         incoming = [edge for edge in data["edges"] if edge["target_id"] == node["id"]]
-        return {
-            **node,
-            "outgoing_edges": outgoing,
-            "incoming_edges": incoming,
-        }
+        result = {**node, "outgoing_edges": outgoing, "incoming_edges": incoming}
+        if node["type"] == "source_page" and not full_source:
+            result["body"] = ""
+            result["content_access"] = "authenticated_or_local_obsidian"
+        return result
+
+    @app.get("/v1/ontology/nodes/{node_id}")
+    def get_node(node_id: str):
+        return node_details(node_id)
+
+    @app.get("/v1/ontology/private/nodes/{node_id}")
+    def private_node(node_id: str, owner=Depends(principal)):  # noqa: B008
+        return node_details(node_id, full_source=True)
 
     @app.post("/v1/ontology/diagnose")
     def diagnose(body: DiagnoseRequest):

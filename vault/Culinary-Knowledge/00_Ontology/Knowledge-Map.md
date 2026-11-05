@@ -3,7 +3,7 @@ id: ONT-MAP-001
 type: ONTOLOGY_MAP
 name: Universal Culinary Knowledge Map
 domain: CULINARY_ONTOLOGY
-version: 1.0.0
+version: 1.2.0
 last_updated: 2026-10-21
 verification_status: FOUNDATIONAL
 ---
@@ -196,3 +196,126 @@ verification_status: FOUNDATIONAL
 * **8.5 אופטימיזציה (Optimization)**
   * קיצור זמנים ללא פגיעה באיכות (שימוש בסיר לחץ, המלחה מוקדמת Dry Brining)
 
+---
+
+## 9. אינדקס רשומות פיילוט חילוץ ספרות: *On Food and Cooking* (McGee 2004) — Chapter 2: Eggs
+מקור מאומת: `[[SRC-MCGEE-2004]]` (עמודים מודפסים 68–117 | עמודי PDF 82–131):
+
+* **01. חומרי גלם (`01_Ingredients/`):**
+  * `[[Egg-Proteins-Yolk-Albumen]]` (`ING-EGG-001`) — הרכב ביצת תרנגולת שלמה, חלבון וחלמון
+  * `[[Egg-Albumen-Key-Proteins]]` (`ING-EGG-002`) — שבעת חלבוני האלבומין (`Ovalbumin`, `Ovotransferrin`, `Ovomucin`, `Lysozyme`, `Globulins`)
+  * `[[Egg-Yolk-Lipoproteins-And-Amylase]]` (`ING-EGG-003`) — כדורי חלמון, גרנולות, `LDL`, לציטין ואנזים ה-`Amylase` העמיד לחום
+  * `[[Egg-Aging-Alkalinization-And-Grades]]` (`ING-EGG-004`) — איבוד $\text{CO}_2$, עליית pH מ-7.7 ל-9.2, אוסמוזה ודירוג איכות
+* **02. מדע המזון (`02_Food-Science/`):**
+  * `[[Protein-Denaturation-Coagulation]]` (`SCI-PROT-002`) — מנגנון דנטורציה וקרישה וסיפי טמפרטורה
+  * `[[Custard-Dilution-Ion-Shielding-And-Starch-Protection]]` (`SCI-PROT-003`) — דילול פי 6, מיסוך סוכרוז, חובת יונים ליצירת ג'ל והגנת עמילן ב-77°C
+  * `[[Egg-Foam-Stability-Disulfide-And-Acid-Copper-Chemistry]]` (`SCI-FOAM-001`) — ייצוב קצף, קשרי גופרית ($\text{S}-\text{S}$), נחושת, חומצה, מלח וסוכר
+  * `[[Souffle-Thermodynamics-Gas-Expansion-And-Vaporization]]` (`SCI-THERM-001`) — חוק שארל (25%) מול אידוי מים לקיטור (75%) בתפיחת סופלה
+  * `[[Alkali-And-Salt-Egg-Curing-Chemistry]]` (`SCI-CHEM-003`) — ביצים מומלחות (35% מלח) וכבישה בסיסית ב-pH 12 (*Pidan / Songhuadan*)
+  * `[[Conflict-Acid-And-Salt-Tenderize-Vs-Toughen-Eggs]]` (`CNF-EGG-001`) — יישוב סתירה: חומצה ומלח מרככים ביצה מבושלת אך מלח מחליש קצף חי
+* **03. טכניקות בישול (`03_Techniques/`):**
+  * `[[In-Shell-Egg-Simmering-And-Steaming]]` (`TEC-EGG-001`) — בישול בקליפה בבעבוע שקט (80–85°C), אידוי ובישול ארוך (*Hamindas* ב-71–74°C)
+  * `[[Poaching-Scrambling-And-French-Omelet-Control]]` (`TEC-EGG-002`) — שליקה (ניקוז חלבון דליל ושיטת הריחוף), טיגון ב-120°C, מקושקשת איטית ואומלט צרפתי
+  * `[[Custard-Water-Bath-Baking-And-Cream-Stirring]]` (`TEC-EGG-003`) — קסטרדים אפויים, קרמים בחושים ומניעת סדקים בעוגת גבינה
+  * `[[Meringue-Souffle-And-Sabayon-Whipping]]` (`TEC-EGG-004`) — 4 שלבי קצף, מרנג צרפתי/איטלקי/שווייצרי, קיפול איטי של סופלה וזביונה ב-50°C
+  * `[[Conflict-Souffle-Dish-Buttering-And-Oven-Door-Myths]]` (`CNF-EGG-003`) — הפרכת מיתוסי שימון סופלה, דלת התנור, חור סיכה בביצה ושלב ה"סרט"
+* **04. טעמים וארומות (`04_Flavors/`):**
+  * `[[Egg-Sulfur-Volatiles-And-Ferrous-Sulfide-Greening]]` (`FLV-EGG-001`) — מימן גופרי ($\text{H}_2\text{S}$), הירקרקות ברזל גופרי ($\text{FeS}$) וטרימתילאמין
+* **05. מרקמים (`05_Textures/`):**
+  * `[[Egg-Gels-Custard-Networks-And-Foam-Stages]]` (`TEX-EGG-001`) — ג'ל אלבומין מול חלמון ואבחון הזעה/חרוזים/גרגיריות במרנג
+* **06. ציוד וסביבה (`06_Equipment/`):**
+  * `[[Water-Bath-Materials-And-Copper-Whisking-Bowls]]` (`EQP-EGG-001`) — פיזיקת חומרי אמבט מים (ברזל יצוק 87°C, זכוכית 83°C, נירוסטה 80°C) וקערות נחושת
+  * `[[Conflict-Copper-Bowl-Ovotransferrin-Vs-Sulfur-Theory]]` (`CNF-EGG-002`) — ניסוי קערת הכסף והפרכת תיאוריית האובטרנספרין מ-1984
+* **07. בטיחות מזון (`07_Food-Safety/`):**
+  * `[[Egg-Salmonella-Pasteurization-And-Lead-Pidan-Hazards]]` (`SAF-EGG-001`) — משטרי פסטור *Salmonella*, מרנג שווייצרי מול איטלקי ורעילות עופרת ב-*Pidan*
+  * `[[Conflict-Dietary-Egg-Cholesterol-Vs-Saturated-Fat]]` (`CNF-EGG-004`) — כולסטרול תזונתי בביצה מול שומן רווי ופוספוליפידים
+* **08. קבלת החלטות וכללים מותנים (`08_Decision-Making/` & `12_Rules/`):**
+  * `[[Rule-Custard-Curdling-Rescue]]` (`RUL-EGG-001`) — עצירה ומניעת התגבנות בקסטרד וקרם ביצים
+  * `[[Rule-Egg-Age-And-Grade-Selection-Matrix]]` (`RUL-EGG-002`) — בחירת גיל ודירוג ביצים לפי משימה ופתרון קילוף
+  * `[[Rule-Starch-Stabilized-Pastry-Cream-Boiling]]` (`RUL-EGG-003`) — חובת הרתחת קרם פטיסייר להשבתת עמילאז החלמון מול איסור הרתחה בקרם אנגלז
+  * `[[Rule-Meringue-And-Egg-Foam-Stabilization-Methods]]` (`RUL-EGG-004`) — בחירת שיטת ייצוב קצף וסוג מרנג
+  * `[[Rule-Custard-Water-Bath-And-Tempering-Control]]` (`RUL-EGG-005`) — בקרת אמבט מים והשוואת טמפרטורות (Tempering)
+* **10. פערי ידע ואי-ודאויות (`10_Knowledge-Gaps/`):**
+  * `[[Egg-Albumen-Biological-And-Adhesion-Unknowns]]` (`GAP-EGG-001`) — 5 אי-ודאויות מדעיות המתועדות בפרק 2
+
+---
+
+## 10. אינדקס רשומות חילוץ ספרות: *On Food and Cooking* (McGee 2004) — Chapter 3: Meat
+מקור מאומת: `[[SRC-MCGEE-2004]]` (עמודים מודפסים 118–178 | עמודי PDF 132–192):
+
+* **01. חומרי גלם (`01_Ingredients/`):**
+  * `[[Beef-Chuck-Collagen-Rich]]` (`ING-MEAT-001`) — הרכב שריר עובד (75% מים, 20% חלבון, 3% שומן), קולגן מול אלסטין בלתי-מסיס
+  * `[[Poultry-Breast-Lean]]` (`ING-POUL-001`) — חזה עוף והודו רזה (90% סיבים לבנים, צפידת מוות מהירה תוך פחות משעה ורגישות לייבוש)
+  * `[[Muscle-Fiber-Types-And-Myoglobin-Chemistry]]` (`ING-MEAT-002`) — סיבים לבנים מהירים מול סיבים אדומים איטיים (חזה ברווז 80% אדומים, יונה 85% אדומים) ו-4 מצבי הצבע של המיוגלובין ($\text{Fe}^{2+}/\text{Fe}^{3+}/\text{O}_2/\text{NO}/\text{CO}$)
+  * `[[Offal-Organs-And-Animal-Fat-Saturation]]` (`ING-MEAT-003`) — שרירים לא-שלדיים עתירי קולגן (קורקבן, לב, לשון, קיבה) מול איברים בלוטיים דלי קולגן (כבד, כבד אווז 50–65% שומן, שקדים, מוח) ומדרג רוויית שומן מן החי
+* **02. מדע המזון (`02_Food-Science/`):**
+  * `[[Collagen-Hydrolysis-Gelatin]]` (`SCI-PROT-001`) — התכווצות קולגן ב-60°C, המסה לג'לטין ב-70–90°C והשפעת גיל בעל החיים על קשרי הצילוב
+  * `[[Meat-Thermal-Progression-And-Doneness-Spectrum]]` (`SCI-MEAT-001`) — ספקטרום השינויים המולקולריים בבשר מ-40°C עד 90°C וטבלת דרגות העשייה (עמ' 152)
+  * `[[Rigor-Mortis-DFD-Meat-And-Aging-Enzymes]]` (`SCI-MEAT-002`) — ירידת ה-pH לחומצה לקטית, פגמי DFD ו-PSE, צפידת מוות, צינון מים מול אוויר ואנזימי יישון `Calpains` (עד 40°C) ו-`Cathepsins` (עד 50°C)
+  * `[[Brining-Marinades-And-Protease-Tenderizers]]` (`SCI-MEAT-003`) — כימיית תמלחת (3%–6% מלח הממיס מיוצין ומפחית איבוד נוזלים ב-50%), מרינדות חומציות ואנזימי פרוטאז צמחיים (`Papain`, `Bromelain`, `Ficin`)
+  * `[[Sausage-Emulsions-Myosin-And-Nitrite-Curing]]` (`SCI-MEAT-004`) — מיצוי מיוצין כדבק חלבוני, ספי טמפרטורה בנקניקיות מתחלבות ($\le 16^\circ\text{C}$ לחזיר, $\le 21^\circ\text{C}$ לבקר) וכימיית כבישה בניטריט ($\text{NO}$)
+* **03. טכניקות בישול (`03_Techniques/` & `11_Conflicts/`):**
+  * `[[Low-Slow-Braising]]` (`TEC-COMB-001`) — צלי קדרה מבוקר ב-80–90°C
+  * `[[Two-Stage-Roasting-Flipping-And-Heat-Scaling]]` (`TEC-MEAT-001`) — היפוך תכוף מדי דקה, צלייה דו-שלבית וחוקי קנה-מידה ($t \propto L^2$ ו-$t \propto W^{2/3}$)
+  * `[[Whole-Bird-Roasting-And-Crisp-Poultry-Skin]]` (`TEC-MEAT-002`) — דילמת העוף השלם (חזה מול כרעיים) ופרוטוקול 5 הצעדים לעור פריך
+  * `[[Succulent-Braising-Stewing-And-Liquid-Cooling]]` (`TEC-MEAT-003`) — ששת כללי הזהב לצלי קדרה עסיסי וקירור בתוך נוזל הבישול ל-50°C
+  * `[[Resting-Carryover-Cooking-And-Carving]]` (`TEC-MEAT-004`) — בישול שאריתי (`Carryover` עד 10°C), מנוחה ל-50°C ופריסה נגד הסיבים
+  * `[[Searing-Locks-In-Juices-Myth]]` (`CON-MEAT-001`) — הפרכת מיתוס נעילת המיצים של פון ליביג (1850)
+  * `[[Conflict-Octopus-Corks-Marinades-And-Breading-Myths]]` (`CNF-MEAT-002`) — הפרכת מיתוס פקקי השעם בתמנון, חדירת מרינדות וציפוי שניצל כמבודד תרמי
+* **04. טעמים וארומות (`04_Flavors/` & `11_Conflicts/`):**
+  * `[[Meat-Flavor-Precursors-Feed-And-Warmed-Over-Flavor]]` (`FLV-MEAT-001`) — ליבת מייאר מול חמצון שומן ספציפי למין, מרעה מול דגנים (`Skatole` & `Terpenes`) ומניעת `Warmed-Over Flavor` ברוזמרין/מרווה
+  * `[[Pre-Salting-Steak-Timing]]` (`CON-SALT-001`) — יישוב סתירת תזמון המלחת סטייק
+* **05. מרקמים (`05_Textures/`):**
+  * `[[Two-Phase-Juiciness-And-Fiber-Compaction]]` (`TEX-MEAT-001`) — תפיסת העסיסיות הדו-שלבית וטכניקות מכניות לשבירת סיבים וציפויים ברוטב
+* **06. ציוד וסביבה (`06_Equipment/`):**
+  * `[[Radiant-Grilling-Smoking-And-Packaging-Permeability]]` (`EQP-MEAT-001`) — קרינת גריל ב-1100°C, כימיית עישון עץ וטבעת עשן, חדירות חמצן בניילון `PE` מול `PVDC`, והפשרה באמבט מים (מהירה פי 20 מאוויר)
+* **07. בטיחות מזון (`07_Food-Safety/`):**
+  * `[[Meat-Pathogens-Blanch-Grinding-And-Carcinogens]]` (`SAF-MEAT-001`) — פתוגנים (*E. coli* O157:H7, *Trichina* ב-58°C, פריונים), פרוטוקול חליטה-וטחינה (30–60 שניות במים רותחים) ומניעת `HCAs`, `PAHs` וניטרוזאמינים
+* **08. קבלת החלטות וכללים מותנים (`08_Decision-Making/` & `12_Rules/`):**
+  * `[[Rule-Collagen-Cut-Moist-Heat]]` (`RUL-MEAT-001`) — התאמת חום לח לנתחים ושרירים לא-שלדיים עתירי קולגן
+  * `[[Rule-Poultry-Safe-Core-Temperature]]` (`RUL-SAF-001`) — אימות טמפרטורת ליבה במדחום וחריג חליטה-וטחינה
+  * `[[Rule-Tender-Vs-Tough-Cut-Thermal-Strategy]]` (`RUL-MEAT-002`) — מטריצת בחירת אסטרטגיה תרמית לנתחים רכים מול קשים
+  * `[[Rule-Whole-Bird-Breast-Vs-Leg-Thermal-Solutions]]` (`RUL-MEAT-003`) — פתרון דילמת העוף השלם והשגת עור פריך
+  * `[[Rule-Pre-Cooking-Tenderization-Brine-Marinade-Enzymes]]` (`RUL-MEAT-004`) — בחירה בין תמלחת, מרינדה ואנזימי פירות
+  * `[[Rule-Freezing-Ice-Water-Thawing-And-WOF-Prevention]]` (`RUL-MEAT-005`) — פרוטוקול הקפאה ב-PVDC, הפשרה במים ומניעת Warmed-Over Flavor
+* **10. פערי ידע ואי-ודאויות (`10_Knowledge-Gaps/`):**
+  * `[[Collagen-Time-Curve-By-Animal-Age]]` (`GAP-PROT-001`) — שונות זמן פירוק הקולגן לפי גיל בעל החיים
+  * `[[Meat-Science-And-Cooking-Documented-Unknowns]]` (`GAP-MEAT-002`) — פיגמנט האבץ בפרושוטו די פארמה ללא ניטריט, קולגן במיקרוגל ומנגנון "אפקט הבשר" בספיגת ברזל
+
+---
+
+## 11. אינדקס רשומות חילוץ ספרות: *On Food and Cooking* (McGee 2004) — Chapter 4: Fish and Shellfish
+מקור מאומת: `[[SRC-MCGEE-2004]]` (עמודים מודפסים 179–242 | עמודי PDF 193–256):
+
+* **01. חומרי גלם (`01_Ingredients/`):**
+  * `[[Finfish-Muscle-Myotomes-Fat-And-Pigments]]` (`ING-FISH-001`) — יריעות מיוטומים (`Myotomes`), קולגן `Myocommata` הנמס ב-50–55°C, תכולת שומן, אסטרי שעווה באסקולר ופיגמנט אסטקסנטין בסלמון
+  * `[[Crustaceans-Hepatopancreas-Molting-And-Astaxanthin]]` (`ING-FISH-002`) — סרטנאים (שרימפס, לובסטר, סרטן), פרוטאזות בלוטת הכבד-לבלב (`Hepatopancreas / Tomalley`), מחזור הנשל ופיגמנט האסטקסנטין
+  * `[[Molluscs-Bivalves-Cephalopods-And-Roe-Caviar]]` (`ING-FISH-003`) — רכיכות דו-קשוותיות (שריר `Quick` מול `Catch`), ראשי-רגליים ואבאלון (סיבי 0.004 מ"מ ופי 3–5 קולגן מצולב), קיפודי ים (`Uni`) וביצי דגים/קוויאר (`Transglutaminase`)
+* **02. מדע המזון (`02_Food-Science/`):**
+  * `[[Fish-Thermal-Progression-Proteases-And-Sarcoplasmic-Glue]]` (`SCI-FISH-001`) — טבלת המעברים התרמיים בדגים (20–90°C), שיא פעילות הפרוטאזות ב-55–60°C במינים מועדים להתפוררות, ודבק חלבוני הסרקופלזמה ב-55°C+ בטונה ודג חרב
+  * `[[Osmoregulation-TMAO-TMA-Spoilage-And-Acid-Neutralization]]` (`SCI-FISH-002`) — אוסמורגולציה בים (חומצות אמינו חופשיות, `TMAO` ואוריאה), הפיכת `TMAO` ל-`TMA` ריחני, ונטרול כימי בחומצה (פרוטונציה, הידרציה של אלדהידים ופירוק גאוסמין)
+  * `[[Fish-Rigor-Mortis-Icing-And-Freeze-Denaturation]]` (`SCI-FISH-003`) — צפידת מוות בדגים, איסור פילוט לפני צפידה ללא בישול מיידי, הכפלת חיי מדף בקרח ב-0°C מול מקרר ב-5°C, ויצירת `DMA` ופורמלדהיד בדגי קוד קפואים
+  * `[[Seafood-Curing-Fermentation-Surimi-And-Katsuobushi]]` (`SCI-FISH-004`) — מוסלין, קנלים וסורימי (`Surimi`), לוטפיסק בסיסי ב-pH 12 (`Lutefisk`), קוד מלוח, הרינג מאטיאס (`Pyloric caecum`), רוטב דגים אוטוליטי, עישון דגים וייצור קצואובושי (`Katsuobushi` ודאשי)
+* **03. טכניקות בישול (`03_Techniques/`):**
+  * `[[Gentle-Simmering-Poaching]]` (`TEC-MOIST-001`) — שליקה עדינה (מועשר בדגים, קור-בויון, ציר דגים ובויאבז)
+  * `[[High-Heat-Pan-Searing]]` (`TEC-DRY-001`) — צריבה בחום גבוה (מועשר בעור דג פריך, טמפורה וחריצה)
+  * `[[Sous-Vide-Precision-Cooking]]` (`TEC-PREC-001`) — בישול מדויק (מועשר בסו-וויד דגים ב-47–55°C ומגבלת הפרוטאזות)
+  * `[[Fish-Dry-Heat-Baking-Tempura-And-En-Papillote]]` (`TEC-FISH-001`) — המלחה מוקדמת (3–5%), אפייה איטית (95–110°C) מול מהירה (260°C), מעטפת `En Papillote`, עור פריך ונוסחת טמפורה יפנית במי קרח
+  * `[[Fish-Poaching-Fumet-Bouillabaisse-And-Steaming]]` (`TEC-FISH-002`) — שליקה במים ושמן, קור-בויון, ציר דגים (`Fumet` $\le 60$ דק'), אמולסיית הרתיחה העזה בבויאבז ואידוי ב-80°C/65–70°C
+  * `[[Raw-Fish-Ceviche-Sushi-Poke-And-Live-Shellfish]]` (`TEC-FISH-003`) — סושי/סשימי, דנטורציה חומצית בסביצ'ה, פוקה, הרדמת סרטנים במי קרח מלוחים, ניקוי חול מצדפות ב-20 g/L מלח ואחסון אויסטרים קעורים כלפי מטה
+  * `[[Conflict-Fish-Slow-Cooking-Cephalopod-Dual-Window-And-Shells]]` (`CNF-FISH-001`) — יישוב 3 מחלוקות: בישול איטי מול פרוטאזות ב-55–60°C, חלון הרכות הדו-קוטבי של דיונון/תמנון/אבאלון, ומיתוס המולים/צדפות הסגורים לאחר הבישול
+* **04. טעמים וארומות (`04_Flavors/`):**
+  * `[[Seafood-Flavor-Chemistry-Amino-Acids-DMS-And-Bromophenols]]` (`FLV-FISH-001`) — גליצין מתוק, גלוטמט, `IMP`, חומצה סוקצינית, ליפאוקסיגנאז, ברומופנולים ימיים, גאוסמין בוצי ודימתיל סולפיד (`DMS` המשותף לצדפות, חלב מחומם ותירס)
+* **05. מרקמים (`05_Textures/`):**
+  * `[[Fish-Flaking-Gelatin-Melting-Point-And-Bivalve-Muscles]]` (`TEX-FISH-001`) — התפרקות לעלעלים ב-50–55°C, נקודת ההתכה הנמוכה של ג'לטין דגים (25°C מול 30°C בבקר), דלדול רבייה (`Sloppy cod`), `Gaping` ופוליפוספטים בסקאלופ
+* **06. ציוד וסביבה (`06_Equipment/`):**
+  * `[[Fish-Slush-Icing-Enclosures-And-Cookware-Control]]` (`EQP-FISH-001`) — מערכת קרח כתוש מתנקז ב-0°C, מרית דגים ורשתות גריל, מגש מתכת לוהט וקרש ארז, מעטפות אדים ומיגון קרינה ברדיד אלומיניום
+* **07. בטיחות מזון (`07_Food-Safety/`):**
+  * `[[Seafood-Toxins-Scombroid-Parasites-And-Freezing-Rules]]` (`SAF-FISH-001`) — הרעלת היסטמין (`Scombroid`), 5 רעלני האצות העמידים לחום (`Ciguatera, PSP, DSP, ASP, NSP`), כספית מול `PCBs`, חיידקי *Vibrio* ובוטוליזם זן E, ופרוטוקול הקפאת ה-FDA להשמדת טפילים (*Anisakis* ותולעי סרט)
+* **08. קבלת החלטות וכללים מותנים (`08_Decision-Making/`):**
+  * `[[Rule-Fish-Target-Temperature-And-Protease-Management]]` (`RUL-FISH-001`) — התאמת טמפרטורת היעד וקצב החימום לסוג הדג, לדבק הסרקופלזמה ולפרוטאזות השריר
+  * `[[Rule-Cephalopod-Abalone-And-Bivalve-Thermal-Windows]]` (`RUL-FISH-002`) — חלונות החום הדו-קוטביים של דיונון/תמנון/אבאלון וכללי הטיפול והבישול של צדפות, מולים, אויסטרים וסקאלופ
+  * `[[Rule-Fish-Odor-Control-Storage-And-Stock-Extraction]]` (`RUL-FISH-003`) — אחסון ב-0°C, איסור פילוט לפני צפידה, נטרול ריחות `TMA`/גאוסמין בחומצה, ומיצוי ציר דגים ($\le 60$ דק') מול בויאבז (רתיחה של 10 דק')
+  * `[[Rule-Raw-Seafood-Parasite-Freezing-And-Toxin-Screening]]` (`RUL-FISH-004`) — השמדת טפילים בהקפאה לדגים נאים (`-35°C` ל-15 ש' או `-20°C` ל-7 ימים), מניעת היסטמין וסינון רעלנים לאוכלוסיות בסיכון
+* **10. פערי ידע ואי-ודאויות (`10_Knowledge-Gaps/`):**
+  * `[[Fish-And-Shellfish-Documented-Unknowns]]` (`GAP-FISH-001`) — שונות בלתי-צפויה ברמת הפרוטאזות בפילה בודד, היעדר בדיקת מטבח לסיגואטרה/רעלני אצות, ושחזור טעם דגי פרא בחקלאות ימית

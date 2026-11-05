@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174b3c"><meta name="apple-mobile-web-app-capable" content="yes">
+  <title>דיווח מהמטבח</title><link rel="manifest" href="/assets/report/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/report/icon-192.png">
+  <link rel="stylesheet" href="/assets/report/style.css"><script type="module" src="/assets/report/app.js"></script>
+</head>
+<body>
+<header><div><h1>דיווח מהמטבח</h1><p>מה עשית עכשיו?</p></div><a href="/">חזרה לשף</a></header>
+<main>
+  <p id="status" role="status" aria-live="polite">טוען את המטבח…</p>
+  <section class="panel" id="connection"><form id="login"><label for="access-token">חיבור לחשבון שלך בשני המכשירים</label><div class="row"><input id="access-token" type="password" autocomplete="off" required placeholder="אסימון הגישה של השף"><button type="submit" disabled>התחבר</button></div></form><p id="identity"></p><button id="logout" type="button" hidden>התנתק</button><small>האסימון נשאר בזיכרון בלבד. לאחר סגירה יש להתחבר מחדש לסנכרון; הדיווחים המקומיים נשמרים.</small></section>
+  <section class="panel" id="workspace" hidden>
+    <div class="row"><label for="session">הבישול הנוכחי</label><select id="session"></select><button id="new-session" type="button">בישול חדש</button></div>
+    <div class="row tools"><button id="enable-sound" type="button" aria-pressed="false">🔔 אפשר צליל</button><button id="enable-push" type="button">📱 התראות גם כשהמסך נעול</button><button id="wake" type="button" aria-pressed="false">☀ השאר מסך ער</button><button id="install" type="button" hidden>התקן למסך הבית</button><button id="retry" type="button">סנכרן עכשיו</button></div>
+    <p class="hint">בחר פעולה ואשר את הפרטים שדיווחת. ערכי ברירת המחדל הם נקודת פתיחה לדיווח.</p>
+    <section id="actions" class="action-grid" aria-label="פעולות בישול"></section>
+    <section id="parameters" class="panel" hidden aria-labelledby="parameter-title"><h2 id="parameter-title"></h2><form id="report-form"><div id="fields"></div><details class="report-notes"><summary>הערה — לא חובה</summary><label for="notes">הערה לפעולה</label><textarea id="notes" rows="2" maxlength="2000"></textarea></details><div class="row"><button id="save-report" type="submit">אשר ורשום פעולה</button><button id="cancel-report" type="button">ביטול</button></div></form></section>
+    <section id="timer-panel" aria-labelledby="timer-title"><h2 id="timer-title">טיימרים פעילים</h2><div id="timers" aria-live="polite"></div><details><summary>מה מציינת התזכורת?</summary><p id="timer-note" class="hint">סיום הטיימר מציין שחלף הזמן שתכננת. הוא אינו מסיים את הפעולה או מאשר מוכנות. התראה כשהאפליקציה סגורה דורשת הרשאת התראות וטיימר שכבר סונכרן לשרת.</p></details></section>
+    <details id="report-history"><summary id="history-title">היסטוריית הפעולות · צפייה ועריכה</summary><ol id="history"></ol></details>
+  </section>
+  <p class="hint">בלי רשת הדיווחים נשמרים במכשיר. הסנכרון חוזר אוטומטית כשהאפליקציה פתוחה ומחוברת לחשבון.</p>
+</main>
+</body></html>

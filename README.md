@@ -8,6 +8,10 @@ For access from another location, run `./scripts/cloudflare.ps1 -Action Start` a
 
 The primary interface is now a [Cooking Coach](docs/COOKING_COACH.md): a cooking journey, chef dialogue, and short contextual lessons. Start a local journey without signing in; connect for private inventory recovery and server-saved progress.
 
+The [dish interview and operation picker](docs/COOKING_SUPPORT.md) combine recipe requests, family-based guidance, explicit missing information and structured operation reports without model interpretation. Start with a dish name or choose the family-first entry.
+
+The [action-reporting PWA](docs/ACTION_LOG_PWA.md) at `/report/` adds configurable parameter forms, timestamped reports, parallel timers, IndexedDB offline capture, two-device synchronization and configurable server Web Push. Read its setup and installation instructions before enabling closed-app notifications.
+
 Standalone FastAPI service for approved culinary knowledge and grounded decisions. The first slice implements **Markdown → review → index activation → extractive answer with citations and policy checks**. It does not modify Cook Pilot.
 
 This is an engineering baseline, not a professionally validated chef. Optional OpenAI selection requires server configuration and per-request opt-in. Local hash embeddings are not semantic embeddings. Do not treat time, color or response confidence as food-safety certification.

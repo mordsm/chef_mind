@@ -95,6 +95,59 @@ class CookingRecord(Base):
     decision: Mapped[dict] = mapped_column(JSON)
 
 
+class ActionLogSession(Base):
+    __tablename__ = "action_log_sessions"
+    owner_id: Mapped[str] = mapped_column(String(80), primary_key=True)
+    id: Mapped[str] = mapped_column(String(36), primary_key=True)
+    recipe_id: Mapped[str] = mapped_column(String(80), default="")
+    linked_cooking_id: Mapped[str] = mapped_column(String(80), default="")
+    revision: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+
+class ActionLogEntry(Base):
+    __tablename__ = "action_log_entries"
+    owner_id: Mapped[str] = mapped_column(String(80), primary_key=True)
+    id: Mapped[str] = mapped_column(String(36), primary_key=True)
+    cooking_id: Mapped[str] = mapped_column(String(36), index=True)
+    revision: Mapped[int] = mapped_column(Integer)
+    document: Mapped[dict] = mapped_column(JSON)
+    deleted: Mapped[int] = mapped_column(Integer, default=0)
+    received_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+    alert_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True, index=True)
+
+
+class ActionLogMutation(Base):
+    __tablename__ = "action_log_mutations"
+    owner_id: Mapped[str] = mapped_column(String(80), primary_key=True)
+    request_id: Mapped[str] = mapped_column(String(36), primary_key=True)
+    body_hash: Mapped[str] = mapped_column(String(64))
+    result: Mapped[dict] = mapped_column(JSON)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+
+class WebPushSubscription(Base):
+    __tablename__ = "web_push_subscriptions"
+    owner_id: Mapped[str] = mapped_column(String(80), primary_key=True)
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    document: Mapped[dict] = mapped_column(JSON)
+    active: Mapped[int] = mapped_column(Integer, default=1)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+
+class WebPushDelivery(Base):
+    __tablename__ = "web_push_deliveries"
+    owner_id: Mapped[str] = mapped_column(String(80), primary_key=True)
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    report_id: Mapped[str] = mapped_column(String(36))
+    subscription_id: Mapped[str] = mapped_column(String(64))
+    target_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    status: Mapped[str] = mapped_column(String(20), default="pending")
+    attempts: Mapped[int] = mapped_column(Integer, default=0)
+    next_attempt_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+    lease_until: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+
 def make_engine(url):
     options = {}
     if url.startswith("postgresql"):

@@ -12,6 +12,9 @@ from fastapi import Depends
 from pydantic import Field
 from sqlalchemy import select
 
+from app.cooking_intake import IntakeFacts
+from app.recipe_import import RecipeSnapshot, RecipeImport, import_recipe
+from app.cooking_operations import OperationEvent
 from app.culinary_context import ContextTip, DishContext
 from app.db import CookingRecord
 from app.decision_table import DecisionQuestion
@@ -32,7 +35,7 @@ class ChefOption(StrictModel):
 
 class CoachMessage(StrictModel):
     role: str = Field(pattern="^(chef|user)$")
-    text: str = Field(max_length=4000)
+    text: str = Field(max_length=12000)
 
 
 class SmartStep(StrictModel):
@@ -273,7 +276,7 @@ RECIPES["shakshuka"]["steps"][-1]["source"] = SAFETY
 
 class CoachCommand(StrictModel):
     action: str = Field(
-        pattern="^(start|start_custom|answer|complete|problem|pause|resume|check_in|personality|timer|timer_cancel|ask|report|finish|add_step|edit_step|remove_step|select_step|move_step|mode|update_plan|adopt_path)$"
+        pattern="^(start|start_custom|answer|complete|problem|pause|resume|check_in|personality|timer|timer_cancel|ask|report|finish|add_step|edit_step|remove_step|select_step|move_step|mode|update_plan|adopt_path|intake|select_operation|report_operation|request_operation|attach_recipe)$"
     )
     journey_id: str = Field(default="", max_length=80)
     message: str = Field(default="", max_length=2000)
@@ -299,6 +302,10 @@ class CoachCommand(StrictModel):
     graph_path_id: str = Field(default="", max_length=80)
     forbid_meat_dairy: bool = True
     rest_seconds: int | None = Field(default=None, ge=0, le=3600)
+    intake_facts: IntakeFacts | None = None
+    recipe_snapshot: RecipeSnapshot | None = None
+    operation_id: str = Field(default="", max_length=80)
+    outcome_id: str = Field(default="", max_length=80)
 
 
 class JourneyState(StrictModel):
@@ -346,6 +353,16 @@ class JourneyState(StrictModel):
     missing_problem_rules: list[dict] = Field(default_factory=list, max_length=30)
     method_recommendations: dict = Field(default_factory=dict)
     method_warning: str = Field(default="", max_length=1000)
+    guidance_links: list[dict[str, str]] = Field(default_factory=list, max_length=8)
+    intake_facts: IntakeFacts = Field(default_factory=IntakeFacts)
+    intake_guidance: dict = Field(default_factory=dict)
+    station_protocol: dict = Field(default_factory=dict)
+    dish_identity: dict = Field(default_factory=dict)
+    recipe_snapshot: RecipeSnapshot | None = None
+    selected_operation_id: str = Field(default="", max_length=80)
+    operation_catalog: list[dict] = Field(default_factory=list, max_length=30)
+    operation_events: list[OperationEvent] = Field(default_factory=list, max_length=50)
+    operation_gaps: list[dict] = Field(default_factory=list, max_length=30)
 
 
 class PreviewRequest(StrictModel):
@@ -360,12 +377,12 @@ def say(state, text, kind="chef"):
     )[-60:]
 
 
-def apply_command(previous, command, now=None, problem_rules=None, method_policy=None):
+def apply_command(previous, command, now=None, problem_rules=None, method_policy=None, recognition=None):
     now = datetime.now(UTC).timestamp() if now is None else now
     if command.action == "start_custom":
         from app.consultant import start_user_work
 
-        return start_user_work(command, now, problem_rules, method_policy)
+        return start_user_work(command, now, problem_rules, method_policy, recognition)
     if command.action == "start":
         if command.recipe_id not in RECIPES:
             raise DomainError("NOT_FOUND", "Recipe not found", 404)
@@ -524,7 +541,21 @@ def apply_command(previous, command, now=None, problem_rules=None, method_policy
     return state
 
 
-def install_coach_routes(app, principal, db):
+def install_coach_routes(app, principal, db, settings=None):
+    from app.config import get_settings
+    from app.provider import ProviderMonitor
+    from app.dish_recognition import recognize_dish
+    settings = settings or get_settings()
+    recognition_monitor = ProviderMonitor(settings)
+
+    @app.post('/v1/coach/recipe-import')
+    def preview_recipe(body: RecipeImport):
+        if not recognition_monitor.reserve('recipe-import'):
+            raise DomainError('RATE_LIMITED','המתן מעט לפני קליטת מתכון נוסף.',429)
+        return import_recipe(body)
+
+    def recognize(command, owner):
+        return recognize_dish(settings, command.dish_title, command.ingredients, recognition_monitor, owner) if command.action == 'start_custom' else None
     @app.get("/v1/coach/graph/catalog")
     def graph_catalog():
         data = graph()
@@ -550,7 +581,8 @@ def install_coach_routes(app, principal, db):
 
     @app.post("/v1/coach/preview")
     def preview(body: PreviewRequest):
-        return apply_command(body.state.model_dump() if body.state else None, body.command)
+        return apply_command(body.state.model_dump() if body.state else None, body.command,
+                             recognition=recognize(body.command, 'guest'))
 
     @app.get("/v1/coach/current")
     def current(owner=Depends(principal), session=Depends(db)):
@@ -564,13 +596,25 @@ def install_coach_routes(app, principal, db):
         )
         journey = deepcopy(record.state["journey"]) if record else None
         if journey and journey.get("workflow") == "user":
+            from app.consultant import cooking_context
+            from app.cooking_intake import attach_intake, classification_ingredients
+            from app.cooking_operations import attach_operations
             from app.decision_table import refresh_decisions
+            from app.knowledge_graph import dietary_paths
             from app.method_policy import attach_recommendations, effective_policy
             from app.problem_rules import effective_rules, options
 
+            journey["context"] = cooking_context(
+                journey["dish_title"], journey["method"], [*journey["ingredients"], *classification_ingredients(journey.get("intake_facts", {}))]
+            )
+            journey["context"]["graph"] = dietary_paths(
+                journey["context"]["graph"], journey["allergies"], journey.get("forbid_meat_dairy", True)
+            )
             attach_recommendations(journey, effective_policy(session, owner.user_id)["policy"])
             refresh_decisions(journey)
             journey["problem_options"] = options(journey, effective_rules(session, owner.user_id)["rules"])
+            attach_intake(journey)
+            attach_operations(journey)
         return {"journey": journey}
 
     @app.post("/v1/coach/events")
@@ -595,6 +639,7 @@ def install_coach_routes(app, principal, db):
         state = apply_command(
             previous,
             body,
+            recognition=recognize(body, owner.user_id),
             problem_rules=effective_rules(session, owner.user_id)["rules"],
             method_policy=effective_policy(session, owner.user_id)["policy"],
         )

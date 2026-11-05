@@ -228,3 +228,12 @@ backups/
 .uv-cache/
 .test-tmp/
 .runtime/
+.wrangler/
+/.test-*/
+/tmp-tests-*/
+/_run_temp.bat
+# Local book sources, OCR binaries/models and extraction scratch data.
+tmp-book-*/
+tmp-tests-full-books-*/
+vault/Culinary-Knowledge/09_Sources/Full-Books/_assets/
+vault/Culinary-Knowledge/09_Sources/Full-Books/Pages/

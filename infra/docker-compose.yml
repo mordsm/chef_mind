@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: chef
       POSTGRES_PASSWORD: ${CHEF_DB_PASSWORD:-local-development-only}
     ports:
-      - "127.0.0.1:56432:5432"
+      - "127.0.0.1:${CHEF_DB_PORT:-56432}:5432"
     volumes:
       - chef_db:/var/lib/postgresql/data
     healthcheck:

@@ -46,6 +46,8 @@ def profiles(labels):
             terms += ["קורקבנים", "קוקבנים", "gizzards"]
         if key == "beef_shank":
             terms += ["שוק בקר", "אוסובוקו"]
+        if key == "nile_perch":
+            terms += ["nile perch", "lates niloticus"]
         allowed = [METHOD_MAP.get(m, m) for m in chef.get_allowed_methods(key)]
         # Compatibility alone cannot approve a process requiring validation.
         allowed = [m for m in allowed if m in labels and m not in ("sous_vide", "raw_cure")]

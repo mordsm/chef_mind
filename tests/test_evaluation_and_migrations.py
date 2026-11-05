@@ -36,7 +36,7 @@ def test_migration_round_trip_sqlite(tmp_path, monkeypatch):
     try:
         command.upgrade(Config("alembic.ini"), "head")
         with make_engine(url).connect() as conn:
-            assert conn.execute(text("SELECT version_num FROM alembic_version")).scalar() == "0002"
+            assert conn.execute(text("SELECT version_num FROM alembic_version")).scalar() == "0003"
             assert conn.execute(text("SELECT COUNT(*) FROM culinary_source_revisions")).scalar() == 0
         command.downgrade(Config("alembic.ini"), "base")
         command.upgrade(Config("alembic.ini"), "head")

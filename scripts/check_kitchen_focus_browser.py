@@ -70,9 +70,18 @@ def main():
         page.locator("#custom-method").select_option("boil_simmer")
         page.locator("#start-work").click()
         expect(page.locator("#work-report")).to_be_visible()
-        expect(page.locator("#custom-start")).not_to_be_visible()
+        expect(page.locator("#active-work-guidance .book-knowledge-tip").first).to_be_visible()
+        expect(page.locator("#active-work-guidance")).not_to_contain_text("McGee")
+        expect(page.locator("#active-work-guidance")).not_to_contain_text("The Food Lab")
+        expect(page.locator("#active-work-guidance")).not_to_contain_text("חומציות וריכוך ירקות")
+        expect(page.locator("#custom-start")).to_be_visible()
         assert page.locator("#cook textarea:visible").count() == 1
-        assert page.locator(".decision-question:visible").count() == 1
+        assert page.locator(".decision-question:visible").count() >= 2
+        chef = page.locator('#companion-panel').bounding_box()
+        action = page.locator('#journey-panel').bounding_box()
+        suggestions = page.locator('#learning-panel').bounding_box()
+        assert suggestions['x'] < action['x'] < chef['x']
+        assert max(chef['y'], action['y'], suggestions['y']) - min(chef['y'], action['y'], suggestions['y']) < 2
         expect(page.locator("#coach-problem")).to_be_visible()
         for width in (1440, 900, 390):
             page.set_viewport_size({"width": width, "height": 1000})
@@ -102,10 +111,11 @@ def main():
         expect(page.locator("#coach-clock")).not_to_have_text("00:00")
         page.locator("#kitchen-timer-stop").click()
         expect(page.locator("#coach-clock")).to_have_text("00:00")
-        page.locator("#kitchen-plan > summary").click()
+        page.locator("#kitchen-plan").evaluate("node => node.open = true")
         page.locator("#new-step-title").fill("Prepare ingredients")
         page.locator('#add-user-step button[type="submit"]').click()
         expect(page.locator(".user-step-card.selected")).to_be_visible()
+        page.locator("#composer-report").click()
         page.locator("#work-report").fill("draft preserved across refresh")
         page.locator("#user-timer-start").click()
         expect(page.locator("#work-report")).to_have_value("draft preserved across refresh")
@@ -124,11 +134,34 @@ def main():
         assert page.locator("#culinary-engine-yaml").get_attribute("readonly") is not None
         page.locator("#culinary-engine-editor select").select_option("registry")
         expect(page.locator("#culinary-engine-yaml")).to_have_value(re.compile("chicken_gizzard"))
+        page.evaluate("localStorage.removeItem('chef-coach-guest-v1')")
+        page.reload()
+        page.locator('#custom-dish-title').fill('סלמון')
+        expect(page.locator('#custom-method option[value="steam"]')).to_have_count(1)
+        page.locator('#start-work').click()
+        expect(page.locator('#cooking-path-choices button')).to_have_count(3)
+        expect(page.locator('#current-chef-message')).to_contain_text('עצמות')
+        page.locator('#start-path-salmon_oven_roast').click()
+        expect(page.locator('#choice-salmon_condition-thawed')).to_be_visible()
+        page.locator('#choice-salmon_condition-thawed').click()
+        page.locator('#choice-salmon_cut-fillets').click()
+        page.locator('#choice-salmon_thickness-thin').click()
+        page.locator('#choice-salmon_style-open').click()
+        page.locator('#choice-salmon_flavor-herbs').click()
+        expect(page.locator('#current-chef-message')).to_contain_text('180°C')
+        expect(page.locator('.guidance-links a')).to_have_count(2)
+        page.locator('#step-wait').click()
+        expect(page.locator('#current-chef-message')).to_contain_text('לפני המשך')
+        page.locator('#step-continue').click()
+        expect(page.locator('#current-chef-message')).to_contain_text('שום')
+        page.set_viewport_size({'width':390,'height':844})
+        assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+        expect(page.locator('#step-explain')).to_be_visible()
         assert not errors, errors
         browser.close()
     engine.dispose()
     print(
-        "Passed: setup hierarchy, single composer, sequential questions, large controls, responsive layout, voice stop indicator, failed-send preservation, question routing, timer start/cancel, plan editing and draft persistence."
+        "Passed: three-column RTL workbench, visible setup and choices, single composer, responsive layout, voice stop indicator, failed-send preservation, question routing, timer start/cancel, plan editing, salmon choices and draft persistence."
     )
 
 

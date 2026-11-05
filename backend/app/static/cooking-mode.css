@@ -1,0 +1,91 @@
+/* Large, high-contrast controls for a counter-top screen. */
+#cook{font-size:18px;color:#173b30;line-height:1.6}
+#cook button,#cook summary{min-height:56px;font-size:18px}#cook button{padding:14px 20px}
+#cook small,#cook .hint{color:#405749;font-size:16px}
+.cooking-mode-bar{display:flex;gap:12px;margin:16px 0;position:sticky;top:0;z-index:8;background:#fff;padding:10px;border-bottom:2px solid #bacbc2}.cooking-mode-bar button{flex:1}.cooking-mode-bar [aria-pressed=true],.touch-choices [aria-pressed=true]{background:#174b3c!important;color:white!important;border:2px solid #174b3c}
+.touch-select{display:none!important}.touch-choices{display:flex;flex-wrap:wrap;gap:12px;margin-block:12px}.touch-choices button{flex:1 1 130px;background:white;color:#173b30;border:2px solid #799d8e}
+.intake-page{padding:10px 0;border-top:1px solid #c3d0c6}.intake-page summary{font-weight:700;cursor:pointer}.intake-page label{display:none}.intake-pages{display:grid;gap:8px}
+.preparation-workflow>h2{font-size:22px;margin:0 0 14px}.preparation-workflow .work-ownership{margin-block:6px}.dish-offers{border-top:2px solid #c3d0c6;margin-top:16px;padding-top:14px}.dish-offers>h2{font-size:21px}.dish-offers p{line-height:1.6}.cooking-live .dish-offers{display:none!important}
+#choose-cooking-dish{background:#fff4d9;color:#3f3516;border:2px solid #89722b;font-weight:750}
+.dish-selection-dialog{width:min(1000px,calc(100% - 24px));max-height:calc(100dvh - 32px);overflow:auto;border:2px solid #527363;border-radius:18px;padding:24px;color:#173b30;background:white}
+.dish-selection-dialog::backdrop{background:#102b22b3}.dish-selection-dialog>h2{font-size:28px;margin:0 0 14px}
+#dish-selection-dialog #kitchen-setup{display:block!important}#dish-selection-dialog #kitchen-setup>summary{display:none}
+#dish-selection-dialog #custom-dish-title{font-size:22px;min-height:60px;border:2px solid #527363}#dish-selection-dialog button{min-height:52px}
+@media(max-width:640px){.cooking-mode-bar{flex-wrap:wrap}#choose-cooking-dish{flex-basis:100%}.dish-selection-dialog{padding:16px}}
+.cooking-live-stage{background:white;border:2px solid #8ba697;border-radius:20px;padding:24px;margin-bottom:20px}.cooking-live-stage h2{font-size:clamp(28px,4vw,44px);line-height:1.3;margin:12px 0}.live-instruction{font-size:clamp(23px,3vw,32px);line-height:1.6}.live-dish{font-weight:700;color:#405749}.live-controls{display:flex;gap:14px;flex-wrap:wrap}.live-controls button{flex:1 1 180px;min-height:76px!important;font-size:22px!important}#live-done{background:#174b3c;color:white}#live-microphone{background:#e6efff;color:#153f70;border:2px solid #38689c}#live-microphone[aria-pressed=true]{background:#8d230f;color:white;animation:mic-listening 1.3s ease-in-out infinite}.live-listening{font-size:18px;font-weight:700}.micro-tip{background:#fff6d9;padding:18px;border-radius:12px;margin-top:20px}.micro-tip>p{font-size:20px}.micro-tip details p{font-size:18px}.live-warning{background:#fff0e7;border:3px solid #a5381d;padding:16px;font-weight:700}.cooking-timeline{display:flex;gap:12px;overflow-x:auto;padding:8px;list-style:none}.cooking-timeline li{flex:0 0 160px;padding:10px;border-bottom:4px solid #c4d0c8;font-size:16px}.cooking-timeline [aria-current=step]{border-color:#174b3c;font-weight:750;background:#edf5ef}
+body:not(.cooking-live) .cooking-live-stage{display:none}
+.cooking-live #kitchen-setup,.cooking-live #user-toolbar,.cooking-live #kitchen-new-work,.cooking-live .learning-panel{display:none!important}
+.cooking-live .coach-workspace{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-areas:'journey companion';gap:20px}
+.cooking-live .journey-panel>*:not(#cooking-live-stage):not(#kitchen-timer){display:none!important}
+.cooking-live .companion-panel>*:not(#inline-action-reporter):not(#user-report-form):not(.status-question):not(.coach-notice){display:none!important}
+.cooking-live .status-question:empty{display:none}.cooking-live .coach-actions,.cooking-live .composer-modes,.cooking-live .quick-reports,.cooking-live #add-user-step{display:none!important}
+.cooking-live #user-report-form{background:white}.cooking-live #user-report-form textarea{min-height:64px;font-size:18px}.cooking-live #work-report-dictate{display:none}.cooking-live .kitchen-timer .coach-clock{font-size:48px}.cooking-live .inline-action-reporter{margin-top:0}
+@keyframes mic-listening{50%{box-shadow:0 0 0 8px #ba4d3338}}@media(prefers-reduced-motion:reduce){#live-microphone[aria-pressed=true]{animation:none}}
+@media(max-width:1000px){.cooking-live .coach-workspace{grid-template-columns:minmax(0,1fr);grid-template-areas:'journey' 'companion'}.cooking-live-stage{padding:18px}.coach-workspace{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:'journey' 'companion' 'learning'!important}}
+@media(max-width:480px){#cook button{padding:12px}.cooking-mode-bar{padding:6px;gap:8px}.cooking-mode-bar button{font-size:16px!important}.live-controls button{flex-basis:100%}.touch-choices button{flex-basis:110px}.cooking-live-stage{padding:14px}}
+
+/* Desktop cockpit: current action on the right, reporting above and below on the left. */
+@media(min-width:1001px){
+ body.kitchen-user-work:has(#cook:not([hidden]))>header{padding:6px 24px;min-height:56px}
+ body.kitchen-user-work:has(#cook:not([hidden]))>header h1{font-size:24px;margin:0}
+ body.kitchen-user-work:has(#cook:not([hidden]))>header p,body.kitchen-user-work:has(#cook:not([hidden]))>header .eyebrow{display:none}
+ body.kitchen-user-work:has(#cook:not([hidden]))>main{padding:8px 20px!important}
+ body.kitchen-user-work:has(#cook:not([hidden]))>main>nav{margin:0 0 6px;gap:8px}
+ .cooking-live>main>nav{position:absolute;top:7px;left:270px;margin:0!important;z-index:3}
+ .cooking-live #notice:not(.error){position:absolute;top:14px;right:240px;padding:4px 12px;min-height:0;margin:0;font-size:14px;max-width:260px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+ body.kitchen-user-work:has(#cook:not([hidden]))>footer{display:none}
+ body.kitchen-user-work #notice:empty{display:none}
+ .kitchen-user-work .coach-home{margin:0}.kitchen-user-work .coach-home>h2{display:none}
+ .kitchen-user-work #kitchen-setup{padding:0;border:0}.kitchen-user-work #kitchen-setup>summary{min-height:40px!important}
+ .kitchen-user-work #user-toolbar,.kitchen-user-work #kitchen-new-work{display:none!important}
+ .cooking-mode-bar{position:static;margin:4px 0 8px;padding:4px;gap:8px}.cooking-mode-bar button{min-height:48px!important;padding:8px!important}
+ .kitchen-user-work .coach-workspace{height:var(--kitchen-height,70dvh);min-height:320px;gap:12px;overflow:hidden}
+ .kitchen-user-work .coach-workspace>.panel{height:100%;overflow:auto;padding:14px;overscroll-behavior:contain;scrollbar-gutter:stable}
+ .cooking-live .coach-workspace{grid-template-columns:minmax(300px,.85fr) minmax(0,1.65fr);grid-template-areas:'journey companion'}
+ .cooking-live .journey-panel{display:flex;flex-direction:column;gap:12px}
+ .cooking-live-stage{padding:16px;margin:0;overflow:auto;min-height:0;flex:1}
+ .cooking-live-stage h2{font-size:30px;margin:8px 0}.live-instruction{font-size:24px;margin:10px 0}.live-dish{margin:0}.live-listening{margin:8px 0;font-size:16px}
+ .live-controls{gap:8px}.live-controls button{min-height:56px!important;font-size:18px!important;flex-basis:130px;padding:10px!important}
+ .micro-tip{padding:12px;margin-top:12px}.micro-tip p{font-size:18px;margin:6px 0}.micro-tip summary{min-height:44px!important}
+ .cooking-live .kitchen-timer{margin:0;padding:10px;flex:none}.cooking-live .kitchen-timer .coach-clock{font-size:32px}.cooking-live .kitchen-timer strong{font-size:16px}.cooking-live .kitchen-timer button{min-height:48px!important;padding:8px!important}.cooking-live .kitchen-timer .row{margin:4px 0}
+ .cooking-live .companion-panel{display:flex;flex-direction:column;gap:8px;overflow:hidden!important}
+ .cooking-live .inline-action-reporter{display:flex;flex-direction:column;flex:1;min-height:0;margin:0;padding:8px}
+ .cooking-live .inline-action-reporter>h3{font-size:20px;margin:0}.cooking-live .inline-action-reporter>p{display:none}
+ .cooking-live #action-report-frame{flex:1;min-height:0;height:100%!important}
+ .cooking-live #user-report-form{flex:none;margin:0;padding:8px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
+ .cooking-live #user-report-form>label,.cooking-live #user-report-form>small,.cooking-live #user-report-form>.voice-tools,.cooking-live #user-report-form>#coach-voice-slot{display:none}
+ .cooking-live #user-report-form textarea{grid-column:1;grid-row:1;min-height:56px;height:56px;margin:0}
+ .cooking-live .kitchen-send-row{grid-column:2;grid-row:1}.cooking-live .kitchen-send-row button{min-height:56px!important;padding:10px!important}
+ .cooking-live #user-report-form #voice-status:not(:empty),.cooking-live #user-report-form #coach-notice:not(:empty){grid-column:1/-1;margin:0}
+ .cooking-live .status-question{margin:0;padding:0;max-height:160px;overflow:auto}
+ .cooking-live .status-question:not(:has(button)):not(.attention){display:none}
+ .intake-pages{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:8px 14px}
+ .intake-page summary{font-size:16px!important;line-height:1.4;min-height:48px!important}
+ .cooking-intake>p,.cooking-intake li{font-size:16px;margin:6px 0}
+}
+
+.intake-saved{background:#e8f5eb;border:2px solid #42784e;border-radius:12px;padding:16px;margin-bottom:16px;scroll-margin-top:12px}.intake-saved h3{margin:0}.intake-saved strong{display:block}
+
+/* The three cockpit stations remain fixed while action settings open above them. */
+.cockpit-voice{grid-area:voice;min-width:0}.cockpit-voice h2{font-size:25px;margin:0 0 12px}.voice-transcript{font-size:24px;min-height:100px;line-height:1.6;background:#eef4f7;padding:14px;border-radius:12px;overflow-wrap:anywhere}.voice-wave{display:flex;justify-content:center;align-items:center;gap:7px;height:48px}.voice-wave span{width:8px;height:12px;border-radius:8px;background:#376a88}.cockpit-voice:has(#live-microphone[aria-pressed=true]) .voice-wave span{animation:voice-pulse .8s ease-in-out infinite alternate}.voice-wave span:nth-child(2){animation-delay:.15s!important}.voice-wave span:nth-child(3){animation-delay:.3s!important}.voice-wave span:nth-child(4){animation-delay:.45s!important}
+#cockpit-voice #live-microphone{width:100%;min-height:88px;font-size:24px;font-weight:700;border-radius:16px}.cockpit-voice small{font-size:16px}.voice-question-editor{margin-top:16px}.voice-question-editor summary{cursor:pointer}.voice-explanation{font-size:20px;background:#fff5d8;padding:12px;border-radius:10px}.live-step-counter{display:block;font-size:24px;margin-bottom:16px}.cooking-live #live-done{width:100%;min-height:100px!important;font-size:28px!important;flex-basis:100%;border-radius:16px}.cooking-live #live-explain{font-size:18px;min-height:48px;margin-top:18px;background:#fff5d8;color:#473c15;border:1px solid #9b8748}
+.action-modal-open{overflow:hidden}.action-modal-open #action-report-frame{position:fixed;inset:12px;width:calc(100vw - 24px)!important;height:calc(100dvh - 24px)!important;max-height:none;z-index:1000;border:0;background:transparent;border-radius:0}
+@keyframes voice-pulse{to{height:42px;background:#b94827}}@media(prefers-reduced-motion:reduce){.voice-wave span{animation:none!important}}
+@media(min-width:1001px){
+ .cooking-live .coach-workspace{grid-template-columns:minmax(0,1.05fr) minmax(0,1.2fr) minmax(0,.85fr);grid-template-areas:'journey companion voice';gap:14px}
+ .cooking-live .coach-workspace>.cockpit-voice{display:block;padding:18px;overflow:auto}
+ .cooking-live .journey-panel{padding:0!important;border:0;background:transparent}
+ .cooking-live-stage{height:100%;padding:22px;border-radius:16px}.cooking-live-stage h2{font-size:30px}.live-instruction{font-size:28px;line-height:1.65}
+ .cooking-live .companion-panel{padding:10px!important}.cooking-live .inline-action-reporter{border:0;background:transparent;padding:0;flex:1}.cooking-live .inline-action-reporter>h3{display:none}
+ .cooking-live #cockpit-voice #user-report-form{display:block;margin:8px 0;padding:0;background:transparent}.cooking-live #cockpit-voice #user-report-form label{display:block}.cooking-live #cockpit-voice #user-report-form textarea{height:100px;font-size:20px}.cooking-live #cockpit-voice .kitchen-send-row{display:flex;margin-top:8px}.cooking-live #cockpit-voice .live-listening{font-size:21px;margin:8px 0}.cooking-live #cockpit-voice button{width:100%}
+}
+@media(max-width:1000px){.cooking-live .coach-workspace{grid-template-areas:'journey' 'companion' 'voice'!important}.cockpit-voice{padding:18px}.cooking-live-stage h2{font-size:28px}.live-instruction{font-size:25px}}
+
+/* Compact sequential guidance with one page scroll. */
+.cooking-stepper{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px;font-size:16px}.cooking-stepper li+li:before{content:"←";margin-inline-end:8px}.cooking-stepper [aria-current=step]{font-weight:800;color:#245f46}.cooking-stepper .completed{color:#60756a}.cooking-live-stage{border:0!important;background:transparent!important;border-radius:0!important;overflow:visible!important;height:auto!important}.cooking-live-stage h2{font-size:30px}.cooking-defaults{margin-block:12px}.cooking-defaults strong{display:block;font-size:20px}.cooking-defaults label{display:block}.kitchen-user-work .coach-workspace{height:auto!important;overflow:visible!important;align-items:start}.kitchen-user-work .coach-workspace>.panel{height:auto!important;overflow:visible!important}.cooking-live .inline-action-reporter{min-height:600px}.cooking-live #action-report-frame{height:600px!important}.cooking-live .journey-panel{display:block}.cooking-live .coach-workspace{grid-template-areas:"companion journey voice"}.cooking-live .status-question{max-height:none;overflow:visible}
+
+
+/* Compact, fixed-row action bar with kitchen-sized touch targets. */
+#cooking-step-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;flex-wrap:nowrap;margin:8px 0}
+#cooking-step-choices button{min-width:0;min-height:48px;margin:0;padding:8px 4px;font-size:clamp(12px,1.1vw,16px);line-height:1.25;white-space:normal}
+.learning-panel:empty,#dish-offers:empty,.micro-tip:empty{display:none!important}

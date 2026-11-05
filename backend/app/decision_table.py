@@ -134,13 +134,22 @@ def normalize(value):
 
 
 def definitions(state):
+    from app.salmon_guidance import oven_questions
+
+    salmon = oven_questions(state)
+    if salmon is not None:
+        return salmon
+    from app.salmon_guidance import is_oven_salmon
+
+    if is_oven_salmon(state):
+        return []
     text = " ".join([state["dish_title"], *state["ingredients"]]).casefold()
     nodes = state["context"]["graph"]["ingredients"]
     gizzards = any(node["id"] == "chicken_giblets" for node in nodes) and any(
         word in text for word in ("קורקבנ", "קורקבן", "קוקבנ", "קוקבן", "gizzard")
     )
     if not gizzards:
-        return [("progress", "באיזה שלב אתה נמצא?", PROGRESS)]
+        return []
     questions = [("condition", "מה מצב הקורקבנים?", CONDITION)]
     if not state["method"] or "method" in state.get("decision_answers", {}):
         questions.append(("method", "באיזו שיטה תרצה להכין?", METHODS))

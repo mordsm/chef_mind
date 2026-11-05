@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "new_markdown_files": 59,
+  "claims": 36,
+  "conditional_rules": 9,
+  "chapters": 9,
+  "structured_relationships": 90,
+  "canonical_concepts_reused": 21,
+  "claim_type_counts": {
+    "INGREDIENT_PROPERTY": 8,
+    "CULINARY_PRINCIPLE": 11,
+    "SCIENTIFIC_PRINCIPLE": 6,
+    "EQUIPMENT_PROPERTY": 2,
+    "EMPIRICAL_OBSERVATION": 5,
+    "COOKING_TECHNIQUE": 4
+  },
+  "source_paragraph_hashes_verified": 36,
+  "original_knowledge_files_unchanged": 125,
+  "application_files_unchanged": 56,
+  "book_unchanged": true,
+  "all_new_records_preliminary": true,
+  "coverage_is_exhaustive": false,
+  "bibliographic_and_scientific_independent_review": "NOT_PERFORMED"
+}

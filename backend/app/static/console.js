@@ -83,6 +83,7 @@ function section(container,key,value){if(value===undefined||value===null||value=
 function renderDecision(d){
  document.dispatchEvent(new CustomEvent('chef-decision',{detail:d}));
  const out=$('decision');out.replaceChildren(el('p',d.instruction,'instruction'));
+ if(d.station_protocol?.blocks?.length){out.replaceChildren();renderStationProtocol(out,d.station_protocol);return;}
  if(d.safety_flags?.length)section(out,'safety',d.safety_flags);
  if(d.requires_confirmation!==false){
    const details=el('details','','guidance-details');details.append(translated('summary','details'));
@@ -96,6 +97,24 @@ function renderDecision(d){
    for(const entry of d.basic_knowledge){const card=el('article','','basic-card');card.append(el('h4',entry.title),el('p',entry.text));const links=el('small');reference(links,entry.source);card.append(links);basics.append(card);}
    out.append(basics);
  }
+}
+function renderStationProtocol(container,protocol){
+ const article=el('article','','station-protocol');
+ for(const [index,block] of protocol.blocks.entries()){
+   const section=el('section','','station-block');section.dataset.stationBlock=String(index+1);
+   if(index===2||index===4){
+     const details=el('details','','station-background');details.append(el('summary',`${index+1}. ${index===2?'* למה מבשלים כך? — הסבר פשוט':'קישורים ותגיות לשמירה'}`),el('p',block.text));section.append(details);
+   }else{
+     section.append(el('h4',`${index+1}. ${block.title}`),el('p',block.display_text||block.text));
+     for(const resource of block.resources||[]){const p=el('p');const link=el('a',resource.title);link.href=resource.url;link.target='_blank';link.rel='noopener noreferrer';p.append(link,el('small',resource.scope));section.append(p);}
+     if(block.details_text){const details=el('details','','station-background');details.append(el('summary','* המקור בספר ומה עדיין לא בדקנו'),el('p',block.details_text));section.append(details);}
+   }
+   article.append(section);
+ }
+ if(protocol.next_question)article.append(el('p','הפרט הבא לביצוע: '+protocol.next_question,'station-next-question'));
+ const download=el('button','ייצוא פתק Obsidian','secondary');download.type='button';
+ download.addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([protocol.obsidian_markdown],{type:'text/markdown;charset=utf-8'}));const link=el('a');link.href=url;link.download='culinary-station-log.md';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+ article.append(download);container.append(article);
 }
 function resetCooking(clear=false){document.dispatchEvent(new Event('chef-session-reset'));cookingId=newCookingId();stateRevision=0;lastProfile=null;$('decision').replaceChildren(translated('p','emptyDecision'));if(clear){for(const key of ['goal','question','reports','allergies'])$(key).value='';$('inventory').replaceChildren();$('kosher').checked=true;$('external').checked=false;}}
 function disconnect(){if(identityUser||$('inventory').children.length)saveInventory();authEpoch++;token='';role='';identityUser='';$('token').value='';$('identity').textContent='';$('sources').replaceChildren();$('pending').replaceChildren();$('review-detail').replaceChildren(translated('p','selectDraft'));document.querySelectorAll('.reviewer').forEach(n=>n.hidden=true);resetCooking(true);document.dispatchEvent(new Event('chef-auth-changed'));show('cook');notice('disconnected');}

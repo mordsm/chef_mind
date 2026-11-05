@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "new_markdown_notes": 43,
+  "source_claims": 31,
+  "conditional_rules": 9,
+  "structured_relationships": 71,
+  "pages_mapped_to_full_book": 473,
+  "source_page_references_verified": 31,
+  "unique_source_pages": 27,
+  "existing_notes_unchanged": 184,
+  "original_pdfs_unchanged": true,
+  "independent_scientific_validation": false,
+  "coverage_is_exhaustive": false
+}

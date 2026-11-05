@@ -30,7 +30,7 @@ def json_bytes(value):
 def manifest_for(files, counts, constitution_digest):
     return {
         "format": FORMAT,
-        "schema_revision": "0002",
+        "schema_revision": "0003",
         "created_at": datetime.now(UTC).isoformat(),
         "constitution_digest": constitution_digest,
         "row_counts": counts,
@@ -38,7 +38,7 @@ def manifest_for(files, counts, constitution_digest):
             name: {"size": len(data), "sha256": hashlib.sha256(data).hexdigest()}
             for name, data in files.items()
         },
-        "scope": "All application owners, source revisions, indexes, audit and cooking records; Markdown Vault only. No credentials.",
+        "scope": "All application owners, source revisions, indexes, audit, cooking records and push subscriptions; Markdown Vault only. Includes private push subscription keys, excludes API tokens and server private keys.",
     }
 
 
@@ -53,7 +53,7 @@ def snapshot_database(engine):
                 rows = [
                     dict(row)
                     for row in connection.execute(
-                        select(table).order_by(table.c.id).limit(100_001 - total)
+                        select(table).order_by(*table.primary_key.columns).limit(100_001 - total)
                     ).mappings()
                 ]
                 total += len(rows)
@@ -119,7 +119,7 @@ def read_backup(path):
             ):
                 raise ValueError("Unexpected backup file")
         manifest = json.loads(archive.read("manifest.json"))
-        if manifest.get("format") != FORMAT or manifest.get("schema_revision") not in {"0001", "0002"}:
+        if manifest.get("format") != FORMAT or manifest.get("schema_revision") not in {"0001", "0002", "0003"}:
             raise ValueError("Unsupported backup format/schema")
         if set(names) != set(manifest["files"]) | {"manifest.json"}:
             raise ValueError("Manifest does not match archive")
@@ -154,6 +154,10 @@ def restore_backup(engine, archive_path, vault_target):
     if manifest["schema_revision"] == "0001" and "culinary_source_revisions" not in tables:
         tables["culinary_source_revisions"] = []
         manifest["row_counts"]["culinary_source_revisions"] = 0
+    if manifest["schema_revision"] in {"0001", "0002"}:
+        for name in ("action_log_sessions", "action_log_entries", "action_log_mutations", "web_push_subscriptions", "web_push_deliveries"):
+            tables[name] = []
+            manifest["row_counts"][name] = 0
     if set(tables) != set(Base.metadata.tables):
         raise ValueError("Snapshot table set does not match application schema")
     with engine.begin() as connection:

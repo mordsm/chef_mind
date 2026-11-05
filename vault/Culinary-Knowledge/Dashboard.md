@@ -7,9 +7,9 @@ title_he: לוח בקרה ראשי - אונטולוגיית הידע הקולי�
 status: ACTIVE
 vault_root: "C:\\workspace\\chef_mind\\vault"
 knowledge_root: "Culinary-Knowledge"
-total_nodes: 53
-verified_nodes: 49
-total_edges: 118
+total_nodes: 97
+verified_nodes: 91
+total_edges: 414
 sources_count: 6
 rules_count: 6
 conflicts_count: 3
@@ -19,6 +19,12 @@ updated_at: 2026-10-21
 ---
 
 # לוח בקרה ראשי: אונטולוגיית הידע הקולינרי (Culinary Knowledge Dashboard)
+
+## מדריכים לבישול בשפה פשוטה
+
+- [[SRC-FDA-SEAFOOD-CONSUMER|מדריך FDA לקנייה, הכנה ואחסון דגים — תקציר ועותק מקומי]]
+- [[SRC-FRDC-FISH-POACHING|כמה זמן לבשל דג? הערכה לפי עובי]]
+- [[Culinary-Plain-Language-Glossary|מילון בישול: הסברים למונחים מקצועיים]]
 
 > [!NOTE] סביבת עבודה מקומית באובסידיאן (Obsidian Native)
 > לוח בקרה זה נבנה בתחביר Markdown תקני הנתמך במלואו על ידי מנוע Obsidian ומסונכרן אוטומטית מול מנוע ההחלטות של `chef_mind` (`app/ontology_bridge.py`).
@@ -74,14 +80,14 @@ graph LR
 | תחום ידע | קטגוריות מוגדרות | רשומות קיימות | רשומות מאומתות | פערי ידע פתוחים | סטטוס כיסוי |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **00. אונטולוגיה ותשתיות** | 8 תתי-תחומים | 5 (`[[Book-Ingestion-Architecture]]`, `[[Chef-Engine-Integration]]`) | 3 | 0 | 🟡 פעיל |
-| **01. חומרי גלם (Ingredients)** | 6 קבוצות ראשיות | 6 (`[[Allium-Onion-Sulfur-Sugars]]`, `[[Beef-Chuck-Collagen-Rich]]`) | 6 | 0 | 🟢 מאומת ומקושר |
-| **02. מדע המזון (Food Science)** | 10 תהליכים | 6 (`[[Caramelization-And-Emulsification]]`, `[[Collagen-Hydrolysis-Gelatin]]`) | 6 | 2 | 🟢 מאומת ומקושר |
-| **03. טכניקות בישול (Techniques)** | 10 טכניקות בסיס | 4 (`[[Gentle-Simmering-Poaching]]`, `[[High-Heat-Pan-Searing]]`) | 4 | 0 | 🟢 מאומת ומקושר |
-| **04. טעמים וארומות (Flavors)** | 6 מימדי חישה | 3 (`[[Acid-Fat-Balance]]`, `[[Fat-Soluble-Volatile-Aromas]]`) | 3 | 0 | 🟢 מאומת ומקושר |
-| **05. מרקמים (Textures)** | 7 טרנספורמציות | 3 (`[[Collagen-Driven-Tenderness]]`, `[[Starch-And-Emulsion-Viscosity]]`) | 3 | 0 | 🟢 מאומת ומקושר |
-| **06. ציוד וסביבה (Equipment)** | 7 סוגי כלים ובקרה | 3 (`[[Cast-Iron-Vs-Stainless-Thermal-Mass]]`, `[[Core-Probe-Thermometry]]`) | 3 | 0 | 🟢 מאומת ומקושר |
-| **07. בטיחות מזון (Food Safety)** | 7 פרוטוקולי בטיחות | 3 (`[[Cross-Contamination-Prevention]]`, `[[Microbial-Danger-Zone-Cooling]]`) | 3 | 0 | 🟢 מאומת ומקושר |
-| **08. קבלת החלטות (Decision-Making)** | 7 שלבי תכנון | 3 (`[[Cut-To-Method-Matching]]`, `[[Real-Time-Thermal-Rescue]]`) | 3 | 0 | 🟢 מאומת ומקושר |
+| **01. חומרי גלם (Ingredients)** | 6 קבוצות ראשיות | 11 (`[[Allium-Onion-Sulfur-Sugars]]`, `[[Beef-Chuck-Collagen-Rich]]`) | 11 | 0 | 🟢 מאומת ומקושר |
+| **02. מדע המזון (Food Science)** | 10 תהליכים | 15 (`[[Alkali-And-Salt-Egg-Curing-Chemistry]]`, `[[Brining-Marinades-And-Protease-Tenderizers]]`) | 15 | 4 | 🟢 מאומת ומקושר |
+| **03. טכניקות בישול (Techniques)** | 10 טכניקות בסיס | 14 (`[[Conflict-Octopus-Corks-Marinades-And-Breading-Myths]]`, `[[Conflict-Souffle-Dish-Buttering-And-Oven-Door-Myths]]`) | 14 | 0 | 🟢 מאומת ומקושר |
+| **04. טעמים וארומות (Flavors)** | 6 מימדי חישה | 5 (`[[Acid-Fat-Balance]]`, `[[Egg-Sulfur-Volatiles-And-Ferrous-Sulfide-Greening]]`) | 5 | 0 | 🟢 מאומת ומקושר |
+| **05. מרקמים (Textures)** | 7 טרנספורמציות | 5 (`[[Collagen-Driven-Tenderness]]`, `[[Egg-Gels-Custard-Networks-And-Foam-Stages]]`) | 5 | 0 | 🟢 מאומת ומקושר |
+| **06. ציוד וסביבה (Equipment)** | 7 סוגי כלים ובקרה | 6 (`[[Cast-Iron-Vs-Stainless-Thermal-Mass]]`, `[[Conflict-Copper-Bowl-Ovotransferrin-Vs-Sulfur-Theory]]`) | 6 | 0 | 🟢 מאומת ומקושר |
+| **07. בטיחות מזון (Food Safety)** | 7 פרוטוקולי בטיחות | 6 (`[[Conflict-Dietary-Egg-Cholesterol-Vs-Saturated-Fat]]`, `[[Cross-Contamination-Prevention]]`) | 6 | 0 | 🟢 מאומת ומקושר |
+| **08. קבלת החלטות (Decision-Making)** | 7 שלבי תכנון | 11 (`[[Cut-To-Method-Matching]]`, `[[Real-Time-Thermal-Rescue]]`) | 11 | 0 | 🟢 מאומת ומקושר |
 | **12. כללי החלטה (Rules)** | כללים קולינריים | 6 (`[[Rule-Collagen-Cut-Moist-Heat]]`, `[[Rule-Custard-Curdling-Rescue]]`) | 6 | 0 | 🟢 מאומת ומקושר |
 
 ---
@@ -91,15 +97,23 @@ graph LR
 > [!IMPORTANT] עיקרון שרשרת ההוכחה (No Invented Citations)
 > כל קביעה במערכת משויכת למקור מוסמך (`09_Sources/`) או מתועדת מפורשות כפער ידע (`10_Knowledge-Gaps/`).
 
-- **סה"כ רשומות פעילות באונטולוגיה:** 53 (49 מאומתות, 118 קשרי גרף סמנטיים).
+- **סה"כ רשומות פעילות באונטולוגיה:** 97 (91 מאומתות, 414 קשרי גרף סמנטיים).
 - **מקורות רשומים ומאומתים (`[[09_Sources/]]`):** 6 (`[[SRC-USDA-FSIS-2024]]`, `[[SRC-BCCAMPUS-PASTRY-2015]]`, `[[SRC-BCCAMPUS-MEAT-2015]]`, `[[SRC-MCGEE-2004]]`, `[[SRC-FOODLAB-2015]]`, `[[SRC-MODCUIS-2011]]`).
 - **סתירות קולינריות מנותחות (`[[11_Conflicts/]]`):** 3 (`[[Searing-Locks-In-Juices-Myth]]`, `[[Pre-Salting-Steak-Timing]]`, `[[Pasta-Water-Oil-And-Volume]]`).
-- **פערי ידע מתועדים (`[[10_Knowledge-Gaps/]]`):** 2 (`[[Home-Oven-Convection-Variance]]`, `[[Collagen-Time-Curve-By-Animal-Age]]`).
-- **כללי החלטה אופרטיביים (`[[12_Rules/]]`):** 6 כללים מחוברים ישירות למנוע `chef_mind`.
+- **פערי ידע מתועדים (`[[10_Knowledge-Gaps/]]`):** 2 פתוחים (`[[Home-Oven-Convection-Variance]]`, `[[Collagen-Time-Curve-By-Animal-Age]]`) + 2 אי-ודאויות ספרותיות מתועדות (`[[Egg-Albumen-Biological-And-Adhesion-Unknowns]]`, `[[Meat-Science-And-Cooking-Documented-Unknowns]]`).
+- **כללי החלטה אופרטיביים (`[[12_Rules/]]` & `[[08_Decision-Making/]]`):** 14 כללים מחוברים ישירות למנוע `chef_mind`.
 
 ---
 
 ## ד. סטטוס פיתוח המערכת (Roadmap)
+
+### ספרי הפרויקט — עדכון קליטה
+
+[[Book-Network-Hub|פתיחת רשת הספרים ודוח הכיסוי]]: נקלטו כל 593 עמודי המקור
+של Salt, Fat, Acid, Heat, עם תמונות ו־OCR, מפות פרקים ונושאים, הפניות למתכונים
+והערות מעובדות. אלה שכבות נפרדות: דף מקור אינו כלל מאושר.
+נקלטו גם כל 280 עמודי אסף אביר עם OCR מקומי והפניות לרשת. יחד נשמרו
+873 דפי מקור ו־95 הערות מעובדות; מצב האימות מפורט במפת הספרים.
 
 ### שלב 1 — תשתית אונטולוגיה (הושלם):
 1. [x] הקמת 14 ספריות האונטולוגיה תחת `Culinary-Knowledge/` וחיבור Junction ל-`llm_wiki/10_Projects/chef_mind`.
@@ -107,6 +121,6 @@ graph LR
 
 ### שלב 2 — קליטת ידע ואינטגרציה למנוע `chef_mind` (הושלם):
 1. [x] רישום 6 מקורות ליבה מוסמכים (`09_Sources/`) עם סיווגי אמינות (Tier 1 & Tier 2).
-2. [x] אכלוס כל 8 תחומי הידע ב-53 רשומות מדעיות ויישומיות מקושרות.
-3. [x] תיעוד 3 סתירות קולינריות מרכזיות (`11_Conflicts/`), 2 פערי ידע (`10_Knowledge-Gaps/`) ו-6 כללי החלטה (`12_Rules/`).
+2. [x] אכלוס כל 8 תחומי הידע ב-97 רשומות מדעיות ויישומיות מקושרות (כולל פרק 2: ביצים ופרק 3: בשר מתוך *On Food and Cooking* — McGee 2004).
+3. [x] תיעוד סתירות קולינריות מרכזיות, פערי ידע וכללי החלטה מותנים (`IF / THEN / BECAUSE / EXCEPTIONS`).
 4. [x] חיבור ישיר למנוע `chef_mind` באמצעות `backend/app/ontology_bridge.py` וחיפוש היברידי סמנטי ב-`backend/app/retrieval.py`.

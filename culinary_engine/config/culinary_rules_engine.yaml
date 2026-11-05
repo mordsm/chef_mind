@@ -11,6 +11,9 @@ universal_methods:
   - raw_cure
 
 failure_reasons:
+  FISH_GENTLE_PROCESS:
+    code: "ERR_FISH_PROCESS_UNVALIDATED"
+    message: "פרופיל דגי המים המתוקים מתעדף חימום עדין ומדיד ברוטב. אין כאן תהליך מאומת לטיגון ממושך או לחימום אגרסיבי העלול לייבש ולהעביר את הליבה מעבר ליעד; אין זו טענה שכל טיגון או צלייה בלתי אפשריים."
   COLLAGEN_DRY_HEAT:
     code: "ERR_COLLAGEN_DRY"
     message: "עשיר בקולגן ודל שומן. חום יבש מאדה נוזלים לפני פירוק רקמת החיבור; מתקבל מרקם גומי קשה."
@@ -34,6 +37,20 @@ failure_reasons:
     message: "סיכון ביולוגי/פתוגני (חיידקי מעיים ועופות). חובה לבשל בישול תרמי מלא."
 
 archetypes:
+  freshwater_white_fish:
+    name: "דגי מים מתוקים — חימום עדין ומבוקר ברוטב"
+    allowed_methods:
+      - boil_simmer
+      - steam
+    blocked_methods:
+      deep_fry: "FISH_GENTLE_PROCESS"
+      grill_direct: "FISH_GENTLE_PROCESS"
+      pan_sear: "FISH_GENTLE_PROCESS"
+      oven_roast_dry: "FISH_GENTLE_PROCESS"
+      braise_slow_cook: "FISH_GENTLE_PROCESS"
+      stir_fry: "FISH_GENTLE_PROCESS"
+      raw_cure: "MICROBIAL_HAZARD"
+      sous_vide: "MICROBIAL_HAZARD"
   dense_collagen_lean:
     name: "שרירים עתירי קולגן ודלי שומן"
     allowed_methods:

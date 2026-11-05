@@ -1,0 +1,5 @@
+.culinary-term{display:inline!important;background:transparent!important;border:0!important;border-bottom:1px dotted currentColor!important;border-radius:0!important;padding:0 2px!important;min-height:0!important;width:auto!important;font:inherit!important;font-weight:700!important;color:#075f78!important;cursor:pointer}
+.culinary-term:focus-visible{outline:2px solid #075f78;outline-offset:3px}
+#culinary-glossary-dialog{max-width:min(640px,90vw);max-height:80vh;overflow:auto;border:1px solid #719688;border-radius:12px;padding:20px;line-height:1.7}
+#culinary-glossary-dialog::backdrop{background:#0007}
+#culinary-glossary-open{margin:12px}

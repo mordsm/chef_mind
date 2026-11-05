@@ -1,4 +1,7 @@
 ingredients:
+  nile_perch:
+    name: "נסיכת הנילוס"
+    archetype: "freshwater_white_fish"
   chicken_gizzard:
     name: "קורקבנים"
     archetype: "dense_collagen_lean"

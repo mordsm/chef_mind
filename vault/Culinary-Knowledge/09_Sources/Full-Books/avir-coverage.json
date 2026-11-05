@@ -1,0 +1,4598 @@
+{
+  "book": "avir",
+  "source_id": "SRC-AVIR-2019",
+  "total_pages": 280,
+  "pages_captured": 280,
+  "image_pages": 280,
+  "ocr_pages_done": 280,
+  "ocr_pages_pending": [],
+  "low_confidence_ocr_pages": [
+    29,
+    43,
+    127
+  ],
+  "recipe_references": 46,
+  "chapter_maps": 10,
+  "topic_maps": 27,
+  "semantic_rule_review": "PARTIAL_NOT_COMPLETE",
+  "pages": [
+    {
+      "id": "PAGE-AVIR-001",
+      "pdf_page": 1,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-001.md",
+      "sha256": "cfc07764349d312747fdae0893557a86f5fcaa005a4192333cc2c2eb09eab1e4",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-002",
+      "pdf_page": 2,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-002.md",
+      "sha256": "7b56697938c53f8be0b3d00285a73b3d9c9075e50f019e7b34667610abf1197a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-003",
+      "pdf_page": 3,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-003.md",
+      "sha256": "d48d3312e03d38c77b95c67e6fba8e6bcd3f047e89f714fe58a52215e1eacded",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-004",
+      "pdf_page": 4,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-004.md",
+      "sha256": "2fbadcc406ee9bbd7f772d64dd9ae722b6644fd5efb2707194e3ac14abf348b2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 93,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-005",
+      "pdf_page": 5,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-005.md",
+      "sha256": "e11f1521f5dbc19400863bcafa9f4ae5f0fc887c39e3c9d800faeaa5d15014b9",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-006",
+      "pdf_page": 6,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-006.md",
+      "sha256": "8346f146221a69d7c3db7c715cfdde4fcb8d223d77ebd7e5dd68eb6e5a3b51a2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-007",
+      "pdf_page": 7,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-007.md",
+      "sha256": "2f62efee458df1436c7cd0c2fad3f3f5a766851268d1cf316df03c6540b93e4a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-008",
+      "pdf_page": 8,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-008.md",
+      "sha256": "f77813d7bd0654025faed0a81f75a8e49ec92638290bc0431409bded56ec24f8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-009",
+      "pdf_page": 9,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-009.md",
+      "sha256": "a154ce51036894f84f99b9f09ab92073549209089b6ddd2f3760070eb22f95bf",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "TEC-EGG-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-010",
+      "pdf_page": 10,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-010.md",
+      "sha256": "5bf524120db19a852eda19f4424d068aa55afdfa2d0565dc2fe6be8e41bda7e2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 92,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-011",
+      "pdf_page": 11,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-011.md",
+      "sha256": "1d9982fae25319edcee62b677b047dacf3083f695fe2f26be0dd7932153e90a9",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 74,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-012",
+      "pdf_page": 12,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-012.md",
+      "sha256": "4b299de4f08b07294bdd0eed1c9e5d61953ccf15e9476bd83b9c09d851b6936c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 92,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-013",
+      "pdf_page": 13,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-013.md",
+      "sha256": "1c410b1dd13838f91971b1dfd566b0ebc47ad37c13097caa809e53e216630746",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-014",
+      "pdf_page": 14,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-014.md",
+      "sha256": "2ae56a1c4bb99e6a04f73ff52a358b85cfb529f2f4a0d947e77156df1a332d89",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-015",
+      "pdf_page": 15,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-015.md",
+      "sha256": "55f536f465a0cd16eaf95e45361ca01287320f81652e698b80d0ee952b828623",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-016",
+      "pdf_page": 16,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-016.md",
+      "sha256": "518717ba2cacb35e71bf3b513204026a69e121821813ce77e3e99e7b4c6326a6",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-017",
+      "pdf_page": 17,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-017.md",
+      "sha256": "ee36737cce6dddb8f42dabcd0e36ff5eda09ac4058902670f807a8652f174ec0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-018",
+      "pdf_page": 18,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-018.md",
+      "sha256": "98de4bf0e227dae84d1a1401122a46a5c027165b8939d727e55818511bc6baae",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-DRY-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-019",
+      "pdf_page": 19,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-019.md",
+      "sha256": "2adfa099ac5d0d7c83acfb76fecf9c16a5336feb819090bcd4337dfbdfcb1b16",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-020",
+      "pdf_page": 20,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-020.md",
+      "sha256": "9ced067ccbc6caa5f554d5b75b0f068a9beb7564b7d756daced1869ac1641e0b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-FISH-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-021",
+      "pdf_page": 21,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-021.md",
+      "sha256": "9346275a048b30f96794ad99303d7176378e7b0ba46dcdb6831f999e4d66b0c2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 77,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-022",
+      "pdf_page": 22,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-022.md",
+      "sha256": "8ec9a0a74c353c4920578ea607bba575be9a755760e64ebd615b071873374467",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "SCI-CHEM-002",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-023",
+      "pdf_page": 23,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-023.md",
+      "sha256": "317993b1f5237fa45c32ed364ca206d0fcc787dc538ef0e7c87319d27c09b9fb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-024",
+      "pdf_page": 24,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-024.md",
+      "sha256": "263004ce9412ded189b3a53e84013026620f0adbd6999857b932fc98a9393006",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-025",
+      "pdf_page": 25,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-025.md",
+      "sha256": "9b093c13b207ba9de12f00008586a7519c7e247b8a6e3dbb66b82a5b3e63abbb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-026",
+      "pdf_page": 26,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-026.md",
+      "sha256": "c230e9b445660c9a1739cec9f422c1518885048561454a4d8bbc2a670da7815d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-027",
+      "pdf_page": 27,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-027.md",
+      "sha256": "05dcb552cb74516570ad606e90825b1c0924bd64fd1bcad0df0577b029fb88ad",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-028",
+      "pdf_page": 28,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-028.md",
+      "sha256": "7537c097b64738adddb7411e91639fac9cfea0d4819a581248d4379a4ad9f0b3",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-029",
+      "pdf_page": 29,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-029.md",
+      "sha256": "96eee70a01f528518ba4469692c5c0d6e8dcf97ecc41ff8b8cef658be968ae37",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 66,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-030",
+      "pdf_page": 30,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-030.md",
+      "sha256": "a83b3ca4ff785b877020f2a19f3b136bb2a82dc1e724052b15124aa66ca7f973",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-DAI-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-031",
+      "pdf_page": 31,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-031.md",
+      "sha256": "a48738a3e5cbdec36d13979293a821c83f35a20bd15fb707f618885aa84e8b14",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-032",
+      "pdf_page": 32,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-032.md",
+      "sha256": "ee6ad19a00608900823c91662059920443cbfe5d740df7a0861255533d722e13",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-033",
+      "pdf_page": 33,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-033.md",
+      "sha256": "82e2b5c1a0692a3ccfa2bee065dc85cc54df286fcfe8878fb67356c367d98c13",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-POUL-001",
+        "ING-FISH-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-034",
+      "pdf_page": 34,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-034.md",
+      "sha256": "257cb7e09768d2589b4c11f26c506bb06e2b3762378e589d315c93f77dac56f6",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-035",
+      "pdf_page": 35,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-035.md",
+      "sha256": "f109c9830698d9e0ce3efcaf60d3da78f1c93d9184a2c1d9dc78c6984736005f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-036",
+      "pdf_page": 36,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-036.md",
+      "sha256": "e44d382e10e0f98b8adfc29d4ee69fb85254131283f408d54d8d97e985a2d0ba",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-CHEM-002",
+        "ING-MEAT-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-037",
+      "pdf_page": 37,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-037.md",
+      "sha256": "bb729b9c69a323b973444f59d2395c6cce9e3adeb617a75dd79a081d6439a849",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-DAI-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-038",
+      "pdf_page": 38,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-038.md",
+      "sha256": "e6e47b0216ebf94b2b329c4b1befc322a0c9d8dae58f53d40aaeda4b50af0d3a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-039",
+      "pdf_page": 39,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-039.md",
+      "sha256": "6171f9f3298879f06e73c047956db365a8ccc0346051f0a36e882229e8c7db12",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-040",
+      "pdf_page": 40,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-040.md",
+      "sha256": "54a3f4a1bc2007b85694b7318f8c0a10502db72a0b783e0c3b2a2e1bcd2f085d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "TEC-DRY-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-041",
+      "pdf_page": 41,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-041.md",
+      "sha256": "2f8ad7b1ca6de7f9576a7a9f11756bbfe1e5cb782d09c5ad53de2fd58a40e252",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-VEG-001",
+        "TEC-DRY-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-042",
+      "pdf_page": 42,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-042.md",
+      "sha256": "eacd392f9a87a8bb40ad772dd6c5eaf691af66aa774f015e3dc3222770bb44c0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-043",
+      "pdf_page": 43,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-043.md",
+      "sha256": "f9cf2b5eb17b1203f5f7f2bfdc83fa8e41cad20842490427fb1931f176f4efd2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 69,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-EGG-001",
+        "ING-FISH-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-044",
+      "pdf_page": 44,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-044.md",
+      "sha256": "b214abaca3f348ef28a162d558365703c688bc77e5742b02f7471d0e0d7f333a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-CHEM-002",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-045",
+      "pdf_page": 45,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-045.md",
+      "sha256": "1a1aac37f0e2f0a8bbd06884c3db9eadb3c65e557211b5c76accd83dde612cda",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-046",
+      "pdf_page": 46,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-046.md",
+      "sha256": "bd7fb59b01bc14753034256ac2000ef854a54a335b4643e3c6bdd4b5a37a6bfc",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "ING-POUL-001",
+        "EQP-ENV-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-047",
+      "pdf_page": 47,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-047.md",
+      "sha256": "77fb87cd7605472e175d4cc89784b01373a417f63cb4f1493b2f0288726aaa59",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-048",
+      "pdf_page": 48,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-048.md",
+      "sha256": "4d1b1a64f2b376cea43bf92c35b7b360ec6bbed00abca73f12617fc5e270e16e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-049",
+      "pdf_page": 49,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-049.md",
+      "sha256": "3a62a553c3018e1e8590522ea0718adef7c0f0df7ec813bbc7727eba9bf9cf5f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-PROT-002",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-050",
+      "pdf_page": 50,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-050.md",
+      "sha256": "d666a9bc02ba4b68de287c87d2f9e1a98d2d9233269cd44a254b1ccbbb48297f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-POUL-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-051",
+      "pdf_page": 51,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-051.md",
+      "sha256": "d65367a26eab1ec4747a078013a3ae869a276ed0eeb9470e1fcb305a27369b1f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-052",
+      "pdf_page": 52,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-052.md",
+      "sha256": "be8b327d5d1efead1f16c341f8f26b70d940245c2c934d68318dfbf05a1f8d87",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-053",
+      "pdf_page": 53,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-053.md",
+      "sha256": "6809e74020cb43adac9ce38304869be602b036f7ea7248888d09041b418efc47",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-054",
+      "pdf_page": 54,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-054.md",
+      "sha256": "03681a899abac4d2a5e461cc8b3bddfb24b6c22b6ea60caf987b1f5492f8ccc7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-055",
+      "pdf_page": 55,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-055.md",
+      "sha256": "87a19d176401a04408e7bf3e8e73abd8aa1c608f1de0090e3cecadd736e3b0fe",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 71,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-056",
+      "pdf_page": 56,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-056.md",
+      "sha256": "350664d9d36801fcebbacc2286046eb32c7cc0cf4266b0ae25d6daacb92fbbd6",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-057",
+      "pdf_page": 57,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-057.md",
+      "sha256": "b46d2840d57264d699b14b3560c8a568587090401588efde368ae09b9482b8a0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-FISH-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-058",
+      "pdf_page": 58,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-058.md",
+      "sha256": "b50ea20d719ea1eb13c8021a3cd50302c398b7cb3bb1bd1f237f674977e0e009",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-059",
+      "pdf_page": 59,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-059.md",
+      "sha256": "82d579e0458a5fc989414462a081bdb1eab431aba5c074bd7b93603c1eadecfb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "TEC-MEAT-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-060",
+      "pdf_page": 60,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-060.md",
+      "sha256": "1e158e411142c28dff0ebc785f488f84d1ffd53e66cf99ee3aa5b07bd0279892",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-061",
+      "pdf_page": 61,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-061.md",
+      "sha256": "71d10e260d698cf109e1c9ccf8daaceeacb66ef634805315b55469c8341e65e5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-062",
+      "pdf_page": 62,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-062.md",
+      "sha256": "2215b7887170c8cf60f8ee07e124ae32d66cb24d2d683743d63abbfc53574c67",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-063",
+      "pdf_page": 63,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-063.md",
+      "sha256": "1b88200ef0bddd526c04e3990b5e68cfff9c4c8e433f38ac2fd85687f13fead5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-064",
+      "pdf_page": 64,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-064.md",
+      "sha256": "d3e9e748a12f4cc1f53e9ec464009e6ba7722f40f0d42e706194b868ab7750df",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-065",
+      "pdf_page": 65,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-065.md",
+      "sha256": "0d0ac9a935d0f0bb8b670b7ad065f2dac8a25716320d36d677e5f926cf8a30c7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-FISH-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-066",
+      "pdf_page": 66,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-066.md",
+      "sha256": "38f50a15dbc0fc1c4ec9ca3d987b34cde4eda34e975a64a27be89a862bc5b9eb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-067",
+      "pdf_page": 67,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-067.md",
+      "sha256": "b72217c3c88621f87a8402c9dd97d314c02369db6aeba5b3e1cc639a49dda8c7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-VEG-001",
+        "TEC-MEAT-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-068",
+      "pdf_page": 68,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-068.md",
+      "sha256": "5d9185cc3e9e18c19822fc1b063a4bf0b93d22913dcc1eba98d725147dad6c26",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-069",
+      "pdf_page": 69,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-069.md",
+      "sha256": "bb4f72b57b9912e61234877ac30e39dd941c8a27e8c783a35958506010c3d758",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-070",
+      "pdf_page": 70,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-070.md",
+      "sha256": "a7932e8c3c2f8e8821e5805e00e6974a13f65f331fe5170e78952d1029f62402",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-071",
+      "pdf_page": 71,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-071.md",
+      "sha256": "3f5b11495692ba7e1fe2680d613f7ac90839eadbd73a4236a9191ad8272f5e55",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-072",
+      "pdf_page": 72,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-072.md",
+      "sha256": "03781113a8f6393e31188c057e160188a52e608295816c0eea607104b692820d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "EQP-ENV-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-073",
+      "pdf_page": 73,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-073.md",
+      "sha256": "363cdb39b3b9ed2b56b54bedc84d43e894eb9b12b238ef3293ddf2a085b60978",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-DAI-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-074",
+      "pdf_page": 74,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-074.md",
+      "sha256": "63e911587b6cbab46197877a9e1350f5f855755e7d78fdee416f99640f9f6a55",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-FISH-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-075",
+      "pdf_page": 75,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-075.md",
+      "sha256": "c396318d08c005591f7abc0bc53d477b2aa7cf16ddb4c4f0d4f8a13970641516",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "ING-FISH-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-076",
+      "pdf_page": 76,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-076.md",
+      "sha256": "16b8c3954d6b792a7965cc8d70e5ef8bff62443c941dc7801ca4f9fd2cbb6ccb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-077",
+      "pdf_page": 77,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-077.md",
+      "sha256": "26f0f0200f540dd3f5690bd4b0f1a730479b3c5b2975da4fe23ed318d3aaa3b5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-078",
+      "pdf_page": 78,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-078.md",
+      "sha256": "1a001da251d89f646f85d2c0bdd380fc0ded94f4a82fd0310cbe9de4534c9dde",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-079",
+      "pdf_page": 79,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-079.md",
+      "sha256": "f7af15b94941ab916845d89ea9455a6c0c08990a65d2a465e267af35aa9ee888",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-080",
+      "pdf_page": 80,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-080.md",
+      "sha256": "b4f06c0c93a8e7e125596f04a46c845301b1395b20749007300aaa7c119a2833",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-081",
+      "pdf_page": 81,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-081.md",
+      "sha256": "61cf6202bd8880b48d956b611eac9cb786c74679fdbdbc15fa93d880cd3d23e2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "TEC-MOIST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-082",
+      "pdf_page": 82,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-082.md",
+      "sha256": "4d884338fb806798457aa200089283378c087e16ee410e88acda4f1e3d226bad",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-083",
+      "pdf_page": 83,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-083.md",
+      "sha256": "b6ae8df56cc9da497c1db2fa5f7d3dab07afb8c60e69adcd5006384b3c6369ba",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-PROT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-084",
+      "pdf_page": 84,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-084.md",
+      "sha256": "b8059996b4a6b90fbcd9d159051aa77960636571a6be3319605f27e5ee2446c8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "EQP-SENS-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-085",
+      "pdf_page": 85,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-085.md",
+      "sha256": "90b11e706d6d109cc30dd3caa22ef8105b06bd5a876cd9debf96d86ef758c303",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-086",
+      "pdf_page": 86,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-086.md",
+      "sha256": "2cedbeb096120d892a89337a48190cec3e7ab5b76bb1c8f55015b8d582bcd53f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-087",
+      "pdf_page": 87,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-087.md",
+      "sha256": "b89d689a2ce93c957899019c9e18c4c487ff5ae93f5daf757c91893c2fdcdeae",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-088",
+      "pdf_page": 88,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-088.md",
+      "sha256": "2ff12295d81eb857eea15a0a7050a36c7e62bc6476fbc5aebdf63b922d9f80c1",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-POUL-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-089",
+      "pdf_page": 89,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-089.md",
+      "sha256": "28ef3fe044b5f10e8e827ed50a615d83473702c909edd22b3161a20a9d0d544d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 81,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-090",
+      "pdf_page": 90,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-090.md",
+      "sha256": "aab87caf8d492e8d6a6d24626f44eb50c69c853ad3f6af529ffc698beea303e8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-091",
+      "pdf_page": 91,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-091.md",
+      "sha256": "e04616f7ff8365b8d449ff85280cfa7b439c16acee3264b4a1dc5579b6283ed8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-092",
+      "pdf_page": 92,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-092.md",
+      "sha256": "ff7420afe6a928197880d5c59c6e1a398c3ee0f6a21491303b815f94a00cce5f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 82,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-093",
+      "pdf_page": 93,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-093.md",
+      "sha256": "d03aaa70dfe1a369a14ae7c90f17bf51800de42689cbd35e4c34d0de3969b21d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 84,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-094",
+      "pdf_page": 94,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-094.md",
+      "sha256": "f7e0c797dc3111cfa30c06c2e3bbbe8f59434031777ff058f8887d9ff1aaa77c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-095",
+      "pdf_page": 95,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-095.md",
+      "sha256": "c8c1dee605b80825d9c8a9a6884498aa97ea52461f08f7d98591b565014d66ec",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-096",
+      "pdf_page": 96,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-096.md",
+      "sha256": "cdcbb73060208142e009db7acc853b08f6b31ae74b99fcc167ef7a3aabb8834b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-097",
+      "pdf_page": 97,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-097.md",
+      "sha256": "a522842846309a9ffb151038ea65816119b2b9b9ca7bef86a935f7f0f79ebe4c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-098",
+      "pdf_page": 98,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-098.md",
+      "sha256": "b9f30229eb7ec72d65e33e8e204855c21e91e59715ec2661c4968b4852ffbd26",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-CHEM-002",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-099",
+      "pdf_page": 99,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-099.md",
+      "sha256": "651f22d4957cdfb620860c59cd8152718adfe1666a7fc3e731a260cc32a5cfe1",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-CHEM-002",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "TEC-MOIST-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-100",
+      "pdf_page": 100,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-100.md",
+      "sha256": "37a30845488c7b920e2960fff85037486479bce68b9733188958284abd5a6895",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-CHEM-002",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-101",
+      "pdf_page": 101,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-101.md",
+      "sha256": "c8cb9f1c78da02bc3d0b950ae80d2ab001154bc037dd4cdf6cc4164aadb0a9b8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-102",
+      "pdf_page": 102,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-102.md",
+      "sha256": "ed2a72cdde49593d0b8a5ce03648adf2dd85914785b3abb7f523177f40d78270",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-103",
+      "pdf_page": 103,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-103.md",
+      "sha256": "aaf7a700b90988ccb761987c2d923cdf6a00313a78ed528e77f5ab6b15ad6bb7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-104",
+      "pdf_page": 104,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-104.md",
+      "sha256": "eb17169fe7a2e944fb188c6597c3263483fdfbf2ba6cd8d122a1a7b1395fc500",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-POUL-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-105",
+      "pdf_page": 105,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-105.md",
+      "sha256": "bf286cc78a648707793d2f151c9924654563d009c10f3253b4024ca46609c283",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 83,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-106",
+      "pdf_page": 106,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-106.md",
+      "sha256": "4dd8c84bee415c769be2fa87e5290491591895cde4a996bfdcc5cbaa0f4bcdda",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-107",
+      "pdf_page": 107,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-107.md",
+      "sha256": "effb352c14395298f0e97135e526c2e8ff553450fd88a0427861a83eb5d6dc74",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-108",
+      "pdf_page": 108,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-108.md",
+      "sha256": "a962ede3a4f80d97215ee9f5826af252d96db06e06fd449d1ce2bc23226ff731",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-109",
+      "pdf_page": 109,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-109.md",
+      "sha256": "05ef89923a8c9de34f416dce1a84f8aa29af265f11a9b3101e3352a04bfd43da",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-110",
+      "pdf_page": 110,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-110.md",
+      "sha256": "7d300cdca07a572dff672a19d9c3864791da29fcfa3dfcee3f80ef3ec2bc6bdc",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-FISH-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-111",
+      "pdf_page": 111,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-111.md",
+      "sha256": "43fbae31be7b1c59c5c541ebf2961fc3f056f6506b92633c7cffcd57b12d6e13",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-112",
+      "pdf_page": 112,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-112.md",
+      "sha256": "88036b98f3d377adfdacabb4cbcffd29e5d031d045ca710a52d4b114b0eac042",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "TEC-MEAT-004",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-113",
+      "pdf_page": 113,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-113.md",
+      "sha256": "1a10c4609f73cd884b2070fff9f20b8b5d4d03b9c6522a38410cf84148e4f90a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-114",
+      "pdf_page": 114,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-114.md",
+      "sha256": "e030923986ad265e6867cfb83d9ae80f8d0e4d6c05332d6d554afedfb53197a8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "EQP-ENV-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-115",
+      "pdf_page": 115,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-115.md",
+      "sha256": "eab397f993538a8b4ed38c45ebc9788c748fce3a3a58c9ca254de291f6817a97",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-CHEM-001",
+        "ING-DAI-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-116",
+      "pdf_page": 116,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-116.md",
+      "sha256": "5135f75ba4ca3d51e056a1aa334f76149ee47dc8a9c821a1667102c18de2c3bd",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-001",
+        "SCI-CARB-001",
+        "TEC-MOIST-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-117",
+      "pdf_page": 117,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-117.md",
+      "sha256": "321aaaa0a225c79a51307832ea7cd114e58363030d8f5a37ce0e63614f707e96",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-118",
+      "pdf_page": 118,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-118.md",
+      "sha256": "4dd9594664ef39d7daf0bc341c559ae3f886221672505353044a27f905275019",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 73,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-EGG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-119",
+      "pdf_page": 119,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-119.md",
+      "sha256": "f52574dfe66e1c5b19a0b28a8e201edebfd827cb7c56ed2e230b41a7459aae6f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 76,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-120",
+      "pdf_page": 120,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-120.md",
+      "sha256": "31e50260913a5aa3d0d79991659c18dff8209e08ee8e2e95ec6babe6a944e490",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-121",
+      "pdf_page": 121,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-121.md",
+      "sha256": "cc52278ae857669eec9e6267b1bdb74c9cd13af0114272f383f1a0d67b39e008",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-122",
+      "pdf_page": 122,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-122.md",
+      "sha256": "1303b8fcdc09ea5c1bbead1a6cfbd7884da032d9c1f10d7d6e404cac842f22c4",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 78,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-123",
+      "pdf_page": 123,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-123.md",
+      "sha256": "a4ba297c343177e1fdfc502c08db90c2960bca25d1943fd9838650e9d654480d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-124",
+      "pdf_page": 124,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-124.md",
+      "sha256": "928694d319ce8e75ead34682996dec0ea4d5f7f3c628e93f7afcd8d51d87fe2e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-125",
+      "pdf_page": 125,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-125.md",
+      "sha256": "29b22c179d57f61e4644294eed5a1559a320a54871c4579a0da8d8523efc77c1",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-126",
+      "pdf_page": 126,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-126.md",
+      "sha256": "9ccb4e6d398f0daa5ad9e11eb3ef34bb08c3278e35bfc30cd9fbebd8b65917eb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-002",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-127",
+      "pdf_page": 127,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-127.md",
+      "sha256": "32ec7a0700f75a0e834c9e8ef4367ba35491889a4ab73ba43f9ae8f5cf33ca38",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 68,
+      "concept_ids": [
+        "ING-EGG-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-128",
+      "pdf_page": 128,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-128.md",
+      "sha256": "dc2da2baef9bba5e162b418011e5a6525e1b20320e70f6e76a9805d21f90220a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 93,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-129",
+      "pdf_page": 129,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-129.md",
+      "sha256": "8531f1fc9c728deb47e5932fbec57a828faa5772626dcfe8671b93bb5385effe",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-EGG-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-130",
+      "pdf_page": 130,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-130.md",
+      "sha256": "1b76297aad38038bc4eb692769e381357bab3922d70664c0d962923d7214322a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-131",
+      "pdf_page": 131,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-131.md",
+      "sha256": "5d267475c37e00b57b9d4d2bfbf5e4a460f764b089dc1bd8b91f13eb79fe8fa6",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-132",
+      "pdf_page": 132,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-132.md",
+      "sha256": "5204b81fb02c55cd1219357d1b9647266782398396291f786c3b2beace274696",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-133",
+      "pdf_page": 133,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-133.md",
+      "sha256": "0103f3a450703cf696c1ef80bbca300bd787e624f781d610f067be13a7f93a96",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-134",
+      "pdf_page": 134,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-134.md",
+      "sha256": "c2ff0d1287adf5e539b17fce6112245ed70877283529c39a95b5c6d3005bebcd",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 83,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-135",
+      "pdf_page": 135,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-135.md",
+      "sha256": "47e513fdcd25fd8d0620d6604d0fd927defdf7f21b9905db6cdc0b5a4d6c0a12",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 84,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-EGG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-136",
+      "pdf_page": 136,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-136.md",
+      "sha256": "c4418051ecd5ec2041c030024f176ad67e1544de738383878c9d6c85e5af124e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-EGG-001",
+        "ING-FISH-001",
+        "TEC-DRY-001",
+        "TEC-EGG-004",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-137",
+      "pdf_page": 137,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-137.md",
+      "sha256": "8a45330768a16131fcbfc9a0a159f4eba4402f7c717fe2cdad5834628321ee6e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "TEC-EGG-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-138",
+      "pdf_page": 138,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-138.md",
+      "sha256": "eae5fc8dcc5a668715de22d2bf5af8867af41ae2efcb3f97b3d8c736c325255b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "TEC-DRY-001",
+        "TEC-EGG-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-139",
+      "pdf_page": 139,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-139.md",
+      "sha256": "895dadb2c54050dacba187f899829a4379ee44e439e77b29076d772f0a9480fe",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-140",
+      "pdf_page": 140,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-140.md",
+      "sha256": "3811cde5029efdd8d0d43dc8766747cdb6ff3a39aebf7b1ab91c79624ecf5088",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-141",
+      "pdf_page": 141,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-141.md",
+      "sha256": "a4e1f26b60da9223ced7edce516b52b711df78596a5dfdbaff8786ae49d0dcbb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 84,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-EGG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-142",
+      "pdf_page": 142,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-142.md",
+      "sha256": "518aae97e718cd369810f0e157839458dadfcd4f1645030e6e00cf3f1c1b97ea",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "ING-EGG-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-143",
+      "pdf_page": 143,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-143.md",
+      "sha256": "4dd47eb996f523b24b1b14873dc0a912d11687ec9a44b88ed68551ac698e606d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-144",
+      "pdf_page": 144,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-144.md",
+      "sha256": "69835066d54c6c1ec3cea6dec603a02c6352d4f61e5966d52b67b5f187f5bf18",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-145",
+      "pdf_page": 145,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-145.md",
+      "sha256": "fd00edd811ca2b4243d4f5ebb6ea96fa4b98142372732e66991c42debb75b673",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-146",
+      "pdf_page": 146,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-146.md",
+      "sha256": "546eb8a741113edb28e1e816dc64106dc0fc51a39dc0d5c8b3f561d360d91bb0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-PROT-002",
+        "ING-EGG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-147",
+      "pdf_page": 147,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-147.md",
+      "sha256": "69bd451893105283ecbaaaf1879c126655d4dc5fad46dd781fc1f13c0fe6fe9c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-FISH-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-148",
+      "pdf_page": 148,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-148.md",
+      "sha256": "2623b48a240647f0d2f8adc6e7925686ce1b125df5f856551b9c2e1b1ce24118",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-149",
+      "pdf_page": 149,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-149.md",
+      "sha256": "13f864944ffa31946df725aa095ad9fb511add795430acbb1d975484a194024a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-150",
+      "pdf_page": 150,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-150.md",
+      "sha256": "9b9b619ca644c80d7f3f824d5ccb660ea5d4a0b4f624c84fb985593f2dc0338a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-151",
+      "pdf_page": 151,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-151.md",
+      "sha256": "c5f2c1ddc013c2097fa09e0043886ff53d60770c1ef87a9c2751612225e4656e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-152",
+      "pdf_page": 152,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-152.md",
+      "sha256": "d5c2f3b286bbd5657a221d73be8e9d35be6b5e6da647120a5f029b5fff80d814",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-EGG-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-153",
+      "pdf_page": 153,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-153.md",
+      "sha256": "ecb70d7caf65929d7d449f7a1e3de5ddd666132e78d255944ba1be0bd2a21a31",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-PROT-002",
+        "ING-EGG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-154",
+      "pdf_page": 154,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-154.md",
+      "sha256": "d8f357860f24881217791b9e69200ee7ac0b5b3a6ac03f827c41d2565e916e2b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-155",
+      "pdf_page": 155,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-155.md",
+      "sha256": "ce128d25d5b38872424f3be71eef010afc8b6d58ec5bc6f8d2ec059ed24e209e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-002",
+        "SCI-PROT-002",
+        "ING-EGG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-156",
+      "pdf_page": 156,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-156.md",
+      "sha256": "a953c43e940938b44899c6cd5dc03a6de6473953c1b468d4c6334c045e5608d7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 83,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-157",
+      "pdf_page": 157,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-157.md",
+      "sha256": "6c2c5b0bc374a9361fd85e4f6f4d700ffeaeafdc71f6950c50f18bc0059a71fd",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-158",
+      "pdf_page": 158,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-158.md",
+      "sha256": "f5b1fccefe45fdc8372b09e7868b02e36f4ad21da19b5fd611530ed2ed022664",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "TEC-EGG-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-159",
+      "pdf_page": 159,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-159.md",
+      "sha256": "4b3cd77e88185c11feef2b71d568a5ff25be70a798b10adede877c7aed890599",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 75,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-EGG-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-160",
+      "pdf_page": 160,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-160.md",
+      "sha256": "b1dd85c35216ba20495678c8e5fc70910e4b8f0a3ecbab96d7e96d7eccf0db85",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "TEC-EGG-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-161",
+      "pdf_page": 161,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-161.md",
+      "sha256": "1da08102c2a4825e6b474cf8c380ba4e5363053d1d6ec82c257985d32f0c8bb5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-162",
+      "pdf_page": 162,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-162.md",
+      "sha256": "da8795d3d04d97750ca4685e5aafdfe1cd168cfcd56a05693f12cf899fd2aa3f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "SCI-PROT-001",
+        "ING-DAI-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-163",
+      "pdf_page": 163,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-163.md",
+      "sha256": "fa23ca21f392fabe6e6c022c49dc7cd3b037a5781686846a822299815f87b6d0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-164",
+      "pdf_page": 164,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-164.md",
+      "sha256": "37f5ca1fc025905d78dbb8884e334c9e8df6b913767b003e8a0dcff2ea74fea4",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-POUL-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-165",
+      "pdf_page": 165,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-165.md",
+      "sha256": "690c78f3e66bb98affaf5464276fd0b0ff87aa2a98a7c242d6c086e0f3a4c9d0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-FISH-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-166",
+      "pdf_page": 166,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-166.md",
+      "sha256": "2631a7b1ea4bad3ea7779b501c2b502cc88d09916c2003ee4a9a26392f238f03",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-167",
+      "pdf_page": 167,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-167.md",
+      "sha256": "b4d7f00fc5b683510d0b3f007080ce9fcfabf74b2087e7a1d4acdf3f8940aa05",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-168",
+      "pdf_page": 168,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-168.md",
+      "sha256": "2108b74c986eda429222e0be6770187f4d4dc29da34037b9f741426721ee2715",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-169",
+      "pdf_page": 169,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-169.md",
+      "sha256": "be80c8fc8c149ce26d13c6513aa6801fd70b749731644a779b3474955b447f61",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-170",
+      "pdf_page": 170,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-170.md",
+      "sha256": "f24671e7864d4210ef41242d2e3dda63f3af2c6ed200b77467343805149105aa",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-171",
+      "pdf_page": 171,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-171.md",
+      "sha256": "334f6af55b70135fe7ace15bb0c9dab05ae34bb1d78a19b28e244a2d8234e23b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-172",
+      "pdf_page": 172,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-172.md",
+      "sha256": "5587d22a1db22db14141bfb44cc69589c7ac0c1e8a92b90f7c99fd21e9cba19e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-173",
+      "pdf_page": 173,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-173.md",
+      "sha256": "ca027a7f173b589c5fbeec88e0b2f33ab50fa6a3d31a33ed04b5974b6ff44912",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-174",
+      "pdf_page": 174,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-174.md",
+      "sha256": "eff6abe953226dd4fa5b8442833f1ed594f3606343ed206f73ca341f6709aff2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-175",
+      "pdf_page": 175,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-175.md",
+      "sha256": "7e518636044f36a244bdd49c3dd04f37cbe3c4f1596fc53b8756cd3bc762c280",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "TEC-DRY-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-176",
+      "pdf_page": 176,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-176.md",
+      "sha256": "7445b5de16f7b257b0934943795837da507ad88de3dcc2b8de16712b6dce824e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "SCI-CARB-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-177",
+      "pdf_page": 177,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-177.md",
+      "sha256": "8902aea490213e8eb1d1b453a139f22700c2208296ae6de68bb552ac3ce83ea2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-178",
+      "pdf_page": 178,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-178.md",
+      "sha256": "f8e5111c0b786603761b8978dadb99affe1fdc122b4beb3069b2b1478b83c571",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-EGG-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-179",
+      "pdf_page": 179,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-179.md",
+      "sha256": "5d401bf5cd267f085e97b92e30c5dd647d1964db43ee0336fce96435c9cab0b9",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-180",
+      "pdf_page": 180,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-180.md",
+      "sha256": "5f60748db3d0b91dd2316d96c3d2fe82569d8bb93a0e5f95d5e8ceb8b0faeacf",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-181",
+      "pdf_page": 181,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-181.md",
+      "sha256": "c9b94d9b64e1dd019bf1c959ab4b297634b9c77f286e77be60fad711e123fad7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-182",
+      "pdf_page": 182,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-182.md",
+      "sha256": "872d790d9561ae35b34d4dcbac41a1bb7dd026036fb3c7a97ae385c78f540d53",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-183",
+      "pdf_page": 183,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-183.md",
+      "sha256": "14b6c7a35b7dcd4b9928ddc2b56bd118927ddcb405405f4c586f576fc64b11eb",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-184",
+      "pdf_page": 184,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-184.md",
+      "sha256": "ea3061d067a9dd15d5fd99b29d875de0ccded0f8f270a75b31090db0621d5fad",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-185",
+      "pdf_page": 185,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-185.md",
+      "sha256": "a2d6faaa7a598f453048e8efe61ed7a33df80a223d23acbedd0d3532d8e04957",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-186",
+      "pdf_page": 186,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-186.md",
+      "sha256": "645dfc0bbf6528e6da6d422f733ee0c355394260e058b22e5d5ba3817ec1d001",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-EGG-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-187",
+      "pdf_page": 187,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-187.md",
+      "sha256": "3e4dc2a7ff5c5d13d481ae55a22f1788eb99f2a045da36b98c2fe11a0fdb25e3",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 78,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-EGG-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-188",
+      "pdf_page": 188,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-188.md",
+      "sha256": "f7c8eb5f051d50a442297e2b64e41a76c9f85e23b3bda45365fd0bfb096b128f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-189",
+      "pdf_page": 189,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-189.md",
+      "sha256": "049433ec16a823b252d0165e0e17762e759dbd7c4fbff0b7e534bc402cf3d870",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-190",
+      "pdf_page": 190,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-190.md",
+      "sha256": "bf9ed95da6d3942e784fd421131925b07859709f1f9649fe941a2d88c59858bf",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-DAI-001",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-191",
+      "pdf_page": 191,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-191.md",
+      "sha256": "9d41f5e655e604c11426503f16ff608b0cecbf46a0a58621a1e546efe47415d2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-VEG-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-192",
+      "pdf_page": 192,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-192.md",
+      "sha256": "629093622de7a9d5e1fac2448756033237d428b2cbafec18f260a75c021842e7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "SCI-CHEM-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-193",
+      "pdf_page": 193,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-193.md",
+      "sha256": "278b3a89c9afd6ea4768fa7d2316986ba9ace647226dacf3362f88654a0baa47",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-194",
+      "pdf_page": 194,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-194.md",
+      "sha256": "4012141c9866ab6248b0aa591cc6dcd75b99488878073ae10a711d965ee030e9",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-195",
+      "pdf_page": 195,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-195.md",
+      "sha256": "146142ee9f5138846830f95b0511d31057d4786a4feac34a08909d909414877f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-196",
+      "pdf_page": 196,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-196.md",
+      "sha256": "86193267d8862cbf5299c5f7712152a8838d245fa01bb4e2f13ca4052f8d6155",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-VEG-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-197",
+      "pdf_page": 197,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-197.md",
+      "sha256": "78234c9aa3a26aabcda799d84a45f3d1f4cedef6175132545884c4c543642b16",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "TEC-MOIST-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-198",
+      "pdf_page": 198,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-198.md",
+      "sha256": "1ddcba11929e06c934bba4033859084a9f9562706275055f3971c08fc2b236fe",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-VEG-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-199",
+      "pdf_page": 199,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-199.md",
+      "sha256": "c34dcdf2bc732bf81289d481dbd53cdb7310c9c297edd4bc16f8a6ad5115d262",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-200",
+      "pdf_page": 200,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-200.md",
+      "sha256": "73df35f277bf27ca2750dc3710d183469d47bd331908aab014e4cd19cde49207",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CARB-001",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-201",
+      "pdf_page": 201,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-201.md",
+      "sha256": "6a662bf32a739521e29b376a4adf0bbb4bb8dbcbcd1d24de83439dea9c680b75",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-CARB-001",
+        "ING-POUL-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-202",
+      "pdf_page": 202,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-202.md",
+      "sha256": "e6fde7d66f4e97a86d1fe54e45d62e052e7bae3676e8158cfb82d40bdbb8ffc7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-203",
+      "pdf_page": 203,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-203.md",
+      "sha256": "001baf3485807fa0e995cf1ef940e935252a38960cf28952fde783bfa6230d1b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-POUL-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-204",
+      "pdf_page": 204,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-204.md",
+      "sha256": "d6148ad50a94f1dc21ee2655264e9aec0d99ee8c289cb89ae9c9d2e8fe811f32",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-POUL-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-205",
+      "pdf_page": 205,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-205.md",
+      "sha256": "e02a1b0aee832173c91b73ee9b5f5f363d54fc70bef69d561c7a6040438a3254",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "TEC-MEAT-004",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-206",
+      "pdf_page": 206,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-206.md",
+      "sha256": "22e211e80003b95a5cc4eeaae6a797da39958817e54a8b023dde94fe250eeb9c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "TEC-MEAT-004",
+        "EQP-PAN-001",
+        "EQP-SENS-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-207",
+      "pdf_page": 207,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-207.md",
+      "sha256": "053272bee2b0b0f53d2deb62faa8ace659ae5ef1818ebc2737d742f43aff333d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 82,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "TEC-DRY-001",
+        "EQP-PAN-001",
+        "EQP-SENS-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-208",
+      "pdf_page": 208,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-208.md",
+      "sha256": "a8ab31181e425dc497ebd9bfd7c89d0aa4a28f85cd59b48b030e20cbe6438224",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "EQP-SENS-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-209",
+      "pdf_page": 209,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-209.md",
+      "sha256": "3737e8fff1bb1e4b926e56b1de3f5c6e364bb78cf4e1b318115ac068e0a1f190",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-PAN-001",
+        "EQP-SENS-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-210",
+      "pdf_page": 210,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-210.md",
+      "sha256": "72f75fcdbe6c71d82717a06d11342913d5c3e638d91527a45d19735842d255a4",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-211",
+      "pdf_page": 211,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-211.md",
+      "sha256": "95cceeb5df0d6ae7222e363ff00faaeb00d1c1c93f3be4dae1e9ab96ae3df156",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 84,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-212",
+      "pdf_page": 212,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-212.md",
+      "sha256": "aeaeae40e27cad4e4c7f3407249d14b61641e37a91d085cec9a1923c48a7d903",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "EQP-SENS-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-213",
+      "pdf_page": 213,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-213.md",
+      "sha256": "ff3296c603f994524003a7f7dee8be16e4ed37759c157e9259a56acbb2a076f4",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-214",
+      "pdf_page": 214,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-214.md",
+      "sha256": "a28f503af03a1df2f1b62d866824ef954ce141e42551d07f78cd437ff6b54ab8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-215",
+      "pdf_page": 215,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-215.md",
+      "sha256": "054a20df6ab64931dd780aa66913928ea9e4de18e556a9abdaaeefdd8a71aa3d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-216",
+      "pdf_page": 216,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-216.md",
+      "sha256": "911013c769560e68b8a2f2aee0e50c0e56c0bd629d2bed65394236243dea895a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-217",
+      "pdf_page": 217,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-217.md",
+      "sha256": "d0fb33ae63a93111b968ea7dc45014cab168003315cef700adc75e10e6c2a9fc",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-218",
+      "pdf_page": 218,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-218.md",
+      "sha256": "1f1923fb362caec55c4dbcf297575e90758fb54246d1f3fcede6f397f2852199",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-219",
+      "pdf_page": 219,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-219.md",
+      "sha256": "8d85235848bd9b4a1141ce886fe5aec92efcfd4b1bb79c41a74ce5f5f48795d5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-220",
+      "pdf_page": 220,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-220.md",
+      "sha256": "11656ce39b08652ddc25ac63fd14fe1fcedb8fe68950251e3462de5c2c8d4376",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "TEC-MEAT-004",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-221",
+      "pdf_page": 221,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-221.md",
+      "sha256": "63517082686e3e40e0583bdab9862d0b762714496190bc0cdfeeef984618a959",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "TEX-CRUST-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-222",
+      "pdf_page": 222,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-222.md",
+      "sha256": "cc274fbdf551897d161d7f97f5f62e7dcf3f7e40243b0d1b0591a10fd3f15956",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-223",
+      "pdf_page": 223,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-223.md",
+      "sha256": "18ff4e0e133e8d95d89ce9318ddfc33d11be79b7739c80953b4a88de849e021e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-224",
+      "pdf_page": 224,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-224.md",
+      "sha256": "098c253553ba99c714e3aa289cb2a5b3ad16b10483192dac94d8924d291d482b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-225",
+      "pdf_page": 225,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-225.md",
+      "sha256": "69725ed954ef12a63cd16317744d15108aadf8b056ae735dd8c26970664ef292",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CARB-001",
+        "SCI-PROT-001",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-226",
+      "pdf_page": 226,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-226.md",
+      "sha256": "cb7b8f83698ede6e28f791b242986dddeea8fa32180793d61d1cdba796b85201",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-MEAT-004",
+        "EQP-SENS-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-227",
+      "pdf_page": 227,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-227.md",
+      "sha256": "d97519c39ee1e07cf2b910c86df5ee2b9e3446c47199a2448f5e370821239de4",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001",
+        "TEC-MEAT-004",
+        "EQP-PAN-001",
+        "EQP-SENS-001",
+        "TEX-CRUST-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-228",
+      "pdf_page": 228,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-228.md",
+      "sha256": "bc3ec19eec9fbb2cdc41c8d7f0450f81b6e8d0e3e038775d50dee98b79480b2c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-229",
+      "pdf_page": 229,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-229.md",
+      "sha256": "22d25859acd5d69d89908c4ea749a2439e798ca980212b3c58ee15a614d5bdb7",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001",
+        "EQP-ENV-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-230",
+      "pdf_page": 230,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-230.md",
+      "sha256": "f7c2f6d3585e5c5aaf380b79ffa2a389c6b5576a93f1d69e30555664ad228e88",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "TEC-COMB-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-231",
+      "pdf_page": 231,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-231.md",
+      "sha256": "0b1e8e2aea78e6e2739b4b80c95724f52d2da9ea89ad65619ed36f0bdae2a316",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-232",
+      "pdf_page": 232,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-232.md",
+      "sha256": "9549c79ff5b2ba7aa71f8c2863e62349e5215d0f29490658507817efb750fa58",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-233",
+      "pdf_page": 233,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-233.md",
+      "sha256": "26ad30b2265aff1ef3f30cf903afe21541d7729ecfc8bb97ecfad136302890f6",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-234",
+      "pdf_page": 234,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-234.md",
+      "sha256": "ef2d46713d806d44ca5bf13e83ca061a509023b605852441b9f1ec4e592c7682",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-235",
+      "pdf_page": 235,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-235.md",
+      "sha256": "9eb5c2adcd2e32b1a4a69d9492bf9ac866df471b2d263342101819d8bc4ab208",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-236",
+      "pdf_page": 236,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-236.md",
+      "sha256": "57fbd51438fdec1142a682a9b547a0f5ce94be5217b9feb5c35a6f43e5d853fe",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-237",
+      "pdf_page": 237,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-237.md",
+      "sha256": "3e1f4ce8ade67dcd99ac8744f895b1539153a4962e24018ccaa8858228346f20",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-238",
+      "pdf_page": 238,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-238.md",
+      "sha256": "28ea413affecf400dc9ec2373e27ad94f2dd1deadddb724b86d64a62d9e44016",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-239",
+      "pdf_page": 239,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-239.md",
+      "sha256": "76bc23ea91e99354b1fb5f317074aff73caee7eedc32143dae5faba4e81c6082",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-240",
+      "pdf_page": 240,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-240.md",
+      "sha256": "657021c2e3840d5d5e4b52627953a640371689f9675a0d983898c3db3b4e94d5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-241",
+      "pdf_page": 241,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-241.md",
+      "sha256": "441a6fb87f528c1f203f823bc90935e0112e2411aa471df8e68d0ea6e8226501",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-242",
+      "pdf_page": 242,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-242.md",
+      "sha256": "855d0a4870dea64f8458961856c954a5338b0f1fb461b47bc43d0d0b6599f9ef",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-243",
+      "pdf_page": 243,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-243.md",
+      "sha256": "4e6560c1b787f55dba408a5bc0842cedc7c0530e758ddae6463087070020808a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-244",
+      "pdf_page": 244,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-244.md",
+      "sha256": "1ae5f4773e76e81950f4c937871bea3955efdb7f5e62185f044f9ee3ffa2b530",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "TEC-MOIST-001",
+        "TEC-COMB-001",
+        "EQP-PAN-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-245",
+      "pdf_page": 245,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-245.md",
+      "sha256": "4127ee557b6b2b9b8a59042c2dc339d3da04d627446e05364f3a743232a044a3",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-MOIST-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-246",
+      "pdf_page": 246,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-246.md",
+      "sha256": "c18316dee39a644bd4eb99ba362b12d9055bac027205041f89902352a45ad202",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-247",
+      "pdf_page": 247,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-247.md",
+      "sha256": "527360f0d23375ff8e11c39a72eea090eaf013c1f394294255d37d9907234d1f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "EQP-PAN-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-248",
+      "pdf_page": 248,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-248.md",
+      "sha256": "5a73982469e2cc2141347171b9a12f230ec4af7640d98b64af2e03473e6b6fd5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 87,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-249",
+      "pdf_page": 249,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-249.md",
+      "sha256": "9ddb104dca90c055acdbce39b36b2318b716ba30787eb6744728dd2cde974018",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-001",
+        "ING-DAI-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-250",
+      "pdf_page": 250,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-250.md",
+      "sha256": "10093783b3119e0cf322c26c0c1d288e8ec961d2b8ad23d496075acbda3702f0",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "EQP-ENV-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-251",
+      "pdf_page": 251,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-251.md",
+      "sha256": "dc1d569d1db985b479f8c9f0ce3112321d395cebe4b846bb47bc514d21854e7b",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-252",
+      "pdf_page": 252,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-252.md",
+      "sha256": "118545906fd57386e9ca9db8446469cdea9ea6bd866495e4a4e7364dda02f048",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-253",
+      "pdf_page": 253,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-253.md",
+      "sha256": "aa52c909a2ef7846fcaf93d43d6a2a478a997d3156f68ddee3d1b428bbb71800",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 88,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-254",
+      "pdf_page": 254,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-254.md",
+      "sha256": "32c278ca015948995f2fc3895f27a667971a434ad2da23dec6142ce16d6b1124",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-255",
+      "pdf_page": 255,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-255.md",
+      "sha256": "d57c5e0107bb21e2d2057875717125c20d31331c9ca648532a175a43ed08b218",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-256",
+      "pdf_page": 256,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-256.md",
+      "sha256": "ab5ca885d723e4129eb44e50a22bda5e66fb22eef7a5a462dbf5c5a90092f653",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-257",
+      "pdf_page": 257,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-257.md",
+      "sha256": "dbd7e1c9fc5b9a57ddb4ce82cc6110b878680765dd56fd9305b96116f96428f8",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-258",
+      "pdf_page": 258,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-258.md",
+      "sha256": "104b10ca9eaef824d8d73951812950de6efacbcc024662e899ad368890d21f7a",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-259",
+      "pdf_page": 259,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-259.md",
+      "sha256": "106aeb046edd85a6453c76e26f90202de7a80b38b3350cb5ad457a91a4e9ed29",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-PROT-001",
+        "ING-MEAT-001",
+        "TEC-COMB-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-260",
+      "pdf_page": 260,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-260.md",
+      "sha256": "afc4a25c6a2087b26348623f2e0b36c868ab4d4c1a204991c475fd72943bf6f2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-261",
+      "pdf_page": 261,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-261.md",
+      "sha256": "779765a24753d8cc4623275d784c6fac96c001e21fd06908c91902b107339ad1",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-POUL-001",
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-262",
+      "pdf_page": 262,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-262.md",
+      "sha256": "12d1686704ccea25ed71ad9687ef0955fbe818672844c223de568797334a4dc2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-PROT-001",
+        "ING-POUL-001",
+        "ING-MEAT-001",
+        "EQP-ENV-001",
+        "DEC-PLAN-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-263",
+      "pdf_page": 263,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-263.md",
+      "sha256": "f16d49d34f955ed23bf8d66d80fba6001ed9a5ba215194c59b451d2ef5c2e8e1",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-264",
+      "pdf_page": 264,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-264.md",
+      "sha256": "c27c2964bd1cb10f761c3fbb37c50abf1e037260d6e0a4a64f6a7dbf2d275dd5",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-PROT-002",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-265",
+      "pdf_page": 265,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-265.md",
+      "sha256": "a6e78c979bba6899c652849f048d73cd77c96e26cfb3bb3cbc050274ab1dbf9c",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 89,
+      "concept_ids": [
+        "ING-FISH-001",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-266",
+      "pdf_page": 266,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-266.md",
+      "sha256": "bb81e67f8f7bc0e591018d018e2b99df384322eedb930e114d75887e72d5af4f",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-PROT-002",
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-267",
+      "pdf_page": 267,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-267.md",
+      "sha256": "112b7258984ee7def7a0c70eb4daa014c66c69a911a84967c2058132a64836b2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-FISH-001",
+        "ING-MEAT-001",
+        "ING-VEG-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-268",
+      "pdf_page": 268,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-268.md",
+      "sha256": "5c5ca395b809c096e1a9ccd0fcd4f772ae549fdbde5ea1b61fe942839b85f9e3",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-269",
+      "pdf_page": 269,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-269.md",
+      "sha256": "b4d27678b5a51478243c626437bb2113f879b29a082f4e56866702ef7123b851",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 91,
+      "concept_ids": [
+        "ING-MEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-270",
+      "pdf_page": 270,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-270.md",
+      "sha256": "d268dc143e8271c2db9434a99ac22d256e7bfda6a23ef7db361171685edc237d",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": [
+        "SCI-CHEM-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-271",
+      "pdf_page": 271,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-271.md",
+      "sha256": "bd8006b10ed396f61e8e7ca586d300410e4af3d07ec0cb64d371afb15a34b2c6",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 90,
+      "concept_ids": []
+    },
+    {
+      "id": "PAGE-AVIR-272",
+      "pdf_page": 272,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-272.md",
+      "sha256": "f0648a3b007f0a77c7ec78bfe113ab8303cf082466df5503b089884359ecc5bc",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "ING-DAI-001",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "ING-VEG-001",
+        "TEC-COMB-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-273",
+      "pdf_page": 273,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-273.md",
+      "sha256": "41be91485d9e58830b630bce223b6e0cff15c2018047d7b44785016e45239527",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-274",
+      "pdf_page": 274,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-274.md",
+      "sha256": "1168c5256db28b7e9f96fa667a3e194360e456be92b367433afd55fa706f8a4e",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 84,
+      "concept_ids": [
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-PROT-002",
+        "ING-EGG-001",
+        "TEC-EGG-004"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-275",
+      "pdf_page": 275,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-275.md",
+      "sha256": "4c7658786823263926bdc47a7b194aa51a0bf89d12771255232e7d2c9fd06e83",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 84,
+      "concept_ids": [
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-CHEM-002",
+        "SCI-PROT-002",
+        "SCI-PROT-001",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "TEC-EGG-004",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-276",
+      "pdf_page": 276,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-276.md",
+      "sha256": "415ee66aca4004d85473c4713ed82a028151489200d7d076a22284b074005adf",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-BAL-001",
+        "FLV-AROMA-001",
+        "SCI-HEAT-001",
+        "SCI-PROT-002",
+        "TEC-EGG-004",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-277",
+      "pdf_page": 277,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-277.md",
+      "sha256": "86e38243131035644b4a742bb09557c5c8c38f773a146f8aaeec3050319d4fa2",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-HEAT-001",
+        "SCI-CHEM-001",
+        "SCI-CHEM-002",
+        "SCI-PROT-002",
+        "ING-FISH-001",
+        "EQP-ENV-001",
+        "EQP-PAN-001",
+        "EQP-SENS-001",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-278",
+      "pdf_page": 278,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-278.md",
+      "sha256": "35160cb34435aa5ad5b6d94eea3fe475eb9b27db25247aadcb8fb0d060d2bc42",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 86,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "ING-EGG-001",
+        "ING-MEAT-001",
+        "TEC-EGG-004",
+        "TEX-CRUST-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-279",
+      "pdf_page": 279,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-279.md",
+      "sha256": "bf0580de3c6c987c0f8963c3ed651fa38cdc44b90601dfbf9a483bfc2d6672c9",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 83,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "SCI-CHEM-002",
+        "SCI-PROT-001",
+        "ING-FISH-001",
+        "TEC-COMB-001",
+        "TEC-EGG-004",
+        "TEX-VISC-001"
+      ]
+    },
+    {
+      "id": "PAGE-AVIR-280",
+      "pdf_page": 280,
+      "path": "09_Sources/Full-Books/Pages/avir/avir-page-280.md",
+      "sha256": "e5c352261a70afd0d9813ba5e982d4f3134d971d628b913a17a3dd0ae8dad251",
+      "native_text_chars": 0,
+      "image": true,
+      "ocr_done": true,
+      "ocr_confidence": 85,
+      "concept_ids": [
+        "FLV-TASTE-001",
+        "FLV-AROMA-001",
+        "SCI-CHEM-002",
+        "ING-MEAT-001",
+        "TEC-COMB-001",
+        "TEX-CRUST-001"
+      ]
+    }
+  ]
+}

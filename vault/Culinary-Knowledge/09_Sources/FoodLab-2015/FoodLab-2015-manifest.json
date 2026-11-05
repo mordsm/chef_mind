@@ -1,0 +1,4596 @@
+{
+  "source_id": "SRC-FOODLAB-2015",
+  "book_path": "C:\\Users\\lenovo\\Downloads\\J. Kenji López-Alt - The Food Lab_ Better Home Cooking Through Science (2015, W. W. Norton & Company) - libgen.li.epub",
+  "book_sha256": "9457a6e8f889baf3740e5e82bd136089c5ce255225d77eeb8069f11a12510a54",
+  "edition": "First Edition",
+  "year": 2015,
+  "format": "EPUB",
+  "ebook_isbn": "9780393249866",
+  "chapter_boundaries": [
+    [
+      14,
+      "1 Eggs, Dairy, and the Science of Breakfast"
+    ],
+    [
+      65,
+      "2 Soups, Stews, and the Science of Stock"
+    ],
+    [
+      118,
+      "3 Steaks, Chops, Chicken, Fish, and the Science of Fast-Cooking Foods"
+    ],
+    [
+      184,
+      "4 Blanching, Searing, Braising, Glazing, Roasting, and the Science of Vegetables"
+    ],
+    [
+      245,
+      "5 Balls, Loaves, Links, Burgers, and the Science of Ground Meat"
+    ],
+    [
+      277,
+      "6 Chickens, Turkeys, Prime Rib, and the Science of Roasts"
+    ],
+    [
+      330,
+      "7 Tomato Sauce, Macaroni, and the Science of Pasta"
+    ],
+    [
+      391,
+      "8 Greens, Emulsions, and the Science of Salads"
+    ],
+    [
+      432,
+      "9 Batter, Breadings, and the Science of Frying"
+    ]
+  ],
+  "chapter_end_exclusive": 455,
+  "pagination": "UNKNOWN; NO_PAGE_LIST_OR_PAGEBREAKS_FOUND",
+  "files": [
+    {
+      "internal_path": "text/part0000.html",
+      "chapter": null,
+      "sha256": "d1ee46a80e2531343826bc808d24d8360153c0d0a2ffde03b30392626d79728c",
+      "paragraph_count": 1,
+      "characters": 0,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0001.html",
+      "chapter": null,
+      "sha256": "56e1a78554d7cb3fd66788b0563410987c5f4edf99ea2bfdd3928ef546853bd2",
+      "paragraph_count": 3,
+      "characters": 57,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0002.html",
+      "chapter": null,
+      "sha256": "e7539601c02d1281ba47d9fface3200bfd375d5ecd3e44fc6d0413d17456630f",
+      "paragraph_count": 10,
+      "characters": 451,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0003.html",
+      "chapter": null,
+      "sha256": "c65bc9a00217689f76c9339862d40e547f493b24e478018354d55f2017a924f3",
+      "paragraph_count": 1,
+      "characters": 0,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0004.html",
+      "chapter": null,
+      "sha256": "3544cbc94d00ccfd92fc97d119afc425da385ba62059f56b5123bf3a833b75d9",
+      "paragraph_count": 21,
+      "characters": 815,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0005.html",
+      "chapter": null,
+      "sha256": "15e85b8b9287b5352e0950ee4e603d704ae8485bf3bc7fcc67be30d39fa1b8d2",
+      "paragraph_count": 18,
+      "characters": 704,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0006.html",
+      "chapter": null,
+      "sha256": "5f7df33d6519e767f3fb10f38f16aab305b4f75b6e4d824bdef7c829e1cfa6a9",
+      "paragraph_count": 5,
+      "characters": 1496,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0007.html",
+      "chapter": null,
+      "sha256": "396e95ec714aeebcbddc997d677bd7d2029232eca44102a23470a79ad3956937",
+      "paragraph_count": 1,
+      "characters": 0,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0008.html",
+      "chapter": null,
+      "sha256": "43b66a224239f6fa0a93ed84aae144fb09835e3ca36eedbdff7331893a6b9ecc",
+      "paragraph_count": 22,
+      "characters": 9607,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0009.html",
+      "chapter": null,
+      "sha256": "763e8c73cc3285ab37813a5e7117d10893bef1f7b0928ce23d331b0e6e25fb39",
+      "paragraph_count": 39,
+      "characters": 16680,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0010.html",
+      "chapter": null,
+      "sha256": "90bed36915008f9acec7ea1b53bd81ecc4749434c52375181c21a04f0a917de6",
+      "paragraph_count": 58,
+      "characters": 20554,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0011.html",
+      "chapter": null,
+      "sha256": "a8eb769b9c6a92b8ae097890becbce6ede6cb9a53fb8f81a9bfe0b3ddc4abdf5",
+      "paragraph_count": 74,
+      "characters": 16216,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0012.html",
+      "chapter": null,
+      "sha256": "08946d2693ec6cb8f3cb9bd0a02bbee026c233670a4965ca08026c3ce78faac6",
+      "paragraph_count": 373,
+      "characters": 117742,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0013.html",
+      "chapter": null,
+      "sha256": "eccedaf1311c1fd3f61c62c9742c7cf9d862db7afadb9198292e28744cab456f",
+      "paragraph_count": 139,
+      "characters": 23918,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0014.html",
+      "chapter": 1,
+      "sha256": "b05b2ec2dad163d499a80d3913d417c51c4627a41629f4694fb151ba7118cfd0",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0015.html",
+      "chapter": 1,
+      "sha256": "ef3d4e42c93e6bfcf6555bdd082b8a606c2414c7401f76f71dc82867623c5e19",
+      "paragraph_count": 3,
+      "characters": 33,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0016.html",
+      "chapter": 1,
+      "sha256": "bbd1efe01e6d3004ff962684a6982d18e103a6473b9ebb61baac43779e632715",
+      "paragraph_count": 41,
+      "characters": 1111,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0017.html",
+      "chapter": 1,
+      "sha256": "95e6ec2f6247daa983bfa3dbdfc6546d902bc24131434e0dc53ad3858332bf1b",
+      "paragraph_count": 8,
+      "characters": 1099,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0018.html",
+      "chapter": 1,
+      "sha256": "646b9047153db6d434702b7aa9558ba6a5763a86e003c54ac92f267c8a44f762",
+      "paragraph_count": 74,
+      "characters": 19085,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0019.html",
+      "chapter": 1,
+      "sha256": "c67d9e555400a2fa5061487562e22f946b5a5ee8a5325c303c61bb067ef6cbbf",
+      "paragraph_count": 56,
+      "characters": 11885,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0020.html",
+      "chapter": 1,
+      "sha256": "b61e29a5c41111309111b1a380b76010c5de48e672dda70ae8e8d911bc1a816e",
+      "paragraph_count": 6,
+      "characters": 778,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0021.html",
+      "chapter": 1,
+      "sha256": "0c0e1b3e27776a518d5b9cc33638e51ea2f1abf7ce8fb195a7459fb01464fa68",
+      "paragraph_count": 7,
+      "characters": 1537,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0022.html",
+      "chapter": 1,
+      "sha256": "7a913ce48962212b56615588839cf0d1d8302f89eb91a5d54fd9c8f87e54401e",
+      "paragraph_count": 7,
+      "characters": 663,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0023.html",
+      "chapter": 1,
+      "sha256": "fa792bf067541971eb7680797c3e8694908d9f269275acf7d039ddb66b4e9cf0",
+      "paragraph_count": 32,
+      "characters": 6102,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0024.html",
+      "chapter": 1,
+      "sha256": "84db2f4927a6273dc3094d7e75ea8639af2bbac1dda033106d915f7409d19ff5",
+      "paragraph_count": 29,
+      "characters": 7909,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0025.html",
+      "chapter": 1,
+      "sha256": "772887eab48a844ceeae97d79eddc263f810438a9f0a1537625b4d5ab06a42c6",
+      "paragraph_count": 17,
+      "characters": 2232,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0026.html",
+      "chapter": 1,
+      "sha256": "0c555103130493e490d49bb3ef5961c8c912f0d8c973056baabc0e05f0e3b818",
+      "paragraph_count": 19,
+      "characters": 1648,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0027.html",
+      "chapter": 1,
+      "sha256": "e626eef6c98d5f7efa9718e3c489ad593d21e522405b35998180ec3e7ca36c95",
+      "paragraph_count": 18,
+      "characters": 1380,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0028.html",
+      "chapter": 1,
+      "sha256": "951b057cce96dce272122e74dae885432bd6d615957b48ef89b1e2382f681f75",
+      "paragraph_count": 17,
+      "characters": 5268,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0029.html",
+      "chapter": 1,
+      "sha256": "9b8b6c8ea4234f77a981dfaee39a699d6e24ae5d997a822cf7a6a4cd578f37df",
+      "paragraph_count": 8,
+      "characters": 909,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0030.html",
+      "chapter": 1,
+      "sha256": "dafde95d0250c945c0b92122a41dcc458ef9a3a2051a9f43b074121209146ba1",
+      "paragraph_count": 21,
+      "characters": 6326,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0031.html",
+      "chapter": 1,
+      "sha256": "55d0bc66bfa7da1f200b8ca19d240f2e5f831e84ed1f61b09b708a10231c2e98",
+      "paragraph_count": 11,
+      "characters": 871,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0032.html",
+      "chapter": 1,
+      "sha256": "844dc4905ea9e0bd89da3cd4180c531d85f525748a77e5188912a6a74e1b9f28",
+      "paragraph_count": 13,
+      "characters": 1010,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0033.html",
+      "chapter": 1,
+      "sha256": "50c53ad25e9c3cecac011a70d9a072f63d3954cdb2e0489701a682a8da21d3c2",
+      "paragraph_count": 6,
+      "characters": 1670,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0034.html",
+      "chapter": 1,
+      "sha256": "04be280ab98bdcd505026f6dee5c298b32e58657cccaa11e931795be443c37a9",
+      "paragraph_count": 6,
+      "characters": 309,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0035.html",
+      "chapter": 1,
+      "sha256": "fb5ad67bcc23a844c20cb8903beb77a4b5a72d187fb1a99d2f9ad2d7f9a998be",
+      "paragraph_count": 9,
+      "characters": 2225,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0036.html",
+      "chapter": 1,
+      "sha256": "998a0266b5f55c6af51a2770c9a287b9e8960c76cabc57b0ddbb594a6c114be2",
+      "paragraph_count": 23,
+      "characters": 3604,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0037.html",
+      "chapter": 1,
+      "sha256": "69749671d72438e45290b832c79ba7a2475f10a985b1990ad2ba8591e3abf1ed",
+      "paragraph_count": 7,
+      "characters": 895,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0038.html",
+      "chapter": 1,
+      "sha256": "c681907b9f878a8e43d34bfbd27a4e82e0b75f9feee145da75d5e15c16f415b7",
+      "paragraph_count": 19,
+      "characters": 2200,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0039.html",
+      "chapter": 1,
+      "sha256": "ad2fbe73cb4ff014c8ef68332dccccf3b0fd4f8838f77df399efa3660189f17c",
+      "paragraph_count": 15,
+      "characters": 3902,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0040.html",
+      "chapter": 1,
+      "sha256": "37c3f0ee37fe7ef1aed93d3ef726e631c209cb94a75581a51d18aace3b5b38ab",
+      "paragraph_count": 5,
+      "characters": 471,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0041.html",
+      "chapter": 1,
+      "sha256": "72b759936cdcbe8f355ab8aaa3707295cd526b76c4c9a34dd10780c3ada02a70",
+      "paragraph_count": 6,
+      "characters": 446,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0042.html",
+      "chapter": 1,
+      "sha256": "1416f2957cd98ef690f2401e0f77104b7c650dbb7b44c438b653c2f8d5530f29",
+      "paragraph_count": 9,
+      "characters": 3306,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0043.html",
+      "chapter": 1,
+      "sha256": "e3f095b3a922794d8570c62bce5a7dfaa7e612bfa5e0b62aec13d56984ee59be",
+      "paragraph_count": 9,
+      "characters": 1255,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0044.html",
+      "chapter": 1,
+      "sha256": "1cb8621bda8e61cd2e10be78e49e39a7769cbca536ead729bd27a629c3039b40",
+      "paragraph_count": 14,
+      "characters": 2102,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0045.html",
+      "chapter": 1,
+      "sha256": "e56e365c8561e46e1a9e396bcf1b7733dd2d97861f9c3916961e8ee8cf174007",
+      "paragraph_count": 16,
+      "characters": 4616,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0046.html",
+      "chapter": 1,
+      "sha256": "51a29016b5c9e588f968b2de2eb4b171e83e742ecdae22a858b52d1fcdc05a5e",
+      "paragraph_count": 21,
+      "characters": 1914,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0047.html",
+      "chapter": 1,
+      "sha256": "5b498945aaeb3bf83244662623e59f3efbbce2803fe090b4536c95c2fa5d1af9",
+      "paragraph_count": 8,
+      "characters": 840,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0048.html",
+      "chapter": 1,
+      "sha256": "85505cd4ab919c8394793ee33dcf0d342cc91be62f6f88d31b912b25f9289099",
+      "paragraph_count": 56,
+      "characters": 14686,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0049.html",
+      "chapter": 1,
+      "sha256": "16ef7c1659a64dbd430b1a5e3dc32dc4373302b48d3095e0eb91a4c118b9125f",
+      "paragraph_count": 10,
+      "characters": 774,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0050.html",
+      "chapter": 1,
+      "sha256": "9b921cc217fa021e3c0eeeb5eddfecdcee2ca7ce13bb82870692295138fbc8f0",
+      "paragraph_count": 17,
+      "characters": 2517,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0051.html",
+      "chapter": 1,
+      "sha256": "2cab8bb7b6654802a019501d757bad3ccd454f554b58507c17b042b7e7844b73",
+      "paragraph_count": 19,
+      "characters": 5201,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0052.html",
+      "chapter": 1,
+      "sha256": "e608f624238729d5d8f2c3384b795b1c1fc6ca9666a6f881543f9078230ae964",
+      "paragraph_count": 10,
+      "characters": 1385,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0053.html",
+      "chapter": 1,
+      "sha256": "0bb9c3d35afda697b574f1303af5bb492c776467d077095aecf4529be49f23ee",
+      "paragraph_count": 9,
+      "characters": 417,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0054.html",
+      "chapter": 1,
+      "sha256": "c8c1ff445723fdc10a1f11c5b7ca476d272a6156209a601b13858f12a7fcc0a6",
+      "paragraph_count": 15,
+      "characters": 1356,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0055.html",
+      "chapter": 1,
+      "sha256": "cbb25a72d7a9995979c10362fc5da50b193b85d691803a9a2d6cdb5dc30ba0b7",
+      "paragraph_count": 8,
+      "characters": 2660,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0056.html",
+      "chapter": 1,
+      "sha256": "89adee289321c9f7cf7fbbe3de93cb9708811de5930a92cfdf288f897c782e8f",
+      "paragraph_count": 17,
+      "characters": 1896,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0057.html",
+      "chapter": 1,
+      "sha256": "cbcbaadc3124ebb312c7489a95fab266d0a94b8f6d5a3be3f42db1c0cd9dad21",
+      "paragraph_count": 28,
+      "characters": 6214,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0058.html",
+      "chapter": 1,
+      "sha256": "9bf12780e8454b2065e1bf8c545ae47e328cb6f76ec1a719691f8bd86ac48cbe",
+      "paragraph_count": 23,
+      "characters": 2954,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0059.html",
+      "chapter": 1,
+      "sha256": "f6d4a0b581e2d3f7fdde3ceed14fe2b87a2e85bb4977ed49607acc1677784a37",
+      "paragraph_count": 12,
+      "characters": 2025,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0060.html",
+      "chapter": 1,
+      "sha256": "826dc41b46f538c4764c9c89245ef50f71d3ef12dde9dc5ce0b37dfd89f1e78e",
+      "paragraph_count": 14,
+      "characters": 1949,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0061.html",
+      "chapter": 1,
+      "sha256": "6037c6d36bcd87e8a92747cd22ed3784fa06f39c0522b720e94347ee91b33ef1",
+      "paragraph_count": 14,
+      "characters": 4775,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0062.html",
+      "chapter": 1,
+      "sha256": "79ada381283a4270bd0c6c854b185bae74cd081704389ad162d26601d06ecaf5",
+      "paragraph_count": 48,
+      "characters": 4170,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0063.html",
+      "chapter": 1,
+      "sha256": "be61a95b22627819ff30506e4ffd1519e48c353b6a2fc466014873bba13c8c37",
+      "paragraph_count": 10,
+      "characters": 2143,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0064.html",
+      "chapter": 1,
+      "sha256": "6d71ae056a4d605a3d2353638874d733647412ae2b0ed8d84e56adbb00b7b01d",
+      "paragraph_count": 12,
+      "characters": 1336,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0065.html",
+      "chapter": 2,
+      "sha256": "38e9d3e6b075a882d5a4f24c1219973bda476ebd5857a414c8293886679becb5",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0066.html",
+      "chapter": 2,
+      "sha256": "14b9a18e3960f070bc85a7cdbafe349412829950c03dc15e3da385114f006b8e",
+      "paragraph_count": 3,
+      "characters": 44,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0067.html",
+      "chapter": 2,
+      "sha256": "667254fc9f1f675a84244a641bd00d9068fd2a106c871a47e37f665178d40ba5",
+      "paragraph_count": 32,
+      "characters": 988,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0068.html",
+      "chapter": 2,
+      "sha256": "2207ad8e1192b9d0d9ebb91beeadc9f805fb677224105789128dc46e4f3b6d06",
+      "paragraph_count": 9,
+      "characters": 1444,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0069.html",
+      "chapter": 2,
+      "sha256": "aefd1e87f6165c17bd28a24c56020b599612218464ab93acd68ba6f9d8eee2c4",
+      "paragraph_count": 78,
+      "characters": 17219,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0070.html",
+      "chapter": 2,
+      "sha256": "72d65806b3c46107dc92ddb5cc128df429ef57f8c1ab080b181490b1ef76b72b",
+      "paragraph_count": 20,
+      "characters": 2579,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0071.html",
+      "chapter": 2,
+      "sha256": "24aa03857b16c45080c82239fe91c87f52da1f597e86d643a1410eae42fd114d",
+      "paragraph_count": 18,
+      "characters": 1349,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0072.html",
+      "chapter": 2,
+      "sha256": "9dbe3ba02a3e10970d397bfaae4a0b40297390d21dbd438ec1c188824ca99caf",
+      "paragraph_count": 6,
+      "characters": 1838,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0073.html",
+      "chapter": 2,
+      "sha256": "39347a4f92892bc21510c7ac98436c258d352c7edebbc630b3458c2ba19f4304",
+      "paragraph_count": 15,
+      "characters": 1498,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0074.html",
+      "chapter": 2,
+      "sha256": "815f011cbf65533f774504743f4adb6bd9f713108c476f0c7b98f2bfb037944c",
+      "paragraph_count": 12,
+      "characters": 1332,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0075.html",
+      "chapter": 2,
+      "sha256": "186b0d924060e9877a4fe140e0b66efa15cfa6deeafc696ad2c263af465a48da",
+      "paragraph_count": 39,
+      "characters": 7453,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0076.html",
+      "chapter": 2,
+      "sha256": "c4babd39eb726fd65867c814253305aa625829ddb36947d9e8eadd52f0f10c8a",
+      "paragraph_count": 21,
+      "characters": 1958,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0077.html",
+      "chapter": 2,
+      "sha256": "643c99f4dd790748681b865443fef511a1247dde2fdeb821a6f008b80aaa0cd8",
+      "paragraph_count": 24,
+      "characters": 2299,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0078.html",
+      "chapter": 2,
+      "sha256": "4a07a3a803a8a1d0532ab7ce02daecacc7076c6aab5edd162f930f1e2decff61",
+      "paragraph_count": 20,
+      "characters": 2299,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0079.html",
+      "chapter": 2,
+      "sha256": "6e7a4353f231d439e6a7b96dbf16c50b3fe9e0448716f108827cb0f8eb1699d9",
+      "paragraph_count": 24,
+      "characters": 1904,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0080.html",
+      "chapter": 2,
+      "sha256": "3674c9da2f4751c385d6869b7b6d369c0a086ffd87a736f1e6fea57676d0eb40",
+      "paragraph_count": 62,
+      "characters": 15209,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0081.html",
+      "chapter": 2,
+      "sha256": "c43eedaf26320673c6936169999308a0b91a61a2f3b1001d2b28277942c63e3f",
+      "paragraph_count": 15,
+      "characters": 2445,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0082.html",
+      "chapter": 2,
+      "sha256": "63aa5f84bd3a09eba48ba4d8d8c438eb7f19b351cd7176e6834ea29ec24a0601",
+      "paragraph_count": 32,
+      "characters": 4526,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0083.html",
+      "chapter": 2,
+      "sha256": "eee931d404fe48662e369a1426e65fa8449ab7fff2395fcf7d28a8893a3c3118",
+      "paragraph_count": 14,
+      "characters": 4482,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0084.html",
+      "chapter": 2,
+      "sha256": "8c7643ae7f4f5021eb5b344102247df73de1fe430d54aec495cfd0205a8695de",
+      "paragraph_count": 7,
+      "characters": 1637,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0085.html",
+      "chapter": 2,
+      "sha256": "947b284407c8a2bd6cb2ddf8456e1d72a1fb17e6edae27a09c3fc83fc155b578",
+      "paragraph_count": 22,
+      "characters": 2236,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0086.html",
+      "chapter": 2,
+      "sha256": "27745407016037b1880af16dced3894d06f3b5f7bcadb0866b80da5b750380c0",
+      "paragraph_count": 25,
+      "characters": 3653,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0087.html",
+      "chapter": 2,
+      "sha256": "c2b7a06d2fb7bcbf3898863ce45b7bcf410a8b14ec43057625fdb25e49c3ca05",
+      "paragraph_count": 11,
+      "characters": 3613,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0088.html",
+      "chapter": 2,
+      "sha256": "143842224973adb0e343df5e03bb25fb1f8aaf180d9c44b35b4f2cb860a0650a",
+      "paragraph_count": 7,
+      "characters": 721,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0089.html",
+      "chapter": 2,
+      "sha256": "30db6f74ae181f99456c678eb74ae462b3cedafebb6ef0979dcf25cbb46dd043",
+      "paragraph_count": 29,
+      "characters": 4784,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0090.html",
+      "chapter": 2,
+      "sha256": "4d05df2f324ea764d21acbe1d94e85ca28530d038b0ecadcd488d43af8172cde",
+      "paragraph_count": 11,
+      "characters": 929,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0091.html",
+      "chapter": 2,
+      "sha256": "e577823daf824dff82a14097dabf40918add850221a89bb53f6f281480fc62e3",
+      "paragraph_count": 8,
+      "characters": 1536,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0092.html",
+      "chapter": 2,
+      "sha256": "6c7be65efd9eebf8d2aa01ae1a3966b5f7fe801fd00437f5018e6d67c8df0b07",
+      "paragraph_count": 16,
+      "characters": 1866,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0093.html",
+      "chapter": 2,
+      "sha256": "5b400b00c4172af7165a5a308dc7d34739fa780beca9eb546245030663aa38c6",
+      "paragraph_count": 33,
+      "characters": 8079,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0094.html",
+      "chapter": 2,
+      "sha256": "cf37126e927d6565bfcc35db81bb380d93cf5f19beb1ff66a61b9a9ecde5c19c",
+      "paragraph_count": 19,
+      "characters": 1945,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0095.html",
+      "chapter": 2,
+      "sha256": "f2774bac75805b46555809675f60e8b2bb4471bff5cbe9a65496d2db8aef28a5",
+      "paragraph_count": 39,
+      "characters": 7767,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0096.html",
+      "chapter": 2,
+      "sha256": "7b06bb359a9fcbd89c563da3000ba4bd7e13bf84abfda24ce6c4630e51c7c054",
+      "paragraph_count": 26,
+      "characters": 4930,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0097.html",
+      "chapter": 2,
+      "sha256": "6cc33242a761296095797a71451ea58eb174b2394d887080d49d3c0ad2494388",
+      "paragraph_count": 24,
+      "characters": 4776,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0098.html",
+      "chapter": 2,
+      "sha256": "7c6d7a86a2de59738e3f8b203ba81185da57ef5d2467768baeda2771b0d4a517",
+      "paragraph_count": 59,
+      "characters": 11553,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0099.html",
+      "chapter": 2,
+      "sha256": "78f6d2a1ff20939b969f8d4aafd7bfa9f3c6f2989da8f9d32227f018b10bb0b7",
+      "paragraph_count": 32,
+      "characters": 3532,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0100.html",
+      "chapter": 2,
+      "sha256": "86a655b6f5f4c36713ce64f344bdd452f6afbab926871134d8b1155905929797",
+      "paragraph_count": 10,
+      "characters": 3924,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0101.html",
+      "chapter": 2,
+      "sha256": "77da58345d32afdb1211b76e4c4670296f6b200292baa3a901caa49fe314fa44",
+      "paragraph_count": 9,
+      "characters": 1706,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0102.html",
+      "chapter": 2,
+      "sha256": "d98272ab11d61c94240dcd1e41436b7df79702e5514dc46796e63496131e738a",
+      "paragraph_count": 23,
+      "characters": 2389,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0103.html",
+      "chapter": 2,
+      "sha256": "9dfee42b472f8c1d1fd4d1acc8603a3f9937a00701269ec56ba2210b4276328a",
+      "paragraph_count": 24,
+      "characters": 2464,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0104.html",
+      "chapter": 2,
+      "sha256": "86fb13c63d1a9895c9dc93611982c1ebab8506647f6cb3fd4be76c77f819b8c9",
+      "paragraph_count": 11,
+      "characters": 1533,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0105.html",
+      "chapter": 2,
+      "sha256": "b9b213d29e73228f80e41a657859bd567accb4d22d963274591031eaf6ed1c04",
+      "paragraph_count": 22,
+      "characters": 2424,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0106.html",
+      "chapter": 2,
+      "sha256": "633642a911b7fc290bf478079a8133b9b9bbf9669e0a57a2f2e53504bf2649e1",
+      "paragraph_count": 23,
+      "characters": 2605,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0107.html",
+      "chapter": 2,
+      "sha256": "5ce9ec342f941f0c0b9021b3a89c0179a2a093048db1821f33c22db9aeebbda6",
+      "paragraph_count": 72,
+      "characters": 15527,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0108.html",
+      "chapter": 2,
+      "sha256": "104089dee0c72d1eb41998efeee36bc15bdbb86810e133c5fa62bbb49af52390",
+      "paragraph_count": 10,
+      "characters": 1242,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0109.html",
+      "chapter": 2,
+      "sha256": "3ee4051cdb33451b2ebf0903b2e273512367208ec0a0c3ea5423cb37586ac345",
+      "paragraph_count": 38,
+      "characters": 4247,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0110.html",
+      "chapter": 2,
+      "sha256": "65aa3dbad83d6fd9184636688a86ae10949166bfb48329802aad41e5e4af6017",
+      "paragraph_count": 40,
+      "characters": 7821,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0111.html",
+      "chapter": 2,
+      "sha256": "7608befc65cf0981a7a87500eaac3d3b6b38ba8b255efc0a27a332e7d0bf6841",
+      "paragraph_count": 26,
+      "characters": 2424,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0112.html",
+      "chapter": 2,
+      "sha256": "e246dd750472a24037f008d02a493e0e1f7c64373a5d0ecdcd4da25f86922184",
+      "paragraph_count": 21,
+      "characters": 5834,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0113.html",
+      "chapter": 2,
+      "sha256": "55fe946b46d6094073766b0f50f5d7fd7b2ccb319f8719790bbdf4e9130fa851",
+      "paragraph_count": 9,
+      "characters": 932,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0114.html",
+      "chapter": 2,
+      "sha256": "5b24d1afa39b743550de68879a4c5dec749e9a7ab5356cb7bff3ecf7e5ec2440",
+      "paragraph_count": 21,
+      "characters": 2021,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0115.html",
+      "chapter": 2,
+      "sha256": "9cffabd2d6c1a9961fe1bf6785e7bc4e8ea677962ef57a58e505ac85abd560b8",
+      "paragraph_count": 29,
+      "characters": 9837,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0116.html",
+      "chapter": 2,
+      "sha256": "c6007c01be6dd9754a2867bc6ddf144a57ed1157d9f1f1da8bbda2330a123893",
+      "paragraph_count": 25,
+      "characters": 2985,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0117.html",
+      "chapter": 2,
+      "sha256": "b8283075220b2d27d06d9182da1b7531b01620ad8735894c2d88d41f1f7b1d7f",
+      "paragraph_count": 23,
+      "characters": 2213,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0118.html",
+      "chapter": 3,
+      "sha256": "7d8739888198cb5d7de40b81cc5e6bf0e83525118b436abf5af34c7f6be48372",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0119.html",
+      "chapter": 3,
+      "sha256": "1e6c658e80cf4437135ba99a0c72722fe6361d4112c4b657f035160ba6df1fc3",
+      "paragraph_count": 3,
+      "characters": 54,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0120.html",
+      "chapter": 3,
+      "sha256": "61afaef9c837bc377f1f1c95b8f422a5b9016ac1f0dd31aa949906cd8db2f7c6",
+      "paragraph_count": 50,
+      "characters": 1612,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0121.html",
+      "chapter": 3,
+      "sha256": "0659501aa9b299d763cc35bd8808bf6e5878620fc8b2e41a463a93d5d278db4e",
+      "paragraph_count": 13,
+      "characters": 2873,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0122.html",
+      "chapter": 3,
+      "sha256": "8de84221f154b171de1e8fe839350705188c04b92e64ff7cbcab153d76e75f8b",
+      "paragraph_count": 32,
+      "characters": 7481,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0123.html",
+      "chapter": 3,
+      "sha256": "c903308756798449110a98e723186433eb0c77acab29c9f09386dab7342bf426",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0124.html",
+      "chapter": 3,
+      "sha256": "92e00ec56860453aafa1aa2ce3bfc8b500ff43764d4de1ba6cfe3718d30ed94e",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0125.html",
+      "chapter": 3,
+      "sha256": "37c6bc7c514d48cb15550889b57e153bae98976f97baf415249ce619c1cc6ff0",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0126.html",
+      "chapter": 3,
+      "sha256": "c94e8546052ec799426e9aaf55716826fae992dae5ac0b534af67be5b1502367",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0127.html",
+      "chapter": 3,
+      "sha256": "9b7b026bea55567e1f2c85df51ca2cf14a75da97a6dbeea0930cf0b1d9212969",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0128.html",
+      "chapter": 3,
+      "sha256": "dd512c723a783f5ab1d7386c385386d3e1817083ffdcc4a951c9769057f8aafe",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0129.html",
+      "chapter": 3,
+      "sha256": "22b09b2067d8338ce83932a729b3620ca5282e2d9ac6885bdc17ca0533d79b87",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0130.html",
+      "chapter": 3,
+      "sha256": "6206d4169c42a7ee64ba816d3f36be1e0f2afc97d7d369196c9e91b344fd57a0",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0131.html",
+      "chapter": 3,
+      "sha256": "079b3e0f8d076b3129b2db1aaece772ca02ce167a3c9c2495138c2a6e531b351",
+      "paragraph_count": 126,
+      "characters": 37564,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0132.html",
+      "chapter": 3,
+      "sha256": "f45ba3893fe52f8fe44dbaffb6e137fb47f9fbc499940a5df22100fdd51f222f",
+      "paragraph_count": 84,
+      "characters": 19422,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0133.html",
+      "chapter": 3,
+      "sha256": "b7b8864b90607ab60c0cb703b0bb8aff4c387781000cf1fcd6173d867298a382",
+      "paragraph_count": 17,
+      "characters": 1151,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0134.html",
+      "chapter": 3,
+      "sha256": "7e1e02c34e68f9556dbfbd7cc6bbc187d2b0bc1d746abbc6b6e954904eb3b520",
+      "paragraph_count": 27,
+      "characters": 8367,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0135.html",
+      "chapter": 3,
+      "sha256": "8372b5a11c009d3b2b87eccc0f3051523e727d0cf1fa3442bccca6ec3115cf68",
+      "paragraph_count": 13,
+      "characters": 3192,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0136.html",
+      "chapter": 3,
+      "sha256": "417077ddae5cfe52799be38f4d94a0ba358f30090d901ac28fb46b907ffa1bc4",
+      "paragraph_count": 15,
+      "characters": 2375,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0137.html",
+      "chapter": 3,
+      "sha256": "e792509e01686a60ca3fe621c47ba7ee325892506ba227ae4e789e18153d1144",
+      "paragraph_count": 14,
+      "characters": 1550,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0138.html",
+      "chapter": 3,
+      "sha256": "2a09f21c20a7c8d19fbc1b47e974eea793856a1e0b95b81ffc663c6a6ef06aa5",
+      "paragraph_count": 19,
+      "characters": 1995,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0139.html",
+      "chapter": 3,
+      "sha256": "06c7cf4b2de3f9ae69c0679f3fe54912a63f22d22c821a9fc5a1ccca8a3a79a2",
+      "paragraph_count": 18,
+      "characters": 4333,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0140.html",
+      "chapter": 3,
+      "sha256": "fd74ceb94bee36a8e839df8c28a321ade4cd0fbf108f9842e395d6f78f33082e",
+      "paragraph_count": 10,
+      "characters": 1629,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0141.html",
+      "chapter": 3,
+      "sha256": "a9c6a44c69452fd92485402ae0cb99c0f5b1073d943c1e4a73f324f072ec53f2",
+      "paragraph_count": 11,
+      "characters": 1919,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0142.html",
+      "chapter": 3,
+      "sha256": "448fe4131bfc8a9da3f2033ce5deee11eb08db84d12901e9036d2edfead62951",
+      "paragraph_count": 8,
+      "characters": 1904,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0143.html",
+      "chapter": 3,
+      "sha256": "dd18cb72bfc48e29e8b65361d6c9c9e8bb9817515f565d53c3984a54fbd86051",
+      "paragraph_count": 16,
+      "characters": 1178,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0144.html",
+      "chapter": 3,
+      "sha256": "ff805c040c55d5da8214609274ebb1344807b5635aba471580bc1bef95623a11",
+      "paragraph_count": 20,
+      "characters": 1738,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0145.html",
+      "chapter": 3,
+      "sha256": "2ab0371b29110e835f82e15ce95de8e5693b218277b441f393dbd57d28bf45a9",
+      "paragraph_count": 18,
+      "characters": 1386,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0146.html",
+      "chapter": 3,
+      "sha256": "08467882f6488b786fd4690066bab21676a8ff80e9949471c5c093f2e2b25a8b",
+      "paragraph_count": 4,
+      "characters": 619,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0147.html",
+      "chapter": 3,
+      "sha256": "06ec886793cdc93f4cbc1ae82d787d61114c99d8ab11174f8de0fdc4f557f7b5",
+      "paragraph_count": 18,
+      "characters": 2411,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0148.html",
+      "chapter": 3,
+      "sha256": "f88333e91551888a192c9734782046afd0bf606e31614876da6d9bd2f4a3edbf",
+      "paragraph_count": 21,
+      "characters": 4130,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0149.html",
+      "chapter": 3,
+      "sha256": "c2c835a26049aff602769203d6cc25079e6ce1276eb681e015f67356f00083bf",
+      "paragraph_count": 15,
+      "characters": 2390,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0150.html",
+      "chapter": 3,
+      "sha256": "aeb39e4994f10c33ad875746629e694324020c5ec09aa6b988ed446c55b95ac0",
+      "paragraph_count": 26,
+      "characters": 1570,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0151.html",
+      "chapter": 3,
+      "sha256": "de1b1605b66e1e2d7acb1e642fad3ff105c163a3c91fd43173d86ab83728eb56",
+      "paragraph_count": 140,
+      "characters": 29978,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0152.html",
+      "chapter": 3,
+      "sha256": "e7cb3cbbd752e218db028766189f6b2077e43d93b75dd8341e1bb38d6ccec102",
+      "paragraph_count": 23,
+      "characters": 2435,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0153.html",
+      "chapter": 3,
+      "sha256": "1592a0b3e95d27e5c00c2dd895325a60aab866a0cb92023335d54b33112c0538",
+      "paragraph_count": 20,
+      "characters": 2186,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0154.html",
+      "chapter": 3,
+      "sha256": "983b7b2238411e4182c11e6ac37f0c9b6d139e2158894e6cf11623bb763d618c",
+      "paragraph_count": 26,
+      "characters": 2780,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0155.html",
+      "chapter": 3,
+      "sha256": "9a6d8907d616bb612ed910ffa4a22942e6bc515cf34d4b00629fa861cefc2806",
+      "paragraph_count": 17,
+      "characters": 2043,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0156.html",
+      "chapter": 3,
+      "sha256": "c3a5c18a5ffcb57ceb07bc49ec513d0ac7dc114fb753702af60ae1560018cd3f",
+      "paragraph_count": 16,
+      "characters": 1796,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0157.html",
+      "chapter": 3,
+      "sha256": "9547dcb6e46505f5797ddd7c45abd0f347e242cc2775aee303dadffee1ddd00d",
+      "paragraph_count": 29,
+      "characters": 3387,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0158.html",
+      "chapter": 3,
+      "sha256": "9822db7d7ed5e8dc82480f4173ab4510e30cbc4ade0534730b1fb9b5f85e8876",
+      "paragraph_count": 52,
+      "characters": 7113,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0159.html",
+      "chapter": 3,
+      "sha256": "e99b90b32ce3db5c248af295fd366d4b172be9388ee8f6a2f00f4de57cf94106",
+      "paragraph_count": 37,
+      "characters": 3604,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0160.html",
+      "chapter": 3,
+      "sha256": "1152602769b7b89a922f633541f03a82a503d9f4072ea392c1d1b6582a306311",
+      "paragraph_count": 43,
+      "characters": 11228,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0161.html",
+      "chapter": 3,
+      "sha256": "c161ad3051783690ecf3214b397ffbfc3ccfa778b73069a80f23b8e53fb0c6a2",
+      "paragraph_count": 53,
+      "characters": 3438,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0162.html",
+      "chapter": 3,
+      "sha256": "c05fd23d6f573809ebdce4beb6b1eab8648c8d096ab234f687aee3ac4a635831",
+      "paragraph_count": 18,
+      "characters": 3157,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0163.html",
+      "chapter": 3,
+      "sha256": "33e7404db111d96b4236d27ee171512f07b219e48dab8d978615c5a5cc426f28",
+      "paragraph_count": 9,
+      "characters": 1091,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0164.html",
+      "chapter": 3,
+      "sha256": "c1db3f28af7c32afaa3eb8d96e28eec8eee922d3766d5ede2e3fe5e8846bb6bd",
+      "paragraph_count": 9,
+      "characters": 1623,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0165.html",
+      "chapter": 3,
+      "sha256": "5704e01a28f53d1ab91632ab954f69028117703c0146128bbaec508cef1b5a05",
+      "paragraph_count": 13,
+      "characters": 974,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0166.html",
+      "chapter": 3,
+      "sha256": "24abc2d676f1fd8c6e84b24da7628fea917a9a4539fcaa7f7da866cd75616b67",
+      "paragraph_count": 16,
+      "characters": 1122,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0167.html",
+      "chapter": 3,
+      "sha256": "0c29806e031b697c9747c8250af992d69af74f8743d374af2357180ed1c165da",
+      "paragraph_count": 15,
+      "characters": 1030,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0168.html",
+      "chapter": 3,
+      "sha256": "f7e106d5d56ca60d6d7715ff3968e0fe0975a6139c0383c3bfeeb304e298aa55",
+      "paragraph_count": 99,
+      "characters": 19191,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0169.html",
+      "chapter": 3,
+      "sha256": "c38512bcd9283889a78f609d7bd068a6192bef56f8e0dc459da971cb87b356a1",
+      "paragraph_count": 9,
+      "characters": 1390,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0170.html",
+      "chapter": 3,
+      "sha256": "c40ef6e33bb9b8931ffbaa332c61a11219917dcaf27396e49ebb8b590d44a377",
+      "paragraph_count": 16,
+      "characters": 752,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0171.html",
+      "chapter": 3,
+      "sha256": "89a00532cc67b8155c71580f8501210fa4aaf91682bc423d15861e3129a0bbf4",
+      "paragraph_count": 9,
+      "characters": 445,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0172.html",
+      "chapter": 3,
+      "sha256": "6af5eb27776640d32e64fba685d8f069ae647a19680aa0323173762f660cecdc",
+      "paragraph_count": 9,
+      "characters": 415,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0173.html",
+      "chapter": 3,
+      "sha256": "dcf428c266c74043578f78765dd0930c46fc25a939b577630d83fc56271f6a4f",
+      "paragraph_count": 10,
+      "characters": 432,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0174.html",
+      "chapter": 3,
+      "sha256": "2249b2f5a4e0139a91ea13e6a0784f745339747829f4f1e3b78ad57c45393c49",
+      "paragraph_count": 100,
+      "characters": 26199,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0175.html",
+      "chapter": 3,
+      "sha256": "4c7f5b5aff7db0338843a1dc53d650cba2a32f85b5beeb670d0116004f4e0567",
+      "paragraph_count": 14,
+      "characters": 1662,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0176.html",
+      "chapter": 3,
+      "sha256": "dc8b9a773102bfe48652e37c60efeae17eca54fb68c796a93fcfea919f1f9a76",
+      "paragraph_count": 24,
+      "characters": 1445,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0177.html",
+      "chapter": 3,
+      "sha256": "4db115395f29d974eaf71320d839917ca6f4d56a093ee3985ba0d4bcdd850474",
+      "paragraph_count": 28,
+      "characters": 2593,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0178.html",
+      "chapter": 3,
+      "sha256": "8badefd3ed15529fefff76deaf8e9968cb2b6931e66b8096dc7ca7b8a0b662b2",
+      "paragraph_count": 24,
+      "characters": 2483,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0179.html",
+      "chapter": 3,
+      "sha256": "895bf7701d40c0c4dd7374c5d0541080540d1aa130c6aa151514d1b541229b2f",
+      "paragraph_count": 12,
+      "characters": 1364,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0180.html",
+      "chapter": 3,
+      "sha256": "1652f37022b17073855ae268ec73d793d2b4fabd9c9a7b80a73faf9073f7b07c",
+      "paragraph_count": 17,
+      "characters": 1708,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0181.html",
+      "chapter": 3,
+      "sha256": "98beeb7f1bcc2454d68d2369f73a5bd030d00516f01dc2aa7f01cab2cf6bb177",
+      "paragraph_count": 18,
+      "characters": 1625,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0182.html",
+      "chapter": 3,
+      "sha256": "2864baea50e9e1fc755e95694585f44be6cbe3d37e889b1942f2aa0dd93c1b9f",
+      "paragraph_count": 8,
+      "characters": 1961,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0183.html",
+      "chapter": 3,
+      "sha256": "eef82466a1f6ff39d0850b6a33eda182ebd6204d0c2e1217104582147a9268e5",
+      "paragraph_count": 20,
+      "characters": 2999,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0184.html",
+      "chapter": 4,
+      "sha256": "69b5b295462788a54dcb2155ec9ff8d0b1a0a195e82cecf4733af1eb8962a8c0",
+      "paragraph_count": 4,
+      "characters": 70,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0185.html",
+      "chapter": 4,
+      "sha256": "4bcce540d9ba878b366467dbec0aced8a7e8329a3571a4e6c3c64a56caff2240",
+      "paragraph_count": 46,
+      "characters": 1602,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0186.html",
+      "chapter": 4,
+      "sha256": "cf928c994bcabe0ffe28f45a5144e91dfd9cfbcfc51e8f32d855a39139163581",
+      "paragraph_count": 10,
+      "characters": 1244,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0187.html",
+      "chapter": 4,
+      "sha256": "34f9822c935926e4a0b583b611d531c490d5a8bebb5c180424da2d7787ee85eb",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0188.html",
+      "chapter": 4,
+      "sha256": "452889f349ff1a0e0d15fc306d9852488bcc812e86a59ab7390cf029b7074f08",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0189.html",
+      "chapter": 4,
+      "sha256": "e5e57623fba26ea63d33757fd1c50640efba11527998e8efe8fa67b5b0b184d7",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0190.html",
+      "chapter": 4,
+      "sha256": "a6e91e514cc160dd92c63b7ea4dd670e75e044288fa5dbd59df9bdb269eb4fd1",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0191.html",
+      "chapter": 4,
+      "sha256": "8e54f828ffc8ccfa35c67a531733107ce5d922a216880d688541ab80b91504a1",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0192.html",
+      "chapter": 4,
+      "sha256": "33bded16bdd7b8f3cbc6b676343a901ac58ffe96002bcce14a9a2faf96b64552",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0193.html",
+      "chapter": 4,
+      "sha256": "a26dc35ec24fd382c6a52980abaffadd0a2441da83b969fe8865b9b1dc45511e",
+      "paragraph_count": 25,
+      "characters": 9308,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0194.html",
+      "chapter": 4,
+      "sha256": "a807df61ad39b10a579ad3a8e1a1b5bdd1031571cb64ebd700dd485d1fef1320",
+      "paragraph_count": 13,
+      "characters": 817,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0195.html",
+      "chapter": 4,
+      "sha256": "365c6ce7ead1e3184c33bea6966f3ab087c03264ea5b2cba870c176db7ab636d",
+      "paragraph_count": 14,
+      "characters": 1146,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0196.html",
+      "chapter": 4,
+      "sha256": "98fae937954e28fa246616eb45b25e7d739fd31d9d0041b56b68c2db2e6f1499",
+      "paragraph_count": 13,
+      "characters": 1016,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0197.html",
+      "chapter": 4,
+      "sha256": "16273d82c563b2e5ffb35a609caddc6fedd467d3ee496e0ba3fe0f0eb67e8685",
+      "paragraph_count": 9,
+      "characters": 544,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0198.html",
+      "chapter": 4,
+      "sha256": "f589dc037d76aa9c40ac2e1492e71e1f5a4aa54cad561afb9f57a4fb552a45a9",
+      "paragraph_count": 14,
+      "characters": 1166,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0199.html",
+      "chapter": 4,
+      "sha256": "2307452e5a76a16e2440e41564b446426c54eafa30f9c033312db732fc29c19f",
+      "paragraph_count": 15,
+      "characters": 1076,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0200.html",
+      "chapter": 4,
+      "sha256": "0fb84b8ef3d625ca6b9eed38ea41c97330e28a04f49be006e9401e425d41927b",
+      "paragraph_count": 7,
+      "characters": 604,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0201.html",
+      "chapter": 4,
+      "sha256": "8a81744dd3c761052453d30e9baf16ad7c6dc0fab2a38df57a91c542a8f2225c",
+      "paragraph_count": 38,
+      "characters": 5924,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0202.html",
+      "chapter": 4,
+      "sha256": "cb45b973f0019c7009c4d3fac8aaa779f629d26357d63366dc22113468439434",
+      "paragraph_count": 28,
+      "characters": 3815,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0203.html",
+      "chapter": 4,
+      "sha256": "920c19eb787ce81f621db7209ec32f55d4c1cb4d1340ce586a5afd47fcaf94b1",
+      "paragraph_count": 10,
+      "characters": 2800,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0204.html",
+      "chapter": 4,
+      "sha256": "1c890e8500d1f8f8376b3c935da31e56ab1cc6f860626c30016e27ab19a7dbbd",
+      "paragraph_count": 9,
+      "characters": 1209,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0205.html",
+      "chapter": 4,
+      "sha256": "3031c1425c4a3f3bf1d1d4bb815ccc449281e5d4679f2e81f269e1297d082abb",
+      "paragraph_count": 25,
+      "characters": 1815,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0206.html",
+      "chapter": 4,
+      "sha256": "b3194a5aae42b8c379093411ab6db942b9bc3021d734afdc392c433397ee1306",
+      "paragraph_count": 24,
+      "characters": 5724,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0207.html",
+      "chapter": 4,
+      "sha256": "d44f2ef64a58edd92448814b24fb379ca9376ced53745dd672b9f6fd37c3c942",
+      "paragraph_count": 12,
+      "characters": 869,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0208.html",
+      "chapter": 4,
+      "sha256": "bca4d89f8a175ab5beb1e8881da929b9b455bc8e39ec235640ba4ed0b8ac0c2e",
+      "paragraph_count": 13,
+      "characters": 923,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0209.html",
+      "chapter": 4,
+      "sha256": "3abf426d833502375a24c9e538107e65d484cb064bcd1e0edb1b649a5623b55e",
+      "paragraph_count": 16,
+      "characters": 4827,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0210.html",
+      "chapter": 4,
+      "sha256": "8dc566d050357b0cf8171893d4c1a43eddda2ade4055d22f28661cf32c8b028c",
+      "paragraph_count": 7,
+      "characters": 938,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0211.html",
+      "chapter": 4,
+      "sha256": "08f945ff2f07dea0449f0fad5614ad63869dc0d75b664799b6f9f9a4bcb3e190",
+      "paragraph_count": 12,
+      "characters": 1606,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0212.html",
+      "chapter": 4,
+      "sha256": "3f9184c920a6499f482e6b7c744af299424f4092dcda2918a47032c54bb608ec",
+      "paragraph_count": 20,
+      "characters": 3850,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0213.html",
+      "chapter": 4,
+      "sha256": "3166d92c753059b16dd35aba4a846c5ecea8c2488c98e328972c4cf636139981",
+      "paragraph_count": 21,
+      "characters": 3403,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0214.html",
+      "chapter": 4,
+      "sha256": "8623ce4ffcd422dcc1717d016560859171ea91d419225807a083cbdd846bdaff",
+      "paragraph_count": 10,
+      "characters": 1920,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0215.html",
+      "chapter": 4,
+      "sha256": "863aa4735223ac8b2bd595f3f50a556d57628109cd1ccd6819940cc98a70c04c",
+      "paragraph_count": 8,
+      "characters": 747,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0216.html",
+      "chapter": 4,
+      "sha256": "66c7b6c3f6901a87d054230e68e3421520aea92d8c3bc7410901d1530cdd1e13",
+      "paragraph_count": 17,
+      "characters": 2346,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0217.html",
+      "chapter": 4,
+      "sha256": "c38db00f8ab00b2f703a22b26c8e52a5d7722f25dfc69eccd9599e199c5f20f9",
+      "paragraph_count": 14,
+      "characters": 1066,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0218.html",
+      "chapter": 4,
+      "sha256": "8042be2a5c6bf3e82ea61db7cd38b3caad0afab70f1211ddc265fef13d8bc303",
+      "paragraph_count": 7,
+      "characters": 2260,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0219.html",
+      "chapter": 4,
+      "sha256": "857e906cb10e4d1c414797f8be908fa20d7356c05e6a22562d9a31acbe947b08",
+      "paragraph_count": 12,
+      "characters": 842,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0220.html",
+      "chapter": 4,
+      "sha256": "255ca592443a1581dcd0a6be6a0017a0ed498774b1adc75cf85e1d309f2dc5c6",
+      "paragraph_count": 4,
+      "characters": 2445,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0221.html",
+      "chapter": 4,
+      "sha256": "dd6209676c2cb6fe4cdce423a6c950c11140b6d845d36f228542bb35f9f2c50f",
+      "paragraph_count": 12,
+      "characters": 1248,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0222.html",
+      "chapter": 4,
+      "sha256": "e703fd6fa54148e34db6859963821c2f340c8010160ee416e31c445aecb0acd4",
+      "paragraph_count": 19,
+      "characters": 1963,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0223.html",
+      "chapter": 4,
+      "sha256": "07af8f13955df879e6119b340e5a2eb37c357ca800d387c2007087a6945c28b7",
+      "paragraph_count": 24,
+      "characters": 2681,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0224.html",
+      "chapter": 4,
+      "sha256": "bd9401dd9e5db7f9507f2bbdc2d92881a1b0149721fc4999eadc8c6856e4f581",
+      "paragraph_count": 25,
+      "characters": 3259,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0225.html",
+      "chapter": 4,
+      "sha256": "727daed1dde44f4d298bc46afa4564c265873f8c18c13f3b1a68f014e1ed5b0a",
+      "paragraph_count": 20,
+      "characters": 1937,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0226.html",
+      "chapter": 4,
+      "sha256": "eef7afd74a7f9aba22698127ec02690b10fe4bf7a6f7107b1573a056363f9f41",
+      "paragraph_count": 6,
+      "characters": 1333,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0227.html",
+      "chapter": 4,
+      "sha256": "461ac05215e68184608baef4b7b384961562d2870633900b7005f9f81540cde0",
+      "paragraph_count": 22,
+      "characters": 1432,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0228.html",
+      "chapter": 4,
+      "sha256": "2bc888bc7a5189930195956f67a6e719332d3c3e70cbfbd8db59393fe66a224d",
+      "paragraph_count": 16,
+      "characters": 2472,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0229.html",
+      "chapter": 4,
+      "sha256": "d5c8895388b9efe76ba08d2872586147ec292376cc26d7ebfd14eaee44ddc240",
+      "paragraph_count": 10,
+      "characters": 3066,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0230.html",
+      "chapter": 4,
+      "sha256": "81509dd3917d32acfdaaee10f04498a9dfaa0817f98cc824fe4474709723644c",
+      "paragraph_count": 15,
+      "characters": 1317,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0231.html",
+      "chapter": 4,
+      "sha256": "e16344a9ec356c5461d98a6f00e369c43af085806b47fa964ff8a4a4bc92a94e",
+      "paragraph_count": 13,
+      "characters": 1127,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0232.html",
+      "chapter": 4,
+      "sha256": "6db7d77f6aa45fb95bb873c97b57165b27634b5468c8fb5546c77308053ad5f5",
+      "paragraph_count": 26,
+      "characters": 2702,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0233.html",
+      "chapter": 4,
+      "sha256": "a8459c46da77bd24f64a6495d018fa65964fd68196fedf5e12b01873eb678efd",
+      "paragraph_count": 18,
+      "characters": 1646,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0234.html",
+      "chapter": 4,
+      "sha256": "17fe58f152df57e3711f492649cc560c97be89c360ec72dac727e5ebc45cdbd9",
+      "paragraph_count": 12,
+      "characters": 1235,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0235.html",
+      "chapter": 4,
+      "sha256": "f6b54ee1f7d05e5fe485ebe5c4ae320ae214d18c557a5d5c2c4bc4e423cdd826",
+      "paragraph_count": 18,
+      "characters": 5315,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0236.html",
+      "chapter": 4,
+      "sha256": "e6eee6d01137423acfc91aca2249ca2676c772f315ea1ea0ab9040f31f841918",
+      "paragraph_count": 25,
+      "characters": 6530,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0237.html",
+      "chapter": 4,
+      "sha256": "1b8cc605cc37af810ec7b59f0f543592b8c74fcae0670a122a1fe5f1e43bfe40",
+      "paragraph_count": 13,
+      "characters": 1926,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0238.html",
+      "chapter": 4,
+      "sha256": "fce5bd3c8c87dcd902b4ea4a07025e2bed97813297c82fee7c57374a6734ec33",
+      "paragraph_count": 2,
+      "characters": 406,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0239.html",
+      "chapter": 4,
+      "sha256": "c4cfc1b6bdc34fccd35102808ec7e5e792a63974c12d61b6a9bf9d694169456c",
+      "paragraph_count": 26,
+      "characters": 7239,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0240.html",
+      "chapter": 4,
+      "sha256": "625ca0cfd453443c7b7690d6de9b74a02f449b03c512b1ba14893f0ee2bee9a0",
+      "paragraph_count": 11,
+      "characters": 1054,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0241.html",
+      "chapter": 4,
+      "sha256": "471d7826ea70ae95998a99e74019bfdfff0fbc752bf02679c2e7d13cac79d967",
+      "paragraph_count": 11,
+      "characters": 1099,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0242.html",
+      "chapter": 4,
+      "sha256": "d00625e56a6e14541a6beb828ff55914e07ec310251267c2813ebaa431fe4e83",
+      "paragraph_count": 28,
+      "characters": 5071,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0243.html",
+      "chapter": 4,
+      "sha256": "a65c47e32d9c9bf10006e9ef0317874c6860224accd73032d856cfc0ac51683f",
+      "paragraph_count": 17,
+      "characters": 2346,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0244.html",
+      "chapter": 4,
+      "sha256": "1a660896849ecd62f16571d3dcb96a2b97496d127461ce589251f3173fa48c33",
+      "paragraph_count": 20,
+      "characters": 4022,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0245.html",
+      "chapter": 5,
+      "sha256": "85bf9843aa1ce2cc2ca2e5fc96539afa75106c1c4a9bf911db27a0c8a14d4d83",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0246.html",
+      "chapter": 5,
+      "sha256": "90f811bee7a95876c817417003f60d062409f0279185905ad316921da88f2894",
+      "paragraph_count": 3,
+      "characters": 44,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0247.html",
+      "chapter": 5,
+      "sha256": "39130d181be1694c953bd17d9023064a94df06352167b5f7f1ecd2617c3f0a7f",
+      "paragraph_count": 25,
+      "characters": 943,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0248.html",
+      "chapter": 5,
+      "sha256": "cf889214742e9453e247c5c2f6c67691338ecfc01fc7edd8ef6c3c1a86480f00",
+      "paragraph_count": 15,
+      "characters": 2242,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0249.html",
+      "chapter": 5,
+      "sha256": "4973642681b7e21e6ba0299d5684dc5470f07794871b7704d0095924ef7c41ac",
+      "paragraph_count": 14,
+      "characters": 3342,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0250.html",
+      "chapter": 5,
+      "sha256": "b3d3cc9c659ded10cd02be75bd14cbad8716a48e91170cf7cfa42f6a94903ce2",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0251.html",
+      "chapter": 5,
+      "sha256": "c7f53b30dcc178d45e2e02b71d02cb6586e44462ef2522021b0dd3ca839aa30a",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0252.html",
+      "chapter": 5,
+      "sha256": "1813037b56921786f9a3a3e383b42a1f8e06c0b265ca94bbfbe6873a89b19cea",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0253.html",
+      "chapter": 5,
+      "sha256": "eea776360ac2e9a45378016f4ebbeb8e9c931851b44e183a0d8ffc5e20b3471d",
+      "paragraph_count": 136,
+      "characters": 38030,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0254.html",
+      "chapter": 5,
+      "sha256": "30031a59f982e6b0ea4c8a701c1a41bb0df3606c89c3b2d41fb980135955e714",
+      "paragraph_count": 62,
+      "characters": 6120,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0255.html",
+      "chapter": 5,
+      "sha256": "74828db2e5e75fde8153162a939774419e62457faadedfb223c394a0abd215a3",
+      "paragraph_count": 21,
+      "characters": 2538,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0256.html",
+      "chapter": 5,
+      "sha256": "371cea4e0660ae48ff5854ccf62b553d9c0141ab47aa1c3c48f8a04c4d630c2c",
+      "paragraph_count": 36,
+      "characters": 7144,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0257.html",
+      "chapter": 5,
+      "sha256": "ab420aa031a1cb8af694d43bb0a015f1b51122dd003526189669dfe0a106f397",
+      "paragraph_count": 20,
+      "characters": 2247,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0258.html",
+      "chapter": 5,
+      "sha256": "dff2e6a39290a107ccb19dd7763ee0afbc45949d38bd901de799c64708fe6987",
+      "paragraph_count": 17,
+      "characters": 1866,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0259.html",
+      "chapter": 5,
+      "sha256": "5d4514ae7251f820f11ea47bb24a7b6f60f378e8848183acdf908a520dbdf1ee",
+      "paragraph_count": 25,
+      "characters": 2583,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0260.html",
+      "chapter": 5,
+      "sha256": "cf1ad331e414c4e23e72416a686a6b51cb57ddf10edb2c69aff812de4a618d5a",
+      "paragraph_count": 20,
+      "characters": 3411,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0261.html",
+      "chapter": 5,
+      "sha256": "840a85fcce6efa5cb8646a0f58ddf2e38c70e0caf022ddacea5bfd271702299b",
+      "paragraph_count": 20,
+      "characters": 2781,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0262.html",
+      "chapter": 5,
+      "sha256": "34f32a5d8f8cd2bd5626114607a97a08526fbb6b19d4e3103962d391d5054f3d",
+      "paragraph_count": 18,
+      "characters": 2348,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0263.html",
+      "chapter": 5,
+      "sha256": "dff5913a1dcd7899626236648f27538751dc3fc476704d94d13f697db17dbe49",
+      "paragraph_count": 26,
+      "characters": 3530,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0264.html",
+      "chapter": 5,
+      "sha256": "409945164c2d14ac694819e1694c9c7cf5b7d357d386e501330b1712a735496b",
+      "paragraph_count": 24,
+      "characters": 3517,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0265.html",
+      "chapter": 5,
+      "sha256": "9281418d4d1b16e8789f3fe243ccd2863c4e8e541235a548fdf7b707f5513097",
+      "paragraph_count": 46,
+      "characters": 14892,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0266.html",
+      "chapter": 5,
+      "sha256": "7a91f84bb1dd7781a2958917a29c1c06b8c5df33c9707d196062b406b30bd4b6",
+      "paragraph_count": 47,
+      "characters": 5214,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0267.html",
+      "chapter": 5,
+      "sha256": "ec5bb7199caf2545d40d7009ce5c4a067e44bcf5ebd7a67d166757f25f6b7d2a",
+      "paragraph_count": 13,
+      "characters": 1371,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0268.html",
+      "chapter": 5,
+      "sha256": "fbc15523560d88d59355751089c7436b2f3bd78b340d8c4f7537f339d66da7ee",
+      "paragraph_count": 14,
+      "characters": 4118,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0269.html",
+      "chapter": 5,
+      "sha256": "679867ca497df0189a7c3de662b65521f67f63c6c371f08619401d46a281da72",
+      "paragraph_count": 42,
+      "characters": 4170,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0270.html",
+      "chapter": 5,
+      "sha256": "831f603d2c8188f5686e104fa370d5a933e4b6f484977ffe38070d76bc3404ab",
+      "paragraph_count": 41,
+      "characters": 4247,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0271.html",
+      "chapter": 5,
+      "sha256": "3ddffbc82592940bc93e8bfaa6a52c73b824aa75b43850f1262f3390eaa3572a",
+      "paragraph_count": 47,
+      "characters": 9349,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0272.html",
+      "chapter": 5,
+      "sha256": "1c1d2e6d447abf8662f3836acedab4e190d3a7216659173930caa25e855fc215",
+      "paragraph_count": 37,
+      "characters": 7723,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0273.html",
+      "chapter": 5,
+      "sha256": "4504b7fd2bac400e58d15358af2f96a2fbee3d7454d1192087d7d7ee99d01215",
+      "paragraph_count": 16,
+      "characters": 1848,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0274.html",
+      "chapter": 5,
+      "sha256": "b3311ccbd25a5a12d13e4e87bd911ad594dcfce30afa81822b4ace971d3a5f18",
+      "paragraph_count": 10,
+      "characters": 605,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0275.html",
+      "chapter": 5,
+      "sha256": "ec4e02455dafe8ee7619fba15e0ab8eb232300d71ecf244094486c678c35dfb1",
+      "paragraph_count": 37,
+      "characters": 6751,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0276.html",
+      "chapter": 5,
+      "sha256": "4c0bb2efd3a7ff9ea2c9c4a7129d4e4121659f8cbed4c2f0ba1f07611a9a941b",
+      "paragraph_count": 16,
+      "characters": 2216,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0277.html",
+      "chapter": 6,
+      "sha256": "edfe96561e85eedecbcde3b90656da8704802d23620a0b28e81453a876294c8c",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0278.html",
+      "chapter": 6,
+      "sha256": "e46bc3708f62f21afc720b951cc6d3f2c7999d5dc3772108c9418e025cdad4d6",
+      "paragraph_count": 3,
+      "characters": 84,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0279.html",
+      "chapter": 6,
+      "sha256": "86cb663fff927e2742188cd0b00bdae31fe17e4861110247bcf7dc331fc87661",
+      "paragraph_count": 37,
+      "characters": 1362,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0280.html",
+      "chapter": 6,
+      "sha256": "fa21f8626f41c2303da9dc73911b426e3266a76aec658bc1001fd1eeb0a55186",
+      "paragraph_count": 18,
+      "characters": 3295,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0281.html",
+      "chapter": 6,
+      "sha256": "858c235c2acc29dd8f27377e2fd8e82e4ef30a0241917d09c98508b571d9b8c7",
+      "paragraph_count": 8,
+      "characters": 1977,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0282.html",
+      "chapter": 6,
+      "sha256": "da8ef10a4a58fa3432dcce9564a171bdeb034f70aea93cda15bfeaab01e84340",
+      "paragraph_count": 133,
+      "characters": 36396,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0283.html",
+      "chapter": 6,
+      "sha256": "8d56633fab1447130f308f9f003a240bd5ee3a64d655cc3326c8798c036d1a14",
+      "paragraph_count": 21,
+      "characters": 4538,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0284.html",
+      "chapter": 6,
+      "sha256": "4ad7d3b2ecbc14f457fd121a23dbb88f09e86dc87c6e9d6aff9df7d319c01166",
+      "paragraph_count": 7,
+      "characters": 2199,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0285.html",
+      "chapter": 6,
+      "sha256": "88a97ef54acf0d3aded68555fb550c0579b899f228238cbcb25ee7f53d92f1ec",
+      "paragraph_count": 55,
+      "characters": 13340,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0286.html",
+      "chapter": 6,
+      "sha256": "a45806a094c0e0632191f3150148311cc963a5513dba88b8b5da80e138df3b83",
+      "paragraph_count": 12,
+      "characters": 1430,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0287.html",
+      "chapter": 6,
+      "sha256": "4ca5fbeb16d6453d83e3db68d000bcccdfcab4646d1031a8309d8ef685d42021",
+      "paragraph_count": 19,
+      "characters": 1476,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0288.html",
+      "chapter": 6,
+      "sha256": "c54cca174d96c2b549c32fa18199f6e764a11ac609414374b811996acda375d7",
+      "paragraph_count": 17,
+      "characters": 2053,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0289.html",
+      "chapter": 6,
+      "sha256": "9721d3e384c35110082b5107e57eafad81145988d47f71e933c8c370993ec0a5",
+      "paragraph_count": 10,
+      "characters": 1479,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0290.html",
+      "chapter": 6,
+      "sha256": "0d8052d0765df1b8ca7053ebf7d31f35b91e3bce66cf9a6945dfa249de4d1ed2",
+      "paragraph_count": 15,
+      "characters": 1064,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0291.html",
+      "chapter": 6,
+      "sha256": "4af955c605b58f74ac16f0c04eb2fa393933e345b24fe64a45d70ff5d96ed6f4",
+      "paragraph_count": 24,
+      "characters": 2063,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0292.html",
+      "chapter": 6,
+      "sha256": "de638b77e5ef12ed1326ddb0c9495b80ef419284bb8efdb085881105bbc1885f",
+      "paragraph_count": 27,
+      "characters": 2206,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0293.html",
+      "chapter": 6,
+      "sha256": "59ceff47c5124781c2d8fab76815d1a9dd622d6bb478d84a8554ab977c758ce0",
+      "paragraph_count": 31,
+      "characters": 2504,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0294.html",
+      "chapter": 6,
+      "sha256": "7c3965cc4519a90f4282146c882874cf55bb8280673a2abd1a64dbfcc8adbad9",
+      "paragraph_count": 17,
+      "characters": 1887,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0295.html",
+      "chapter": 6,
+      "sha256": "9b646e8adb59cbe02237865d2e6ff80c1b74311a2296dc2cfa3557c8df3fac15",
+      "paragraph_count": 17,
+      "characters": 1857,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0296.html",
+      "chapter": 6,
+      "sha256": "27539c323b1c956047ded4212c9096e93026616550b97a3578e32b4b245a617c",
+      "paragraph_count": 28,
+      "characters": 3360,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0297.html",
+      "chapter": 6,
+      "sha256": "3e260082f4f5637f22de52b09410353e0a1d175a02c5e5479a81bb515f7db723",
+      "paragraph_count": 12,
+      "characters": 2377,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0298.html",
+      "chapter": 6,
+      "sha256": "c3c3d7c8047f486434a9e3fb076099cd84c1b42800067ecb9519b6a20225cf0d",
+      "paragraph_count": 48,
+      "characters": 6846,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0299.html",
+      "chapter": 6,
+      "sha256": "863d728a81c0db19e803db81336908a6ee64efba681a4cf4b2e3060431d2304e",
+      "paragraph_count": 30,
+      "characters": 3087,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0300.html",
+      "chapter": 6,
+      "sha256": "b9640cabe06dbe311ba9a6b2aabbf492d23e68346a7ec9338d4e0ddd43c49f91",
+      "paragraph_count": 29,
+      "characters": 4091,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0301.html",
+      "chapter": 6,
+      "sha256": "6ad885dd99dd7588cd3c5af23dcdf10a893aef00427bbbeac475a62226d1a5ef",
+      "paragraph_count": 26,
+      "characters": 3349,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0302.html",
+      "chapter": 6,
+      "sha256": "daede9d2c03030dba767da9e14e62eb442e9abbde18491335310511b48b73007",
+      "paragraph_count": 12,
+      "characters": 2952,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0303.html",
+      "chapter": 6,
+      "sha256": "4c063ac444f1dcd0ac3a4e17d47f2ee664bb1989ee4d9402acf69e47c94dd294",
+      "paragraph_count": 45,
+      "characters": 7240,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0304.html",
+      "chapter": 6,
+      "sha256": "bc7c58ec8495391d5138f58cd2ae9f6d3682f6adb5c6a564e1cceb8490d0d129",
+      "paragraph_count": 20,
+      "characters": 5043,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0305.html",
+      "chapter": 6,
+      "sha256": "38ff86040dd905d17b909fe163f5190ac6622bbbcdf9694c64f9c7f9897333e4",
+      "paragraph_count": 17,
+      "characters": 2263,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0306.html",
+      "chapter": 6,
+      "sha256": "6ce3d73792e84edc561ae44830e2e201cb4ba288b1827e47376a4d15c480f2a2",
+      "paragraph_count": 14,
+      "characters": 2763,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0307.html",
+      "chapter": 6,
+      "sha256": "6fae1e71aef47b06753b5fbd98f58c421ab6d4caab4c09af2e9c6a8844c7f852",
+      "paragraph_count": 9,
+      "characters": 668,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0308.html",
+      "chapter": 6,
+      "sha256": "f6bb21a178542fc5b997fca2b0f21b0475097f4cbcff87c2420ac1e70d9880f7",
+      "paragraph_count": 7,
+      "characters": 585,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0309.html",
+      "chapter": 6,
+      "sha256": "cecf3a488d4b70df73039e080e5ce8855622e82f2f082e736679d31a7cf76e6b",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0310.html",
+      "chapter": 6,
+      "sha256": "b95bc58dd7f1ebb87faecaaf7f78a3dd215a377e05c56197bc5bc08887402b8d",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0311.html",
+      "chapter": 6,
+      "sha256": "51b9015623cd47b968d969fb4e790bc3c571caee37439a684bef48495b4354e9",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0312.html",
+      "chapter": 6,
+      "sha256": "a7416864d3f6bdf1fb1583135bc82b99659b9f72a62de58f5d6e7385603c13a0",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0313.html",
+      "chapter": 6,
+      "sha256": "76468ee22a8a2463c513eac258a284996ff7d57add1e87ac62fa7dcc8aa247f0",
+      "paragraph_count": 97,
+      "characters": 19968,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0314.html",
+      "chapter": 6,
+      "sha256": "bbe1a8ddd9e2bbdf0ebb255e0c9222560a5c95e9cd58e4166d1f06c7a0b4f685",
+      "paragraph_count": 21,
+      "characters": 1219,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0315.html",
+      "chapter": 6,
+      "sha256": "456e8b19ac43b4c48c80d568be500f43017c815fe9c17dae149f6237f749cb0d",
+      "paragraph_count": 34,
+      "characters": 4719,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0316.html",
+      "chapter": 6,
+      "sha256": "945da773f22da22cee911a70714455cb62f8666a72d25e524c7325f7d3676c8e",
+      "paragraph_count": 33,
+      "characters": 3679,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0317.html",
+      "chapter": 6,
+      "sha256": "4c7341f7bd427d27609db362d10918dee85fd8d50d3ad2df20096a59346ffb8b",
+      "paragraph_count": 11,
+      "characters": 886,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0318.html",
+      "chapter": 6,
+      "sha256": "728932249322c6f593f6374a72da01575b128fb18629205c8ff34fa3d1d954c5",
+      "paragraph_count": 60,
+      "characters": 13858,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0319.html",
+      "chapter": 6,
+      "sha256": "d0355de05eedbb8695b1ccca581f6e43ab3535c4f7e5eabb40f1a4b4164c8614",
+      "paragraph_count": 29,
+      "characters": 5242,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0320.html",
+      "chapter": 6,
+      "sha256": "8e6eed3e4f2bfa64c015e90a76abdf233ce46816e37b38242599f7d024fa62e7",
+      "paragraph_count": 18,
+      "characters": 1973,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0321.html",
+      "chapter": 6,
+      "sha256": "e02a13aa3c73dc407845e81fbe9f7cd2d98e9fab1d9bec003816ba39bd7341b5",
+      "paragraph_count": 43,
+      "characters": 12172,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0322.html",
+      "chapter": 6,
+      "sha256": "de5d9a03d199ca9ea0cf190a80acaed57d8dd425f6a0fce170418609cdabd39e",
+      "paragraph_count": 11,
+      "characters": 2211,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0323.html",
+      "chapter": 6,
+      "sha256": "5fcb5a0bc6dc693ebaa74933814900a2e9e90cd3348d20bc459fa048f9c4beed",
+      "paragraph_count": 23,
+      "characters": 5454,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0324.html",
+      "chapter": 6,
+      "sha256": "e765932eae3fed415080249ae47c7bd39e46c74fa2bd0b507efc0da056ecf870",
+      "paragraph_count": 22,
+      "characters": 2572,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0325.html",
+      "chapter": 6,
+      "sha256": "6e9d2bd0bca7ca7f47e8373e6465df4bd29db65cb19d0458d8ba37f7edb6e33a",
+      "paragraph_count": 11,
+      "characters": 2103,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0326.html",
+      "chapter": 6,
+      "sha256": "c3d37b165b10a27afcb96f06b2d3fec2adab2b117b59ba547239ee1affc8046f",
+      "paragraph_count": 21,
+      "characters": 1946,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0327.html",
+      "chapter": 6,
+      "sha256": "88a9f6362062d5053a75e59b65335145c0b078f58c9c9d301c3992254244db98",
+      "paragraph_count": 21,
+      "characters": 5581,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0328.html",
+      "chapter": 6,
+      "sha256": "2d3aafe800346ba429cb100340fcfab40e0cde41bc6ffce8073395b791a0687d",
+      "paragraph_count": 23,
+      "characters": 3434,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0329.html",
+      "chapter": 6,
+      "sha256": "3a042410accc5ba07fa7a18fa83b57511c984be417a9ae5e0a4f595004181c66",
+      "paragraph_count": 27,
+      "characters": 4918,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0330.html",
+      "chapter": 7,
+      "sha256": "da8b1a41dd71cc76dc655d2005a10eede6de37041938a552599e23c8cb3add99",
+      "paragraph_count": 4,
+      "characters": 89,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0331.html",
+      "chapter": 7,
+      "sha256": "4da5a9c4debb5eb03b5dc1db0f5d588d16339f80784bcf41baf47ee25493609d",
+      "paragraph_count": 42,
+      "characters": 1647,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0332.html",
+      "chapter": 7,
+      "sha256": "b19389ced59016dcaf2d3366f1407f3baae53988d1ef9ffe488a29d1aed96ec2",
+      "paragraph_count": 11,
+      "characters": 1865,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0333.html",
+      "chapter": 7,
+      "sha256": "65bbf4d63c7886b9c0ae80c268db9c364bb2e5d66b7754cabe4bcf7527fe1f46",
+      "paragraph_count": 9,
+      "characters": 3422,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0334.html",
+      "chapter": 7,
+      "sha256": "6c8951c6aecc854b1db83aa286efe13b51082cd5733a3a85776409c99a3b685a",
+      "paragraph_count": 52,
+      "characters": 11828,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0335.html",
+      "chapter": 7,
+      "sha256": "83d2131b33e7e3283d901d89ee9da7d884e88331f9babcf92e9a5f50f3d11b32",
+      "paragraph_count": 12,
+      "characters": 1506,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0336.html",
+      "chapter": 7,
+      "sha256": "42a2e2f514ee605813120c9dbba02dca443028ffeea27379faf57047c9a7e1ab",
+      "paragraph_count": 37,
+      "characters": 7167,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0337.html",
+      "chapter": 7,
+      "sha256": "c729ed3cb2fab749832a266da1f952f5aaa65b70768803cbff3f8a3d98c9878b",
+      "paragraph_count": 14,
+      "characters": 1771,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0338.html",
+      "chapter": 7,
+      "sha256": "c8197623d475b094703b1274b66bfb77e4674c08297d61ee9bb4bd1c200b404a",
+      "paragraph_count": 19,
+      "characters": 3214,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0339.html",
+      "chapter": 7,
+      "sha256": "bd9655bed95d12fc4c8a204d5a07947eac81f7d620947fdd119d1dab87795a5d",
+      "paragraph_count": 25,
+      "characters": 3432,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0340.html",
+      "chapter": 7,
+      "sha256": "2f85fa78bf71737ccf8c980a3762d3415ce386773272c606ea54f75e2f3114fc",
+      "paragraph_count": 27,
+      "characters": 6114,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0341.html",
+      "chapter": 7,
+      "sha256": "0727c15f633bc50848be347b1a8fe63a732956605c197d8cd23643faa9a91094",
+      "paragraph_count": 23,
+      "characters": 2340,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0342.html",
+      "chapter": 7,
+      "sha256": "07558840e63cfb02f06b30a0df575ee24c0e1e1f0085b4a42062e2693f98a207",
+      "paragraph_count": 20,
+      "characters": 3059,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0343.html",
+      "chapter": 7,
+      "sha256": "72fa303dec633f593e259a49384dbcd1ac11d4d5ecb31dff2a7664c645992860",
+      "paragraph_count": 21,
+      "characters": 5175,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0344.html",
+      "chapter": 7,
+      "sha256": "d613b5c4242c43bc3ebcf68d71e5bf46e51856f4cf701d8f33ebed3ba24f03f3",
+      "paragraph_count": 16,
+      "characters": 1086,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0345.html",
+      "chapter": 7,
+      "sha256": "5f7b0d78101f6066269358e0fb386fecaa9ad3eccedeb02a7e23680985d50b5f",
+      "paragraph_count": 25,
+      "characters": 2717,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0346.html",
+      "chapter": 7,
+      "sha256": "f2883c6207526b09790d902c4047af9397101da1a0d66add3fc874e32c88aab3",
+      "paragraph_count": 26,
+      "characters": 2361,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0347.html",
+      "chapter": 7,
+      "sha256": "a8371960530092cdc1a0cd10466ab4c2aedc79210d51ed1daf9099dfd4674707",
+      "paragraph_count": 25,
+      "characters": 3099,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0348.html",
+      "chapter": 7,
+      "sha256": "07ee63e2afb29c7618b017bc1371abab91f54ea7503f83127f10da25b907e79a",
+      "paragraph_count": 16,
+      "characters": 3720,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0349.html",
+      "chapter": 7,
+      "sha256": "ded82294e41c284d7fa26898e16f7f2ea7226715ffac1596c06c7feeb00e52d5",
+      "paragraph_count": 30,
+      "characters": 3914,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0350.html",
+      "chapter": 7,
+      "sha256": "8d6211d94dcccdbf6b2dfa5d4121eaa27bc182322e0d9f7ee35a6fe286fddcf4",
+      "paragraph_count": 16,
+      "characters": 2705,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0351.html",
+      "chapter": 7,
+      "sha256": "9751251c511ed36ed5f57915b4bede8e980e9f51ed44e1575430f1dd181e51c5",
+      "paragraph_count": 33,
+      "characters": 3723,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0352.html",
+      "chapter": 7,
+      "sha256": "7cb7dff7c80640d7ebf44fcc4a39520d6a5c67b41ab109ec73af2f487bbd8270",
+      "paragraph_count": 14,
+      "characters": 2753,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0353.html",
+      "chapter": 7,
+      "sha256": "09bec7c779132f7245262f28bead697ba96fef428dbf520b5a88614edb496cc7",
+      "paragraph_count": 69,
+      "characters": 4627,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0354.html",
+      "chapter": 7,
+      "sha256": "e8e52e2520bc4cf81ef463630defda520c1fc777dff2df541a1a0b83eeebced5",
+      "paragraph_count": 11,
+      "characters": 1841,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0355.html",
+      "chapter": 7,
+      "sha256": "21b2fb61f1137aee0aebda7ae9d43b1c71ad9e076c8c5bbaf8671c921c4cf11b",
+      "paragraph_count": 16,
+      "characters": 1422,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0356.html",
+      "chapter": 7,
+      "sha256": "db3b0b3b4e269a10344ba5142e680572bab8b78394d120c775ecf746d1f5a00f",
+      "paragraph_count": 39,
+      "characters": 10248,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0357.html",
+      "chapter": 7,
+      "sha256": "b1fd3efc7e4f96e737cfeab9cd123e144db29a5fbb809f95fa4c7ab463c90505",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0358.html",
+      "chapter": 7,
+      "sha256": "7f90cf46d96bd21f10cca3cc71f58b3a655e5d6c2c3b34cc7c2b13f7a0dbc2e4",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0359.html",
+      "chapter": 7,
+      "sha256": "4ecbd4c0afd36c90de4bc677b8e5982304441dd5d2574caeeaee19665eda7f3a",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0360.html",
+      "chapter": 7,
+      "sha256": "ec0d4a836e83df36dcf669961e088893b776945cb9c4e354e37a9ad21f2fd6bc",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0361.html",
+      "chapter": 7,
+      "sha256": "5e50ebbedbea05682a5428628a4bd7de738ef9113f4c6e1baa56ca29e04f8d13",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0362.html",
+      "chapter": 7,
+      "sha256": "841e4eae7a98868dc9d8ef6113de3fdeecb1590f24f1a8e9780e6198cb91d185",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0363.html",
+      "chapter": 7,
+      "sha256": "a671427f46187a46dbabe65f675cbe270b40f9d8854cdf8b18e9ca05d81865c7",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0364.html",
+      "chapter": 7,
+      "sha256": "fc2fbe1b97b67edfe0e1dfff8cd31ab93155758cd0998591981831db2a5f638c",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0365.html",
+      "chapter": 7,
+      "sha256": "7f80769c408d8f2c1190126b64349fdf982ce6cd9c7cf403327ef053e6f7045e",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0366.html",
+      "chapter": 7,
+      "sha256": "60d0ae23a9ce01f92aa16b7a50238cfc9c5f6283120821bde3d48edd553c1793",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0367.html",
+      "chapter": 7,
+      "sha256": "1010e79de65420296e35fb8ea549f56d9af3307f92956a97388cc64d22d88ee8",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0368.html",
+      "chapter": 7,
+      "sha256": "60d26314b67ba064067fe0a6f5a40056814f60db341637242ada9e3bdff6f154",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0369.html",
+      "chapter": 7,
+      "sha256": "8023b59955d9070336770778519840f0edc84fb9c7de34721c7c347b9219e530",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0370.html",
+      "chapter": 7,
+      "sha256": "edf06ce02c291d0e41ff7acff8283bdf4c7d8d989adb4198e1eb878c1cc0ede0",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0371.html",
+      "chapter": 7,
+      "sha256": "45746a08aa5e4a491221f793aaf93f86e2d863fb3b8e4d4e10002739af9aa034",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0372.html",
+      "chapter": 7,
+      "sha256": "6b11a92c8eaf08d16c6a0aa50e78024456753f9d583ddcd488ff5b22e9dc022d",
+      "paragraph_count": 33,
+      "characters": 3395,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0373.html",
+      "chapter": 7,
+      "sha256": "36fe4c7f54f7342460c41ca4149d2769561f523f0181e9d9b29a68ab63b8ecd0",
+      "paragraph_count": 35,
+      "characters": 3426,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0374.html",
+      "chapter": 7,
+      "sha256": "525fcd77d03cc1e319022a934f22f20112ec5dda3f99c80e2f1aa12518503c5a",
+      "paragraph_count": 23,
+      "characters": 7663,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0375.html",
+      "chapter": 7,
+      "sha256": "945df40116289e866b01aa068897eccadfbb17ac84f2172e0ff18d70bbacdc4e",
+      "paragraph_count": 44,
+      "characters": 3992,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0376.html",
+      "chapter": 7,
+      "sha256": "502400c0eb24a5893699c7cb20b0e30316e90aa6781bf1ab0835cbecdb58101e",
+      "paragraph_count": 11,
+      "characters": 795,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0377.html",
+      "chapter": 7,
+      "sha256": "421dab6e28e22079dce1a41b869da2a20396c346e6390ea54b4ed736841353a1",
+      "paragraph_count": 33,
+      "characters": 3264,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0378.html",
+      "chapter": 7,
+      "sha256": "24978fe68755606f2e9097f1d7d0f56c7ef2c7df5d332818de6f03e99f51f7b8",
+      "paragraph_count": 14,
+      "characters": 3635,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0379.html",
+      "chapter": 7,
+      "sha256": "7e4937933b47749441f6234c3acd6d55a19f92bea4ac1a57bfc1262aaa8a4a85",
+      "paragraph_count": 22,
+      "characters": 2730,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0380.html",
+      "chapter": 7,
+      "sha256": "ae90d2d8dbdd90138a79a6571a60654bcd53b5716e686721336f77cc4984de5c",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0381.html",
+      "chapter": 7,
+      "sha256": "eee4eeb68bf917e69e84fb6411668e93f6d8aef7ef1ad2089264eb78cd9b554a",
+      "paragraph_count": 17,
+      "characters": 3270,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0382.html",
+      "chapter": 7,
+      "sha256": "21c8fb06d9b3cc9ca6bb132dbef5bf983ef520edf4f049bb25553695530b6747",
+      "paragraph_count": 34,
+      "characters": 4322,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0383.html",
+      "chapter": 7,
+      "sha256": "d8155532e8bdc59c5a8dbfa49e59cfd7a79a93a99eac64d1f91ccee17819947f",
+      "paragraph_count": 30,
+      "characters": 5194,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0384.html",
+      "chapter": 7,
+      "sha256": "d04be0ff49e79804d215bf13809b6f993f3936119bdb21242f203befcf5ccf5e",
+      "paragraph_count": 25,
+      "characters": 2307,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0385.html",
+      "chapter": 7,
+      "sha256": "467bef663b853f57bea2e50bae9ed7ae8645ffed3c5ed36d2c4478300f87c229",
+      "paragraph_count": 22,
+      "characters": 2306,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0386.html",
+      "chapter": 7,
+      "sha256": "ad090f8f591aaafdda6739054d2a6e5d9781ec570cf97bfc9310c7f1f3e746c6",
+      "paragraph_count": 17,
+      "characters": 1850,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0387.html",
+      "chapter": 7,
+      "sha256": "995eeb218cfe508efa92e41010682c4fc23bd40ed9639331f4e50962a2147000",
+      "paragraph_count": 60,
+      "characters": 12049,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0388.html",
+      "chapter": 7,
+      "sha256": "df72ce227209f9a1f2ecf2f625ccc61bf0f03442a8bdeec310b77b1fcb10dfb0",
+      "paragraph_count": 22,
+      "characters": 3072,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0389.html",
+      "chapter": 7,
+      "sha256": "56eb087868400ad12c5a89db2374566255fa9a14efb7213e612361d6b0185fd5",
+      "paragraph_count": 31,
+      "characters": 6599,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0390.html",
+      "chapter": 7,
+      "sha256": "1db1e337bc429c823872b151e4e439eb0106f8a183111dd55833cdeedb05206d",
+      "paragraph_count": 35,
+      "characters": 4624,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0391.html",
+      "chapter": 8,
+      "sha256": "4416642d8d1656b95e8ad284d4188a12fdd23feea10a5f51f5b238859d1844d3",
+      "paragraph_count": 2,
+      "characters": 0,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0392.html",
+      "chapter": 8,
+      "sha256": "27852d31702c026aba1a3904d4b6bdf4377752a3cb9ed3396279dee5f3c3ae17",
+      "paragraph_count": 3,
+      "characters": 136,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0393.html",
+      "chapter": 8,
+      "sha256": "b358922048218197205e563ee7462385afecab603268eca3c03dff94f0b80f20",
+      "paragraph_count": 39,
+      "characters": 1489,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0394.html",
+      "chapter": 8,
+      "sha256": "1cd7e814752cf68841d66e97a684c0c29024f4ce101010e6001267b732af5296",
+      "paragraph_count": 25,
+      "characters": 5162,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0395.html",
+      "chapter": 8,
+      "sha256": "64f71358fa6e75770e12c1c9c52a05f89922af1dcabebbce8596594b1c09e4af",
+      "paragraph_count": 63,
+      "characters": 11510,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0396.html",
+      "chapter": 8,
+      "sha256": "ef51c40cc255c2c554c69e0d2caad392f1044e4425be7ead2ebf5fc0a053f2c4",
+      "paragraph_count": 9,
+      "characters": 951,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0397.html",
+      "chapter": 8,
+      "sha256": "45e881240d44668308565f3b9369ac22a208229b41e2879ec89e4c1b9d166f5b",
+      "paragraph_count": 83,
+      "characters": 17570,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0398.html",
+      "chapter": 8,
+      "sha256": "cb0bef703a49e1dc22a2620ee52a53f9552faaffb359c32a8d741597be1d9d20",
+      "paragraph_count": 12,
+      "characters": 891,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0399.html",
+      "chapter": 8,
+      "sha256": "11774f69d01d1e72c7958b8c254027b8c9901e558e47edc69a35055fe547f263",
+      "paragraph_count": 11,
+      "characters": 1028,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0400.html",
+      "chapter": 8,
+      "sha256": "8ebcbaa1834355846b32eddf4ff276d415a09f46d4dc66d3785c688f34e45344",
+      "paragraph_count": 6,
+      "characters": 389,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0401.html",
+      "chapter": 8,
+      "sha256": "11bf3c69c39ea23d683818d9ff74f0585f81c6af852aeb4e9ae6850776206e6f",
+      "paragraph_count": 20,
+      "characters": 1688,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0402.html",
+      "chapter": 8,
+      "sha256": "7b2facd5ff791db99b4dfbbd95f2b7b92c6b7590d9588d0bb7973f184f622809",
+      "paragraph_count": 41,
+      "characters": 7462,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0403.html",
+      "chapter": 8,
+      "sha256": "414d79030661a6bc89ec0e71dc3f5e303a8dd86843d58108361cb62b2bf9aa76",
+      "paragraph_count": 28,
+      "characters": 4602,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0404.html",
+      "chapter": 8,
+      "sha256": "8a9270896f510b9889515531da46deba7c1d4d335dd09fc800ce47ae12422524",
+      "paragraph_count": 28,
+      "characters": 2159,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0405.html",
+      "chapter": 8,
+      "sha256": "39f670cdc9daeee8ea33a2d0736e1230c43e781a34ebfe14ae3a21240680b929",
+      "paragraph_count": 20,
+      "characters": 1568,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0406.html",
+      "chapter": 8,
+      "sha256": "9860744c78887a7a37cc0bc25aa69ec1f02a33512896d1cd44371949f3aac69b",
+      "paragraph_count": 27,
+      "characters": 2035,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0407.html",
+      "chapter": 8,
+      "sha256": "a494bbbe724e2ef0ed508ac3b2682470c4b47e5654151387501c261ea4e5c6e9",
+      "paragraph_count": 20,
+      "characters": 3128,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0408.html",
+      "chapter": 8,
+      "sha256": "e31febffa71424dfdaf318dc48b84a5f998411d4cd77fb5639c547e1303f4388",
+      "paragraph_count": 26,
+      "characters": 2741,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0409.html",
+      "chapter": 8,
+      "sha256": "69cb20c33afa9df58c92f20b777f859332d3dc1ebecf0f50c4f5cbfdbf7b9f25",
+      "paragraph_count": 31,
+      "characters": 3474,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0410.html",
+      "chapter": 8,
+      "sha256": "d97076fb3e873908610278fcfcf61e3c9016a533c016f39ddb83a9a31b8c4cec",
+      "paragraph_count": 21,
+      "characters": 1506,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0411.html",
+      "chapter": 8,
+      "sha256": "97ec992e29223794580262050a585960374c6457ec62c0810ccbe29b6dcfa5a2",
+      "paragraph_count": 11,
+      "characters": 565,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0412.html",
+      "chapter": 8,
+      "sha256": "f6ae687d0b0391630aecf673ca56943a0894fa07b99bcc50bd91b8864211b031",
+      "paragraph_count": 22,
+      "characters": 712,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0413.html",
+      "chapter": 8,
+      "sha256": "22cbde91d09a27a94e22e1a0e9f91b3ab65d8c8b132375234d744a0bd84679cf",
+      "paragraph_count": 41,
+      "characters": 15525,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0414.html",
+      "chapter": 8,
+      "sha256": "d77c56715ff2216abee84345d4852e6ed641273b41fe5782d7bab7eaa912510c",
+      "paragraph_count": 54,
+      "characters": 3641,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0415.html",
+      "chapter": 8,
+      "sha256": "657816b85da08842ed2ce284d3f6295cdc1b3f8bf1d597e3e4a5b760d7518bd8",
+      "paragraph_count": 22,
+      "characters": 2550,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0416.html",
+      "chapter": 8,
+      "sha256": "81c1781cf385bba46c5ad846782851058ccbb72dd56025676ea2045146564b32",
+      "paragraph_count": 63,
+      "characters": 12112,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0417.html",
+      "chapter": 8,
+      "sha256": "ab792761750b9a9af3c48f42ed97f742435ee081a1ae27b26718cde5796697ba",
+      "paragraph_count": 17,
+      "characters": 1381,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0418.html",
+      "chapter": 8,
+      "sha256": "4a5b46321d88cb51189727de3746422cc5a1212d9e618089272084d68f231369",
+      "paragraph_count": 34,
+      "characters": 4400,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0419.html",
+      "chapter": 8,
+      "sha256": "d956f3cd45b9f5f0d78a4aa0a165007603f8292b38bf191911964ba9a5cdda68",
+      "paragraph_count": 14,
+      "characters": 1616,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0420.html",
+      "chapter": 8,
+      "sha256": "68cf6a13fed9e2d32d5ba8cd422421c40d8e6e99f3707ac486551d611c9e950c",
+      "paragraph_count": 20,
+      "characters": 2771,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0421.html",
+      "chapter": 8,
+      "sha256": "a77702b49263492ede9d5b636141dc789b474239d4ed965faf3e88e49ff3dc6b",
+      "paragraph_count": 50,
+      "characters": 7331,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0422.html",
+      "chapter": 8,
+      "sha256": "16c77f545a18243cf3a1c694b33e878cf48b0f8cbfc4402ecf023d34133c593e",
+      "paragraph_count": 23,
+      "characters": 2175,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0423.html",
+      "chapter": 8,
+      "sha256": "1c7f6572f18e2f65785b08d4f4f1e3cd9c3ae62650d740f75476747cfee34ef4",
+      "paragraph_count": 36,
+      "characters": 4501,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0424.html",
+      "chapter": 8,
+      "sha256": "e4c3d195178166eb385557ae201155515cc16656aa38c2e03b479adcec0a9092",
+      "paragraph_count": 5,
+      "characters": 699,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0425.html",
+      "chapter": 8,
+      "sha256": "0c1b7c0e0382c1b4fe48654625d3c9b9883dafa361c85c77c0857239dd5ef85f",
+      "paragraph_count": 19,
+      "characters": 1779,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0426.html",
+      "chapter": 8,
+      "sha256": "b96f9593d754a3f0579273f32fe691161021c37da08518c2641d40e5bf89a196",
+      "paragraph_count": 13,
+      "characters": 2528,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0427.html",
+      "chapter": 8,
+      "sha256": "f69cb873c7bc8b183b27cbbf16049200f393e453453dc4f954e446be0bdc652b",
+      "paragraph_count": 27,
+      "characters": 3658,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0428.html",
+      "chapter": 8,
+      "sha256": "35dc2e898ce6cd7de85ef6866d674195a2d44d78d96815cee34684657af5c40b",
+      "paragraph_count": 8,
+      "characters": 390,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0429.html",
+      "chapter": 8,
+      "sha256": "7661d4903b7b1d03960c7c0fa4a5bd77adb426efebbaba6e51e2bc665527727d",
+      "paragraph_count": 11,
+      "characters": 1140,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0430.html",
+      "chapter": 8,
+      "sha256": "0aa627e3ee6a6f5ac32923701f72d301030760f73a3d499cf48076f59da74b41",
+      "paragraph_count": 30,
+      "characters": 2201,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0431.html",
+      "chapter": 8,
+      "sha256": "dd4cf347923c75d29be586a91339b26889a1a3a66d935765bdc5c9ff21b62887",
+      "paragraph_count": 36,
+      "characters": 3641,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0432.html",
+      "chapter": 9,
+      "sha256": "5f304b37f6a5f67b1db0f37dc3ed36d4ec210d71659c448cdafd6f1fc8692b51",
+      "paragraph_count": 4,
+      "characters": 104,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0433.html",
+      "chapter": 9,
+      "sha256": "ad95714fd1f55ca15b912d5ef2d77e8ade3e08f91a4f54e800b30853fecdbde2",
+      "paragraph_count": 17,
+      "characters": 515,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0434.html",
+      "chapter": 9,
+      "sha256": "137a39caeb935026565feb6a8c0349adbf87b9c9bfab96fdaccf483e427fb4ab",
+      "paragraph_count": 11,
+      "characters": 2267,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0435.html",
+      "chapter": 9,
+      "sha256": "5b4a4835e55f3752f617a10deb6fd097772f13f4c4dcac7cc861187862400cbd",
+      "paragraph_count": 116,
+      "characters": 38799,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0436.html",
+      "chapter": 9,
+      "sha256": "cdb7adb705443cb05326cfcb798f212bf368f1a7244e6db25aa84ad23b04656b",
+      "paragraph_count": 52,
+      "characters": 12928,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0437.html",
+      "chapter": 9,
+      "sha256": "69b3616e347a591f42a7d41980afad4cf213b4cc7717d3aeb9b57c9a47a96f92",
+      "paragraph_count": 31,
+      "characters": 3382,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0438.html",
+      "chapter": 9,
+      "sha256": "c762d265dc7ef36482aeb9de4528f920ae6240ed6b02a159b380e7e2e6eb88ff",
+      "paragraph_count": 40,
+      "characters": 5671,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0439.html",
+      "chapter": 9,
+      "sha256": "e8194a7aef13d51b2ad1ed0922f3692fb5fed97148ef0ff303b3af35d6377066",
+      "paragraph_count": 31,
+      "characters": 4396,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0440.html",
+      "chapter": 9,
+      "sha256": "b372ab4dd8034374b7b5054187c6b9ed0c0905d126a6539276efe8b44297a4af",
+      "paragraph_count": 4,
+      "characters": 35,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0441.html",
+      "chapter": 9,
+      "sha256": "a444810160e628a2764a82b89eb34669410f75efc5ce0c7ae1011e2595269ad4",
+      "paragraph_count": 43,
+      "characters": 8734,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0442.html",
+      "chapter": 9,
+      "sha256": "33f9df9c1f2894b5d850082479d42b8c0b6a25ad52effa472b41d2b8d35fd81a",
+      "paragraph_count": 44,
+      "characters": 9483,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0443.html",
+      "chapter": 9,
+      "sha256": "6cc1bbfb68f9035e5a89d745fa2afbb19fb402888a62c56980e01ac3bcbbc2a0",
+      "paragraph_count": 6,
+      "characters": 2294,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0444.html",
+      "chapter": 9,
+      "sha256": "a873dc0aeece959a1e4615e7d66396a19964fe637724e76a5772a66cd21a2a74",
+      "paragraph_count": 35,
+      "characters": 8989,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0445.html",
+      "chapter": 9,
+      "sha256": "2c4211eb118f9be88913b66011d24718d5583c64ad35c8b95d7caedb9b41c87e",
+      "paragraph_count": 37,
+      "characters": 2756,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0446.html",
+      "chapter": 9,
+      "sha256": "81321a0121f1082403d0137a1e4c596610e142d7289b20c16d6344a6816fda0e",
+      "paragraph_count": 33,
+      "characters": 2819,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0447.html",
+      "chapter": 9,
+      "sha256": "aff971fb2898a4bdbf4a4268bf1af577e75eb2658565e15aefac1f2db7881235",
+      "paragraph_count": 29,
+      "characters": 5024,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0448.html",
+      "chapter": 9,
+      "sha256": "e97ae70f0511015efef9906a56b9223a9c6686dd2be7ad679bfe33e34b9969cf",
+      "paragraph_count": 18,
+      "characters": 2050,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0449.html",
+      "chapter": 9,
+      "sha256": "c903f045a03a586dd7743d4bacaade262eb92da16f144ec4ed1ed1a68adc9026",
+      "paragraph_count": 10,
+      "characters": 2618,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0450.html",
+      "chapter": 9,
+      "sha256": "d6f2c88cfd66a76e76bf2bdad11fe159b9eac4b03f102e6cb4a6ad21fbefef35",
+      "paragraph_count": 29,
+      "characters": 3661,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0451.html",
+      "chapter": 9,
+      "sha256": "374c1ae507daf69e67cdac62e942604453fa0559b9476dac1a63b3087692abe7",
+      "paragraph_count": 54,
+      "characters": 12163,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0452.html",
+      "chapter": 9,
+      "sha256": "e64198df9d4cadffd45f5e3df9e8a649685bf777fc36e753469c0eb26339dbb1",
+      "paragraph_count": 12,
+      "characters": 2173,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0453.html",
+      "chapter": 9,
+      "sha256": "e3c1979d9f13e2d90c68c3cd1fbf86b8a73ce313d09ab38e2414de24fd08dffe",
+      "paragraph_count": 24,
+      "characters": 6375,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0454.html",
+      "chapter": 9,
+      "sha256": "1ebc06d7f6d52a57901525b8e80b4334039ee6c308d10e964bbef34b7ab85de2",
+      "paragraph_count": 48,
+      "characters": 7497,
+      "coverage": "STRUCTURAL_SCAN; SELECTED_CLAIMS_ONLY"
+    },
+    {
+      "internal_path": "text/part0455.html",
+      "chapter": null,
+      "sha256": "724ceb924e881a455a5be2df2b10b150306f6311b0c6ace6a2fc51b4c312df90",
+      "paragraph_count": 15,
+      "characters": 7254,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0456.html",
+      "chapter": null,
+      "sha256": "21bc5df3d2e1ea8b3713fb7fddab3c3dface050c7ecdea0cb1b739bfb1ec1ef3",
+      "paragraph_count": 3239,
+      "characters": 102315,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0457.html",
+      "chapter": null,
+      "sha256": "1087aeee2e4df829d3f7a8d92005c7ccbe6c5f7bcbe95382d442f779f6b33f9b",
+      "paragraph_count": 13,
+      "characters": 1391,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    },
+    {
+      "internal_path": "text/part0458.html",
+      "chapter": null,
+      "sha256": "44d7e37537b9a2ef7aac2feb5c8c8a6061e9996901d28fffd9b9234317499658",
+      "paragraph_count": 15,
+      "characters": 694,
+      "coverage": "OUTSIDE_NUMBERED_CHAPTERS"
+    }
+  ],
+  "records": [
+    {
+      "id": "EVD-FLB-CH01-001",
+      "claim_id": "CLM-FLB-CH01-001",
+      "stem": "FoodLab-CH01-Yolk-Lecithin",
+      "chapter": 1,
+      "canonical": "Egg-Yolk-Lipoproteins-And-Amylase",
+      "canonical_id": "ING-EGG-003",
+      "path": "01_Ingredients/FoodLab-CH01-Yolk-Lecithin.md",
+      "locator": {
+        "internal_path": "text/part0018.html",
+        "paragraph_index": 11,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "3743488fe0e42cb19acd8e2802cf2f412f34c2941c6546e64604a57f121425cf",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH01-002",
+      "claim_id": "CLM-FLB-CH01-002",
+      "stem": "FoodLab-CH01-Poaching-Acid",
+      "chapter": 1,
+      "canonical": "Poaching-Scrambling-And-French-Omelet-Control",
+      "canonical_id": "TEC-EGG-002",
+      "path": "03_Techniques/FoodLab-CH01-Poaching-Acid.md",
+      "locator": {
+        "internal_path": "text/part0023.html",
+        "paragraph_index": 23,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "407f6660d2cf6e51b94e7fd0c99bea258fb617860dbfccb2a535e48463d577ec",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH01-003",
+      "claim_id": "CLM-FLB-CH01-003",
+      "stem": "FoodLab-CH01-Biscuit-Cold-Fat",
+      "chapter": 1,
+      "canonical": "Starch-Cornstarch-Flour",
+      "canonical_id": "ING-STR-001",
+      "path": "02_Food-Science/FoodLab-CH01-Biscuit-Cold-Fat.md",
+      "locator": {
+        "internal_path": "text/part0057.html",
+        "paragraph_index": 7,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "38424e147bb29079fc2df67e4b1e4c78748b9257c8f22f4b35c2ca09ec40c5c3",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH01-004",
+      "claim_id": "CLM-FLB-CH01-004",
+      "stem": "FoodLab-CH01-Enriched-Dough",
+      "chapter": 1,
+      "canonical": "Starch-Cornstarch-Flour",
+      "canonical_id": "ING-STR-001",
+      "path": "02_Food-Science/FoodLab-CH01-Enriched-Dough.md",
+      "locator": {
+        "internal_path": "text/part0061.html",
+        "paragraph_index": 8,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "5477a5ee7a9d0fe01fad95cbe5379ba67ce91008be5c5f8cc21d2c635e5b64b7",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "SCIENTIFIC_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH02-001",
+      "claim_id": "CLM-FLB-CH02-001",
+      "stem": "FoodLab-CH02-Stock-Gelatin-Time",
+      "chapter": 2,
+      "canonical": "Collagen-Hydrolysis-Gelatin",
+      "canonical_id": "SCI-PROT-001",
+      "path": "02_Food-Science/FoodLab-CH02-Stock-Gelatin-Time.md",
+      "locator": {
+        "internal_path": "text/part0069.html",
+        "paragraph_index": 41,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "dbe0d5e0c828deceda6b853930ef096e8ba81266d5e21eb5b8798052bcda7f1e",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "SCIENTIFIC_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH02-002",
+      "claim_id": "CLM-FLB-CH02-002",
+      "stem": "FoodLab-CH02-Braising-Moisture",
+      "chapter": 2,
+      "canonical": "Two-Phase-Juiciness-And-Fiber-Compaction",
+      "canonical_id": "TEX-MEAT-001",
+      "path": "05_Textures/FoodLab-CH02-Braising-Moisture.md",
+      "locator": {
+        "internal_path": "text/part0098.html",
+        "paragraph_index": 29,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "135b3e62ec6c6252d897db64c39fa5a0c6020d13221361dc0659141023781902",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH02-003",
+      "claim_id": "CLM-FLB-CH02-003",
+      "stem": "FoodLab-CH02-Oven-Stovetop-Braise",
+      "chapter": 2,
+      "canonical": "Covered-Vs-Uncovered-Evaporation",
+      "canonical_id": "EQP-ENV-001",
+      "path": "06_Equipment/FoodLab-CH02-Oven-Stovetop-Braise.md",
+      "locator": {
+        "internal_path": "text/part0115.html",
+        "paragraph_index": 20,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "d27b7baac02c56e0cbaeaa29c0ec153e13503de078fd28dea392d6297263c893",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EQUIPMENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH02-004",
+      "claim_id": "CLM-FLB-CH02-004",
+      "stem": "FoodLab-CH02-Corn-Sugar-Storage",
+      "chapter": 2,
+      "canonical": "Starch-Cornstarch-Flour",
+      "canonical_id": "ING-STR-001",
+      "path": "01_Ingredients/FoodLab-CH02-Corn-Sugar-Storage.md",
+      "locator": {
+        "internal_path": "text/part0083.html",
+        "paragraph_index": 13,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "63279bdc5800162d4de151c038b83e5683ed2512d3294fb34de01e24ae8e2e5e",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH03-001",
+      "claim_id": "CLM-FLB-CH03-001",
+      "stem": "FoodLab-CH03-Steak-Salt-Drying",
+      "chapter": 3,
+      "canonical": "Pre-Salting-Steak-Timing",
+      "canonical_id": "CON-SALT-001",
+      "path": "04_Flavors/FoodLab-CH03-Steak-Salt-Drying.md",
+      "locator": {
+        "internal_path": "text/part0131.html",
+        "paragraph_index": 57,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "101b94f62faf650022b05bc7365fa154a14dd0cfbd9a92fa6f4056d02c8ec232",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH03-002",
+      "claim_id": "CLM-FLB-CH03-002",
+      "stem": "FoodLab-CH03-Pan-Fond",
+      "chapter": 3,
+      "canonical": "Maillard-Reaction",
+      "canonical_id": "SCI-CHEM-001",
+      "path": "04_Flavors/FoodLab-CH03-Pan-Fond.md",
+      "locator": {
+        "internal_path": "text/part0142.html",
+        "paragraph_index": 5,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "1fa2d0c4820d72c58698a9c7cc7a70f565fc699dbf458db2b96abb12a00a9d28",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH03-003",
+      "claim_id": "CLM-FLB-CH03-003",
+      "stem": "FoodLab-CH03-Tender-Tough-Method",
+      "chapter": 3,
+      "canonical": "Cut-To-Method-Matching",
+      "canonical_id": "DEC-PLAN-001",
+      "path": "08_Decision-Making/FoodLab-CH03-Tender-Tough-Method.md",
+      "locator": {
+        "internal_path": "text/part0121.html",
+        "paragraph_index": 8,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "f1cdf41673f9101edc3d05636d84e4d347003cdc5415e44f474156b92655c71c",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH03-004",
+      "claim_id": "CLM-FLB-CH03-004",
+      "stem": "FoodLab-CH03-Salmon-Fat-Variation",
+      "chapter": 3,
+      "canonical": "Finfish-Muscle-Myotomes-Fat-And-Pigments",
+      "canonical_id": "ING-FISH-001",
+      "path": "01_Ingredients/FoodLab-CH03-Salmon-Fat-Variation.md",
+      "locator": {
+        "internal_path": "text/part0168.html",
+        "paragraph_index": 27,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "421f97ac117e175cb7784311e0573dc0cc10fe1870ad68823bdafcfd5ea80f5d",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH04-001",
+      "claim_id": "CLM-FLB-CH04-001",
+      "stem": "FoodLab-CH04-Blanch-Water-Volume",
+      "chapter": 4,
+      "canonical": "Heat-Transfer",
+      "canonical_id": "SCI-HEAT-001",
+      "path": "03_Techniques/FoodLab-CH04-Blanch-Water-Volume.md",
+      "locator": {
+        "internal_path": "text/part0193.html",
+        "paragraph_index": 6,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "179097971ece32e8bcafd8d8d51f3af24ed50a1175c07dddc2e3ba2908f850b7",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EMPIRICAL_OBSERVATION"
+    },
+    {
+      "id": "EVD-FLB-CH04-002",
+      "claim_id": "CLM-FLB-CH04-002",
+      "stem": "FoodLab-CH04-Vegetable-Braising",
+      "chapter": 4,
+      "canonical": "Low-Slow-Braising",
+      "canonical_id": "TEC-COMB-001",
+      "path": "03_Techniques/FoodLab-CH04-Vegetable-Braising.md",
+      "locator": {
+        "internal_path": "text/part0220.html",
+        "paragraph_index": 3,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "5550c424dc0c2f8e4227b95616ad00e0a482f5b255bd74927d6fc0255ff14e34",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH04-003",
+      "claim_id": "CLM-FLB-CH04-003",
+      "stem": "FoodLab-CH04-Sweet-Potato-Enzymes",
+      "chapter": 4,
+      "canonical": "Starch-Gelatinization-Retrogradation",
+      "canonical_id": "SCI-CARB-001",
+      "path": "01_Ingredients/FoodLab-CH04-Sweet-Potato-Enzymes.md",
+      "locator": {
+        "internal_path": "text/part0235.html",
+        "paragraph_index": 5,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "b38ac99118912b423e7038f80ca3414340c812d74302c9f50ecad2c394fae3d9",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "SCIENTIFIC_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH04-004",
+      "claim_id": "CLM-FLB-CH04-004",
+      "stem": "FoodLab-CH04-Mash-Potato-Type",
+      "chapter": 4,
+      "canonical": "Starch-And-Emulsion-Viscosity",
+      "canonical_id": "TEX-VISC-001",
+      "path": "05_Textures/FoodLab-CH04-Mash-Potato-Type.md",
+      "locator": {
+        "internal_path": "text/part0239.html",
+        "paragraph_index": 11,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "4c9be5de277701a1cb76d19cd475dfb3547c3deb6fff6fc10d49aaca1e84ded6",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH05-001",
+      "claim_id": "CLM-FLB-CH05-001",
+      "stem": "FoodLab-CH05-Cold-Grinding",
+      "chapter": 5,
+      "canonical": "Sausage-Emulsions-Myosin-And-Nitrite-Curing",
+      "canonical_id": "SCI-MEAT-004",
+      "path": "03_Techniques/FoodLab-CH05-Cold-Grinding.md",
+      "locator": {
+        "internal_path": "text/part0253.html",
+        "paragraph_index": 8,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "5ae09e6892f93a13ce00777532af67c07f233445fc85d9cc20a990f8498aba24",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "COOKING_TECHNIQUE"
+    },
+    {
+      "id": "EVD-FLB-CH05-002",
+      "claim_id": "CLM-FLB-CH05-002",
+      "stem": "FoodLab-CH05-Sausage-Moisture",
+      "chapter": 5,
+      "canonical": "Two-Phase-Juiciness-And-Fiber-Compaction",
+      "canonical_id": "TEX-MEAT-001",
+      "path": "05_Textures/FoodLab-CH05-Sausage-Moisture.md",
+      "locator": {
+        "internal_path": "text/part0256.html",
+        "paragraph_index": 4,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "fdcca94f587e5ca85db618d8042cb8f717c80316627aa0ef54b4185507f7f407",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH05-003",
+      "claim_id": "CLM-FLB-CH05-003",
+      "stem": "FoodLab-CH05-Burger-Handling",
+      "chapter": 5,
+      "canonical": "Sausage-Emulsions-Myosin-And-Nitrite-Curing",
+      "canonical_id": "SCI-MEAT-004",
+      "path": "05_Textures/FoodLab-CH05-Burger-Handling.md",
+      "locator": {
+        "internal_path": "text/part0271.html",
+        "paragraph_index": 15,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "74fdb20c4c90549da2cf71ba1711c87709ef31423e739c0efcc5f041c42dc95a",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH05-004",
+      "claim_id": "CLM-FLB-CH05-004",
+      "stem": "FoodLab-CH05-Meatloaf-Gelatin",
+      "chapter": 5,
+      "canonical": "Collagen-Hydrolysis-Gelatin",
+      "canonical_id": "SCI-PROT-001",
+      "path": "02_Food-Science/FoodLab-CH05-Meatloaf-Gelatin.md",
+      "locator": {
+        "internal_path": "text/part0265.html",
+        "paragraph_index": 23,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "fe78fdeaf5b49674ecde9a0f2b66a6da1bf4189059a4d2aeba085abccfb424f1",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "SCIENTIFIC_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH06-001",
+      "claim_id": "CLM-FLB-CH06-001",
+      "stem": "FoodLab-CH06-Spatchcock-Geometry",
+      "chapter": 6,
+      "canonical": "Whole-Bird-Roasting-And-Crisp-Poultry-Skin",
+      "canonical_id": "TEC-MEAT-002",
+      "path": "03_Techniques/FoodLab-CH06-Spatchcock-Geometry.md",
+      "locator": {
+        "internal_path": "text/part0283.html",
+        "paragraph_index": 11,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "a46a91e6c2ca7df79704108f9d27206a295873f8120eaf45570da6d180abf39f",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "COOKING_TECHNIQUE"
+    },
+    {
+      "id": "EVD-FLB-CH06-002",
+      "claim_id": "CLM-FLB-CH06-002",
+      "stem": "FoodLab-CH06-Convection-Surface-Drying",
+      "chapter": 6,
+      "canonical": "Heat-Transfer",
+      "canonical_id": "SCI-HEAT-001",
+      "path": "06_Equipment/FoodLab-CH06-Convection-Surface-Drying.md",
+      "locator": {
+        "internal_path": "text/part0285.html",
+        "paragraph_index": 9,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "197e3ccc4542cb7bdad8829e0b17a1d63c3b4672cbecb3203d6322bb1ce45daa",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EQUIPMENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH06-003",
+      "claim_id": "CLM-FLB-CH06-003",
+      "stem": "FoodLab-CH06-Bone-Insulation-Test",
+      "chapter": 6,
+      "canonical": "Heat-Transfer",
+      "canonical_id": "SCI-HEAT-001",
+      "path": "08_Decision-Making/FoodLab-CH06-Bone-Insulation-Test.md",
+      "locator": {
+        "internal_path": "text/part0313.html",
+        "paragraph_index": 7,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "74319f01cbac3654116f8eee70afccedfd519b5febe262f06e319800ff07583e",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EMPIRICAL_OBSERVATION"
+    },
+    {
+      "id": "EVD-FLB-CH06-004",
+      "claim_id": "CLM-FLB-CH06-004",
+      "stem": "FoodLab-CH06-Cranberry-Pectin",
+      "chapter": 6,
+      "canonical": "Starch-And-Emulsion-Viscosity",
+      "canonical_id": "TEX-VISC-001",
+      "path": "01_Ingredients/FoodLab-CH06-Cranberry-Pectin.md",
+      "locator": {
+        "internal_path": "text/part0306.html",
+        "paragraph_index": 6,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "918b90b33279bdc946802351858fd431cb066f9c3895dc360d8aa19c323962d4",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH07-001",
+      "claim_id": "CLM-FLB-CH07-001",
+      "stem": "FoodLab-CH07-Pasta-Water-Energy",
+      "chapter": 7,
+      "canonical": "Heat-Transfer",
+      "canonical_id": "SCI-HEAT-001",
+      "path": "06_Equipment/FoodLab-CH07-Pasta-Water-Energy.md",
+      "locator": {
+        "internal_path": "text/part0334.html",
+        "paragraph_index": 13,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "c9d9d5176b95dde5dae57431b675eb2ba5e4b4985b26eb025d8d91183c4ed130",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "SCIENTIFIC_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH07-002",
+      "claim_id": "CLM-FLB-CH07-002",
+      "stem": "FoodLab-CH07-Cheese-Starch-Sauce",
+      "chapter": 7,
+      "canonical": "Starch-And-Emulsion-Viscosity",
+      "canonical_id": "TEX-VISC-001",
+      "path": "03_Techniques/FoodLab-CH07-Cheese-Starch-Sauce.md",
+      "locator": {
+        "internal_path": "text/part0356.html",
+        "paragraph_index": 28,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "8f9d1816eb71f7a92874590ee52622eebea8b7ef6915f7aaee4f290b0964f4b8",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "COOKING_TECHNIQUE"
+    },
+    {
+      "id": "EVD-FLB-CH07-003",
+      "claim_id": "CLM-FLB-CH07-003",
+      "stem": "FoodLab-CH07-Pasta-Hydration-Separate",
+      "chapter": 7,
+      "canonical": "Starch-Gelatinization-Retrogradation",
+      "canonical_id": "SCI-CARB-001",
+      "path": "02_Food-Science/FoodLab-CH07-Pasta-Hydration-Separate.md",
+      "locator": {
+        "internal_path": "text/part0378.html",
+        "paragraph_index": 6,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "81fe35c7480beda2fd79ef140cbf3d2fba8e48f99a6665d389332edcbdfad969",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH07-004",
+      "claim_id": "CLM-FLB-CH07-004",
+      "stem": "FoodLab-CH07-Butter-Oil-Burning",
+      "chapter": 7,
+      "canonical": "Dairy-Butter-Emulsion",
+      "canonical_id": "ING-DAI-001",
+      "path": "04_Flavors/FoodLab-CH07-Butter-Oil-Burning.md",
+      "locator": {
+        "internal_path": "text/part0387.html",
+        "paragraph_index": 40,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "5e6d4ae939f30f7853442df10f5a09191f87e1ca1280136e362a57807b33c246",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EMPIRICAL_OBSERVATION"
+    },
+    {
+      "id": "EVD-FLB-CH08-001",
+      "claim_id": "CLM-FLB-CH08-001",
+      "stem": "FoodLab-CH08-Mustard-Vinaigrette",
+      "chapter": 8,
+      "canonical": "Caramelization-And-Emulsification",
+      "canonical_id": "SCI-CHEM-002",
+      "path": "05_Textures/FoodLab-CH08-Mustard-Vinaigrette.md",
+      "locator": {
+        "internal_path": "text/part0397.html",
+        "paragraph_index": 10,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "620881ac99d920ddb4bcdbf2d7dcfc80fe8f305989dd4141e75eeec11097927d",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EMPIRICAL_OBSERVATION"
+    },
+    {
+      "id": "EVD-FLB-CH08-002",
+      "claim_id": "CLM-FLB-CH08-002",
+      "stem": "FoodLab-CH08-Yolk-Mayo-Emulsifier",
+      "chapter": 8,
+      "canonical": "Egg-Yolk-Lipoproteins-And-Amylase",
+      "canonical_id": "ING-EGG-003",
+      "path": "01_Ingredients/FoodLab-CH08-Yolk-Mayo-Emulsifier.md",
+      "locator": {
+        "internal_path": "text/part0413.html",
+        "paragraph_index": 12,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "9a1c09c4f85cb7c82e921e2927140b8f004a793b4c401c1be5f47426b5a7b331",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH08-003",
+      "claim_id": "CLM-FLB-CH08-003",
+      "stem": "FoodLab-CH08-Cabbage-Water",
+      "chapter": 8,
+      "canonical": "Salt-Osmosis-And-Perception",
+      "canonical_id": "FLV-TASTE-001",
+      "path": "03_Techniques/FoodLab-CH08-Cabbage-Water.md",
+      "locator": {
+        "internal_path": "text/part0420.html",
+        "paragraph_index": 3,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "a999b428efa673e02550a268028df736bb1856dcf5aa5e4d6ee1f79b5f661932",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "COOKING_TECHNIQUE"
+    },
+    {
+      "id": "EVD-FLB-CH08-004",
+      "claim_id": "CLM-FLB-CH08-004",
+      "stem": "FoodLab-CH08-Dairy-Dressing",
+      "chapter": 8,
+      "canonical": "Microbial-Danger-Zone-Cooling",
+      "canonical_id": "SAF-ZONE-001",
+      "path": "07_Food-Safety/FoodLab-CH08-Dairy-Dressing.md",
+      "locator": {
+        "internal_path": "text/part0424.html",
+        "paragraph_index": 4,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "664210524544f1739b7397750013d3f4d814b2aa2ccc7aa63795fe7e6a42f43b",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH09-001",
+      "claim_id": "CLM-FLB-CH09-001",
+      "stem": "FoodLab-CH09-Frying-Coating-Set",
+      "chapter": 9,
+      "canonical": "Protein-Denaturation-Coagulation",
+      "canonical_id": "SCI-PROT-002",
+      "path": "02_Food-Science/FoodLab-CH09-Frying-Coating-Set.md",
+      "locator": {
+        "internal_path": "text/part0435.html",
+        "paragraph_index": 11,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "76a5cf67410e68963d0cb841d3cd3b6218c68e34c7c7bbfdfdb9b569203101d2",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "SCIENTIFIC_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH09-002",
+      "claim_id": "CLM-FLB-CH09-002",
+      "stem": "FoodLab-CH09-Batter-Heat-Barrier",
+      "chapter": 9,
+      "canonical": "Heat-Transfer",
+      "canonical_id": "SCI-HEAT-001",
+      "path": "03_Techniques/FoodLab-CH09-Batter-Heat-Barrier.md",
+      "locator": {
+        "internal_path": "text/part0444.html",
+        "paragraph_index": 10,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "537e3585e11247d9ea17c454afb573b7f74dc03bbbb32eb13d86286a700d670d",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "CULINARY_PRINCIPLE"
+    },
+    {
+      "id": "EVD-FLB-CH09-003",
+      "claim_id": "CLM-FLB-CH09-003",
+      "stem": "FoodLab-CH09-Eggplant-Porosity",
+      "chapter": 9,
+      "canonical": "Salt-Osmosis-And-Perception",
+      "canonical_id": "FLV-TASTE-001",
+      "path": "01_Ingredients/FoodLab-CH09-Eggplant-Porosity.md",
+      "locator": {
+        "internal_path": "text/part0442.html",
+        "paragraph_index": 9,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "ceaf887dbcc084776061eca86bd3a8cb9fd5dc84ee89f3a47dde0a9325c39156",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "INGREDIENT_PROPERTY"
+    },
+    {
+      "id": "EVD-FLB-CH09-004",
+      "claim_id": "CLM-FLB-CH09-004",
+      "stem": "FoodLab-CH09-Fries-Crispness-Tradeoff",
+      "chapter": 9,
+      "canonical": "Starch-Gelatinization-Retrogradation",
+      "canonical_id": "SCI-CARB-001",
+      "path": "08_Decision-Making/FoodLab-CH09-Fries-Crispness-Tradeoff.md",
+      "locator": {
+        "internal_path": "text/part0453.html",
+        "paragraph_index": 23,
+        "paragraph_selector": "body descendant p; 1-based; includes empty p; itertext joined with a space then stripped",
+        "paragraph_sha256": "3e281175b23160af1a4660773eead328d70c008b6b312b2370b94ed0a0ec3c32",
+        "anchor_status": "UNKNOWN",
+        "pdf_page": "UNKNOWN",
+        "printed_page": "UNKNOWN"
+      },
+      "kind": "EMPIRICAL_OBSERVATION"
+    }
+  ],
+  "existing_knowledge_hashes": {
+    "Dashboard.md": "eb76d54ce2c70c7c424797b4ba82a5b8ed0411ca3410a53e2e6baa5f8d266483",
+    "00_Ontology\\Book-Ingestion-Architecture.md": "8a1d162a6f13b4e7e674f8e92d7f6ae458ea50ab755cdfdee025d43d6e378a57",
+    "00_Ontology\\Chef-Engine-Integration.md": "dad87962cbd91c5f41d059eb90d2ac52a0e0a088508412d5f978f2a5555eb5f9",
+    "00_Ontology\\Concepts.md": "701401660bcbb654dfc8f308d5ef3c5de0cdd2ec404eb8867482c42ded4ca59c",
+    "00_Ontology\\Knowledge-Map.md": "0fede7e93c58fd2e3b4690dc87b323997ba4c4d4331ce33be720dadd7782b148",
+    "00_Ontology\\Relationships.md": "6a50b4945539647a24122ecc8e61ca27f0fb42a21b7ca799b477d3bb7dba3913",
+    "01_Ingredients\\Allium-Onion-Sulfur-Sugars.md": "14ef78a9ca92ddd25f7fd3d7d91558170eba6ce3fcba32d4eaa4fb024ff425d6",
+    "01_Ingredients\\Beef-Chuck-Collagen-Rich.md": "7cfb0d21dfcd3c2b2fc4ddc29f7131b72b158c19085a5208a9d2916eda40feb6",
+    "01_Ingredients\\Crustaceans-Hepatopancreas-Molting-And-Astaxanthin.md": "e192016504ae6070ab6d909a4c869e1c75e17a71fa5f72740182233f79d3b0da",
+    "01_Ingredients\\Dairy-Butter-Emulsion.md": "e57cb66d4fab01d02c40953bec40ec8b7ee53153da45cae353ee3a1fe65372e7",
+    "01_Ingredients\\Egg-Aging-Alkalinization-And-Grades.md": "738d474ec97870860a6d5eb825bb5f2dddc960fa7dfb992840271ec46189c351",
+    "01_Ingredients\\Egg-Albumen-Key-Proteins.md": "9730eb9818abdf0c9ee121b333fab3a9949fcf5d3b05c832c8c23864f338776f",
+    "01_Ingredients\\Egg-Proteins-Yolk-Albumen.md": "bf452658dca702fe86cc0c3fe781dbbd1e3e4eb67387a915751594d1597d8a91",
+    "01_Ingredients\\Egg-Yolk-Lipoproteins-And-Amylase.md": "79bfb582f0dcaf69a63da170b3c443f280c44788d4660722bf0df94a999110fb",
+    "01_Ingredients\\Finfish-Muscle-Myotomes-Fat-And-Pigments.md": "1eed75bf30a640111aec49a2f8231aa908caaa07c998d7970bea72d21403f78c",
+    "01_Ingredients\\Molluscs-Bivalves-Cephalopods-And-Roe-Caviar.md": "d376b3ec598472d247fda351ca4269e6b7f303363bc7b065d4ba47693f408ab4",
+    "01_Ingredients\\Muscle-Fiber-Types-And-Myoglobin-Chemistry.md": "74af0496033e9dea34b5dbe64ad876e4d4b1fa37246e678398a2a51966263046",
+    "01_Ingredients\\Offal-Organs-And-Animal-Fat-Saturation.md": "14ed0430304a963cf17a36db4f0f3454a6c749b3197f09d245ef834d0993f091",
+    "01_Ingredients\\Poultry-Breast-Lean.md": "ed08390a78b71413cd046e62f9753ee7ba7daf4356d2bdbb9ec97f1c81a088d2",
+    "01_Ingredients\\Starch-Cornstarch-Flour.md": "5824a1880caefe512c4cbae1c3da93e237640ce787d2c1de23c2cf53a4979db0",
+    "02_Food-Science\\Alkali-And-Salt-Egg-Curing-Chemistry.md": "e875a320535aafdaf5aa86b71cff74124c81e805ff92865b6e140611e5ed2736",
+    "02_Food-Science\\Brining-Marinades-And-Protease-Tenderizers.md": "ad01a1644a744eb339b3799daa9f0af506bc9d5ab1f2573e99fa623b6103cc54",
+    "02_Food-Science\\Caramelization-And-Emulsification.md": "42ca48832836bd1ae27e7bab7742c5b7fcb71226a2ceab29797787d3311fda10",
+    "02_Food-Science\\Collagen-Hydrolysis-Gelatin.md": "f7c92715713d0786ddf8d7423331bbc886daab5ea553d17d0fc660667d92b61d",
+    "02_Food-Science\\Conflict-Acid-And-Salt-Tenderize-Vs-Toughen-Eggs.md": "d823331fc30b7811974577e0804be7b283991de8925cb6a23603ab20c87e83ff",
+    "02_Food-Science\\Custard-Dilution-Ion-Shielding-And-Starch-Protection.md": "4d89c1064c3f06001545dd9a09ba54419e36a50766363fb91470cf9959b62324",
+    "02_Food-Science\\Egg-Foam-Stability-Disulfide-And-Acid-Copper-Chemistry.md": "673207a1b07a565f923baad1080eb1be06af714032ec5f8a38b42f4e0e728d53",
+    "02_Food-Science\\Fish-Rigor-Mortis-Icing-And-Freeze-Denaturation.md": "8df62693c5e09c13baf6f5a35eeb1d8793433becc00a0249297eec97d729cd0f",
+    "02_Food-Science\\Fish-Thermal-Progression-Proteases-And-Sarcoplasmic-Glue.md": "4f40b7f891254336c065387944c15a577931925d5d5fffcf07acfa75f8ca36ca",
+    "02_Food-Science\\Heat-Transfer.md": "da9f62585432fddaa124ee4503d261e60f2cc12f9f620dc7fa466e04be738120",
+    "02_Food-Science\\Maillard-Reaction.md": "467da0c0caa8cfcde4fd9f8e8ec60e5f6a3e805c4d0df66e48aa28806f60b271",
+    "02_Food-Science\\Meat-Thermal-Progression-And-Doneness-Spectrum.md": "4947d8c90e635adee3b5a10148e16f2ecae0b86282bd434136c5f28402b90c8c",
+    "02_Food-Science\\Osmoregulation-TMAO-TMA-Spoilage-And-Acid-Neutralization.md": "e510baf7a098169a26bc7e668ca83d458d4812dd1fc7cd938ab3e8c69608b285",
+    "02_Food-Science\\Protein-Denaturation-Coagulation.md": "794707a5f7d299559c35574121051f516ef6f1ebee7b296a0989d730b5937c5f",
+    "02_Food-Science\\Rigor-Mortis-DFD-Meat-And-Aging-Enzymes.md": "7241227b96ebd5415f2406d5cc2ddb681e4b7023e000e93e8e9a852c4611821c",
+    "02_Food-Science\\Sausage-Emulsions-Myosin-And-Nitrite-Curing.md": "edf2c45b1262c5a15bb88f457c28db10dee39996a1e33301c100e49705a17a2b",
+    "02_Food-Science\\Seafood-Curing-Fermentation-Surimi-And-Katsuobushi.md": "8baf86d8e1edcf310635332301881601f3a8fa76123e9028bdcf4a67cbd20d0f",
+    "02_Food-Science\\Souffle-Thermodynamics-Gas-Expansion-And-Vaporization.md": "3eb75ac65d41ffdb6047935571c18d5c7d375db8d89e9c601295272fa113b11e",
+    "02_Food-Science\\Starch-Gelatinization-Retrogradation.md": "97a64318fdfebc48e53183435f2eaffa94c1cbce4c3a75a3bde87d06ae81c8a0",
+    "03_Techniques\\Conflict-Fish-Slow-Cooking-Cephalopod-Dual-Window-And-Shells.md": "08cd0e6b5d228999daa46efbebfd43ac9778f06da6227678f178b7679ff7115e",
+    "03_Techniques\\Conflict-Octopus-Corks-Marinades-And-Breading-Myths.md": "fbc96ba42a2d7533d049f4602ce912ec3fcdfd66eea305588b34b496dcb7fe58",
+    "03_Techniques\\Conflict-Souffle-Dish-Buttering-And-Oven-Door-Myths.md": "2a15c773d219f6ef8424bb4989d522e138af4ff3fd7d5b8eef6adc268ac44f5c",
+    "03_Techniques\\Custard-Water-Bath-Baking-And-Cream-Stirring.md": "9fd76630fc23410d92528391b7acb07ffbbbabc5b372c574435f351955a08408",
+    "03_Techniques\\Fish-Dry-Heat-Baking-Tempura-And-En-Papillote.md": "63d3bcb33fabd002a2292fa9ca16c82d2cfd4c617a0abfb99dc21c1f2b56aff6",
+    "03_Techniques\\Fish-Poaching-Fumet-Bouillabaisse-And-Steaming.md": "c0ff85a984f8db56abcfddfbd17bc0e40b0f7771158f610ef8a39fda3fb51fb2",
+    "03_Techniques\\Gentle-Simmering-Poaching.md": "c5e53e9247dceff37a6c49c797a3b3027bf5b3dd70b81be3cc948d4c2e8857ba",
+    "03_Techniques\\High-Heat-Pan-Searing.md": "117bf00d730bf0ee20c9f5fafb31450049f42265f8d00c3f9060360cc2ab83da",
+    "03_Techniques\\In-Shell-Egg-Simmering-And-Steaming.md": "4b2574aa7e437bda00be608218b97e16ce0e54bd807f5bbd0e588ac9ca7fd653",
+    "03_Techniques\\Low-Slow-Braising.md": "87bd00a6fef42b557282800794838004a1cbfa6abc78d9b79fc976af406e0652",
+    "03_Techniques\\Meringue-Souffle-And-Sabayon-Whipping.md": "0cdcdc8ca6f62e0c3fe24ebd1cb7429e07679782abf1cf2f1be5443a91142c7b",
+    "03_Techniques\\Poaching-Scrambling-And-French-Omelet-Control.md": "27e3288ff09adba18ae1eb2f60610705312db35a31ee261b754c098358f35fd7",
+    "03_Techniques\\Raw-Fish-Ceviche-Sushi-Poke-And-Live-Shellfish.md": "d3668748479a168048c9a08c2bf3814c04058159887c2e09a8cb0d16cc9a2330",
+    "03_Techniques\\Resting-Carryover-Cooking-And-Carving.md": "91fd912328bc4915bd9615a8b9c7c7b6b5e60c585096530f7c63ab0ffba02357",
+    "03_Techniques\\Sous-Vide-Precision-Cooking.md": "8ecbbc61d886c3172773a2b6f8c5bd36c962e1c35f7e9afca094f7737734300a",
+    "03_Techniques\\Succulent-Braising-Stewing-And-Liquid-Cooling.md": "3e6a181ddccdcc21b0bf09f531e0b85cc65fb8c955e1c79f126f2700ebe90a8a",
+    "03_Techniques\\Two-Stage-Roasting-Flipping-And-Heat-Scaling.md": "bfde57ae000c301a5c24b9ddbc0e4585ae9e27a4ada28aa15b15b40feaf40606",
+    "03_Techniques\\Whole-Bird-Roasting-And-Crisp-Poultry-Skin.md": "c5baeb15f30eaf0b86161bee75a4d9e059db30b9422c4b67275f56f4d2530c52",
+    "04_Flavors\\Acid-Fat-Balance.md": "48da08158d039dbf00a1aece7b083da17b6c333af5b4191a6a5fa71b9dc43b45",
+    "04_Flavors\\Egg-Sulfur-Volatiles-And-Ferrous-Sulfide-Greening.md": "b2a0685273ebb0ca792b872be1d32b480f7f6cad73edef40852a262155e8c7fc",
+    "04_Flavors\\Fat-Soluble-Volatile-Aromas.md": "28d124d50dbf6160b9799cb7db46264496a668a0abcb948d6f80743ae7b3540b",
+    "04_Flavors\\Meat-Flavor-Precursors-Feed-And-Warmed-Over-Flavor.md": "8eadf5a0e4d8f62f5ce1726ee3ea437a12675a61a903a0c21d17c057f54e5cbf",
+    "04_Flavors\\Salt-Osmosis-And-Perception.md": "7f65d0bdc6772ac17bff7a4dad3bb5163602e3f1caf5faa2bde0267c3a621c25",
+    "04_Flavors\\Seafood-Flavor-Chemistry-Amino-Acids-DMS-And-Bromophenols.md": "7aee93d9fe70212512dd634ee654c65c970e350c3ca3b94abb8a38f3d1591537",
+    "05_Textures\\Collagen-Driven-Tenderness.md": "df38487f75364a146fdc736425fbe25476cbdc322955507ae5af1b578cc7f64c",
+    "05_Textures\\Egg-Gels-Custard-Networks-And-Foam-Stages.md": "cdf4d939186728d8dadb293700dc7f6d93065f6c1759348ca517399657181a1a",
+    "05_Textures\\Fish-Flaking-Gelatin-Melting-Point-And-Bivalve-Muscles.md": "a404507521360de84972801005a26c1fbbb25bba6ea4512bd4f568e90f09be55",
+    "05_Textures\\Starch-And-Emulsion-Viscosity.md": "cacdec7d7cca344188cfa37f4861eb9286e51e2d55806180e701c7f184ee647d",
+    "05_Textures\\Surface-Browning.md": "1057bd3599ad17b2121e2c111963c4356d15a1b9907e730854733378a38c106c",
+    "05_Textures\\Two-Phase-Juiciness-And-Fiber-Compaction.md": "cff20ca33f75085f73b230c871db6ca20d75f46fd5db264d87bc3a390309fbef",
+    "06_Equipment\\Cast-Iron-Vs-Stainless-Thermal-Mass.md": "f03fca89eb083b5fd53c22d330d5536c645b6fdc33fe16022575d501b978c43c",
+    "06_Equipment\\Conflict-Copper-Bowl-Ovotransferrin-Vs-Sulfur-Theory.md": "d5c278abce565a680e51ca446772e1b7ee8d65f11e236304ff578211b090f411",
+    "06_Equipment\\Core-Probe-Thermometry.md": "a38f013f9693f7e429f84770c42ad01a1c0f5ff94a168369d1b85c711855cb57",
+    "06_Equipment\\Covered-Vs-Uncovered-Evaporation.md": "18ed349865bcfbfdb312d299ee4e9a966ab7ca9d631298064bd8ea14837b11e7",
+    "06_Equipment\\Fish-Slush-Icing-Enclosures-And-Cookware-Control.md": "fcdaf2621ab93dbb8df3f927131a617ba7e02dcb05134a05c1f3b372c6ec3892",
+    "06_Equipment\\Radiant-Grilling-Smoking-And-Packaging-Permeability.md": "ae76eca806ba5badd65265530878664dab7fe64d68b62858382bd26e8ba96faf",
+    "06_Equipment\\Water-Bath-Materials-And-Copper-Whisking-Bowls.md": "21e9cc984c32fa8525ba0afc5b7682eabec44d8891f6285e423876981573ce38",
+    "07_Food-Safety\\Conflict-Dietary-Egg-Cholesterol-Vs-Saturated-Fat.md": "fe29d4643a40643952845efbaf3c5000d584c3131c4df036bfb87292c89d9701",
+    "07_Food-Safety\\Cross-Contamination-Prevention.md": "af28fa9d8490027be21001a8cd7e8338d7fef6f88f00bb5ed15c054294c5abec",
+    "07_Food-Safety\\Egg-Salmonella-Pasteurization-And-Lead-Pidan-Hazards.md": "f24cdf6a3a17a9af783b3237d3b8ec0e7e3e738bb7f6239e9f620e6727067704",
+    "07_Food-Safety\\Meat-Pathogens-Blanch-Grinding-And-Carcinogens.md": "6cd8135df9979d05189ecd3ed6a852c7d22c10b745d9d82a35bb8413aab97d4f",
+    "07_Food-Safety\\Microbial-Danger-Zone-Cooling.md": "d0472c0be6650fb512f41e8eda04c670b3b033d4ddd704205f0d8023cf83e36f",
+    "07_Food-Safety\\Minimum-Internal-Temperatures.md": "299340b559a0cc0c05eadde82b8ad92a30c8116c7594f2f4c241e7ca09d0ab61",
+    "07_Food-Safety\\Seafood-Toxins-Scombroid-Parasites-And-Freezing-Rules.md": "9ab63db02d1e4bb66aafb3a14ee72a206bbfdf355d31429da956a5e27061672c",
+    "08_Decision-Making\\Cut-To-Method-Matching.md": "63b1a711c302791f642ab1a88c20af83d8db4d16ced3ccc6fa589f310bfaa05c",
+    "08_Decision-Making\\Real-Time-Thermal-Rescue.md": "a634bf66d88579d284b463f4e951546c1fef2fa1cbc78daf4fd24e7b1ffdef35",
+    "08_Decision-Making\\Rule-Cephalopod-Abalone-And-Bivalve-Thermal-Windows.md": "c4566fee0d5b87baf0c9985fa29c9a6cd2feb49b1b0a95af2a306bfaa3258cc5",
+    "08_Decision-Making\\Rule-Custard-Water-Bath-And-Tempering-Control.md": "285e8f62739b007f7ed236599b473e230f86ae9800eb8c0002d93dc47ee9e27d",
+    "08_Decision-Making\\Rule-Egg-Age-And-Grade-Selection-Matrix.md": "5e32a7de93523926805658cd6c89aee3dcfc5c759e2ed6bff6f7b4979c715ee5",
+    "08_Decision-Making\\Rule-Fish-Odor-Control-Storage-And-Stock-Extraction.md": "3ad887e557ba3dc69edc96fa9cea5b7ce2502fd81923d7b035d58708c92beb72",
+    "08_Decision-Making\\Rule-Fish-Target-Temperature-And-Protease-Management.md": "8f097bcf29e48536b7ce3d35045aa9fbc8c7a083722785d7ea7fa6572272e821",
+    "08_Decision-Making\\Rule-Freezing-Ice-Water-Thawing-And-WOF-Prevention.md": "2cb5340bac0451c673f4cb525bd2f9f7e3c643527fc7dc674040356931f55767",
+    "08_Decision-Making\\Rule-Meringue-And-Egg-Foam-Stabilization-Methods.md": "24fcf8cd33b716f0d81854f421b166dde375136ad923df1683630431a0b79a93",
+    "08_Decision-Making\\Rule-Pre-Cooking-Tenderization-Brine-Marinade-Enzymes.md": "b17bb6d6c3eba7894a5efa95f2f171132a1a6b13c7ff1effa61cde015a1b7287",
+    "08_Decision-Making\\Rule-Raw-Seafood-Parasite-Freezing-And-Toxin-Screening.md": "ba2ff93443a9f48fec95d2cd02c2eff6e156417be130ce43444be5441df9c04e",
+    "08_Decision-Making\\Rule-Starch-Stabilized-Pastry-Cream-Boiling.md": "f7b6bc387518e83ebc9f29ea908dd6bf16b9c60f6732464e6f5bf97f0fad42ba",
+    "08_Decision-Making\\Rule-Tender-Vs-Tough-Cut-Thermal-Strategy.md": "56340ee4361a2d8cf1c17d46dce26ff022e6c03187a10625d33ddf6e30821338",
+    "08_Decision-Making\\Rule-Whole-Bird-Breast-Vs-Leg-Thermal-Solutions.md": "a3e5ef7a2db1ca593b6714ca898effcd5ebd79c6ad23b7bef147f59e2c2eeb28",
+    "08_Decision-Making\\Sauce-Texture-Correction-Matrix.md": "8fa6f36fe9f380c5f7bbd5ce3a21805b3dd1a136f83c6ec0bbaf6da248f69a6f",
+    "09_Sources\\SRC-BCCAMPUS-MEAT-2015.md": "22a6fe07bc38ae6902ba1827be1c7057ffdbd85859452795456bb572e41bab62",
+    "09_Sources\\SRC-BCCAMPUS-PASTRY-2015.md": "73960785470df5f6f314019ad5dff13ed97730d9a216a79a3fac2eb55add8020",
+    "09_Sources\\SRC-FOODLAB-2015.md": "dd465a207dd046a9a04ece9348e0f90e5c300069f0bb41a8805c328d3ce0e06e",
+    "09_Sources\\SRC-MCGEE-2004.md": "15623abac3c1dc6cacec0c36b8953747c0cbd6e97cdd28ba3f759a384ed230f3",
+    "09_Sources\\SRC-MODCUIS-2011.md": "1b019a884040a207974c4008d1e6ecbe014f24fa52099f89ba58591d4378adbd",
+    "09_Sources\\SRC-USDA-FSIS-2024.md": "ecdcc8f972b3bfc35c0dc62948743ddecf7a2cd9e0313c726c2b6a0bc3e9b3fb",
+    "10_Knowledge-Gaps\\Collagen-Time-Curve-By-Animal-Age.md": "08f5623c4450b0fe60371fb09a4391112a9ff2ab1a0a4371c8519f3e7030c7de",
+    "10_Knowledge-Gaps\\Egg-Albumen-Biological-And-Adhesion-Unknowns.md": "f3d6304cc32db8be0a419184b72a8b410664c7c5e9212ab1738fa873ba987ddd",
+    "10_Knowledge-Gaps\\Fish-And-Shellfish-Documented-Unknowns.md": "40f3a0794e699a9ed4aecb7f5f7f2ebdd52519617a532c15ecdd960ba871ca42",
+    "10_Knowledge-Gaps\\Home-Oven-Convection-Variance.md": "24640dc178b22245b5a95e6d47cbdbec839c3ee9735af5398a5b621a13b8501c",
+    "10_Knowledge-Gaps\\Meat-Science-And-Cooking-Documented-Unknowns.md": "ce01edd99fefd4bfa58acc9a5b99de43d14569f929967fb35873221e77cfb387",
+    "11_Conflicts\\Pasta-Water-Oil-And-Volume.md": "8317e05827deac8e81bf0f9e538fb4dc55a900249d76fa250ac876e5f01edefd",
+    "11_Conflicts\\Pre-Salting-Steak-Timing.md": "40932fc7f22496629948ab390f65105db43279aeaaf76bc6e9020c7cca9106a6",
+    "11_Conflicts\\Searing-Locks-In-Juices-Myth.md": "883a218d04fa79bb3b6e31f4fb1b8aff03f6ae70496290c4e6a09c378c4c6ede",
+    "12_Rules\\Rule-Collagen-Cut-Moist-Heat.md": "2c21e967db6fb285ef9d6123d1676b41bdd62e9b1d0a9b194349bb0a83e13b2b",
+    "12_Rules\\Rule-Custard-Curdling-Rescue.md": "44de8eb216d10c473233c796b393098cc0797b84fcba0b2620751eeee41e24c1",
+    "12_Rules\\Rule-Onion-Browning-Before-Softening.md": "ab1f89ad2f87a43176560ec896496f29972bb725f10e5a3615ab06c1c2fb8d6f",
+    "12_Rules\\Rule-Pan-Crowding-Steam-Inhibition.md": "ec5f734c5ec4c55399362e3b297ae6f3df2097afc18c3d36d42bd5bce02e3ace",
+    "12_Rules\\Rule-Poultry-Safe-Core-Temperature.md": "6e12df3691d58c21f4d7c8081a9b9c5c94dc87c64f2582fcca5d0f935eb04be5",
+    "12_Rules\\Rule-Starch-Slurry-Dispersion.md": "580a086223b1d9d95f62c10880eb8ed454ebd1c8dc258b1b81bc14bc53ca0375",
+    "13_Templates\\Contradictory-Claim-Template.md": "b4a55e4cd56cb7a67febed7ba179f3c10c05b7c277578d8bd722c5ef407d4ca9",
+    "13_Templates\\Cooking-Technique-Template.md": "605c548554afcf2a91865672db6542ea93a2e5523aad97ba7e22db286cb56d85",
+    "13_Templates\\Culinary-Rule-Template.md": "cdfc540cb1497d1d7636af5dd59b2e96196b03f701c405fbc218086840b7bcaf",
+    "13_Templates\\Ingredient-Template.md": "891f3222bb4b9886d87274c3442b1dc9c33660acfc24fcb044952799b291d741",
+    "13_Templates\\Knowledge-Gap-Template.md": "89927e18d6fcd09d3217c837a030e9407320818d5ad4205c34e72dcfe85dffcc",
+    "13_Templates\\Knowledge-Source-Template.md": "c79345f670d6ca9534a9d50b1d29946655111fe3d7905c0e8d2c59d1d6f45a3e",
+    "13_Templates\\Scientific-Principle-Template.md": "d591ff98dd468431cf0ef1580b7105226020f7849344fbf8f277eaf50cba87eb"
+  },
+  "application_hashes": {
+    "app\\backup.py": "504a7bdd2a23157197000f951b61669829804db340b6f84a7b0002da377ec5e1",
+    "app\\book_knowledge.py": "8330bc6eb33083b3d5031ddccb8309866489610d15e70f325add9886183a321c",
+    "app\\chef.py": "e3ee37be3b53a8e524b65760d8c28aad6f77fddf68acc5f77b7be3fd40c4e12e",
+    "app\\coach.py": "f4db08282036c74e980fe8bd8ca3ad5f04f520b408a86f53806e0a252716921f",
+    "app\\config.py": "e9e46863aac9a160a44e93e7d94d07bd5502ce6326f44da4bbb43eed6983a161",
+    "app\\consultant.py": "14c0162595574620f3369927595612b6e390a77ee3f9e48fde28adb258f278da",
+    "app\\culinary_basics.py": "483fc0595c4ba64afe5b71552c549812146edbf5da9f47dcd5af26f709b51e33",
+    "app\\culinary_context.py": "c34ee4cea1247ca7522748e35b84f88932e89c717068a9845d7ad9274d698cb3",
+    "app\\culinary_domain.py": "abaac59f5b5917618ca3972accf74d911dce4136f989465d8b0d0d39d91f42c3",
+    "app\\culinary_engine_api.py": "b8b3e45f1821eb99560345857bfe730b8ead92101af26075641eec29bee7f2f8",
+    "app\\culinary_evaluation.py": "462d092b5821f5c8be53dbbd27f1aa7d47c016f774b14b955583f273e0d1b373",
+    "app\\culinary_sources.py": "7fae4166561f6bb1abd08d0b46cf999e77ee4b798a4d9c881ee73158d20aa723",
+    "app\\db.py": "ad61e4a770e963db5bbc3b7d69247c1afaab441007e7a61ffe32ba3e97be4a14",
+    "app\\decision_table.py": "d685058165e8cccccd736569f9e0777ebcaf985ac42daf52439483b8095bd5e5",
+    "app\\evaluation.py": "067345b544c2cf19e61743c24bb45656eb1ba287f061c351f78850ed2885b146",
+    "app\\gizzard_guidance.py": "a1de69abdc713d8b249130590d8ba65d1fc86581d4370e87254f1c7cb38a0f6f",
+    "app\\history.py": "e48937204dcf189ff376e137377b60035f32ab4e82314b8fb0ae968d8c33394e",
+    "app\\knowledge.py": "cfa782ee58b61a032e6b155afab209b5a5a220d3718cab8e27d9b3795f9ad19d",
+    "app\\knowledge_graph.py": "32cf59fc7b72ab6c0015fa8e5c41e77c9eb92980cdb23e8ff04697dc8150610d",
+    "app\\main.py": "5dbcec46980384656586240887ce0c236bb84bc12c846196f1e660c4e0b2dff6",
+    "app\\method_policy.py": "63113b7fc57a5786c2bad616e2fcf964814c3aebf7f19f8707cc769666855aa3",
+    "app\\model.py": "4f4d18169150c7de7b4949e3eb21ed94f97486925a70a9d4139d9a9cad6d20c9",
+    "app\\ontology_bridge.py": "58e4320f17e0bfeb2fc817ad3395919468ba60a2a414fef115519ccbdb3e37ad",
+    "app\\policies.py": "900c4dd972765906ccb7c31153efc13b8acb1b634663f056c968d068cb646c8c",
+    "app\\problem_rules.py": "8ade702373e6112ac025237915afb79a71aa3d4f6f180b680bde290720d11e0e",
+    "app\\provider.py": "570660272093acbaa58978e71bf3bdb1fec5f72bff3d01db4ea4f3a7bbe134d5",
+    "app\\retrieval.py": "c89be8b13f20945eddf4094ca94de18df78ff1eed553a2220c2e3f70853030b8",
+    "app\\salmon_guidance.py": "d1029e8a980be73738dfac31240d8fad6cba79375a04f3293e86e274aa1423fb",
+    "app\\schemas.py": "45aad9beda850aa28caa338fe0d987dd10782ec7c74d71c5149e55b54b199d22",
+    "app\\sync.py": "f083f91eab09f4ea9cb0451cfb6c1fcde32159ee82030ea80f768aabec5f94be",
+    "app\\__init__.py": "6cec112781e6075f6cd5bab364a9832a903cfe6bc06e26e1e6381051c59a0f3c",
+    "migrations\\env.py": "c2ff87e0891977848628ca8cfbdde6af8d942d199c527db6de241943fa9f4e1e",
+    "app\\data\\culinary_domain_source.yaml": "266061e7a56c2e9a7f238feb415db436e60c701619b83a52de352b9d38a0b922",
+    "app\\data\\culinary_graph_source.yaml": "9ffe8a92f4e8239f1d0b66b7ec01bc89f177e3f98a6552db8dc11dd7ed0dc85e",
+    "app\\data\\gizzard_user_protocol.json": "75308eb246f86fc01d99cea8f91310f0d7be4efc16bf40cfff07d34c62bc3784",
+    "app\\data\\method_policy.yaml": "b67344f59e4ce4f303f4fb4956f66f074a5c8a719204dbbfa28e340d186227ca",
+    "app\\data\\problem_rules.yaml": "341e06158728a7c6fc94f3b2c99cb4d7aabe8a20ddb227c241bf2dbe2540032b",
+    "app\\static\\coach.css": "35eadb54561d401e7dd9ce41f92f73b186906677692a711c0390a3fcd8a55a39",
+    "app\\static\\coach.js": "d1c51afd78dd5b366ef9e22e26e343056d19eadff64004a608a41ca9872c54f2",
+    "app\\static\\console.css": "0efeb40ec93c7cc23462439c5ceab01b03890a24336e73c7a01a7dff591af0a6",
+    "app\\static\\console.js": "e3ae9c596800387ed0ac6ecf7f3cdba8c4366e1e786f422a9ee5075ddbec455c",
+    "app\\static\\culinary-engine.js": "c41bd2571fef8678f0800dd57851855a0853580abe2780cef8a8794c59962c8a",
+    "app\\static\\culinary-sources.js": "35c981ac6cf87efe58ce2ebb3ff3375080ed621b2e62e5e1932eb9b06541f21b",
+    "app\\static\\index.html": "e40d6b915b39ce24faa88d87f336ee16ee52479db38377081c8f3b189d790ffc",
+    "app\\static\\kitchen-focus.css": "7b0770243d547a2d834125723b138c76921bfe208a2e408ade42cee89cd775a0",
+    "app\\static\\kitchen-focus.js": "93b0faed92927f5e181b64344965734facf15d8409ff7c5eaa6b8a25a74472f7",
+    "app\\static\\kitchen.js": "ebf2cb6076eb5e304701dd994ffc6d883d1c196d1f541307411ff1011392dff2",
+    "app\\static\\method-policy.js": "2a0901e0f65d3d178b18f3a26062d32f0316489097eccb3d2614cc50acfa1b68",
+    "app\\static\\problem-rule-defaults.js": "597d18952e59b15bac4a4b07643e69c55b3fc8f6deb6cb11bce7fb71a2e1ec8a",
+    "app\\static\\problem-rules.js": "d1ac2f3769283283cd5430a70cada6db1bc871c9b519beeb1692d331ae92772c",
+    "app\\static\\start-help.js": "d236ab1d6455fd880aa843579b1c3b4e144966e8cdb69ff241101a61a296a8b4",
+    "app\\static\\voice.js": "c202cd8ff6f03cd16cb07ff93f7fbe2406432e0ecc60ba5c624086e7c95686c9",
+    "app\\static\\workbench.css": "3386ad6fe3fb6caf4b378bfe9bb6c5cd4996987984c5f4a84dbb9a5b62806ebb",
+    "app\\static\\workbench.js": "da02cc77fc9318dd3561b114a1e3a9d9898118bc7e3b7caed4443484df50ecc7",
+    "migrations\\versions\\0001_initial.py": "e275ccf7a9e9fab3351f34d7669260ff0625e16d81236581f4fbe9b2f3e26e8c",
+    "migrations\\versions\\0002_culinary_sources.py": "3036e7d36b709c9003fdeecbbb7c52dfc79836d68d9e8a210fe5c765ca567b95"
+  },
+  "original_pdf_modified": false,
+  "chef_application_modified": false
+}

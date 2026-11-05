@@ -17,3 +17,4 @@
 .culinary-basics{margin-top:20px;border-top:1px solid var(--line);padding-top:12px}
 .culinary-basics h3{font-size:18px}.basic-card h4{margin:12px 0 4px}.basic-card p{margin:4px 0}.basic-card{margin:10px 0}.basic-card small{overflow-wrap:anywhere}
 @media(max-width:650px){#inventory .inventory-item,.inventory-header{grid-template-columns:minmax(0,1fr) 54px 58px 36px;gap:6px}#inventory .inventory-fields label:first-child{grid-column:auto}#inventory .remove-item{grid-column:4;grid-row:1}#inventory .inventory-item input{padding:7px 4px}}
+.station-block{border-block-end:1px solid #c6cbbd;padding-block:10px;overflow-wrap:anywhere}.station-block h4{margin-block:4px 8px}.station-block p{white-space:pre-line;line-height:1.65}.station-next-question{font-weight:700}

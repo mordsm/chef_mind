@@ -1,0 +1,86 @@
+version: 1
+archetype_families:
+  freshwater_white_fish: fish
+  delicate_white_fish: fish
+  dense_collagen_lean: meat
+  lean_tender_muscle: meat
+  watery_tender_greens: vegetables
+  dense_starchy_tubers: vegetables
+fish_safety:
+  approval_status: APPROVED
+  core_c: 63
+  hold_seconds: 15
+  approval_date: "2026-11-05"
+  approval_basis: "Owner approval in conversation for intact, unstuffed finfish; kitchen-specific HACCP validation remains separate."
+  source: https://www.fda.gov/media/164194/download
+  section: FDA Food Code 2022, 3-401.11(A)(1), 3-501.14
+  scope: unstuffed intact finfish; not minced fish, stuffed fish or raw service
+  cooling: "אם שומרים להמשך במקום להגיש: חלק מיד לכלים קטנים ורדודים והתחל קירור מהיר; אל תחכה שהסיר יתקרר על השיש. אפשר להיעזר באמבט מי קרח מסביב לכלי. בדוק במדחום: מ־57°C ל־21°C בתוך שעתיים, ואז עד 5°C בתוך 6 שעות בסך הכול מתחילת הירידה מ־57°C. המשך לאחסון במקרר מתחת ל־4°C. הזמנים הם גבולות לקירור, לא זמן המתנה לפני שמכניסים למקרר."
+  rest: "5. הוצא להגשה אחרי שהמרכז הגיע ליעד והשלמת את זמן ההחזקה. אל תוציא את הדג מוקדם מתוך הנחה שימשיך להתחמם בצלחת. אין צורך להמתין עוד אחרי שהושלם הבישול."
+fish_time_guide:
+  source: https://www.fishfiles.com.au/consuming/cooking/poaching
+  source_id: SRC-FRDC-FISH-POACHING
+  text: "כמה זמן לתכנן? מדריך Fishfiles נותן לפילה בעובי 1 ס״מ כ־3 דקות, 2 ס״מ כ־5 דקות, ו־3 ס״מ כ־5–8 דקות, בנוזל בחום 75–85°C. אלו זמני הערכה כלליים, לא מתכון בדוק לנסיכת הנילוס. ברוטב שלנו, ב־70–80°C, ייתכן שיידרש יותר זמן, במיוחד בקצה הקר של הטווח. ספור מהרגע שהרוטב חזר לחום הרצוי אחרי הכנסת הדג. בדוק במהלך הבישול, ואל תפסיק רק כי נגמרו הדקות: המדידה במרכז הדג קובעת מתי לסיים."
+readings:
+  fish:
+    author: Harold McGee
+    book: On Food and Cooking
+    edition: 2nd edition, 2004
+    chapter: "4 — Fish and Shellfish"
+    pages: "179–242; שליקה 215–217"
+    verification: "פרק ועמודים תועדו במקור המקומי SRC-MCGEE-2004 ו־TEC-FISH-002; לא פרוטוקול מאומת למין מסוים."
+    resources:
+      - title: "מקור רחב: Harold McGee — On Food and Cooking, פרק 4, עמ׳ 179–242; שליקה בעמ׳ 215–217"
+        url: https://www.simonandschuster.com/books/On-Food-and-Cooking/Harold-McGee/9780684800011
+        scope: "רקע על דגים, חימום, מרקם וריחות. הספר כבר במאגר; הקישור הוא לעמוד הספר בהוצאה, לא לטקסט מלא בחינם. אינו מספק כאן זמן בדוק לנתח שלך."
+      - title: "קריאה ממוקדת: McGee — טמפרטורות לשליקת דגים"
+        url: https://origin.ckbk.com/reference/food00011c04s001e008se003se006se002/poaching-temperatures
+        scope: "קטע מתוך אותו ספר. ייתכן שתידרש הרשמה לקריאת הטקסט המלא. להסבר השיטה; יעד הבטיחות בהנחיה נקבע בנפרד לפי מקור FDA."
+      - title: "מדריך חינמי: FDA — בחירה, הכנה ואחסון של דגים"
+        url: https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely
+        scope: "הנחיות לקנייה, הפשרה, בישול ואחסון. זהו מקור משלים לבטיחות, ולא מתכון לנסיכת הנילוס."
+      - title: "זמני בישול משוערים לפי עובי — Fishfiles"
+        url: https://www.fishfiles.com.au/consuming/cooking/poaching
+        scope: "הערכות לפילה בעובי 1, 2 ו־3 ס״מ, בנוזל ב־75–85°C. לא זמן סיום מובטח; בודקים במדחום."
+  meat:
+    author: Harold McGee
+    book: On Food and Cooking
+    edition: 2nd edition, 2004
+    chapter: "3 — Meat"
+    pages: "118–178"
+    verification: "טווח הפרק תועד ב־SRC-MCGEE-2004."
+  eggs:
+    author: Harold McGee
+    book: On Food and Cooking
+    edition: 2nd edition, 2004
+    chapter: "2 — Eggs"
+    pages: "68–117"
+    verification: "טווח הפרק תועד ב־SRC-MCGEE-2004."
+  general:
+    author: Harold McGee
+    book: On Food and Cooking
+    edition: 2nd edition, 2004
+    chapter: "14 — Cooking Methods and Utensil Materials"
+    pages: UNKNOWN
+    verification: "מספרי העמודים לא אומתו; אין לייחס לספר פרוטוקול מנה חסר."
+profiles:
+  - id: nile_perch
+    title: נסיכת הנילוס
+    aliases: [נסיכת הנילוס, nile perch, lates niloticus]
+    family: fish
+    ingredient_family: freshwater-fish
+    preferred_method: boil_simmer
+    preparation: "הכן קרש נפרד לדגים, סכין, נייר סופג ומדחום מחט. הוצא את נסיכת הנילוס מהמקרר סמוך לבישול וייבש היטב בנייר. בהכנה הזו אין צורך בהשריה בחלב, לימון או מי מלח. ייבש את הדג והמשך לבישול."
+    science: "בחום חזק בשר הדג מתכווץ ומאבד נוזלים, ורקמת החיבור שמחזיקה אותו מתרככת. לכן בישול עדין ברוטב עוזר לשמור על נתח עסיסי שלא מתפרק. קולגן הוא חלק מרקמת החיבור הזו. לעיתים יש בדגי מים מתוקים חומרים בעלי ריח אדמתי, גיאוזמין (geosmin) ו־2-MIB. אין לנו בדיקה שמראה שהם נמצאים בדג שלך, ולכן איננו מציעים השריה כפתרון מוכח."
+    flavor: "לפני הכנסת הדג, טעם את הרוטב בכפית נקייה. חסר מלח? הוסף קמצוץ קטן, ערבב וטעם שוב. רוצה טעם לימוני? נסה כמה טיפות לימון בכף רוטב נפרדת. אהבת? הוסף מעט לימון לסיר וטעם שוב.\nרוצה משהו פריך מעל הדג? אם לחם מתאים לך, ערבב מעט פירורי לחם במחבת יבשה עד שהם מזהיבים. פזר על הדג בצלחת, ממש לפני האכילה. התוספת הזו אינה חובה.\nלשתייה לצד המנה: אפשר מים או מים מוגזים עם פלח לימון בכוס. אין הכוונה לשפוך אותם לרוטב. למי שרוצה יין: Chenin Blanc יבש מ־Anjou שבעמק הלואר, צרפת. בחר מה שטעים לך."
+    wikilinks: ["[[Nile Perch]]", "[[Geosmin Hydrolysis]]", "[[Fish Collagen]]", "[[Low-Temperature Poaching]]"]
+    tags: ["culinary/ingredient/freshwater-fish", "culinary/science/geosmin", "culinary/technique/poaching"]
+    gaps: ["זמן חימום לפי נתח ועובי לא אומת", "טיפול מקדים בחומצה, מלח או חלב: ריכוז ומשך לא אומתו", "אין אימות לפירוק 2-MIB בטיפול הביתי המוצע", "התאמת היין היא הצעה קולינרית"]
+    sources:
+      - SRC-MCGEE-2004
+      - TEC-FISH-002
+      - SRC-FDA-SEAFOOD-CONSUMER
+      - SRC-FRDC-FISH-POACHING
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6801251/
+      - https://scholarsjunction.msstate.edu/td/2707/
+      - https://www.domaineamirault.com/wp-content/uploads/2023/08/Fiche-TecH-FDFAnjou-blanc-EN-1.pdf
