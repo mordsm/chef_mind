@@ -90,12 +90,17 @@ def _parse_markdown_file(path: Path, ontology_root: Path) -> dict | None:
                     }
                 )
     raw_sources = meta.get("sources") or []
+    if not raw_sources and meta.get("source_id"):
+        raw_sources = [{
+            "source_id": meta["source_id"], "chapter": meta.get("chapter", ""),
+            "printed_pages": meta.get("printed_page", ""), "pdf_pages": meta.get("pdf_page", ""),
+        }]
     sources = []
     if isinstance(raw_sources, list):
         for src in raw_sources:
             if isinstance(src, dict):
                 sources.append(
-                    {
+                    {**src,
                         "source_id": _clean_wikilink(str(src.get("source_id") or "")),
                         "citation": str(src.get("citation") or src.get("source_id") or ""),
                     }
@@ -103,6 +108,7 @@ def _parse_markdown_file(path: Path, ontology_root: Path) -> dict | None:
             elif isinstance(src, str):
                 cleaned = _clean_wikilink(src)
                 sources.append({"source_id": cleaned, "citation": cleaned})
+    meta = {**meta, "sources": sources}
     return {
         "id": node_id,
         "stem": path.stem,

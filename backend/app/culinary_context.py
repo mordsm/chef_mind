@@ -17,6 +17,9 @@ class ContextTip(StrictModel):
     source: str = Field(max_length=1000)
     origin: str = Field(default="EDITORIAL", max_length=60)
     source_ids: list[str] = Field(default_factory=list, max_length=16)
+    knowledge_id: str = Field(default="", max_length=100)
+    revision_sha256: str = Field(default="", pattern="^(|[0-9a-f]{64})$")
+    usage: str = Field(default="", max_length=80)
     practical: bool = False
     step_keywords: list[str] = Field(default_factory=list, max_length=20)
 

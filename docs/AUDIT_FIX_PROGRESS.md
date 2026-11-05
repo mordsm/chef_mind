@@ -47,3 +47,17 @@ strings and replaced vague generic seasoning prose with concrete tasting steps.
 Browser regression passed at desktop/mobile widths with model recognition
 disabled; focused tests additionally cover foreground burning/bean warnings.
 This preserves the six-block full protocol and existing source exports.
+
+## Cycle 4 — normalized source references and food relevance
+
+CM-008/009: legacy singular source_id and source-page metadata are normalized
+alongside existing source lists. Explanatory summary paragraphs can be retrieved
+as background; they are not executed as recipes or approved en masse. Fish/egg
+scope and bilingual poaching relevance prevent the reproduced cross-food result.
+Retrieved tips carry note ID and SHA-256; the schema preserves those fields.
+Exports distinguish editorial references from approved action citations, while
+the legacy source_ids field remains a compatibility reference index.
+
+Validation: 38 book/station/ontology tests passed. Initial tests caught Hebrew
+ranking and strict-schema issues; both were corrected before committing.
+No production private index approval or deployment was performed.

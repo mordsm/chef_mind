@@ -123,6 +123,15 @@ def test_nile_perch_method_registry():
     assert {"deep_fry", "grill_direct"} <= {item["id"] for item in options["blocked"]}
 
 
+def test_recommended_sources_are_not_presented_as_approved_action_citations():
+    protocol = build_protocol("נסיכת הנילוס")
+    assert protocol["editorial_references"]
+    assert protocol["action_citations"] == []
+    header = yaml.safe_load(protocol["obsidian_markdown"].split("---", 2)[1])
+    assert header["action_citations"] == []
+    assert header["editorial_references"] == protocol["editorial_references"]
+
+
 def test_missing_station_profile_still_resolves_ingredient_family(approved_fish):
     approved_fish["profiles"] = []
     protocol = build_protocol("נסיכת הנילוס", model_status="disabled")

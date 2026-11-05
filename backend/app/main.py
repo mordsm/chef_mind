@@ -424,6 +424,7 @@ def create_app(settings: Settings | None = None, engine=None):
             from app.station_protocol import obsidian_note, render_text
 
             protocol = decision.station_protocol
+            protocol["action_citations"] = [citation.model_dump(mode="json") for citation in decision.citations]
             protocol["blocks"][5]["text"] += "\nמקורות מאושרים לפעולה: " + "; ".join(
                 f"{citation.source_id} / {citation.knowledge_id}: {citation.source_reference}"
                 for citation in decision.citations

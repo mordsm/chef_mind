@@ -71,6 +71,8 @@ def obsidian_note(protocol, title):
         "knowledge_gap_flagged": protocol["knowledge_gap_flagged"],
         "recommended_reading": protocol["recommended_reading"],
         "source_ids": protocol["source_ids"],
+        "editorial_references": protocol.get("editorial_references", []),
+        "action_citations": protocol.get("action_citations", []),
         "unverified": protocol["gaps"],
     }
     return (
@@ -292,6 +294,9 @@ def build_protocol(
         ]))
     if hazard:
         protocol["source_ids"].append(hazard["source_id"])
+    protocol["source_ids_semantics"] = "reference_index_not_proof_of_claim_support"
+    protocol["editorial_references"] = [{"source_id": value, "usage": "editorial_reference"} for value in protocol["source_ids"]]
+    protocol["action_citations"] = []
     if blocked or method_warning:
         protocol["current_action"] = {"text": preparation if blocked else execution, "kind": "safety"}
     elif current and current.get("instruction"):

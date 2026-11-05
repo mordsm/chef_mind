@@ -1,12 +1,31 @@
 """Additive, attributed book knowledge for the cooking coach."""
 
 import json
+import re
 from functools import lru_cache
 
 import yaml
 
 from app.ontology_bridge import DEFAULT_VAULT_ROOT, load_ontology
 from app.retrieval import semantic_concepts, tokens
+
+
+def food_domains(text):
+    from app.ingredient_safety import contains
+    aliases = {"fish": ("fish", "finfish", "salmon", "דג", "דגים", "סלמון"),
+               "eggs": ("egg", "eggs", "ביצה", "ביצים")}
+    return {key for key, values in aliases.items() if any(contains(text, value) for value in values)}
+
+
+def background_excerpt(body):
+    """Read a note's explanatory summary only, never execute its rule parameters."""
+    match = re.search(r"^##\s+(?:תקציר הידע|תקציר|Summary)\s*\n+(.+?)(?=\n\s*\n|\n##|\Z)", body, re.M | re.S)
+    return re.sub(r"[*`]", "", match.group(1)).strip()[:1000] if match else ""
+
+
+def technique_domains(text):
+    from app.ingredient_safety import contains
+    return {"poaching"} if any(contains(text, value) for value in ("שליקה", "שליקת", "poach", "poaching")) else set()
 
 # Application guidance derived from the notes; provenance remains in source/source_ids.
 PRACTICAL_TIPS = {
@@ -59,9 +78,14 @@ def book_tips(query, *, limit=3):
     except (OSError, ValueError, yaml.YAMLError):
         return []
     q_tokens, q_concepts = tokens(query), semantic_concepts(query)
+    query_domains = food_domains(query)
     ranked = []
     for node in data["nodes"]:
         meta = node["metadata"]
+        primary_scope = " ".join([node["name"], node["title_he"], str(meta.get("title", "")), str(meta.get("chapter", "")), " ".join(meta.get("tags", []))])
+        node_domains = food_domains(primary_scope)
+        if query_domains and node_domains and query_domains.isdisjoint(node_domains):
+            continue
         foodlab = node["id"] in enabled_claims and meta.get("source_text_checked") is True
         mcgee_checked = node["id"] in mcgee_claims and meta.get("source_text_checked") is True
         mcgee_rule = (
@@ -96,7 +120,7 @@ def book_tips(query, *, limit=3):
         explanation = (
             meta.get("claim")
             if foodlab or mcgee_checked
-            else meta.get("description") or meta.get("scientific_rationale")
+            else meta.get("description") or meta.get("scientific_rationale") or background_excerpt(node["body"])
         )
         if rule or mcgee_rule:
             explanation = f"אם: {meta.get('if', '')}. אפשרויות: {meta.get('then', '')}. הסבר: {meta.get('because', '')}. פשרות: {meta.get('tradeoffs', '')}"
@@ -107,7 +131,7 @@ def book_tips(query, *, limit=3):
         concepts = q_concepts & semantic_concepts(searchable)
         if not overlap and not concepts:
             continue
-        score = len(overlap) + 2 * len(concepts)
+        score = len(overlap) + 2 * len(concepts) + 4 * len(technique_domains(query) & technique_domains(primary_scope))
         ref = refs[0]
         if ref["source_id"] == "SRC-FOODLAB-2015":
             if not foodlab and not rule:
@@ -150,13 +174,17 @@ def book_tips(query, *, limit=3):
                     + node["sha256"],
                     "origin": origin,
                     "source_ids": [ref["source_id"], node["id"]],
+                    "knowledge_id": node["id"],
+                    "revision_sha256": node["sha256"],
+                    "usage": "retrieved_background_not_approved_action",
                 },
             )
         )
     from app.method_policy import canonical_method
     from app.practical_knowledge import practical_tips
 
-    ranked.extend((100, tip) for tip in practical_tips(query, canonical_method(query)))
+    ranked.extend((100, tip) for tip in practical_tips(query, canonical_method(query))
+                  if not query_domains or not food_domains(tip["title"]) or not query_domains.isdisjoint(food_domains(tip["title"])))
     ranked.sort(key=lambda pair: pair[0], reverse=True)
     # Keep both books available when both have relevant evidence.
     selected = []

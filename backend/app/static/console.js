@@ -113,6 +113,7 @@ function renderStationProtocol(container,protocol){
    article.append(section);
  }
  if(protocol.next_question)article.append(el('p','הפרט הבא לביצוע: '+protocol.next_question,'station-next-question'));
+ if(protocol.action_citations?.length){const details=el('details','','station-action-citations');details.append(el('summary','המקורות שתומכים בפעולה הזו'));for(const citation of protocol.action_citations){details.append(el('p',citation.supporting_text));reference(details,citation.source_reference);}article.append(details);}
  const download=el('button','ייצוא פתק Obsidian','secondary');download.type='button';
  download.addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([protocol.obsidian_markdown],{type:'text/markdown;charset=utf-8'}));const link=el('a');link.href=url;link.download='culinary-station-log.md';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
  article.append(download);container.append(article);

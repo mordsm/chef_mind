@@ -1,6 +1,7 @@
 from app.book_knowledge import book_tips, enrich_context
 from app.coach import CoachCommand, apply_command
 from app.consultant import cooking_context
+import pytest
 
 
 def test_gizzard_context_keeps_safety_and_adds_attributed_book_explanation():
@@ -14,6 +15,17 @@ def test_gizzard_context_keeps_safety_and_adds_attributed_book_explanation():
 
 def test_unrelated_query_does_not_receive_book_advice():
     assert book_tips("zzzzzzzzzzzzzzzzz") == []
+
+
+@pytest.mark.parametrize("query", ["fish poaching", "שליקת דגים"])
+def test_fish_retrieval_reads_existing_legacy_note_without_egg_advice(query):
+    tips = book_tips(query, limit=6)
+    fish = next(tip for tip in tips if tip.get("knowledge_id") == "TEC-FISH-002")
+    assert "SRC-MCGEE-2004" in fish["source_ids"]
+    assert len(fish["revision_sha256"]) == 64
+    assert fish["usage"] == "retrieved_background_not_approved_action"
+    assert not any("TEC-EGG-002" in tip["source_ids"] for tip in tips)
+    assert not any("שליקת ביצים" in tip["title"] for tip in tips)
 
 
 def test_enrichment_preserves_existing_tips_and_is_idempotent():
