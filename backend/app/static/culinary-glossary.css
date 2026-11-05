@@ -3,3 +3,4 @@
 #culinary-glossary-dialog{max-width:min(640px,90vw);max-height:80vh;overflow:auto;border:1px solid #719688;border-radius:12px;padding:20px;line-height:1.7}
 #culinary-glossary-dialog::backdrop{background:#0007}
 #culinary-glossary-open{margin:12px}
+.station-current-action{padding:14px;border:2px solid #387159;border-radius:10px;background:#f0f7ed;margin-bottom:12px}.station-current-action[data-kind=safety],.station-current-action[data-kind=warning]{border-color:#ac5d19;background:#fff4de}.station-current-action p{white-space:pre-line}

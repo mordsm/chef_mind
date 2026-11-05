@@ -132,6 +132,8 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     from app.coach import say
 
     state = deepcopy(state)
+    if command.action not in {"ask", "report", "answer", "problem"}:
+        state["learning_focus"] = None
     from app.ingredient_safety import check_ingredients
     if command.action not in {"update_plan", "finish", "pause", "timer_cancel"}:
         check_ingredients(

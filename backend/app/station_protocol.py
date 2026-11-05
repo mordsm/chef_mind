@@ -55,6 +55,8 @@ def render_text(protocol):
     text = "\n\n".join(
         f"{i}. {block['title']}\n{block['text']}" for i, block in enumerate(protocol["blocks"], 1)
     )
+    if protocol.get("current_action"):
+        text = "עכשיו: " + protocol["current_action"]["text"] + "\n\n" + text
     if protocol["next_question"]:
         text += "\n\nהפרט הבא לביצוע: " + protocol["next_question"]
     return text
@@ -136,11 +138,11 @@ def build_protocol(
     )
     flavor = (profile or {}).get(
         "flavor",
-        "כוון מלח וחומצה בהדרגה ברכיב שמוכן לטעימה, ושמור ניגוד בין מרקם רך לפריך רק עם רכיבים מתאימים לאלרגיות. התאמת משקה טרם אומתה למנה; הגש מים לצד הטעימה.",
+        "טעם רכיב שכבר מוכן לאכילה בכפית נקייה. חסר מלח? הוסף קמצוץ קטן, ערבב וטעם שוב. רוצה טעם לימוני? נסה כמה טיפות לימון בכף נפרדת לפני שמוסיפים לסיר. אפשר לשתות מים לצד המנה.",
     )
     if family == "fish" and not profile:
         flavor += " הצעת התאמה, לא כלל מאומת למנה: Chenin Blanc יבש מ־Anjou, עמק הלואר, צרפת."
-    execution = "טמפרטורת בישול ומשך: UNKNOWN — לא אומתו למנה ולשיטה. אל תתחיל חימום לפי מספר משוער. בדוק חיתוך אחיד ומצב חומר הגלם; זמן וסימן חושי אינם אישור בטיחות."
+    execution = "עדיין חסרה כאן הוראת בישול מתאימה למנה ולשיטה. אל תתחיל לחמם לפי ניחוש. השלם את פרטי המנה או בחר מתכון נתמך כדי לקבל את הפעולה הבאה."
     if current and current.get("instruction"):
         preparation += " הפעולה שנבחרה: " + current["title"] + "."
         execution = (
@@ -290,6 +292,10 @@ def build_protocol(
         ]))
     if hazard:
         protocol["source_ids"].append(hazard["source_id"])
+    if blocked or method_warning:
+        protocol["current_action"] = {"text": preparation if blocked else execution, "kind": "safety"}
+    elif current and current.get("instruction"):
+        protocol["current_action"] = {"text": current["instruction"], "kind": "action"}
     protocol["text"] = render_text(protocol)
     protocol["obsidian_markdown"] = obsidian_note(protocol, name)
     return protocol
@@ -324,9 +330,13 @@ def attach_station(state):
         if protocol["family"] == "fish":
             useful = [s for s in useful if not re.search(r"\d.*(?:°|מעלות|דקות|שניות|minutes|seconds)", s)]
         if useful:
-            protocol["blocks"][2]["text"] += (
-                "\nבהקשר לשאלה או לדיווח האחרון, מתוך מסלול ההכוונה המקומי: " + " ".join(useful)[:1200]
-            )
+            # The actual answer belongs in the foreground, not inside closed science.
+            answer = " ".join(useful)[:1200]
+            if protocol.get("current_action", {}).get("kind") != "safety":
+                protocol["current_action"] = {
+                    "text": answer,
+                    "kind": "warning" if any(word in answer for word in ("שרוף", "חריכה", "עצור", "סיכון")) else "answer",
+                }
             protocol["source_ids"] = list(
                 dict.fromkeys([*protocol["source_ids"], *focus.get("source_ids", [])])
             )

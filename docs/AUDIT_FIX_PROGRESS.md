@@ -35,3 +35,15 @@ actually performed the required preparation.
 
 Validation: 38 safety/station tests passed, including the exact slow-cooker
 question from the audit and dry/canned/unknown controls. No live deployment.
+
+## Cycle 3 — visible action and warning
+
+CM-004/011 and presentation part of CM-012: a current-action card precedes the
+full station protocol. Contextual answers and warnings no longer go only into
+closed science details; safety holds retain priority. Stale learning answers
+are cleared on non-dialogue transitions. Restored the two corrupted Hebrew
+strings and replaced vague generic seasoning prose with concrete tasting steps.
+
+Browser regression passed at desktop/mobile widths with model recognition
+disabled; focused tests additionally cover foreground burning/bean warnings.
+This preserves the six-block full protocol and existing source exports.

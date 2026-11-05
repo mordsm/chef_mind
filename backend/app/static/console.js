@@ -100,6 +100,7 @@ function renderDecision(d){
 }
 function renderStationProtocol(container,protocol){
  const article=el('article','','station-protocol');
+ if(protocol.current_action){const action=el('section','','station-current-action');action.dataset.kind=protocol.current_action.kind;action.setAttribute('role',['safety','warning'].includes(protocol.current_action.kind)?'alert':'status');action.append(el('h3',protocol.current_action.kind==='safety'?'לפני שממשיכים':'עכשיו'),el('p',protocol.current_action.text));article.append(action);}
  for(const [index,block] of protocol.blocks.entries()){
    const section=el('section','','station-block');section.dataset.stationBlock=String(index+1);
    if(index===2||index===4){
