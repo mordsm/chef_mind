@@ -412,7 +412,8 @@ def create_app(settings: Settings | None = None, engine=None):
             current={"title": "הפעולה הנוכחית", "instruction": decision.instruction,
                      "successCriteria": [decision.success_signal]} if decision.decision_type == "action" else None,
             blocked=decision.decision_type == "blocked" or bool(decision.missing_conditions)
-            or "INVENTORY_UNVERIFIED" in decision.policy_flags or "EXCEPTION_REVIEW_REQUIRED" in decision.policy_flags,
+            or "INVENTORY_UNVERIFIED" in decision.policy_flags or "EXCEPTION_REVIEW_REQUIRED" in decision.policy_flags
+            or "INGREDIENT_COMPOSITION_UNKNOWN" in decision.policy_flags,
             gaps=["הנחיית המקור: " + decision.instruction] if decision.decision_type != "action" else (),
             model_status="unavailable" if model_failed else "rules_only",
             allergies=body.profile.allergies,

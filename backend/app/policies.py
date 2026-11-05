@@ -47,6 +47,15 @@ def forbidden(text):
 
 
 def assess(request: ChefRequest, proposed=""):
+    from app.ingredient_safety import check_ingredients
+    from app.knowledge import DomainError
+    try:
+        check_ingredients(
+            [item.name for item in request.inventory if item.quantity != 0] + ([proposed] if proposed else []),
+            request.profile.allergies, request.profile.forbid_meat_dairy,
+        )
+    except DomainError as error:
+        return ("clarify" if error.code == "INGREDIENT_COMPOSITION_UNKNOWN" else "blocked", error.code, error.message)
     context = " ".join([request.message, *request.state.reports, proposed]).lower()
     if any(hazard in context for hazard in HAZARDS):
         return "blocked", "SAFETY_HAZARD", "יש לטפל בסיכון לפני המשך הבישול; אין לבצע את הפעולה המוצעת."

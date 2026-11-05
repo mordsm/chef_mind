@@ -23,21 +23,8 @@ def cooking_context(title, method="", ingredients=()):
 
 
 def check_ingredient_avoidance(ingredients, avoided):
-    groups = [
-        {"milk", "חלב", "cheese", "גבינה", "butter", "חמאה", "cream", "שמנת"},
-        {"egg", "eggs", "ביצה", "ביצים"},
-        {"wheat", "חיטה", "קמח חיטה", "gluten", "גלוטן"},
-        {"fish", "דג", "דגים"},
-        {"peanuts", "בוטנים"},
-        {"sesame", "שומשום", "טחינה"},
-        {"soy", "סויה", "טופו"},
-    ]
-    names = {item.strip().lower() for item in ingredients}
-    avoidance = {item.strip().lower() for item in avoided}
-    if any(names & group and avoidance & group for group in groups):
-        raise DomainError(
-            "ALLERGEN_CONFLICT", "A reported ingredient conflicts with the avoidance profile", 422
-        )
+    from app.ingredient_safety import check_ingredients
+    check_ingredients(ingredients, avoided)
 
 
 def start_user_work(command, now, problem_rules=None, method_policy=None, recognition=None):
@@ -47,6 +34,8 @@ def start_user_work(command, now, problem_rules=None, method_policy=None, recogn
         raise DomainError("INVALID_REQUEST", "A dish name is required", 422)
     if any(not item.strip() or len(item) > 160 for item in command.ingredients):
         raise DomainError("INVALID_REQUEST", "Ingredient names must be bounded and nonempty", 422)
+    from app.ingredient_safety import check_ingredients
+    check_ingredients(command.ingredients, command.allergies, command.forbid_meat_dairy)
     policy = method_policy if method_policy is not None else effective_policy()["policy"]
     identity = recognition or {'status':'rules_only'}
     facts = dict(identity.get('facts', {}))
@@ -143,6 +132,12 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     from app.coach import say
 
     state = deepcopy(state)
+    from app.ingredient_safety import check_ingredients
+    if command.action not in {"update_plan", "finish", "pause", "timer_cancel"}:
+        check_ingredients(
+            [*state["ingredients"], *classification_ingredients(state.get("intake_facts", {}))],
+            state["allergies"], state.get("forbid_meat_dairy", True),
+        )
     previous_method_value = state["method"]
     # Re-derive safety/context from reported ingredients, not client-provided advice fields.
     classification = classification_ingredients(state.get("intake_facts", {}))
@@ -224,6 +219,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         if command.recipe_snapshot is None:
             raise DomainError('INVALID_REQUEST','Recipe steps are required',422)
         recipe=command.recipe_snapshot.model_dump()
+        check_ingredients([*state["ingredients"], *recipe["ingredients"]], state["allergies"], state.get("forbid_meat_dairy", True))
         state['recipe_snapshot']=recipe
         state['custom_steps']=[user_step(f"שלב {index+1}",item['text'],state['context'],step_id=item['id']) for index,item in enumerate(recipe['steps'])]
         for entry in state['custom_steps']:entry['source']='USER_RECIPE_REFERENCE:'+recipe['id']
@@ -237,7 +233,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         if facts["family"] != "meat" and facts["protein"]:
             raise DomainError("INVALID_REQUEST", "A meat subtype requires the meat family", 422)
         classification = classification_ingredients(facts)
-        check_ingredient_avoidance([*state["ingredients"], *classification], state["allergies"])
+        check_ingredients([*state["ingredients"], *classification], state["allergies"], state.get("forbid_meat_dairy", True))
         requested_method = facts["method"] if "method" in command.intake_facts.model_fields_set else state["method"]
         selected_method = enforce_method(state["dish_title"], requested_method, [*state["ingredients"], *classification], policy)
         if facts != state.get("intake_facts"):
@@ -287,7 +283,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
             not item.strip() or len(item) > 160 for item in command.ingredients
         ):
             raise DomainError("INVALID_REQUEST", "Valid dish and ingredient names are required", 422)
-        check_ingredient_avoidance(command.ingredients, state["allergies"])
+        check_ingredients(command.ingredients, state["allergies"], command.forbid_meat_dairy)
         selected_method = enforce_method(command.dish_title, command.method, command.ingredients, policy)
         state["dish_title"], state["method"], state["ingredients"] = (
             command.dish_title,
