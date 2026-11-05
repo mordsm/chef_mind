@@ -93,8 +93,15 @@ def build_protocol(
     allergies=(),
     method_warning="",
     method="",
+    ingredients=(),
+    user_message="",
 ):
     cfg = configuration()
+    from app.food_hazards import red_bean_warning
+    hazard = red_bean_warning([title, *ingredients], user_message)
+    if hazard:
+        advice = (advice + "\n" if blocked and advice else "") + hazard["text"]
+        blocked = True
     profile, family = identify(title, family, cfg)
     facts = facts or {}
     name = title or "המנה"
@@ -257,6 +264,12 @@ def build_protocol(
     blocks[5]["text"] = gap_summary + "\n" + gap_text
     if reading.get("resources"):
         blocks[5]["resources"] = reading["resources"]
+    if hazard:
+        question = hazard["question"]
+        blocks[5]["resources"] = [*blocks[5].get("resources", []), {
+            "title": "FDA — הכנה בטוחה של שעועית יבשה", "url": hazard["source"],
+            "scope": "הסבר על הסיכון בשעועית שלא בושלה כראוי ועל ההכנה הנדרשת.",
+        }]
     protocol = {
         "version": 1,
         "profile_id": (profile or {}).get("id"),
@@ -275,6 +288,8 @@ def build_protocol(
         protocol["source_ids"] = list(dict.fromkeys([
             *protocol["source_ids"], "SRC-FDA-SEAFOOD-CONSUMER", cfg["fish_time_guide"]["source_id"]
         ]))
+    if hazard:
+        protocol["source_ids"].append(hazard["source_id"])
     protocol["text"] = render_text(protocol)
     protocol["obsidian_markdown"] = obsidian_note(protocol, name)
     return protocol
@@ -296,6 +311,8 @@ def attach_station(state):
         model_status=state.get("dish_identity", {}).get("status", "rules_only"),
         allergies=state.get("allergies", []),
         method=state.get("method", ""),
+        ingredients=state.get("ingredients", []),
+        user_message=next((m["text"] for m in reversed(state.get("messages", [])) if m["role"] == "user"), ""),
     )
     focus = state.get("learning_focus") or {}
     explanation = focus.get("text", "")

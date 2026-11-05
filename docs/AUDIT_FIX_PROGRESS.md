@@ -23,3 +23,15 @@ Validation: 60 focused tests passed, including guest/authenticated API conflicts
 recipe/update bypass attempts, custom avoidance, plant-alternative controls and
 existing coach/station regressions. Production remains unchanged; the original
 live audit findings are not marked fixed in production.
+
+## Cycle 2 — dried red kidney beans
+
+CM-002: the station checks declared red kidney beans and their stated condition
+before ordinary advice. Dried/unspecified cases receive a visible warning, a
+state question and the FDA natural-toxins source. Explicit canned/previously
+cooked controls do not receive dry-bean instructions. The same station gate
+serves coach and grounded responses. This is not confirmation that a user has
+actually performed the required preparation.
+
+Validation: 38 safety/station tests passed, including the exact slow-cooker
+question from the audit and dry/canned/unknown controls. No live deployment.

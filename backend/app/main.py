@@ -417,6 +417,8 @@ def create_app(settings: Settings | None = None, engine=None):
             gaps=["הנחיית המקור: " + decision.instruction] if decision.decision_type != "action" else (),
             model_status="unavailable" if model_failed else "rules_only",
             allergies=body.profile.allergies,
+            ingredients=[item.name for item in body.inventory],
+            user_message=body.message,
         )
         if decision.citations:
             from app.station_protocol import obsidian_note, render_text

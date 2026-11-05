@@ -5,6 +5,7 @@ from app.coach import CoachCommand, apply_command
 from app.ingredient_safety import check_ingredients
 from app.knowledge import DomainError
 from conftest import chef_body
+from app.food_hazards import red_bean_warning
 
 
 @pytest.mark.parametrize("ingredient,allergy", [
@@ -68,3 +69,31 @@ def test_grounded_chef_also_blocks_inferred_composition(env, ingredient, allergy
     assert response.json()["decision_type"] == "blocked"
     assert "ALLERGEN_CONFLICT" in response.json()["policy_flags"]
     assert "אל תבצע" in response.json()["station_protocol"]["blocks"][1]["text"]
+
+
+def test_dried_bean_warning_is_visible_before_ordinary_advice(env):
+    client = env["client"]
+    state = client.post("/v1/coach/preview", json={"command": {
+        "action": "start_custom", "dish_title": "תבשיל שעועית אדומה יבשה",
+        "ingredients": ["שעועית אדומה יבשה"],
+    }}).json()
+    result = client.post("/v1/coach/preview", json={"state": state, "command": {
+        "action": "ask", "expected_revision": state["revision"],
+        "message": "השריתי שעועית אדומה יבשה ואני רוצה לבשל בסיר איטי על חום נמוך. זה בטוח?",
+    }})
+    assert result.status_code == 200
+    protocol = result.json()["station_protocol"]
+    assert "השריה לבדה אינה מספיקה" in protocol["blocks"][0]["text"]
+    assert "30 דקות" in protocol["blocks"][0]["text"]
+    assert "אל תבצע" in protocol["blocks"][1]["text"]
+    assert any("fda.gov" in resource["url"] for resource in protocol["blocks"][5]["resources"])
+
+
+@pytest.mark.parametrize("name", ["שעועית אדומה משומרת", "canned red kidney beans", "שעועית אדומה מבושלת מראש"])
+def test_cooked_bean_controls_do_not_get_dried_bean_instructions(name):
+    assert red_bean_warning([name]) is None
+
+
+def test_unspecified_beans_request_state_instead_of_assuming_cooked():
+    assert "יבשה, משומרת" in red_bean_warning(["שעועית אדומה"])["question"]
+    assert red_bean_warning(["עדשים ירוקות"]) is None
