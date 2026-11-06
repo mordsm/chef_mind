@@ -102,3 +102,41 @@ Artifacts: C:/workspace/.runtime/chef-audit-rerun-20261106.
 Remaining: expand beyond the one-dish pilot; CM-007 embedded reporter loading;
 CM-013 live technique-policy verification; authorized live retrieval comparison;
 physical voice/cooking checks. No deployment, merge, or blanket source approval.
+
+## User-authorized expansion — five complete dish plans, 2026-11-06
+
+Following the user's request to complete the other dishes, added scoped authored
+plans for beef stew (6 steps), oven salmon (4), lentils/vegetables (5), vegetable
+soup (5), and yeast bread (5). The plan catalog records sources, timing conditions
+and a SHA-256 revision. These are authored adaptations, not blanket approvals of
+external recipes. Every step includes a visible instruction and completion check.
+
+Completion gates require reported temperature for the beef/salmon cooking step.
+Jumping to serving, deleting the cooking check, or reusing a reading from another
+step cannot complete that check. Intake edits invalidate generated quantities,
+old completion IDs and timers. Custom user steps are preserved. Finish summaries
+use the plan's target rather than a different cut's rest rule.
+
+Specific recovery and substitution replies preserve dish, problem and missing
+ingredient context across side questions. Explanatory questions no longer replace
+observations in memory. The original salty-soup prompt receives actual dilution
+and continued-cooking guidance. The old fish fallback no longer overwrites this
+authored oven plan. Intake recognizes the authored plan; the glossary/Obsidian
+note now includes 24 plain-language entries.
+
+Scope: matching declared recipe ingredients, family and equipment; no silently
+discarded additions, frozen/stuffed/minced fish, or substitution of kidney beans
+for lentils. Bread supports 400–540 g dough, not a guaranteed baked loaf weight.
+See FULL_DISH_PLANS_HE.md for source conditions, evidence and remaining limits.
+
+Validation: full Python suite 346 passed / 4 skipped. After final memory and
+finish-summary corrections, 30 focused plan/salad tests passed. The final
+temperature-target hardening additionally uses server catalog values rather than
+client-returned step values: 23 focused tests passed, plus two final boundary
+cases for a removed/lowered returned target passed. Counts overlap earlier runs.
+Six Node gateway/worker tests passed; station/glossary/Obsidian browser acceptance
+passed at desktop/mobile widths. The final six original dialogue replays all
+produced plans, and all five added plans completed in mobile browser controls.
+Real reminder, refresh, unavailable-network input and built-in shakshuka checks
+also passed. Final artifacts: C:/workspace/.runtime/chef-full-plans-final-20261106.
+No production deployment, merge, physical cooking or real microphone claim.

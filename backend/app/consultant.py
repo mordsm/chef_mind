@@ -134,6 +134,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     state = deepcopy(state)
     previous_message_count = len(state["messages"])
     from app.cooking_pilot import timer_request, remember_request, ensure_salad_plan, salad_reply
+    from app.dish_plans import ensure_dish_plan, active_plan, plan_reply, completion_warning, clear_generated_plan, plan_temperature
     if command.action in {"ask", "report"}:
         remember_request(state, command.message)
         requested_seconds = timer_request(command.message)
@@ -152,6 +153,9 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     # Re-derive safety/context from reported ingredients, not client-provided advice fields.
     classification = classification_ingredients(state.get("intake_facts", {}))
     context = cooking_context(state["dish_title"], state["method"], [*state["ingredients"], *classification])
+    if active_plan(state)[1]:
+        context["minimum_temperature"] = plan_temperature(state)
+        context["minimum_rest_seconds"] = 0
     context["graph"] = dietary_paths(
         context["graph"], state["allergies"], state.get("forbid_meat_dairy", True)
     )
@@ -247,6 +251,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         requested_method = facts["method"] if "method" in command.intake_facts.model_fields_set else state["method"]
         selected_method = enforce_method(state["dish_title"], requested_method, [*state["ingredients"], *classification], policy)
         if facts != state.get("intake_facts"):
+            clear_generated_plan(state)
             state["measured_temperature"] = None
             state["measured_rest_seconds"] = None
             state["selected_operation_id"] = ""
@@ -289,6 +294,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         state["asked"] = [item for item in state["asked"] if item != "time"]
         say(state, "נרשמה תזכורת לבדיקה בזמן שבחרת. אין מעבר אוטומטי בין פעולות.")
     elif command.action == "update_plan":
+        clear_generated_plan(state)
         if not command.dish_title.strip() or any(
             not item.strip() or len(item) > 160 for item in command.ingredients
         ):
@@ -391,13 +397,19 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
             steps.insert(min(command.target_index, len(steps)), item)
         if command.action == "select_step":
             state["current_step"] = index
+            if active_plan(state)[1] and current_id != steps[index]["id"] and plan_temperature(state, steps[index]) is not None:
+                state["measured_temperature"] = None
         else:
             state["current_step"] = next(
                 (i for i, item in enumerate(steps) if item["id"] == current_id),
                 min(state["current_step"], max(0, len(steps) - 1)),
             )
     elif command.action == "complete":
-        if is_oven_salmon(state) and not current:
+        plan_warning = completion_warning(state, current)
+        if plan_warning:
+            say(state, plan_warning)
+            state["learning_focus"] = {"title": "לפני המשך", "text": plan_warning, "source": ""}
+        elif is_oven_salmon(state) and not current:
             say(state, guide_oven_salmon(state))
         elif (
             is_oven_salmon(state)
@@ -414,11 +426,15 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         else:
             if current["id"] not in state["completed_step_ids"]:
                 state["completed_step_ids"].append(current["id"])
+            if active_plan(state)[1] and (plan_temperature(state, current) is not None or current["title"] == "אפייה"):
+                state["cooking_memory"].pop("on_heat", None)
             next_index = next(
                 (i for i, item in enumerate(steps) if item["id"] not in state["completed_step_ids"]), None
             )
             if next_index is not None:
                 state["current_step"] = next_index
+                if active_plan(state)[1] and plan_temperature(state, steps[next_index]) is not None:
+                    state["measured_temperature"] = None
                 if is_oven_salmon(state) and steps[next_index]["title"] == "אפייה ובדיקת המרכז":
                     state["measured_temperature"] = None
             say(
@@ -547,7 +563,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         ):
             say(state, "המדידה נרשמה. בשיטה זו טמפרטורה בודדת אינה מאמתת תהליך או מוכנות להגשה.")
         elif command.temperature is not None and context["minimum_temperature"] is not None:
-            minimum = context["minimum_temperature"]
+            minimum = (plan_temperature(state, current) if current else None) or context["minimum_temperature"]
             say(
                 state,
                 f"המדידה שדיווחת עומדת בסף של {minimum:g}°C; אין בכך אימות עצמאי."
@@ -595,7 +611,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
                     reply += "\n\n" + book_tip["text"]
             if command.action == "report":
                 reply = "הדיווח התקבל: " + text[:240] + "\n\n" + reply
-            pilot_reply = salad_reply(state, text) if not state["safety_hold"] else None
+            pilot_reply = (plan_reply(state, text) or salad_reply(state, text)) if not state["safety_hold"] else None
             if pilot_reply:
                 reply = pilot_reply
             state["learning_focus"] = {"title": issue or "בהקשר לדיווח האחרון", "text": reply, "source": ""}
@@ -645,9 +661,12 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     enrich_context(state["context"], " ".join([state["dish_title"], state["method"], command.message, *state["ingredients"]]))
     from app.culinary_context import strict_context
     strict_context(state['context'], state['dish_title'], [*state['ingredients'], *classification_ingredients(state.get('intake_facts', {}))])
-    plan_started = ensure_salad_plan(state)
+    plan_started = ensure_dish_plan(state) or ensure_salad_plan(state)
     if plan_started:
-        say(state, "בנינו ארבע פעולות להכנה קרה של הסלט. נתחיל בפעולה אחת: " + state["custom_steps"][0]["instruction"])
+        state["learning_focus"] = None
+        say(state, f"בנינו תוכנית של {len(state['custom_steps'])} פעולות. נתחיל בפעולה אחת: " + state["custom_steps"][0]["instruction"])
+    if command.temperature is not None and active_plan(state)[1]:
+        state["learning_focus"] = {"title": "בדיקת המדידה", "text": state["messages"][-1]["text"], "source": ""}
     if command.action in {"timer", "timer_cancel", "check_in", "finish"} and len(state["messages"]) > previous_message_count:
         state["learning_focus"] = {"title": "עדכון הבישול", "text": state["messages"][-1]["text"], "source": ""}
     attach_intake(state)

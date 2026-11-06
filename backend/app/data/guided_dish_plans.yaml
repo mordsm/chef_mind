@@ -1,0 +1,141 @@
+# Editorial adaptations, not approval of an entire external recipe or vault.
+version: 1
+checked_on: '2026-11-06'
+plans:
+  beef:
+    titles: [תבשיל בקר]
+    family: meat
+    equipment: pot
+    methods: [boil_simmer, בישול בנוזל]
+    required: [שוק בקר, בצל, גזר, שמן זית, מלח, מים]
+    sources:
+      - https://www.ars.usda.gov/ARSUserFiles/80400500/pdf/9%20Beef%20Stew.pdf
+      - https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling
+    timing_basis: 'USDA ARS: chuck cubes about 1.3 cm, simmer 2–2.5 hours. The shank/3 cm adaptation has no guaranteed finish time; use tenderness and temperature. Twenty-minute checks are authored reminders, not validated cooking times.'
+    science: 'בישול עדין ממושך מרכך את הרקמה שמחברת בין סיבי הבשר. לכן בשר יכול להיות חם ובכל זאת קשה; תוספת חום חזק אינה תחליף לזמן ולנוזלים.'
+    steps:
+      - title: הכנת הבשר והירקות
+        instruction: 'הכן סיר עם מכסה, כף ומדחום. חתוך את הבשר לקוביות דומות של כ־3 ס״מ, ויבש בנייר סופג. חתוך בצל וגזר בקרש נפרד; שמור כלי נקי להגשה.'
+        check: הבשר חתוך והקרש לירקות נפרד מהקרש לבשר
+      - title: השחמת הבשר
+        instruction: 'הוסף לסיר מעט שמן זית לציפוי התחתית וחמם בחום בינוני. הכנס בשר בשכבה אחת, בכמה סבבים אם צריך. הפוך כשהצד התחתון שחום; אם יש עשן, הורד חום. הוצא לצלחת שמיועדת עדיין לבשר שאינו מבושל.'
+        check: פני הבשר שחומים ואינם שחורים
+      - title: ריכוך הבצל והוספת מים
+        instruction: 'הוסף בצל לסיר וערבב עד שהוא מתרכך. אם התחתית שחורה ושרופה, עצור ואל תגרד אותה לתבשיל. החזר את הבשר, הוסף מים עד כיסויו והבא לבעבוע. הנמך כך שייראו בועות קטנות, וכסה.'
+        check: הבשר מכוסה בנוזל והסיר מבעבע בעדינות
+      - title: בישול עד שהבשר רך
+        instruction: 'המשך בבעבוע עדין; תכנן כמה שעות, לא דקות ספורות. בדוק מדי פעם שהבשר מכוסה והוסף מים חמים אם צריך. נעץ מזלג בקובייה: אם היא קשה, המשך ובדוק שוב בעוד כ־20 דקות. מדוד בכמה קוביות עבות לפחות 74°C לפני טעימה. גם אחרי המדידה ממשיכים עד שהמזלג נכנס בקלות.'
+        check: נמדדו לפחות 74°C בקוביות העבות והבשר רך במזלג
+        minimum_temperature: 74
+      - title: בישול הגזר והתיבול
+        instruction: 'כשהבשר רך, הוסף גזר והמשך בבעבוע עד שסכין נכנסת בו בקלות. טעם בכפית נקייה. חסר מלח? הוסף קמצוץ, ערבב וטעם שוב. הרוטב דליל? בשל בלי מכסה וערבב עד שהוא מצפה מעט את הכף.'
+        check: הגזר רך והתיבול מתאים אחרי טעימה
+      - title: הגשה ושמירת התבשיל
+        instruction: 'הגש בכלים נקיים. לשמירה, חלק לכלים רדודים והכנס למקרר מתחת ל־4°C בתוך שעתיים, או בתוך שעה בחום סביבה מעל 32°C. אל תשאיר סיר גדול בחוץ עד שיתקרר. בחימום חוזר הבא את התבשיל ל־74°C.'
+        check: התבשיל הוגש או חולק לכלים רדודים והוכנס בזמן למקרר
+  fish:
+    titles: [פילה סלמון בתנור, סלמון בתנור]
+    family: fish
+    equipment: oven
+    methods: [oven_roast, צלייה בתנור]
+    required: [סלמון, לימון, שמן זית, מלח]
+    sources:
+      - https://doh.wa.gov/community-and-environment/food/fish/health-benefits/healthy-fish-recipes
+      - https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely
+    timing_basis: 'Washington DOH: approximate ten minutes per inch of thickness for fish. Use only as a first-check estimate for thawed fillet; an authored 200°C conventional-oven adaptation is not a validated finish time. Actual completion requires measured 63°C and the instructed hold.'
+    science: 'חום מהדק את חלבוני הדג, ולכן אפייה ממושכת מדי מייבשת אותו. צבע ומראה אינם מדידת בטיחות.'
+    steps:
+      - title: בדיקת הסלמון והכנת התחנה
+        instruction: 'השתמש בפילה רגיל, לא ממולא. אם הוא קפוא, הפשר במקרר לפני המשך; אל תפשיר על השיש. הכן מדחום מזון, תבנית וכלי נקי להגשה. בדוק עצמות ויבש בנייר סופג. השאר את הדג בקירור עד הכנת התבנית.'
+        check: הפילה מופשר לגמרי, הכלים נקיים ויש מדחום
+      - title: חימום התנור ותיבול
+        instruction: 'חמם תנור ל־200°C בחום עליון ותחתון, ללא טורבו. הנח את הפילה בתבנית בשכבה אחת. מרח מעט שמן זית ופזר קורט מלח. שמור את הלימון לתיקון הטעם בהגשה; אין צורך בהשריה.'
+        check: התנור הגיע ל־200°C והדג מונח בשכבה אחת
+      - title: אפייה ובדיקת המרכז
+        instruction: 'הכנס לתנור. לפילה מופשר בעובי כ־3 ס״מ, התחל לבדוק אחרי כ־12 דקות; זה מועד לבדיקה ולא הבטחה שהדג מוכן. הכנס מדחום מהצד למרכז החלק העבה ובדוק כמה מקומות. המשך באפייה עד לפחות 63°C למשך 15 שניות. דווח את המדידה. המרכז נעשה אטום והבשר נפרד בעדינות במזלג; המראה אינו מחליף מדחום.'
+        check: דווחו לפחות 63°C בחלקים העבים ונבדקה שהייה של 15 שניות
+        minimum_temperature: 63
+      - title: תיבול והגשת הסלמון
+        instruction: 'העבר לכלי נקי. נסה כמה טיפות לימון על ביס; הוסף עוד רק אם הטעם מתאים. הגש כעת. לשמירה, הכנס לכלי רדוד במקרר מתחת ל־4°C בתוך שעתיים, או שעה אם חם מעל 32°C. בחימום חוזר בדוק 74°C.'
+        check: הדג הוגש או הוכנס בזמן לכלי רדוד במקרר
+  legumes:
+    titles: [תבשיל עדשים וירקות]
+    family: legumes
+    equipment: pot
+    methods: [boil_simmer, בישול בנוזל]
+    required: [עדשים ירוקות יבשות, גזר, בצל, עגבניות, מים, מלח]
+    sources:
+      - https://www.lentils.org/recipes-cooking/how-to-cook%20-lentils/
+      - https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling
+    timing_basis: 'Lentils.org: whole dry lentils, three volumes liquid per one volume lentils, typically 15–20 minutes at a simmer. Vegetables are prepared separately; age/type can extend the time. No red-kidney-bean substitution.'
+    science: 'העדשים סופגות מים ומתרככות. עגבניות מוסיפות חומציות שעלולה לעכב ריכוך, ולכן נחבר אותן אחרי שהעדשים רכות.'
+    steps:
+      - title: מיון העדשים והכנת הירקות
+        instruction: 'השתמש בעדשים ירוקות יבשות, לא בשעועית. מיין והוצא אבנים קטנות, ושטוף במסננת. חתוך גזר ובצל לחתיכות קטנות ודומות. חתוך את העגבניות ושמור בנפרד. אין צורך להשרות את העדשים.'
+        check: העדשים ממוינות ושטופות והירקות חתוכים
+      - title: בישול העדשים
+        instruction: 'מדוד את העדשים בכוס. לכל כוס עדשים הוסף שלוש כוסות מים לסיר מרווח. הבא לרתיחה, הנמך לבעבוע עדין וכסה. התחל לבדוק אחרי 15–20 דקות: צנן כמה עדשים בכפית ובדוק שאין מרכז קשה. אם קשות, המשך ובדוק שוב; הוסף מים חמים אם מפלס המים נמוך.'
+        check: העדשים רכות גם במרכז
+      - title: ריכוך הירקות
+        instruction: 'בסיר נוסף הוסף לבצל ולגזר מעט מים, כסה ובשל בבעבוע עדין. הוסף מעט מים אם הסיר מתייבש. המשך עד שסכין נכנסת בגזר בקלות; רק אז הוסף את העגבניות ובשל עד שהן מתרככות.'
+        check: הגזר והבצל רכים והעגבניות התרככו
+      - title: חיבור ותיבול
+        instruction: 'העבר את הירקות לעדשים ובשל יחד עד שהכול חם. דליל מדי? השאר בלי מכסה וערבב עד שמסמיך. סמיך מדי? הוסף מעט מים חמים וערבב. הוסף קמצוץ מלח, טעם בכפית נקייה וחזור רק אם חסר.'
+        check: המרקם מתאים והתיבול נבדק בטעימה
+      - title: הגשה ושמירת העדשים
+        instruction: 'הגש בקערות נקיות. לשמירה, חלק לכלים רדודים והכנס למקרר מתחת ל־4°C בתוך שעתיים; בחום מעל 32°C בתוך שעה. בחימום חוזר ערבב ובדוק 74°C במרכז.'
+        check: התבשיל הוגש או הוכנס בזמן למקרר
+  soup:
+    titles: [מרק ירקות עשיר, מרק ירקות]
+    family: soup
+    equipment: pot
+    methods: [boil_simmer, בישול בנוזל]
+    required: [גזר, קישוא, תפוח אדמה, בצל, שמן זית, מים, מלח]
+    sources:
+      - https://medlineplus.gov/recipes/veggie-stew/
+      - https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling
+    timing_basis: 'MedlinePlus/Food Hero vegetable stew: gentle covered simmer about 30 minutes or until carrots/potatoes tender. Soup adaptation uses water to cover; cut size and quantity change duration.'
+    science: 'החימום מרכך את דפנות תאי הירקות. קוביות בגודל דומה מתרככות באופן אחיד יותר; מעיכת תפוח אדמה מבושל מסמיכה את הנוזל.'
+    steps:
+      - title: שטיפה וחיתוך למרק
+        instruction: 'שטוף ירקות במים זורמים. קלף תפוח אדמה והסר חלקים ירוקים. חתוך את הגזר, הקישוא ותפוח האדמה לקוביות דומות, כ־2 ס״מ. קצוץ בצל והכן סיר מרווח עם מכסה.'
+        check: הירקות נקיים וחתוכים בגודל דומה
+      - title: ריכוך הבצל
+        instruction: 'הוסף לסיר מעט שמן זית לציפוי התחתית ובצל. חמם בחום בינוני וערבב עד שהבצל רך. אם מתחיל להשחים מהר, הנמך. אין צורך להשחיר אותו כדי לקבל מרק טעים.'
+        check: הבצל רך ואינו שרוף
+      - title: בישול המרק
+        instruction: 'הוסף גזר, קישוא ותפוח אדמה. הוסף מים עד כיסוי הירקות, הבא לרתיחה והנמך לבעבוע עדין. כסה ובשל; תכנן כ־30 דקות בישול ובדוק שסכין נכנסת בקלות בגזר ובתפוח האדמה. אם עדיין קשים, המשך ובדוק שוב.'
+        check: סכין נכנסת בקלות בגזר ובתפוח האדמה
+      - title: התאמת המרקם והתיבול
+        instruction: 'למרק סמיך, מעך כמה קוביות תפוח אדמה מבושל בצד הסיר וערבב. למרק דליל יותר, הוסף מעט מים חמים. טעם בכפית נקייה, הוסף קמצוץ מלח אם חסר וטעם שוב לפני תוספת נוספת.'
+        check: הסמיכות והמלח מתאימים אחרי טעימה
+      - title: הגשה וקירור המרק
+        instruction: 'הגש בקערות נקיות. לשמירה, חלק לכלים רדודים והכנס למקרר מתחת ל־4°C בתוך שעתיים, או שעה בחום מעל 32°C. אל תשאיר סיר גדול על השיש להתקרר. בחימום חוזר ערבב, הבא לרתיחה ובדוק 74°C.'
+        check: המרק הוגש או חולק והוכנס בזמן למקרר
+  bread:
+    titles: [לחם שמרים פשוט]
+    family: starch
+    equipment: oven
+    methods: ['']
+    required: [קמח חיטה, שמרים יבשים, מים, מלח, שמן]
+    sources:
+      - https://www.kingarthurbaking.com/recipes/no-knead-crusty-white-bread-recipe
+      - https://www.fda.gov/food/buy-store-serve-safe-food/handling-flour-safely-what-you-need-know
+    timing_basis: 'King Arthur no-knead white bread, scaled dough formula; stated times apply to 400–540 g dough. Editorial adaptation omits added oven steam; crust and baked weight may differ.'
+    science: 'השמרים יוצרים גז שמרחיב את הבצק. קמח ומים יוצרים רשת שמחזיקה אותו; בקור הפעילות איטית יותר, ולכן שעה אינה הבטחה לתפיחה.'
+    steps:
+      - title: שקילה וערבוב הבצק
+        instruction: 'לבצק במשקל {dough_g} גרם: {flour_g} גרם קמח חיטה לבן, {water_g} גרם מים פושרים, {salt_g} גרם מלח ו־{yeast_g} גרם שמרים יבשים. הכיכר תשקול פחות אחרי אפייה. ערבב עד שאין קמח יבש; אין צורך ללוש. אל תטעם בצק נא.'
+        check: כל הרכיבים נשקלו והבצק מעורבב ללא קמח יבש
+      - title: תפיחה ראשונה וקירור
+        instruction: 'כסה בקערה מרווחת: כשעתיים בחדר, ואז לפחות שעתיים במקרר. אם אין פעילות, דווח לפני המשך; אל תאיץ בחימום ישיר.'
+        check: הבצק תפח ונח לפחות שעתיים במקרר
+      - title: עיצוב ותפיחה אחרונה
+        instruction: 'בידיים מעט משומנות עצב כיכר על תבנית מרופדת בנייר מתאים לחום. כסה ברפיון כשעה, עד שמתרחבת; בקור נדרש יותר. חמם תנור ל־230°C בחום עליון ותחתון.'
+        check: הכיכר התרחבה והתנור חם
+      - title: אפייה
+        instruction: 'חרוץ בזהירות למעלה. אפה במדף האמצעי ב־230°C, כ־25–35 דקות, עד זהוב עמוק. אם הפנים בצקי, המשך ובדוק שוב. אל תוסיף מים לתנור החם.'
+        check: הקרום זהוב עמוק והפנים אפוי ואינו בצקי
+      - title: צינון והגשת הלחם
+        instruction: 'העבר בכפפות לרשת וצנן. חתוך ובדוק שהפנים אפוי. שמור בשקית נקייה או הקפא פרוסות.'
+        check: הלחם התקרר ונחתך לאחר בדיקת הפנים

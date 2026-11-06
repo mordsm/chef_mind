@@ -154,6 +154,8 @@ def build_protocol(
         )
         if current.get("source") == "CHEF_AUTHORED:salad_pilot_v1":
             execution = "זהו מסלול להכנה קרה, ללא חימום. המשך לפי הפעולה הנוכחית וסמן אישור ביצוע רק אחרי שבדקת: " + "; ".join(current.get("successCriteria", []))
+        elif current.get("source", "").startswith("CHEF_AUTHORED:guided/"):
+            execution = current["instruction"] + " לפני מעבר, בדוק: " + "; ".join(current["successCriteria"])
     links = (profile or {}).get(
         "wikilinks",
         ["[[Culinary Station]]", "[[" + ("Fish Collagen" if family == "fish" else "Heat Transfer") + "]]"],
@@ -332,6 +334,20 @@ def attach_station(state):
         ingredients=state.get("ingredients", []),
         user_message=next((m["text"] for m in reversed(state.get("messages", [])) if m["role"] == "user"), ""),
     )
+    from app.dish_plans import active_plan, catalog
+    plan_key, authored = active_plan(state)
+    if authored:
+        if protocol.get("current_action", {}).get("kind") != "safety" and current:
+            protocol["blocks"][1]["text"] = current["instruction"] + " לפני מעבר, בדוק: " + "; ".join(current["successCriteria"])
+        protocol["blocks"][2]["text"] = authored["science"]
+        protocol["blocks"][5]["text"] = "יש כאן תוכנית הכנה עם בדיקת מצב לכל צעד. זמני הבישול הם אומדנים; יש להשלים את הבדיקות שבהוראות. Knowledge Base Extension Needed — התאמת התוכנית למטבח המסוים עדיין לא נבדקה בבישול בפועל."
+        reading = protocol["recommended_reading"]
+        protocol["blocks"][5]["details_text"] = f"לרקע כללי: {reading['author']}, {reading['book']}, פרק {reading['chapter']}. המקורות לתוכנית הם הפניות והתאמות, ולא אישור גורף של מתכון."
+        protocol["blocks"][5]["resources"] = [{"title": "מקור לתוכנית", "url": source, "scope": "רקע והתאמה שנכתבה למערכת"} for source in authored["sources"]]
+        protocol["editorial_references"].append({"source_id": plan_key, "revision_sha256": catalog()[1], "usage": "authored_adaptation", "timing_basis": authored["timing_basis"]})
+        for source in authored["sources"]:
+            protocol["editorial_references"].append({"source_id": source, "usage": "reference_for_authored_adaptation"})
+            protocol["source_ids"].append(source)
     focus = state.get("learning_focus") or {}
     explanation = focus.get("text", "")
     if explanation and not state.get("safety_hold") and not state.get("method_warning"):
@@ -339,7 +355,7 @@ def attach_station(state):
         # advice or repeat its interview questions ahead of the one next detail.
         sentences = re.split(r"(?<=[.!?])\s+|\n+", explanation)
         useful = [s for s in sentences if s and "Knowledge Base Extension Needed" not in s]
-        if protocol["family"] == "fish":
+        if protocol["family"] == "fish" and not authored:
             useful = [s for s in useful if not re.search(r"\d.*(?:°|מעלות|דקות|שניות|minutes|seconds)", s)]
         if useful:
             # The actual answer belongs in the foreground, not inside closed science.
@@ -347,13 +363,15 @@ def attach_station(state):
             if protocol.get("current_action", {}).get("kind") != "safety":
                 protocol["current_action"] = {
                     "text": answer,
-                    "kind": "warning" if any(word in answer for word in ("שרוף", "חריכה", "עצור", "סיכון")) else "answer",
+                    "kind": "warning" if any(word in answer for word in ("שרוף", "חריכה", "עצור", "סיכון", "אל תעבור")) else "answer",
                 }
             protocol["source_ids"] = list(
                 dict.fromkeys([*protocol["source_ids"], *focus.get("source_ids", [])])
             )
             protocol["text"] = render_text(protocol)
             protocol["obsidian_markdown"] = obsidian_note(protocol, state["dish_title"])
+    protocol["text"] = render_text(protocol)
+    protocol["obsidian_markdown"] = obsidian_note(protocol, state["dish_title"])
     state["station_protocol"] = protocol
     if info:
         info["guidance"] = protocol["text"]

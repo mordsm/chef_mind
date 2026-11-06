@@ -31,7 +31,7 @@ def main(baseline, output):
     )
     engine = make_engine(settings.database_url)
     Base.metadata.create_all(engine)
-    results, pilot = [], None
+    results, pilot, full_plans = [], None, []
     with TestClient(create_app(settings, engine)) as client:
         for name in ("beef", "fish", "legumes", "soup", "salad", "bread"):
             folder = baseline / name
@@ -66,6 +66,8 @@ def main(baseline, output):
                 method=initial["method"],
             )
             command("intake", intake_facts=facts)
+            assert len(state["custom_steps"]) >= 4, (name, "missing full plan")
+            full_plans.append((name, state))
             if name == "salad":
                 pilot = state
                 assert len(state["custom_steps"]) == 4
@@ -82,7 +84,7 @@ def main(baseline, output):
                 "steps": len(state["custom_steps"]),
                 "six_blocks": True,
                 "timer_started": state["timer_deadline"] is not None,
-                "guided_scope": "pilot" if name == "salad" else "not_implemented",
+                "guided_scope": "full_authored_plan",
                 "memory": state.get("cooking_memory", {}),
             }
             results.append(result)
@@ -191,6 +193,36 @@ def main(baseline, output):
                     expect(stage.locator(".station-current-action")).to_contain_text("מתחת ל־4°C")
                     page.screenshot(path=str(output / f"pilot-{width}.png"), full_page=True)
                     page.close()
+                # Every new plan must also progress through the real UI, with
+                # explicit confirmations and required reported measurements.
+                for name, initial_state in full_plans:
+                    if name == "salad":
+                        continue
+                    page = browser.new_page(viewport={"width": 390, "height": 1000})
+                    page.on("pageerror", lambda error: errors.append(str(error)))
+                    page.route("**/*", serve)
+                    page.goto("http://127.0.0.1:8800/")
+                    page.evaluate(
+                        "state => localStorage.setItem('chef-coach-guest-v1',JSON.stringify(state))",
+                        initial_state,
+                    )
+                    page.reload()
+                    page.wait_for_function("() => mentor.state?.custom_steps?.length >= 4")
+                    page.locator("#mode-live").click()
+                    for step in initial_state["custom_steps"]:
+                        if step.get("minimum_temperature") is not None:
+                            page.evaluate(
+                                "async temperature => {if(!await coachCommand('report',{temperature}))throw Error('measurement failed');}",
+                                step["minimum_temperature"],
+                            )
+                        page.locator("#live-done").click()
+                        page.wait_for_function("() => !mentor.busy")
+                    assert page.evaluate("mentor.state.completed_step_ids.length") == len(
+                        initial_state["custom_steps"]
+                    ), name
+                    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth"), name
+                    page.screenshot(path=str(output / f"{name}-complete-mobile.png"), full_page=True)
+                    page.close()
             finally:
                 browser.close()
         assert not errors, errors
@@ -204,7 +236,6 @@ def main(baseline, output):
         "built_in_shakshuka": True,
         "physical_cooking_and_voice": "NOT_VERIFIED",
         "remaining": [
-            "Five non-pilot dishes lack a generated full plan",
             "CM-007",
             "CM-013",
             "Authorized live retrieval verification",

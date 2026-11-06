@@ -101,13 +101,15 @@ def ensure_salad_plan(state):
 
 def remember_request(state, text):
     memory = state.setdefault("cooking_memory", {})
-    if "אין לי" not in text and any(
+    if "אין לי" not in text and not text.lstrip().startswith(("למה", "מה פירוש")) and any(
         term in text
-        for term in ("נשרף", "חמוץ מדי", "מלוח מדי", "לא תפח", "עדיין קשה", "יבש מדי", "מוציא מים")
+        for term in ("נשרף", "חמוץ מדי", "מלוח", "לא תפח", "עדיין קשה", "עוד קשה", "עדיין קשות", "יבש", "מתפרק", "דליל", "מימי", "מוציא מים")
     ):
         memory["reported_problem"] = text[:1000]
     if "אין לי" in text:
         memory["missing_ingredient_report"] = text[:1000]
+    if text.startswith(("הכנסתי", "הסיר על האש")):
+        memory["on_heat"] = text[:1000]
 
 
 def salad_reply(state, text):

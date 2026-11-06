@@ -137,7 +137,7 @@ def attach_intake(state):
         facts['family'] = 'meat'
     # A user-written step or a generic graph path is not a complete recipe.
     authored = any(
-        step.get("source", "").startswith("CHEF_AUTHORED:salmon") for step in state["custom_steps"]
+        step.get("source", "").startswith(("CHEF_AUTHORED:salmon", "CHEF_AUTHORED:guided/", "CHEF_AUTHORED:salad_pilot_v1")) for step in state["custom_steps"]
     )
     authored = authored or bool(state.get('recipe_snapshot'))
     supplied = bool(facts["recipe_text"].strip() or facts["recipe_url"])
@@ -175,7 +175,7 @@ def attach_intake(state):
         need("goal", "איזו תוצאה אתה רוצה?", "כדי לבחור בין ריכוך, השחמה ופריכות", GOALS)
     if not facts["equipment"]:
         need("equipment", "באיזה כלי תשתמש?", "כדי להתאים את סדר הפעולות והשליטה בחום", EQUIPMENT)
-    if not state["method"]:
+    if not state["method"] and not authored:
         need("method", "באיזו שיטת הכנה?", "בחר שיטה מתוך ההמלצות כדי להתאים את פעולות החימום")
     gaps = []
     if not authored:
