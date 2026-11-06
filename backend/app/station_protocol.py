@@ -201,6 +201,20 @@ def build_protocol(
         if any(term in scope for term in ("טחון", "ממולא", "minced", "stuffed", "קפוא", "frozen")):
             execution = "הפרוטוקול אינו מתאים לדג טחון, ממולא או קפוא. אל תבצע חימום לפי פרופיל הנתח השלם; שמור מתחת ל־4°C ובחר תהליך ייעודי מאומת. טמפרטורה ומשך: UNKNOWN."
             unknowns.append("מצב הדג או מבנהו מחייבים תהליך בטיחות ייעודי.")
+    imported = bool(current and current.get("source", "").startswith("USER_RECIPE_REFERENCE:"))
+    if imported:
+        preparation = f"הכן את חומרי הגלם והכלים של המתכון שבחרת: {name}. שלבי המתכון החליפו את התוכנית הקודמת; בדוק שהכמויות ומצב חומרי הגלם מתאימים לך. הפרד מזון נא ממוכן."
+        execution = current["instruction"] + " הוראה מתוך המתכון שצירפת; המערכת לא אימתה את זמני הבישול והטמפרטורות במקור הזה."
+        if family == "fish":
+            preparation += " שמור את הדג מתחת ל־4°C בהכנות והשתמש בכלים נפרדים לדג נא."
+            scope = " ".join([title, facts.get("cut", ""), current["instruction"]]).casefold()
+            if any(term in scope for term in ("קציצ", "טחון", "ממולא", "קפוא", "minced", "stuffed", "frozen")):
+                blocked = True
+                advice = "זהו מתכון לקציצות, לדג טחון, ממולא או קפוא; הוראות השליקה לנתח שלם אינן מתאימות לו. שמור מתחת ל־4°C ואל תתחיל לחמם עד לבירור תהליך בטיחות מתאים למתכון הזה."
+            else:
+                safety = cfg["fish_safety"]
+                execution += f" לדג שאינו טחון או ממולא: מדוד במרכז החלק העבה והמשך עד {safety['core_c']}°C למשך {safety['hold_seconds']} שניות לפחות; זה אינו זמן הבישול הכולל. " + safety["rest"] + " " + safety["cooling"]
+        unknowns.append("המתכון שצורף הוא מקור לעיון ולהוראות, ולא תהליך שנבדק במערכת.")
     if allergies:
         preparation = (
             f"בדוק קודם התאמת כל רכיב לאלרגיות שדווחו: {', '.join(allergies)}. אל תשתמש בחלב, בציפוי או בתוספת בלי בדיקה. "

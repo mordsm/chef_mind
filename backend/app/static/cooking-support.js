@@ -44,7 +44,16 @@ function renderCookingSupport(state){
    function showProtein(){protein.hidden=family.value!=='meat';form.querySelector('label[for="intake-protein"]').hidden=protein.hidden;if(protein.hidden){protein.value='';draft.protein='';}}
    family.addEventListener('change',showProtein);showProtein();
    if(info.main_ingredient_needed){intakeLabels.main_ingredient='מה המרכיב העיקרי? (רק כשהמנה לא זוהתה)';add('main_ingredient',{'עוף':'עוף','חזה עוף':'חזה עוף','כרעיים':'כרעיים','בקר':'בקר','סלמון':'סלמון','גזר':'גזר','תפוח אדמה':'תפוח אדמה','אורז':'אורז','עדשים':'עדשים'});form.append(el('small','הבחירה עוזרת להתאים את ההכוונה כששם המנה אינו מציין את המרכיב. אין צורך להזין רשימת קניות.'));}
-   add('cut');add('quantity',{'250 גרם':'250 גרם','500 גרם':'500 גרם','750 גרם':'750 גרם','1 ק״ג':'1 ק״ג','2 ק״ג':'2 ק״ג','1 כוס':'1 כוס','2 כוסות':'2 כוסות','4 יחידות':'4 יחידות'});
+   const cut=add('cut');
+   function showShape(){
+     const patties=/קציצ|טחון|patties|meatballs/i.test(state.dish_title+' '+(state.recipe_snapshot?.steps||[]).map(step=>step.text).join(' '));
+     const relevant=['fish','meat'].includes(family.value||info.family);
+     cut.hidden=!relevant;form.querySelector('label[for="intake-cut"]').hidden=!relevant;
+     form.querySelector('label[for="intake-cut"]').textContent=patties?'גודל הקציצות ומצב התערובת':'נתח, עובי ומצב חומר הגלם';
+     cut.placeholder=patties?'למשל: קציצות בעובי 2 ס״מ מתערובת מופשרת':'למשל: פילה מופשר בעובי 3 ס״מ';
+   }
+   family.addEventListener('change',showShape);showShape();
+   add('quantity');controls.quantity.placeholder=(family.value||info.family)==='soup'?'למשל: 2 ליטר או 4 מנות':'למשל: 500 גרם, 2 כוסות או 12 קציצות';
    add('goal',info.goal_choices||intakeChoices.goal);add('equipment',{...intakeChoices.equipment,grill:'גריל'});
    const methods=Object.fromEntries((state.method_recommendations?.allowed||[]).map(item=>[item.id,item.label]));
    const method=add('method',methods);if(!draft.method){const option=[...method.options].find(option=>option.textContent===state.method||option.value===state.method);method.value=option?.value||'';}

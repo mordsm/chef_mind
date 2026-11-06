@@ -235,10 +235,21 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         recipe=command.recipe_snapshot.model_dump()
         check_ingredients([*state["ingredients"], *recipe["ingredients"]], state["allergies"], state.get("forbid_meat_dairy", True))
         state['recipe_snapshot']=recipe
+        state['dish_title']=recipe['title']
+        if recipe['ingredients']:
+            state['ingredients']=recipe['ingredients']
+        state['intake_facts']={"recipe_url":recipe['url']}
+        state['method']=''
+        state['dish_identity']={'status':'rules_only'}
+        state['decision_answers']={}
+        state['selected_operation_id']=''
+        state['measured_temperature']=None
+        state['measured_rest_seconds']=None
+        state['timer_deadline']=state['check_due_at']=state['paused_remaining']=None
+        state['context']=cooking_context(state['dish_title'], '', state['ingredients'])
         state['custom_steps']=[user_step(f"שלב {index+1}",item['text'],state['context'],step_id=item['id']) for index,item in enumerate(recipe['steps'])]
         for entry in state['custom_steps']:entry['source']='USER_RECIPE_REFERENCE:'+recipe['id']
         state['current_step']=0;state['completed_step_ids']=[];state['stage_valid']=False
-        state['intake_facts']['recipe_url']=recipe['url']
         say(state,'המתכון צורף: '+recipe['title']+'. שלב ראשון: '+recipe['steps'][0]['text'])
     elif command.action == "intake":
         if command.intake_facts is None:

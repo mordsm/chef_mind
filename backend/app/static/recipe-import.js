@@ -9,14 +9,15 @@
    const explanation=source.querySelector('p');if(explanation)explanation.textContent='בחרת מתכון באתר אחר? העתק את הקישור לכאן ולחץ על קליטה. אם לא ניתן לקרוא את האתר, הדבק רק את הוראות ההכנה — שלב בכל שורה. לאחר תצוגה מקדימה אפשר להוסיף את השלבים לתוכנית.';
    const text=$('intake-recipe_text');if(text)text.placeholder='הוראות הכנה בלבד, שלב בכל שורה. שלבי המתכון לא יסומנו אוטומטית כבוצעו.';
    const textLabel=source.querySelector('label[for="intake-recipe_text"]');if(textLabel)textLabel.textContent='הוראות המתכון — שלב בכל שורה';
+   const titleLabel=el('label','שם המתכון החדש');const titleInput=el('input');titleInput.id='import-recipe-title';titleInput.value=state.recipe_snapshot?.title||state.dish_title;titleInput.maxLength=200;titleLabel.append(titleInput);source.append(titleLabel);
    const button=actionButton('import-selected-recipe','קלוט מתכון מקישור / מהוראות שהדבקתי',async()=>{
      const status=$('recipe-import-status');button.disabled=true;status.textContent='קורא את המתכון…';
      try{
-       const response=await fetch('/v1/coach/recipe-import',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:$('intake-recipe_url').value.trim(),text:text.value.trim(),title:state.dish_title})});
+       const response=await fetch('/v1/coach/recipe-import',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:$('intake-recipe_url').value.trim(),text:text.value.trim(),title:titleInput.value.trim()||state.dish_title})});
        const recipe=await response.json();if(!response.ok)throw new Error(recipe.message||'לא ניתן לקלוט את המתכון. אפשר להדביק את הוראות ההכנה.');
        const preview=$('recipe-import-preview');preview.replaceChildren(el('h4',recipe.title),el('p',`${recipe.steps.length} שלבי הכנה נקלטו. בדוק שהם שייכים למתכון שבחרת.`));
        const steps=el('ol');for(const step of recipe.steps)steps.append(el('li',step.text));preview.append(steps);
-       const adopt=actionButton('adopt-imported-recipe',state.custom_steps.length?'השתמש בשלבי המתכון במקום התוכנית הנוכחית':'הוסף את שלבי המתכון למנה שלי',async()=>{adopt.disabled=true;const result=await coachCommand('attach_recipe',{recipe_snapshot:recipe});if(!result)adopt.disabled=false;});preview.append(adopt);status.textContent='המתכון נקלט לתצוגה מקדימה. אשר להוספת השלבים.';
+       const adopt=actionButton('adopt-imported-recipe',state.custom_steps.length?'השתמש בשלבי המתכון במקום התוכנית הנוכחית':'הוסף את שלבי המתכון למנה שלי',async()=>{adopt.disabled=true;const result=await coachCommand('attach_recipe',{recipe_snapshot:recipe});if(result){supportDrafts.delete(state.id);renderCoach();}else adopt.disabled=false;});preview.append(adopt);status.textContent='המתכון נקלט לתצוגה מקדימה. אשר להוספת השלבים.';
      }catch(error){status.textContent=error.message;}finally{button.disabled=false;}
    });
    const status=el('p');status.id='recipe-import-status';status.setAttribute('role','status');const preview=el('section');preview.id='recipe-import-preview';source.append(button,status,preview);

@@ -67,6 +67,15 @@
   $('mode-prepare').textContent='פרטי ההכנה';$('mode-live').textContent='בישול צעד אחר צעד';$('choose-cooking-dish').textContent='＋ מנה חדשה';
   if(!state)return;
   const stage=$('cooking-live-stage'),measurement=document.querySelector('.kitchen-measurement');
+  const priorReference=$('ux-cooking-reference');
+  if(stage&&!stage.querySelector('.station-full-protocol')){const priorProtocol=priorReference?.querySelector('.station-full-protocol');if(priorProtocol)stage.querySelector('.station-protocol')?.append(priorProtocol);}
+  priorReference?.remove();
+  if(stage&&document.body.classList.contains('cooking-live')){
+   const reference=el('section','','ux-cooking-reference');reference.id='ux-cooking-reference';reference.append(el('h2','סדר ההכנה ומידע נוסף'));
+   const steps=stage.querySelector('.cooking-stepper');if(steps)reference.append(steps.cloneNode(true));
+   const complete=stage.querySelector('.station-full-protocol');if(complete)reference.append(complete);
+   companion.prepend(reference);
+  }
   if(stage&&measurement&&document.body.classList.contains('cooking-live')){stage.append(measurement);measurement.open=selectedStep()?.minimum_temperature!=null;}
   if(stage&&state.custom_steps.length){
    const allDone=state.custom_steps.every(step=>state.completed_step_ids.includes(step.id));

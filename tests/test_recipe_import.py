@@ -34,6 +34,23 @@ def test_pasted_recipe_is_explicit_reference_not_inferred_parameters():
     assert same.id==recipe.id and same.steps[0].id==recipe.steps[0].id
 
 
+def test_replacing_fish_recipe_resets_old_details_and_keeps_patties_safety():
+    state=apply_command(None,CoachCommand(action='start_custom',dish_title='נסיכת הנילוס'),1000)
+    state['intake_facts'].update(cut='פילה בעובי 3 סמ',quantity='500 גרם',equipment='pot')
+    state['measured_temperature']=63
+    recipe=import_recipe(RecipeImport(title='קציצות נסיכת הנילוס',text='מערבבים דג טחון עם פטרוזיליה.\nיוצרים קציצות.'))
+    state=apply_command(state,CoachCommand(action='attach_recipe',expected_revision=state['revision'],recipe_snapshot=recipe),1001)
+    JourneyState.model_validate(state)
+    assert state['dish_title']==recipe.title
+    assert state['intake_facts']['cut']==''
+    assert state['measured_temperature'] is None
+    assert state['custom_steps'][0]['instruction']==recipe.steps[0].text
+    protocol=state['station_protocol']
+    assert '70–80' not in protocol['blocks'][1]['text']
+    assert protocol['current_action']['kind']=='safety'
+    assert 'קציצות' in protocol['current_action']['text']
+
+
 def test_instruction_in_howto_step_name_when_text_is_null():
     data={'@type':'Recipe','name':'אפייה','recipeInstructions':[{'@type':'HowToStep','name':'אופים בתנור.','text':None}]}
     recipe=from_html('<script type="application/ld+json">'+json.dumps(data)+'</script>','https://imaot.co.il/Book/Page/example')

@@ -96,12 +96,15 @@ def main(output, live_url=None):
                         "n => mentor.state?.custom_steps.length === n && !mentor.busy", arg=count
                     )
                     expect(page.locator("#cooking-live-stage .station-current-action")).to_be_visible()
-                    expect(page.locator("#cooking-live-stage .station-full-protocol")).not_to_have_attribute(
+                    expect(page.locator("#ux-cooking-reference .station-full-protocol")).not_to_have_attribute(
                         "open", ""
                     )
                     expect(page.locator("#ux-report-tools")).not_to_have_attribute("open", "")
                     expect(page.locator("#ux-report-tools")).to_be_visible()
                     expect(page.locator("#work-report")).to_be_visible()
+                    if width >= 1100:
+                        columns=page.evaluate("['.journey-panel','#cockpit-voice','.companion-panel'].map(s => Math.round(document.querySelector(s).getBoundingClientRect().x))")
+                        assert len(set(columns)) == 3, columns
                     assert not page.evaluate("document.documentElement.scrollWidth > innerWidth"), (
                         width,
                         key,
@@ -112,6 +115,8 @@ def main(output, live_url=None):
                         expect(page.locator("#cooking-live-stage .station-current-action")).to_contain_text(
                             "כף מהרוטב", timeout=30000
                         )
+                        expect(page.locator("#voice-explanation")).to_be_visible()
+                        expect(page.locator("#voice-explanation")).to_contain_text("כף מהרוטב")
                         page.screenshot(path=str(output / f"cooking-{width}.png"), full_page=True)
                         page.locator("#ux-report-tools > summary").click()
                         frame = page.frame_locator("#action-report-frame")

@@ -100,7 +100,9 @@
      voice.append(el('h3','התמלול האחרון'));const transcript=el('p',lastHeard||'הדיבור שלך יופיע כאן.','voice-transcript');transcript.id='voice-last-transcript';voice.append(transcript);
      voice.append(el('small','אמור ״השף, למה?״ להסבר קצר. שאלה אחרת תישלח רק בלחיצה על שליחה.'));
      const form=$('user-report-form');if(form){const edit=el('details','','voice-question-editor');edit.append(el('summary','עריכה או הקלדת שאלה'),form);voice.append(edit);voice.append(actionButton('voice-send-question','שלח את השאלה לשף',()=>{if(!$('work-report').value.trim()){edit.open=true;$('work-report').focus();}else form.requestSubmit();}));}
-     const response=el('p','','voice-explanation');response.id='voice-explanation';response.hidden=true;response.setAttribute('role','status');voice.append(response,coachNotice);if(typeof voiceStatus!=='undefined')voice.append(voiceStatus);workspace.append(voice);
+     voice.append(el('p','השאלה נשלחת לעוזר הבישול האוטומטי של המערכת, שמסתמך על המידע המקומי. אין כאן שף אנושי או שיחה חופשית עם מודל.','chef-answer-source'));
+     const latest=state.messages.filter(message=>message.role==='chef').at(-1);
+     const response=el('p',latest?.text||'','voice-explanation');response.id='voice-explanation';response.hidden=!latest;response.setAttribute('role','status');voice.append(el('h3','תשובת השף'),response,coachNotice);if(typeof voiceStatus!=='undefined')voice.append(voiceStatus);workspace.append(voice);
    }
    const plan=$('kitchen-plan');if(plan)plan.open=false;
    const form=$('cooking-intake-form');
