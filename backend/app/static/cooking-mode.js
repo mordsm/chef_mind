@@ -81,7 +81,7 @@
    stage.append(stepper);
    if(step)stage.append(el('strong',`שלב ${state.current_step+1} מתוך ${steps.length}`,'live-step-counter'));
    stage.append(el('p',state.dish_title,'live-dish'),el('h2',step?.title||'לפני שמתחילים לחמם'));
-   const instruction=state.station_protocol?.text||step?.instruction||state.intake_guidance?.missing?.[0]?.label||'בחר פעולה לדיווח, או חזור להכנה כדי להשלים תוכנית למנה.';
+   const instruction=state.station_protocol?.current_action?.text||step?.instruction||state.station_protocol?.text||state.intake_guidance?.missing?.[0]?.label||'בחר פעולה לדיווח, או חזור להכנה כדי להשלים תוכנית למנה.';
    if(state.station_protocol?.blocks?.length)renderStationProtocol(stage,state.station_protocol,{compact:true});else stage.append(el('p',instruction,'live-instruction'));
    if(!step){const back=actionButton('live-complete-preparation','השלם פרטי הכנה',()=>setMode('prepare'));stage.append(back);}
    const controls=el('div','','live-controls');
@@ -110,6 +110,7 @@
    const reporter=$('inline-action-reporter');if(reporter){reporter.querySelector('h3').textContent='דיווח פעולה';reporter.querySelector('p').textContent='לחץ על פעולה, בחר פרטים וקבל שאלת בדיקה.';}
    syncMic();
    arrangePreparation();
+   document.dispatchEvent(new Event('chef-layout-updated'));
    requestAnimationFrame(sizeWorkspace);
  }
  function arrangePreparation(){

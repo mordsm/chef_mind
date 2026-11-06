@@ -171,7 +171,8 @@ def main(baseline, output):
                     expect(stage.locator(".station-current-action")).to_contain_text("אין לי לימון")
                     # Simulate an unavailable API and preserve the typed text.
                     editor = page.locator(".voice-question-editor")
-                    editor.locator(":scope > summary").click()
+                    if not editor.evaluate("node => node.open"):
+                        editor.locator(":scope > summary").click()
                     page.locator("#work-report").fill("שאלה שנשמרת גם כשהרשת נותקה")
                     offline["enabled"] = True
                     page.locator("#user-report-form button[type=submit]").click()

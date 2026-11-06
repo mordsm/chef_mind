@@ -17,7 +17,7 @@ body:not(.cooking-live) .cooking-live-stage{display:none}
 .cooking-live #kitchen-setup,.cooking-live #user-toolbar,.cooking-live #kitchen-new-work,.cooking-live .learning-panel{display:none!important}
 .cooking-live .coach-workspace{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-areas:'journey companion';gap:20px}
 .cooking-live .journey-panel>*:not(#cooking-live-stage):not(#kitchen-timer){display:none!important}
-.cooking-live .companion-panel>*:not(#inline-action-reporter):not(#user-report-form):not(.status-question):not(.coach-notice){display:none!important}
+.cooking-live .companion-panel>*:not(#inline-action-reporter):not(#user-report-form):not(.status-question):not(.coach-notice):not(.ux-report-tools){display:none!important}
 .cooking-live .status-question:empty{display:none}.cooking-live .coach-actions,.cooking-live .composer-modes,.cooking-live .quick-reports,.cooking-live #add-user-step{display:none!important}
 .cooking-live #user-report-form{background:white}.cooking-live #user-report-form textarea{min-height:64px;font-size:18px}.cooking-live #work-report-dictate{display:none}.cooking-live .kitchen-timer .coach-clock{font-size:48px}.cooking-live .inline-action-reporter{margin-top:0}
 @keyframes mic-listening{50%{box-shadow:0 0 0 8px #ba4d3338}}@media(prefers-reduced-motion:reduce){#live-microphone[aria-pressed=true]{animation:none}}
