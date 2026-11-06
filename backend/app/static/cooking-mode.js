@@ -82,7 +82,7 @@
    if(step)stage.append(el('strong',`שלב ${state.current_step+1} מתוך ${steps.length}`,'live-step-counter'));
    stage.append(el('p',state.dish_title,'live-dish'),el('h2',step?.title||'לפני שמתחילים לחמם'));
    const instruction=state.station_protocol?.text||step?.instruction||state.intake_guidance?.missing?.[0]?.label||'בחר פעולה לדיווח, או חזור להכנה כדי להשלים תוכנית למנה.';
-   if(state.station_protocol?.blocks?.length)renderStationProtocol(stage,state.station_protocol);else stage.append(el('p',instruction,'live-instruction'));
+   if(state.station_protocol?.blocks?.length)renderStationProtocol(stage,state.station_protocol,{compact:true});else stage.append(el('p',instruction,'live-instruction'));
    if(!step){const back=actionButton('live-complete-preparation','השלם פרטי הכנה',()=>setMode('prepare'));stage.append(back);}
    const controls=el('div','','live-controls');
    if(step){const done=actionButton('live-done','✓ בוצע / השלב הבא',()=>coachCommand('complete'));done.disabled=state.status!=='active'||state.safety_hold;controls.append(done);}

@@ -61,3 +61,44 @@ the legacy source_ids field remains a compatibility reference index.
 Validation: 38 book/station/ontology tests passed. Initial tests caught Hebrew
 ranking and strict-schema issues; both were corrected before committing.
 No production private index approval or deployment was performed.
+
+## Cycle 5 — bounded cold-salad pilot (completed 2026-11-06)
+
+CM-003/005/006, limited to a declared raw-vegetable salad: after ingredients,
+quantity and equipment are provided, create four editorial steps without manual
+step authoring. Each step has an instruction and observable completion check.
+Only explicit user confirmation advances it. Unknown mixtures, heated methods
+and animal ingredients do not enter this cold pilot. This is not a complete
+recipe generator for arbitrary dishes.
+
+Store reported problems and missing ingredients separately across side questions
+and refresh. An explicit supported reminder request starts the existing actual
+deadline/check-in mechanism. Invalid, negated or unbounded requests do not start
+a timer. Live mode keeps the current action visible and puts the full six-block
+protocol inside a closed expandable section. Pilot instructions are marked as
+editorial; the FDA produce source supports handling background, not recipe
+validation. Fixed reminder check-in idempotence discovered by regression tests.
+The final UI review also preserves plain dietary/composition rejection messages
+in guest and authenticated requests instead of reducing them to a generic error.
+
+Final validation: full Python suite 324 passed / 4 skipped; 25 focused tests
+passed after the last memory/timer parsing changes; six Node tests passed.
+Desktop/mobile station and Obsidian export checks passed. The real HTTP/PWA
+journal check passed, including two-device conflict handling and offline reload,
+after correcting the test's asynchronous-save wait. New pilot modules and replay
+harness pass Ruff. The old broad coach browser harness has obsolete selectors
+and removed custom-step controls; its failure is not reported as a passing run.
+Built-in shakshuka is instead covered by the bounded replay browser check.
+That replay browser check passed at 1440/390 widths, including explicit step
+confirmation, visible dietary/composition messages, a real two-second deadline,
+refresh memory, and preservation of a typed question after an unavailable API.
+
+All six original dialogue inputs were replayed against isolated model-disabled
+code. Only salad creates a full plan (four steps); beef, fish, legumes, soup and
+bread still have zero generated steps. Their timers now start; that alone is not
+successful guided cooking. See the Hebrew implementation report for final scope.
+Artifacts: C:/workspace/.runtime/chef-audit-rerun-20261106.
+
+Remaining: expand beyond the one-dish pilot; CM-007 embedded reporter loading;
+CM-013 live technique-policy verification; authorized live retrieval comparison;
+physical voice/cooking checks. No deployment, merge, or blanket source approval.

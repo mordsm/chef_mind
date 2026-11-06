@@ -132,7 +132,15 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     from app.coach import say
 
     state = deepcopy(state)
-    if command.action not in {"ask", "report", "answer", "problem"}:
+    previous_message_count = len(state["messages"])
+    from app.cooking_pilot import timer_request, remember_request, ensure_salad_plan, salad_reply
+    if command.action in {"ask", "report"}:
+        remember_request(state, command.message)
+        requested_seconds = timer_request(command.message)
+        if requested_seconds is not None:
+            say(state, command.message, "user")
+            command = command.model_copy(update={"action": "timer", "seconds": requested_seconds})
+    if command.action not in {"ask", "report", "answer", "problem", "check_in"}:
         state["learning_focus"] = None
     from app.ingredient_safety import check_ingredients
     if command.action not in {"update_plan", "finish", "pause", "timer_cancel"}:
@@ -302,6 +310,7 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
         state["learning_focus"] = None
         state["decision_answers"] = {}
         state["intake_facts"] = {}
+        state["cooking_memory"] = {}
         state["selected_operation_id"] = ""
         state["pending_problem"] = {}
         state["problem_questions"] = []
@@ -586,6 +595,9 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
                     reply += "\n\n" + book_tip["text"]
             if command.action == "report":
                 reply = "הדיווח התקבל: " + text[:240] + "\n\n" + reply
+            pilot_reply = salad_reply(state, text) if not state["safety_hold"] else None
+            if pilot_reply:
+                reply = pilot_reply
             state["learning_focus"] = {"title": issue or "בהקשר לדיווח האחרון", "text": reply, "source": ""}
             if specific_reply:
                 state["learning_focus"].update(origin="USER_SUPPLIED_PROTOCOL", source_ids=["USER_GIZZARD_PROTOCOL_2026_10_25"])
@@ -633,6 +645,11 @@ def apply_user_command(state, command, now, problem_rules=None, method_policy=No
     enrich_context(state["context"], " ".join([state["dish_title"], state["method"], command.message, *state["ingredients"]]))
     from app.culinary_context import strict_context
     strict_context(state['context'], state['dish_title'], [*state['ingredients'], *classification_ingredients(state.get('intake_facts', {}))])
+    plan_started = ensure_salad_plan(state)
+    if plan_started:
+        say(state, "בנינו ארבע פעולות להכנה קרה של הסלט. נתחיל בפעולה אחת: " + state["custom_steps"][0]["instruction"])
+    if command.action in {"timer", "timer_cancel", "check_in", "finish"} and len(state["messages"]) > previous_message_count:
+        state["learning_focus"] = {"title": "עדכון הבישול", "text": state["messages"][-1]["text"], "source": ""}
     attach_intake(state)
     defaults = state['intake_guidance'].get('defaults')
     if defaults and not defaults.get('source_ids'):

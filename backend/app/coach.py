@@ -357,6 +357,7 @@ class JourneyState(StrictModel):
     intake_facts: IntakeFacts = Field(default_factory=IntakeFacts)
     intake_guidance: dict = Field(default_factory=dict)
     station_protocol: dict = Field(default_factory=dict)
+    cooking_memory: dict[str, str] = Field(default_factory=dict, max_length=20)
     dish_identity: dict = Field(default_factory=dict)
     recipe_snapshot: RecipeSnapshot | None = None
     selected_operation_id: str = Field(default="", max_length=80)

@@ -152,6 +152,8 @@ def build_protocol(
             + " זמן וטמפרטורה שלא צוינו במקור: UNKNOWN; אין להשלים מספרים. סימן לבדיקה: "
             + "; ".join(current.get("successCriteria", []))
         )
+        if current.get("source") == "CHEF_AUTHORED:salad_pilot_v1":
+            execution = "זהו מסלול להכנה קרה, ללא חימום. המשך לפי הפעולה הנוכחית וסמן אישור ביצוע רק אחרי שבדקת: " + "; ".join(current.get("successCriteria", []))
     links = (profile or {}).get(
         "wikilinks",
         ["[[Culinary Station]]", "[[" + ("Fish Collagen" if family == "fish" else "Heat Transfer") + "]]"],
@@ -301,6 +303,11 @@ def build_protocol(
         protocol["current_action"] = {"text": preparation if blocked else execution, "kind": "safety"}
     elif current and current.get("instruction"):
         protocol["current_action"] = {"text": current["instruction"], "kind": "action"}
+    if current and current.get("source") == "CHEF_AUTHORED:salad_pilot_v1":
+        from app.cooking_pilot import PRODUCE_SOURCE, PILOT_SOURCE
+        for value in (PILOT_SOURCE, PRODUCE_SOURCE):
+            protocol["source_ids"].append(value)
+            protocol["editorial_references"].append({"source_id": value, "usage": "editorial_pilot_and_safety_reference"})
     protocol["text"] = render_text(protocol)
     protocol["obsidian_markdown"] = obsidian_note(protocol, name)
     return protocol
@@ -331,7 +338,7 @@ def attach_station(state):
         # Keep the contextual answer, but do not import legacy fish temperature
         # advice or repeat its interview questions ahead of the one next detail.
         sentences = re.split(r"(?<=[.!?])\s+|\n+", explanation)
-        useful = [s for s in sentences if s and "?" not in s and "Knowledge Base Extension Needed" not in s]
+        useful = [s for s in sentences if s and "Knowledge Base Extension Needed" not in s]
         if protocol["family"] == "fish":
             useful = [s for s in useful if not re.search(r"\d.*(?:°|מעלות|דקות|שניות|minutes|seconds)", s)]
         if useful:
